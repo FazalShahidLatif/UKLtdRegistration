@@ -1,0 +1,130 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navigation') %>
+
+<main class="bg-white min-h-screen">
+    <!-- Post Hero -->
+    <header class="relative pt-40 pb-24 bg-gray-900 border-b border-gray-800 overflow-hidden">
+        <!-- Decorative Background -->
+        <div class="absolute inset-0 opacity-20 pointer-events-none">
+            <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-600 rounded-full blur-[150px] -mr-96 -mt-96 animate-pulse"></div>
+            <div class="absolute bottom-0 left-0 w-[800px] h-[800px] bg-indigo-600 rounded-full blur-[150px] -ml-96 -mb-96 animate-pulse" style="animation-delay: -2s"></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <nav class="mb-10">
+                    <a href="/blog" class="inline-flex items-center text-xs font-black text-blue-400 hover:text-blue-300 transition-colors uppercase tracking-widest">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                        Intelligence Hub
+                    </a>
+                </nav>
+
+                <div class="flex items-center space-x-4 mb-8">
+                    <span class="bg-blue-600 text-white px-5 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest shadow-lg shadow-blue-900/40">
+                        <%= article.category %>
+                    </span>
+                    <span class="text-gray-500 text-[10px] font-black uppercase tracking-widest">
+                        <%= new Date(article.publishedAt || article.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) %>
+                    </span>
+                </div>
+
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-10 leading-[1.1] tracking-tight">
+                    <%= article.title %>
+                </h1>
+
+                <div class="flex items-center">
+                    <div class="w-14 h-14 bg-gradient-to-br from-gray-700 to-gray-800 rounded-2xl flex items-center justify-center border border-gray-600 shadow-xl mr-5">
+                        <span class="text-xl font-black text-blue-400">UK</span>
+                    </div>
+                    <div>
+                        <p class="text-white font-black text-sm uppercase tracking-widest">UK Ltd Support</p>
+                        <p class="text-gray-500 text-xs font-bold uppercase tracking-widest mt-0.5">Corporate Formation Analyst</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 py-24">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 item-start">
+            <!-- Main Content -->
+            <article class="flex-1 max-w-4xl">
+                <!-- Featured Image -->
+                <% if (article.image) { %>
+                    <div class="mb-16 -mt-36 relative z-20 group">
+                        <div class="absolute inset-0 bg-blue-600 rounded-[3rem] blur-3xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
+                        <img src="<%= article.image %>" alt="<%= article.title %>" class="w-full h-auto rounded-[3rem] shadow-2xl relative border-8 border-white/5 object-cover">
+                    </div>
+                <% } %>
+
+                <!-- Article Body -->
+                <div class="prose prose-xl prose-slate max-w-none 
+                    prose-headings:font-black prose-headings:tracking-tight prose-headings:text-gray-900
+                    prose-h2:text-4xl prose-h2:mt-16 prose-h2:mb-8
+                    prose-p:text-gray-600 prose-p:leading-[1.8]
+                    prose-strong:text-gray-900 prose-strong:font-black
+                    prose-blockquote:border-l-4 prose-blockquote:border-blue-600 prose-blockquote:bg-gray-50 prose-blockquote:p-8 prose-blockquote:rounded-3xl prose-blockquote:not-italic
+                    prose-li:text-gray-600">
+                    <%- content %>
+                </div>
+
+                <!-- Strategic Advice Component -->
+                <div class="mt-20 p-10 bg-gradient-to-br from-gray-900 to-blue-900 rounded-[3rem] text-white relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
+                    <div class="relative z-10 text-center">
+                        <h3 class="text-3xl font-black mb-6">Foundational Insight</h3>
+                        <p class="text-blue-100/80 mb-10 text-lg leading-relaxed max-w-2xl mx-auto">
+                            The 2026 regulatory shift demands proactive compliance. Don't let your formation be stalled by identity verification gaps.
+                        </p>
+                        <a href="/pricing" class="bg-white text-gray-900 px-10 py-4 rounded-2xl font-black uppercase tracking-widest hover:bg-blue-50 transition-all inline-block shadow-2xl">
+                            Secure Compliance Now
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Sticky Sidebar -->
+            <aside class="hidden lg:block w-96 sticky top-32 h-fit">
+                <!-- Conversion Box -->
+                <div class="bg-white rounded-[2.5rem] p-10 border border-gray-100 shadow-2xl shadow-gray-200/50 mb-8 p-12">
+                    <h4 class="text-2xl font-black text-gray-900 mb-6 leading-tight">Elite UK Formations</h4>
+                    <p class="text-gray-500 text-sm mb-10 leading-relaxed">
+                        Join 15,000+ global entrepreneurs who trust us for seamless, high-prestige UK company registration.
+                    </p>
+                    
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-blue-600 mt-1 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-xs font-bold text-gray-700 uppercase tracking-widest">2026 ACSP Ready</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-blue-600 mt-1 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="text-xs font-bold text-gray-700 uppercase tracking-widest">Global Banking Access</span>
+                        </li>
+                    </ul>
+
+                    <a href="/pricing" class="block w-full text-center bg-blue-600 text-white py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-blue-700 transition shadow-xl shadow-blue-200">
+                        Start Formation
+                    </a>
+                </div>
+
+                <!-- Recent Posts / Trending -->
+                <div class="px-8">
+                    <h4 class="text-xs font-black text-gray-300 uppercase tracking-[0.2em] mb-6">Trending Analysis</h4>
+                    <div class="space-y-8">
+                        <a href="#" class="block group">
+                            <p class="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-2">Banking</p>
+                            <h5 class="text-sm font-black text-gray-900 group-hover:text-blue-600 transition-colors leading-snug">Wise vs. Revolut: The 2026 Global Banking Face-off</h5>
+                        </a>
+                        <a href="#" class="block group border-t border-gray-50 pt-8">
+                            <p class="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-2">Legal</p>
+                            <h5 class="text-sm font-black text-gray-900 group-hover:text-blue-600 transition-colors leading-snug">Privacy Shields: Keeping Your Home Address Off Record</h5>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</main>
+
+<%- include('../partials/footer') %>

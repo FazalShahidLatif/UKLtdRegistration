@@ -1,0 +1,38 @@
+# Hostinger Optimized Node.js Proxy .htaccess
+# Created by BlueOceanHub for UK Ltd Registration
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # 1. Force HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    
+    # 2. Disable index files to prevent conflict
+    DirectoryIndex disabled
+    Options -Indexes
+    
+    # 3. Serve static files from public/ if they exist
+    # (Optional: Hostinger might do this automatically, but this is safer)
+    RewriteCond %{DOCUMENT_ROOT}/public/$1 -f
+    RewriteRule ^(.*)$ /public/$1 [L]
+    
+    # 4. Proxy everything else to Node.js on port 3000
+    # This is the most critical part for Hostinger Shared/Business hosting
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ http://localhost:3000/$1 [P,L]
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Performance Optimization
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+</IfModule>

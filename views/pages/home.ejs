@@ -1,0 +1,182 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navigation') %>
+
+<main>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Register Your UK Limited Company</h1>
+            <p class="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">Fast, professional, and fully online. Join thousands of entrepreneurs who started their journey with us.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/pricing" class="bg-white text-blue-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition shadow-lg">Start Formation</a>
+                <a href="#tools" class="bg-blue-600 text-white border border-blue-400 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-500 transition shadow-lg">Explore Tools</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cohesive Launch Center -->
+    <section id="tools" class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-4 relative">
+            <!-- Background Decorative Elements -->
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-50"></div>
+            <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-indigo-50 rounded-full blur-3xl opacity-50"></div>
+
+            <div class="max-w-5xl mx-auto relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Strategic Research Hub</h2>
+                    <p class="text-xl text-gray-600">Everything you need to validate your brand and classify your vision.</p>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-2xl border border-gray-100 p-2 md:p-4 overflow-hidden">
+                    <div class="flex flex-col lg:flex-row">
+                        <!-- Step 1: Company Search -->
+                        <div class="flex-1 p-8 md:p-12 border-b lg:border-b-0 lg:border-r border-gray-100">
+                            <div class="flex items-center mb-6">
+                                <span class="w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-black text-xl shadow-lg shadow-blue-200 mr-4">01</span>
+                                <h3 class="text-2xl font-bold text-gray-900">Brand Availability</h3>
+                            </div>
+                            <p class="text-gray-600 mb-8">Search the official Companies House registry to secure your unique business name.</p>
+                            
+                            <div class="relative group">
+                                <input type="text" id="company-q" placeholder="Enter desired name..." 
+                                    class="w-full pl-6 pr-32 py-5 bg-gray-50 border-2 border-transparent focus:border-blue-600 focus:bg-white rounded-2xl transition-all duration-300 outline-none text-lg font-medium shadow-inner">
+                                <button onclick="searchCompany()" 
+                                    class="absolute right-2 top-2 bottom-2 bg-blue-600 text-white px-8 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-100 active:scale-95">
+                                    Verify
+                                </button>
+                            </div>
+                            <div id="company-results" class="mt-6 space-y-3 max-h-60 overflow-y-auto pr-2 custom-scrollbar"></div>
+                        </div>
+
+                        <!-- Step 2: SIC Finder -->
+                        <div class="flex-1 p-8 md:p-12 bg-gray-50/50">
+                            <div class="flex items-center mb-6">
+                                <span class="w-12 h-12 bg-indigo-600 text-white rounded-2xl flex items-center justify-center font-black text-xl shadow-lg shadow-indigo-200 mr-4">02</span>
+                                <h3 class="text-2xl font-bold text-gray-900">Activity Classification</h3>
+                            </div>
+                            <p class="text-gray-600 mb-8">Identify the correct SIC codes to define your company's official scope of operations.</p>
+                            
+                            <div class="relative group">
+                                <input type="text" id="sic-q" placeholder="Search activities (e.g. tech, retail)..." 
+                                    class="w-full pl-6 pr-32 py-5 bg-white border-2 border-transparent focus:border-indigo-600 rounded-2xl transition-all duration-300 outline-none text-lg font-medium shadow-sm">
+                                <button onclick="searchSIC()" 
+                                    class="absolute right-2 top-2 bottom-2 bg-indigo-600 text-white px-8 rounded-xl font-bold hover:bg-indigo-700 transition shadow-lg shadow-indigo-100 active:scale-95">
+                                    Search
+                                </button>
+                            </div>
+                            <div id="sic-results" class="mt-6 space-y-3 max-h-60 overflow-y-auto pr-2 custom-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategic Tip -->
+                <div class="mt-12 flex items-center justify-center text-gray-500 bg-white/50 backdrop-blur-sm py-4 px-8 rounded-full border border-gray-100 w-fit mx-auto">
+                    <svg class="w-5 h-5 text-yellow-500 mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1a1 1 0 112 0v1a1 1 0 11-2 0zM13.464 15.657a1 1 0 010-1.414l.707-.707a1 1 0 111.414 1.414l-.707.707a1 1 0 01-1.414 0zM10 8a2 2 0 100 4 2 2 0 000-4z"></path></svg>
+                    <span class="text-sm font-medium">Pro Tip: Use the most specific SIC code possible to ensure your company bank account application is approved faster.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Formation Packages</h2>
+                <p class="text-xl text-gray-600">Choose the perfect foundation for your business growth.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <% packages.forEach(pkg => { %>
+                    <div class="relative bg-white p-8 rounded-3xl border <%= pkg.popular ? 'border-blue-600 shadow-2xl scale-105 z-10' : 'border-gray-200 hover:shadow-xl' %> transition-all duration-300 flex flex-col">
+                        <% if (pkg.popular) { %>
+                            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-6 py-1 rounded-full font-bold text-sm tracking-wide shadow-lg">
+                                MOST POPULAR
+                            </div>
+                        <% } %>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2"><%= pkg.name %></h3>
+                            <p class="text-gray-500 text-sm h-10"><%= pkg.description %></p>
+                        </div>
+
+                        <div class="flex items-baseline mb-8">
+                            <span class="text-5xl font-black text-gray-900"><%= pkg.price %></span>
+                            <span class="text-gray-500 ml-2 font-medium">+ VAT</span>
+                        </div>
+
+                        <ul class="space-y-4 mb-10 flex-1">
+                            <% pkg.features.forEach((feature, idx) => { %>
+                                <li class="flex items-start">
+                                    <div class="mt-1 flex-shrink-0 w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                                        <svg class="w-3.5 h-3.5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                    </div>
+                                    <span class="ml-3 text-gray-700 <%= (pkg.popular && idx < 3) ? 'font-semibold' : '' %>"><%= feature %></span>
+                                </li>
+                            <% }) %>
+                        </ul>
+
+                        <a href="/checkout?package=<%= pkg.name.toLowerCase() %>" class="block text-center py-4 rounded-xl font-extrabold text-lg transition-all duration-300 <%= pkg.popular ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-blue-200 shadow-lg' : 'border-2 border-blue-600 text-blue-600 hover:bg-blue-50' %>">
+                            <%= pkg.cta %>
+                        </a>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+    async function searchCompany() {
+        const q = document.getElementById('company-q').value;
+        const resDiv = document.getElementById('company-results');
+        if (!q) return;
+        resDiv.innerHTML = '<div class="flex items-center justify-center py-6"><div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div></div>';
+        try {
+            const resp = await fetch(`/api/company-search?q=${q}`);
+            const data = await resp.json();
+            if (data.items.length > 0) {
+                resDiv.innerHTML = data.items.map(item => `
+                    <div class="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow flex justify-between items-center group">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center mr-3 font-bold text-xs">UK</div>
+                            <div>
+                                <span class="font-bold text-gray-900 block group-hover:text-blue-600 transition-colors">${item.title}</span>
+                                <p class="text-xs text-gray-500 uppercase tracking-wider">${item.company_number} • ${item.status}</p>
+                            </div>
+                        </div>
+                        <span class="text-[10px] font-bold px-2 py-1 bg-green-100 text-green-700 rounded-md">AVAILABLE</span>
+                    </div>
+                `).join('');
+            } else {
+                resDiv.innerHTML = '<div class="p-4 bg-red-50 text-red-600 rounded-xl text-sm font-medium">No direct matches found. Your name is likely available!</div>';
+            }
+        } catch (e) { resDiv.innerHTML = '<div class="p-4 bg-red-50 text-red-600 rounded-xl text-sm font-medium">Connection failed. Please try again.</div>'; }
+    }
+
+    async function searchSIC() {
+        const q = document.getElementById('sic-q').value;
+        const resDiv = document.getElementById('sic-results');
+        if (!q) return;
+        resDiv.innerHTML = '<div class="flex items-center justify-center py-6"><div class="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div></div>';
+        try {
+            const resp = await fetch(`/api/sic-finder?query=${q}`);
+            const data = await resp.json();
+            if (data.results.length > 0) {
+                resDiv.innerHTML = data.results.map(item => `
+                    <div class="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center mb-1">
+                            <span class="font-black text-indigo-600 mr-2">#${item.code}</span>
+                            <span class="text-xs font-bold text-gray-400 bg-gray-100 px-2 py-0.5 rounded uppercase">Standard Code</span>
+                        </div>
+                        <p class="text-sm text-gray-700 leading-relaxed font-medium">${item.description}</p>
+                    </div>
+                `).join('');
+            } else {
+                resDiv.innerHTML = '<div class="p-4 bg-red-50 text-red-600 rounded-xl text-sm font-medium">No codes found for this activity. Try a generic term.</div>';
+            }
+        } catch (e) { resDiv.innerHTML = '<div class="p-4 bg-red-50 text-red-600 rounded-xl text-sm font-medium">Search failed.</div>'; }
+    }
+</script>
+
+<%- include('../partials/footer') %>

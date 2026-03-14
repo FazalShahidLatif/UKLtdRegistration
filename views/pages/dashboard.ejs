@@ -1,0 +1,169 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navigation') %>
+
+<main class="min-h-screen bg-gray-50 py-12">
+    <div class="container mx-auto px-4">
+        <!-- Dashboard Header -->
+        <div class="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 mb-8 flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-black text-gray-900 mb-2">Welcome back, <%= user.email.split('@')[0] %>!</h1>
+                <p class="text-gray-500">Manage your formations and access your strategic tools.</p>
+            </div>
+            <div class="mt-6 md:mt-0 flex gap-4">
+                <button class="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-100">Start New Formation</button>
+                <a href="/auth/logout" class="bg-gray-100 text-gray-700 px-6 py-3 rounded-xl font-bold hover:bg-gray-200 transition">Logout</a>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Column: Quick Stats/Actions -->
+            <div class="lg:col-span-1 space-y-8">
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-100 p-8">
+                    <h3 class="text-xl font-bold mb-6">Your Status</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-4 bg-blue-50 rounded-2xl">
+                            <span class="text-blue-700 font-medium">Formations</span>
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded-lg text-sm font-bold">0</span>
+                        </div>
+                        <div class="flex justify-between items-center p-4 bg-indigo-50 rounded-2xl">
+                            <span class="text-indigo-700 font-medium">Saved Names</span>
+                            <span class="bg-indigo-600 text-white px-3 py-1 rounded-lg text-sm font-bold">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl shadow-xl p-8 text-white relative overflow-hidden">
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-bold mb-2">Need Expert Help?</h3>
+                        <p class="text-blue-100 mb-6 text-sm">Schedule a 15-minute consultation with our formation specialists.</p>
+                        <button class="w-full bg-white text-blue-700 py-3 rounded-xl font-bold hover:bg-blue-50 transition">Book Call</button>
+                    </div>
+                    <div class="absolute -right-4 -bottom-4 w-24 h-24 bg-white/10 rounded-full blur-2xl"></div>
+                </div>
+            </div>
+
+            <!-- Right Column: Tools (The Core Request) -->
+            <div class="lg:col-span-2">
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
+                    <div class="border-b border-gray-100 p-8">
+                        <h2 class="text-2xl font-black text-gray-900 mb-2">Formation Research Tools</h2>
+                        <p class="text-gray-500">Secure your name and classify your industry.</p>
+                    </div>
+                    
+                    <div class="p-8 space-y-12">
+                        <!-- Tool 1: Company Search -->
+                        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:border-blue-300 transition-all duration-300">
+                            <div class="flex items-center mb-6">
+                                <div class="w-10 h-10 bg-blue-600 text-white rounded-xl flex items-center justify-center mr-4 shadow-md">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">Official Company Name Search</h3>
+                            </div>
+                            <div class="flex flex-col md:flex-row gap-4">
+                                <input type="text" id="db-company-q" placeholder="Check name availability..." 
+                                    class="flex-1 px-5 py-4 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition-all">
+                                <button onclick="dbSearchCompany()" 
+                                    class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 shadow-lg shadow-blue-50 transition active:scale-95">
+                                    Verify Name
+                                </button>
+                            </div>
+                            <div id="db-company-results" class="mt-6 space-y-3"></div>
+                        </div>
+
+                        <!-- Tool 2: SIC Finder -->
+                        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:border-indigo-300 transition-all duration-300">
+                            <div class="flex items-center mb-6">
+                                <div class="w-10 h-10 bg-indigo-600 text-white rounded-xl flex items-center justify-center mr-4 shadow-md">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900">Industry Activity Finder (SIC)</h3>
+                            </div>
+                            <div class="flex flex-col md:flex-row gap-4">
+                                <input type="text" id="db-sic-q" placeholder="Describe your business..." 
+                                    class="flex-1 px-5 py-4 bg-white border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none transition-all">
+                                <button onclick="dbSearchSIC()" 
+                                    class="bg-indigo-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-indigo-700 shadow-lg shadow-indigo-50 transition active:scale-95">
+                                    Find SIC Code
+                                </button>
+                            </div>
+                            <div id="db-sic-results" class="mt-6 space-y-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    // Copy-paste logic with minor adjustments for dashboard IDs
+    async function dbSearchCompany() {
+        const q = document.getElementById('db-company-q').value;
+        const resDiv = document.getElementById('db-company-results');
+        if (!q) return;
+        resDiv.innerHTML = '<div class="flex items-center justify-center py-6"><div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div></div>';
+        try {
+            const resp = await fetch(`/api/company-search?q=${q}`);
+            const data = await resp.json();
+            if (data.items.length > 0) {
+                resDiv.innerHTML = data.items.map(item => `
+                    <div class="p-4 bg-white border border-gray-100 rounded-xl shadow-sm flex justify-between items-center group">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center mr-3 font-bold text-xs">UK</div>
+                            <div>
+                                <span class="font-bold text-gray-900 block group-hover:text-blue-600 transition-colors">${item.title}</span>
+                                <p class="text-xs text-gray-500 uppercase tracking-wider">${item.company_number} • ${item.status}</p>
+                            </div>
+                        </div>
+                        <span class="text-[10px] font-bold px-2 py-1 bg-green-100 text-green-700 rounded-md">AVAILABLE</span>
+                    </div>
+                `).join('');
+            } else {
+                resDiv.innerHTML = '<div class="p-4 bg-red-50 text-red-600 rounded-xl text-sm font-medium">No matches found. This name is available!</div>';
+            }
+        } catch (e) { resDiv.innerHTML = '<div class="p-4 bg-red-50 text-red-600 rounded-xl text-sm font-medium">Error.</div>'; }
+    }
+
+    async function dbSearchSIC() {
+        const q = document.getElementById('db-sic-q').value;
+        const resDiv = document.getElementById('db-sic-results');
+        if (!q) return;
+        resDiv.innerHTML = '<div class="flex items-center justify-center py-6"><div class="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div></div>';
+        try {
+            const resp = await fetch(`/api/sic-finder?query=${q}`);
+            const data = await resp.json();
+            if (data.results.length > 0) {
+                resDiv.innerHTML = data.results.map(item => `
+                    <div class="p-4 bg-white border border-gray-100 rounded-xl shadow-sm">
+                        <div class="flex items-center mb-1">
+                            <span class="font-black text-indigo-600 mr-2">#${item.code}</span>
+                            <span class="text-xs font-bold text-gray-400 bg-gray-100 px-1.5 py-0.5 rounded uppercase">SIC 2007</span>
+                        </div>
+                        <p class="text-sm text-gray-700 leading-relaxed font-medium">${item.description}</p>
+                    </div>
+                `).join('');
+            } else {
+                resDiv.innerHTML = '<div class="p-4 bg-red-50 text-red-600 rounded-xl text-sm font-medium">No results.</div>';
+            }
+        } catch (e) { resDiv.innerHTML = '<div class="p-4 bg-red-50 text-red-600 rounded-xl text-sm font-medium">Failed.</div>'; }
+    }
+</script>
+
+<style>
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #e2e8f0;
+        border-radius: 10px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #cbd5e1;
+    }
+</style>
+
+<%- include('../partials/footer') %>
