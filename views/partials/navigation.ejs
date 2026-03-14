@@ -1,13 +1,17 @@
 <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
     <div class="container mx-auto px-4">
         <div class="flex justify-between items-center h-20">
-            <a href="/" class="flex items-center space-x-3">
-                <div class="w-12 h-12 bg-brand-blue rounded-2xl flex items-center justify-center text-white shadow-xl shadow-blue-200 group-hover:scale-110 transition-transform duration-300">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
-                </div>
-                <div class="flex flex-col -space-y-1">
-                    <span class="text-2xl font-black text-gray-900 tracking-tighter uppercase">UK<span class="text-brand-blue">LTD</span></span>
-                    <span class="text-[8px] font-black text-gray-400 uppercase tracking-[0.2em]">Registration</span>
+            <a href="/" class="flex items-center">
+                <img src="/images/logo.png" alt="UK LTD Formation" class="h-12 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <!-- Fallback text logo if image fails -->
+                <div class="hidden items-center space-x-3">
+                    <div class="w-10 h-10 bg-brand-navy rounded-xl flex items-center justify-center">
+                        <span class="text-brand-gold font-black text-lg">U</span>
+                    </div>
+                    <div class="flex flex-col -space-y-1">
+                        <span class="text-xl font-black text-brand-navy tracking-tighter uppercase">UK<span class="text-brand-blue">LTD</span></span>
+                        <span class="text-[8px] font-black text-gray-400 uppercase tracking-[0.2em]">Formation</span>
+                    </div>
                 </div>
             </a>
             
