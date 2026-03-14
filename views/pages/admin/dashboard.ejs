@@ -1,0 +1,156 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<div class="flex min-h-screen bg-gray-50/50">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-brand-navy text-white hidden lg:flex flex-col">
+        <div class="p-8 border-b border-white/5">
+            <span class="text-xs font-black uppercase tracking-[0.2em] text-gray-400">Master Control</span>
+            <h2 class="text-xl font-black mt-1">Dashboard</h2>
+        </div>
+        <nav class="flex-1 p-4 space-y-2 mt-4">
+            <a href="/admin" class="flex items-center space-x-3 p-4 bg-brand-blue/20 text-white rounded-2xl font-bold group transition-all">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                <span>Overview</span>
+            </a>
+            <a href="/admin/orders" class="flex items-center space-x-3 p-4 text-gray-400 hover:bg-white/5 hover:text-white rounded-2xl font-bold transition-all">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                <span>Orders</span>
+            </a>
+            <a href="/admin/partners" class="flex items-center space-x-3 p-4 text-gray-400 hover:bg-white/5 hover:text-white rounded-2xl font-bold transition-all">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                <span>Partners</span>
+            </a>
+            <a href="/admin/leads" class="flex items-center space-x-3 p-4 text-gray-400 hover:bg-white/5 hover:text-white rounded-2xl font-bold transition-all">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg>
+                <span>Leads</span>
+            </a>
+        </nav>
+        <div class="p-8 border-t border-white/5">
+            <a href="/auth/logout" class="text-xs font-black uppercase tracking-[0.2em] text-red-400 hover:text-red-300 transition-colors">Logout Command</a>
+        </div>
+    </aside>
+
+    <!-- Content -->
+    <main class="flex-1 p-8 lg:p-12">
+        <header class="mb-12 flex justify-between items-start">
+            <div>
+                <h1 class="text-4xl font-black text-gray-900 tracking-tighter">Operational Overview</h1>
+                <p class="text-gray-500 font-medium">Monitoring the "8 to 9" growth trajectory.</p>
+            </div>
+            <div class="px-6 py-3 bg-brand-blue/10 rounded-2xl border border-brand-blue/20">
+                <span class="text-[10px] font-black uppercase text-brand-blue tracking-widest">System Status</span>
+                <p class="text-xs font-bold text-gray-900">All Modules Functional</p>
+            </div>
+        </header>
+
+        <!-- Metrics Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <div class="glass p-8 rounded-[2.5rem]">
+                <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-4">Total Revenue</p>
+                <p class="text-3xl font-black text-gray-900"><%= stats.totalRevenue %></p>
+                <div class="mt-4 flex items-center text-green-500">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+                    <span class="text-xs font-black">+12.5%</span>
+                </div>
+            </div>
+            <div class="glass p-8 rounded-[2.5rem]">
+                <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-4">Conversion Rate</p>
+                <p class="text-3xl font-black text-gray-900"><%= stats.conversionRate %></p>
+                <div class="mt-4 flex items-center text-brand-blue">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+                    <span class="text-xs font-black">+0.8%</span>
+                </div>
+            </div>
+            <div class="glass p-8 rounded-[2.5rem]">
+                <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-4">Pending Orders</p>
+                <p class="text-3xl font-black text-gray-900"><%= stats.pendingOrders %></p>
+                <div class="mt-4 flex items-center text-yellow-500">
+                    <span class="text-xs font-black tracking-widest uppercase">Action Required</span>
+                </div>
+            </div>
+            <div class="glass p-8 rounded-[2.5rem]">
+                <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-4">Partner Growth</p>
+                <p class="text-3xl font-black text-gray-900"><%= stats.activeAffiliates %></p>
+                <div class="mt-4 flex items-center text-brand-green">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+                    <span class="text-xs font-black">+4 New</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secondary Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2 bg-white rounded-[3rem] border border-gray-100 p-10 shadow-sm">
+                <div class="flex justify-between items-center mb-8">
+                    <h3 class="text-2xl font-black text-gray-900 tracking-tighter">Recent Conversions</h3>
+                    <a href="/admin/orders" class="text-xs font-black uppercase text-brand-blue tracking-widest hover:underline">View All</a>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="border-b border-gray-50">
+                                <th class="pb-4 text-[10px] font-black uppercase text-gray-400 tracking-widest">Customer</th>
+                                <th class="pb-4 text-[10px] font-black uppercase text-gray-400 tracking-widest">Package</th>
+                                <th class="pb-4 text-[10px] font-black uppercase text-gray-400 tracking-widest">Amount</th>
+                                <th class="pb-4 text-[10px] font-black uppercase text-gray-400 tracking-widest text-right">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-50">
+                            <!-- Mock Data -->
+                            <tr>
+                                <td class="py-6">
+                                    <p class="font-bold text-gray-900 text-sm">Alex Thompson</p>
+                                    <p class="text-xs text-gray-400 font-medium">alex.t@example.com</p>
+                                </td>
+                                <td class="py-6">
+                                    <span class="px-3 py-1 bg-brand-blue/10 text-brand-blue rounded-lg text-[10px] font-black uppercase tracking-widest">Elite</span>
+                                </td>
+                                <td class="py-6 font-bold text-gray-900 text-sm">£299.99</td>
+                                <td class="py-6 text-right">
+                                    <span class="px-3 py-1 bg-green-50 text-green-600 rounded-lg text-[10px] font-black uppercase tracking-widest">Completed</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="py-6">
+                                    <p class="font-bold text-gray-900 text-sm">Maya Chen</p>
+                                    <p class="text-xs text-gray-400 font-medium">maya.c@global.net</p>
+                                </td>
+                                <td class="py-6">
+                                    <span class="px-3 py-1 bg-gray-50 text-gray-500 rounded-lg text-[10px] font-black uppercase tracking-widest">Starter</span>
+                                </td>
+                                <td class="py-6 font-bold text-gray-900 text-sm">£119.99</td>
+                                <td class="py-6 text-right">
+                                    <span class="px-3 py-1 bg-yellow-50 text-yellow-600 rounded-lg text-[10px] font-black uppercase tracking-widest">Pending ID</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- AI Insights -->
+            <div class="bg-gray-900 rounded-[3rem] p-10 text-white flex flex-col">
+                <div class="flex items-center space-x-3 mb-8">
+                    <div class="w-10 h-10 bg-brand-blue rounded-2xl flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-black tracking-tighter uppercase">AI Strategy</h3>
+                </div>
+                <div class="flex-1 space-y-6">
+                    <div class="p-6 bg-white/5 border border-white/10 rounded-2xl">
+                        <p class="text-[10px] font-black text-brand-blue uppercase tracking-widest mb-2">Trend Alert</p>
+                        <p class="text-sm font-medium text-gray-300">Non-resident traffic from USA up 45% this week. Suggest updating "US Citizens" guide with banking FAQ.</p>
+                    </div>
+                    <div class="p-6 bg-white/5 border border-white/10 rounded-2xl">
+                        <p class="text-[10px] font-black text-brand-green uppercase tracking-widest mb-2">Lead Quality</p>
+                        <p class="text-sm font-medium text-gray-300">Olivia reports high intent from "Enterprise Elite" queries. 12 leads are ready for assisted follow-up.</p>
+                    </div>
+                </div>
+                <button class="mt-8 w-full btn-primary !py-4 shadow-none">Review Recommendations</button>
+            </div>
+        </div>
+    </main>
+</div>
+
+<%- include('../../partials/footer') %>

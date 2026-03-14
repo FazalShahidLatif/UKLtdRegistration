@@ -95,10 +95,11 @@ app.use((req, res, next) => {
 
 // Routes
 app.use('/', homeRoutes);
-app.use('/blog', blogRoutes);
+app.use('/blog', blogRoutes); // Kept original order for blogRoutes
 app.use('/auth', authRoutes);
 app.use('/api', apiRoutes);
-app.use('/knowledge-hub', hubRoutes); // New route
+app.use('/knowledge-hub', hubRoutes);
+app.use('/admin', adminRoutes); // New route
 app.use('/', pagesRoutes); // Must be last to catch all page routes
 
 // 404 Handler
