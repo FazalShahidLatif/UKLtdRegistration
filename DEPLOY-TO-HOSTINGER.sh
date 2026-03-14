@@ -27,12 +27,16 @@ else
 fi
 echo ""
 
-# Step 3: Pull from GitHub (or skip if files already present)
-echo "[3/12] Getting latest code..."
-if [ -f "package.json" ]; then
-    echo "✓ Code already present"
+# Step 3: Pull from GitHub
+echo "[3/12] Synchronizing with GitHub..."
+if [ -d ".git" ]; then
+    git pull origin main
+    echo "✓ Code synchronized"
+elif [ -f "package.json" ]; then
+    echo "⚠ Not a git repository, skipping pull (Code already present)"
 else
-    echo "Upload your files via FTP or Git clone"
+    echo "✗ Error: No code found. Upload your files via FTP or Git clone"
+    exit 1
 fi
 echo ""
 
