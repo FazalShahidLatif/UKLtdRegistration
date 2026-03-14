@@ -15,7 +15,7 @@ router.get('/checkout', (req, res) => {
     const packages = {
         'starter': { name: 'Starter', price: '119.99' },
         'basic': { name: 'Starter', price: '119.99' },
-        'standard': { name: 'Standard Plus', price: '199.99' },
+        'standard': { name: 'Standard Plus', price: '189.99' },
         'premium': { name: 'Enterprise Elite', price: '299.99' }
     };
     
