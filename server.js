@@ -26,6 +26,8 @@ const blogRoutes = require('./routes/blog');
 const pagesRoutes = require('./routes/pages');
 const authRoutes = require('./routes/auth');
 const apiRoutes = require('./routes/api');
+const hubRoutes = require('./routes/hub');
+const adminRoutes = require('./routes/admin');
 
 // Initialize Express app
 const app = express();
