@@ -13,12 +13,12 @@
         <div class="bg-gradient-to-br from-blue-600 to-indigo-700 p-6 text-white">
             <div class="flex items-center justify-between mb-2">
                 <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center font-black">LTD</div>
+                    <div class="w-10 h-10 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center font-black">OL</div>
                     <div>
-                        <h4 class="font-bold">UK Registration Pro</h4>
+                        <h4 class="font-bold">Olivia</h4>
                         <div class="flex items-center text-[10px] text-blue-100">
                             <span class="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-                            AI Assistant Live
+                            Formation Specialist
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,11 @@
         <div id="chat-messages" class="flex-1 overflow-y-auto p-6 space-y-4 bg-gray-50/50 custom-scrollbar">
             <div class="flex items-start">
                 <div class="bg-white border border-gray-100 p-4 rounded-2xl rounded-tl-none shadow-sm text-sm text-gray-700 max-w-[85%]">
-                    Hello! I'm your UK Ltd formation expert. How can I help you build your business today?
+                    <% if (locals.user) { %>
+                        Hello <%= user.email.split('@')[0] %>! I'm Olivia, your UK Ltd formation expert. How can I help you build your business today?
+                    <% } else { %>
+                        Hello! I'm Olivia, your UK Ltd formation expert. How can I help you build your business today?
+                    <% } %>
                 </div>
             </div>
         </div>

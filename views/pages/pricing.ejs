@@ -1,16 +1,185 @@
 <%- include('../partials/header') %>
 <%- include('../partials/navigation') %>
 
-<main class="py-20">
+<main class="py-24 bg-gray-50/50">
     <div class="container mx-auto px-4">
-        <h1 class="text-4xl font-black text-center mb-8">Choose Your Formation Package</h1>
-        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Select the perfect foundation for your UK business. All prices include the Companies House £100 filing fee.</p>
-        
-        <!-- Reusing home page logic or specific pricing layout -->
-        <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-sm border border-gray-100 p-12 text-center">
-            <h2 class="text-2xl font-bold mb-4">Our Packages are Ready</h2>
-            <p class="text-gray-500 mb-8">Please visit our homepage to see the latest 2026 pricing tiers and secure your company name.</p>
-            <a href="/" class="bg-blue-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-700 transition">Return to Home</a>
+        <!-- Page Header -->
+        <div class="text-center mb-20">
+            <h1 class="text-5xl font-black text-gray-900 mb-6 tracking-tight">Transparent Pricing, No Hidden Fees</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Every package includes the mandatory <span class="font-bold text-gray-900 underline decoration-blue-500 underline-offset-4">£100 Companies House filing fee</span>. 
+                What you see is what you pay.
+            </p>
+        </div>
+
+        <!-- Pricing Grid -->
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <!-- Basic Package -->
+            <div class="bg-white rounded-[2.5rem] border border-gray-100 p-10 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                <div class="mb-8">
+                    <h3 class="text-2xl font-black text-gray-900 mb-2">Basic Formation</h3>
+                    <p class="text-gray-500 text-sm">Perfect for individuals starting out.</p>
+                </div>
+                
+                <div class="mb-8 p-6 bg-blue-50/50 rounded-2xl">
+                    <div class="flex items-baseline mb-1">
+                        <span class="text-5xl font-black text-gray-900">£104.99</span>
+                        <span class="text-gray-500 ml-2 font-medium">+ VAT</span>
+                    </div>
+                    <p class="text-xs font-bold text-blue-600 uppercase tracking-widest">Includes £100 Registry Fee</p>
+                </div>
+
+                <div class="flex-1 space-y-6">
+                    <div>
+                        <h4 class="text-xs font-black text-gray-400 uppercase tracking-widest mb-4">Inside the Package:</h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                <div>
+                                    <span class="block text-gray-900 font-bold text-sm">Companies House Fee (£100)</span>
+                                    <span class="text-xs text-gray-500">Official government filing fee included.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                <div>
+                                    <span class="block text-gray-900 font-bold text-sm">Digital Incorporation Docs</span>
+                                    <span class="text-xs text-gray-500">PDF Certificate & Articles of Association.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                <div>
+                                    <span class="block text-gray-900 font-bold text-sm">Web Portal Access</span>
+                                    <span class="text-xs text-gray-500">Manage your company filings online.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="/checkout?package=basic" class="mt-10 block text-center py-4 bg-gray-900 text-white rounded-2xl font-bold hover:bg-black transition shadow-lg active:scale-95">Select Basic</a>
+            </div>
+
+            <!-- Standard Package -->
+            <div class="relative bg-white rounded-[2.5rem] border-2 border-blue-600 p-10 shadow-2xl scale-105 z-10 flex flex-col">
+                <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-6 py-2 rounded-full text-xs font-black tracking-widest shadow-lg">
+                    MOST POPULAR
+                </div>
+
+                <div class="mb-8 text-center">
+                    <h3 class="text-3xl font-black text-gray-900 mb-2">Standard Plus</h3>
+                    <p class="text-gray-500 text-sm">Complete all-in-one setup.</p>
+                </div>
+                
+                <div class="mb-8 p-6 bg-blue-600 rounded-2xl text-white text-center">
+                    <div class="flex items-baseline justify-center mb-1">
+                        <span class="text-5xl font-black">£119.99</span>
+                        <span class="text-blue-200 ml-2 font-medium">+ VAT</span>
+                    </div>
+                    <p class="text-xs font-bold text-blue-100 uppercase tracking-widest">Registry Fee & Privacy Included</p>
+                </div>
+
+                <div class="flex-1 space-y-6">
+                    <div>
+                        <h4 class="text-xs font-black text-gray-400 uppercase tracking-widest mb-4">Everything in Basic, Plus:</h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4"></path></svg>
+                                </div>
+                                <div>
+                                    <span class="block text-gray-900 font-bold text-sm">Registered Office Address</span>
+                                    <span class="text-xs text-gray-500">1 Year London address for your company.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4"></path></svg>
+                                </div>
+                                <div>
+                                    <span class="block text-gray-900 font-bold text-sm">Business Banking Setup</span>
+                                    <span class="text-xs text-gray-500">Fast-track intro to Tide/Monzo Business.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-0.5">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4"></path></svg>
+                                </div>
+                                <div>
+                                    <span class="block text-gray-900 font-bold text-sm">VAT Registration Scan</span>
+                                    <span class="text-xs text-gray-500">Professional review for VAT eligibility.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="/checkout?package=standard" class="mt-10 block text-center py-5 bg-blue-600 text-white rounded-2xl font-black text-lg hover:bg-blue-700 transition shadow-xl shadow-blue-200 active:scale-95">Go Standard</a>
+            </div>
+
+            <!-- Premium Package -->
+            <div class="bg-gray-900 rounded-[2.5rem] p-10 shadow-2xl flex flex-col text-white">
+                <div class="mb-8">
+                    <h3 class="text-2xl font-black mb-2">Enterprise Elite</h3>
+                    <p class="text-gray-400 text-sm">Maximum privacy & global readiness.</p>
+                </div>
+                
+                <div class="mb-8 p-6 bg-white/10 rounded-2xl">
+                    <div class="flex items-baseline mb-1">
+                        <span class="text-5xl font-black">£149.99</span>
+                        <span class="text-gray-400 ml-2 font-medium">+ VAT</span>
+                    </div>
+                    <p class="text-xs font-bold text-indigo-400 uppercase tracking-widest">The Ultimate Non-Resident Choice</p>
+                </div>
+
+                <div class="flex-1 space-y-6">
+                    <div>
+                        <h4 class="text-xs font-black text-gray-500 uppercase tracking-widest mb-4">Ultimate Protection:</h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-indigo-400 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                <div>
+                                    <span class="block font-bold text-sm">Director Service Address</span>
+                                    <span class="text-xs text-gray-400">Keep your home address 100% private.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-indigo-400 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                <div>
+                                    <span class="block font-bold text-sm">Business Phone Number</span>
+                                    <span class="text-xs text-gray-400">020 London virtual number (1 month).</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-indigo-400 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                <div>
+                                    <span class="block font-bold text-sm">Dedicated Account Manager</span>
+                                    <span class="text-xs text-gray-400">Priority human support on WhatsApp.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="/checkout?package=premium" class="mt-10 block text-center py-4 bg-white text-gray-900 rounded-2xl font-bold hover:bg-gray-100 transition shadow-lg active:scale-95">Select Elite</a>
+            </div>
+        </div>
+
+        <!-- Trust Section -->
+        <div class="mt-24 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center border-t border-gray-100 pt-16">
+            <div>
+                <p class="text-gray-900 font-black text-2xl mb-1">99.8%</p>
+                <p class="text-gray-500 text-sm">Approval Rate</p>
+            </div>
+            <div>
+                <p class="text-gray-900 font-black text-2xl mb-1">15k+</p>
+                <p class="text-gray-500 text-sm">Companies Formed</p>
+            </div>
+            <div>
+                <p class="text-gray-900 font-black text-2xl mb-1">< 24hrs</p>
+                <p class="text-gray-500 text-sm">Avg. Processing Time</p>
+            </div>
         </div>
     </div>
 </main>
