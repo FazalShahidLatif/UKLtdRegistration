@@ -1,0 +1,73 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<main class="py-24 bg-gray-50/50">
+    <div class="max-w-4xl mx-auto px-6">
+        <div class="mb-16">
+            <span class="text-[10px] font-black uppercase tracking-[0.2em] text-brand-blue">Legal</span>
+            <h1 class="text-5xl font-black text-gray-900 tracking-tight mt-2">Privacy Policy</h1>
+            <p class="text-gray-500 mt-4 font-medium">Last updated: March 2026. This policy explains how UK Ltd Registration collects, uses, and protects your personal information.</p>
+        </div>
+
+        <div class="prose prose-lg max-w-none space-y-12">
+            <section class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm">
+                <h2 class="text-2xl font-black text-gray-900 mb-4">1. Who We Are</h2>
+                <p class="text-gray-600 leading-relaxed">UK Ltd Registration ("we", "our", "us") is an authorized formation agent providing company registration and business support services to clients in the United Kingdom and internationally. Our registered website is <strong>ukltdregistration.com</strong>.</p>
+            </section>
+
+            <section class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm">
+                <h2 class="text-2xl font-black text-gray-900 mb-4">2. Information We Collect</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">We collect information you provide directly to us, including:</p>
+                <ul class="list-none space-y-3">
+                    <% ['Full name and contact details (email, phone)', 'Business name, registered address preferences', 'Government-issued ID for identity verification (KYC)', 'Payment information (processed securely via third-party providers)', 'Communications with our support team and AI assistant (Olivia)'].forEach(item => { %>
+                    <li class="flex items-start space-x-3 text-gray-600">
+                        <div class="w-2 h-2 bg-brand-blue rounded-full mt-2 flex-shrink-0"></div>
+                        <span><%= item %></span>
+                    </li>
+                    <% }); %>
+                </ul>
+            </section>
+
+            <section class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm">
+                <h2 class="text-2xl font-black text-gray-900 mb-4">3. How We Use Your Information</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">Your information is used to:</p>
+                <ul class="list-none space-y-3">
+                    <% ['Process and submit your company formation to Companies House', 'Verify your identity as required by UK law (KYC/AML)', 'Communicate order updates and compliance reminders', 'Provide customer support via email and AI chat', 'Improve our services and website experience'].forEach(item => { %>
+                    <li class="flex items-start space-x-3 text-gray-600">
+                        <div class="w-2 h-2 bg-brand-green rounded-full mt-2 flex-shrink-0"></div>
+                        <span><%= item %></span>
+                    </li>
+                    <% }); %>
+                </ul>
+            </section>
+
+            <section class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm">
+                <h2 class="text-2xl font-black text-gray-900 mb-4">4. Legal Basis for Processing</h2>
+                <p class="text-gray-600 leading-relaxed">Under UK GDPR, we process your data on the following lawful bases: <strong>contractual necessity</strong> (to deliver your formation service), <strong>legal obligation</strong> (identity verification under the Companies Act 2006 and Money Laundering Regulations 2017), and <strong>legitimate interests</strong> (to maintain and improve our services).</p>
+            </section>
+
+            <section class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm">
+                <h2 class="text-2xl font-black text-gray-900 mb-4">5. Data Sharing</h2>
+                <p class="text-gray-600 leading-relaxed">We share your data with <strong>Companies House</strong> (required for incorporation), identity verification partners, and our secure payment processor. We do not sell your data to third parties.</p>
+            </section>
+
+            <section class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm">
+                <h2 class="text-2xl font-black text-gray-900 mb-4">6. Your Rights</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">Under UK GDPR, you have the right to access, correct, or delete your personal data. You may also object to processing or request data portability. To exercise these rights, contact us at:</p>
+                <a href="mailto:info@ukltdregistration.com" class="text-brand-blue font-bold hover:underline">info@ukltdregistration.com</a>
+            </section>
+
+            <section class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm">
+                <h2 class="text-2xl font-black text-gray-900 mb-4">7. Cookies</h2>
+                <p class="text-gray-600 leading-relaxed">We use essential cookies to maintain your session and analytics cookies to understand website usage. See our <a href="/legal/cookies" class="text-brand-blue font-bold hover:underline">Cookie Policy</a> for full details.</p>
+            </section>
+
+            <section class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm">
+                <h2 class="text-2xl font-black text-gray-900 mb-4">8. Contact Us</h2>
+                <p class="text-gray-600 leading-relaxed">For privacy queries, contact our Data Controller at <a href="mailto:info@ukltdregistration.com" class="text-brand-blue font-bold hover:underline">info@ukltdregistration.com</a>.</p>
+            </section>
+        </div>
+    </div>
+</main>
+
+<%- include('../../partials/footer') %>

@@ -86,4 +86,27 @@ router.get('/partners', (req, res) => {
     });
 });
 
+
+// Legal Pages
+router.get('/legal/privacy', (req, res) => {
+    res.render('pages/legal/privacy', {
+        title: 'Privacy Policy | UK Ltd Registration',
+        metaDescription: 'How UK Ltd Registration collects, uses, and protects your personal information in compliance with UK GDPR.'
+    });
+});
+
+router.get('/legal/terms', (req, res) => {
+    res.render('pages/legal/terms', {
+        title: 'Terms of Service | UK Ltd Registration',
+        metaDescription: 'The terms and conditions governing the use of UK Ltd Registration services.'
+    });
+});
+
+router.get('/legal/cookies', (req, res) => {
+    res.render('pages/legal/cookies', {
+        title: 'Cookie Policy | UK Ltd Registration',
+        metaDescription: 'How UK Ltd Registration uses cookies and how you can manage your preferences.'
+    });
+});
+
 module.exports = router;

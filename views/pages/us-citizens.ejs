@@ -1,12 +1,78 @@
 <%- include('../partials/header') %>
 <%- include('../partials/navigation') %>
 
-<main class="py-20">
-    <div class="container mx-auto px-4 text-center">
-        <h1 class="text-4xl font-black mb-8">Non-Resident Specialists</h1>
-        <p class="text-xl text-gray-600 mb-12">Register a UK Limited Company from the US or anywhere globally. No UK visit required.</p>
-        <a href="/" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition">Get Started as Non-Resident</a>
-    </div>
+<main class="bg-gray-50/50">
+    <!-- Hero -->
+    <section class="bg-white py-24 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center space-x-2 px-4 py-2 bg-blue-50 border border-blue-100 rounded-full mb-8">
+                    <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span class="text-[10px] font-black uppercase tracking-widest text-brand-blue">International Founders</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black text-gray-900 tracking-tighter leading-tight mb-6">Register a UK Ltd From Anywhere in the World.</h1>
+                <p class="text-xl text-gray-500 font-medium leading-relaxed mb-10">Any nationality, any country. You don't need to be a UK resident to own a UK Limited Company. Our fully-managed service handles the compliance complexities for you.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="/pricing" class="btn-primary">View Global Packages</a>
+                    <a href="/knowledge-hub/non-resident-guide" class="px-10 py-5 border border-gray-100 rounded-2xl font-black text-xs uppercase tracking-widest text-gray-700 hover:bg-gray-50 transition shadow-sm">Read the Non-Resident Guide</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Requirements -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-gray-900 tracking-tighter">What Non-Residents Must Have</h2>
+                <p class="text-gray-500 mt-4 font-medium">UK law applies to all companies, regardless of where the owner lives.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <% const requirements = [
+                    { title: 'UK Registered Address', essential: true, desc: 'Every UK Ltd must have a registered office address in the UK. Our Enterprise Elite package includes a prestigious London address — a major trust signal for international clients and banking partners.' },
+                    { title: 'Director Identity Verification', essential: true, desc: 'As of 2024, Companies House requires all directors to complete identity verification (IDVT) as part of the Economic Crime and Corporate Transparency Act reforms.' },
+                    { title: 'UK Business Bank Account', essential: false, desc: 'A UK bank account is essential to operate. We provide guided setup with Wise, Payoneer, and Tide — all accepting non-resident directors with no branch visit required.' },
+                    { title: 'Annual Compliance Filings', essential: true, desc: 'Your company must file a Confirmation Statement and Annual Accounts with Companies House each year, regardless of your location. Our Compliance Bundle handles this for you.' }
+                ]; %>
+                <% requirements.forEach(r => { %>
+                <div class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <% if (r.essential) { %>
+                        <span class="px-3 py-1 bg-red-50 text-red-600 rounded-lg text-[10px] font-black uppercase tracking-widest">Required</span>
+                        <% } else { %>
+                        <span class="px-3 py-1 bg-yellow-50 text-yellow-600 rounded-lg text-[10px] font-black uppercase tracking-widest">Strongly Advised</span>
+                        <% } %>
+                    </div>
+                    <h3 class="text-xl font-black text-gray-900 mb-3"><%= r.title %></h3>
+                    <p class="text-gray-500 font-medium leading-relaxed text-sm"><%= r.desc %></p>
+                </div>
+                <% }); %>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supported Countries -->
+    <section class="py-24 bg-white border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-black text-gray-900 tracking-tighter mb-6">We Support Founders From 150+ Countries</h2>
+            <p class="text-gray-500 font-medium mb-12 max-w-2xl mx-auto">Including USA, Canada, India, UAE, Pakistan, Nigeria, Australia, Singapore, and all EU nations.</p>
+            <div class="flex flex-wrap justify-center gap-3 text-2xl">
+                <% ['🇺🇸','🇨🇦','🇮🇳','🇦🇪','🇵🇰','🇳🇬','🇦🇺','🇸🇬','🇩🇪','🇫🇷','🇮🇹','🇧🇷','🇯🇵','🇳🇱','🇿🇦'].forEach(f => { %>
+                <div class="w-12 h-12 bg-gray-50 rounded-2xl flex items-center justify-center text-2xl border border-gray-100"><%= f %></div>
+                <% }); %>
+                <div class="w-12 h-12 bg-brand-blue/10 rounded-2xl flex items-center justify-center text-xs font-black text-brand-blue border border-brand-blue/20">+135</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-black text-gray-900 tracking-tighter mb-6">Start Your UK Ltd Today</h2>
+            <p class="text-gray-500 font-medium mb-10">Our Enterprise Elite package was built specifically for international founders who need everything handled end-to-end.</p>
+            <a href="/pricing" class="btn-primary">View Enterprise Elite — £299.99</a>
+        </div>
+    </section>
 </main>
 
 <%- include('../partials/footer') %>

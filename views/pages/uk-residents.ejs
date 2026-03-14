@@ -1,12 +1,86 @@
 <%- include('../partials/header') %>
 <%- include('../partials/navigation') %>
 
-<main class="py-20">
-    <div class="container mx-auto px-4 text-center">
-        <h1 class="text-4xl font-black mb-8">UK Residents</h1>
-        <p class="text-xl text-gray-600 mb-12">The easiest way for UK residents to launch their limited company.</p>
-        <a href="/" class="bg-blue-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-700 transition">Check Name Availability</a>
-    </div>
+<main class="bg-gray-50/50">
+    <!-- Hero -->
+    <section class="bg-white py-24 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center space-x-2 px-4 py-2 bg-blue-50 border border-blue-100 rounded-full mb-8">
+                    <svg class="w-4 h-4 text-brand-blue" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+                    <span class="text-[10px] font-black uppercase tracking-widest text-brand-blue">UK Residents</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black text-gray-900 tracking-tighter leading-tight mb-6">Register Your UK Ltd Company — Fast.</h1>
+                <p class="text-xl text-gray-500 font-medium leading-relaxed mb-10">As a UK resident, you're in the fastest lane to incorporation. 100% online. Same-day processing. The mandatory £100 Companies House fee is included in every package.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="/pricing" class="btn-primary">View Packages</a>
+                    <a href="/knowledge-hub" class="px-10 py-5 border border-gray-100 rounded-2xl font-black text-xs uppercase tracking-widest text-gray-700 hover:bg-gray-50 transition shadow-sm">Read Our Guides</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Steps -->
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-gray-900 tracking-tighter">Simple 3-Step Process</h2>
+                <p class="text-gray-500 mt-4 font-medium">From idea to incorporated — typically within 24 hours.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <% const steps = [
+                    { num: '01', icon: 'M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01', title: 'Choose & Checkout', desc: 'Select your package. All prices include the 2026 statutory £100 government filing fee.' },
+                    { num: '02', icon: 'M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2', title: 'Verify Your Identity', desc: 'Complete a quick KYC check as required by UK law. Our streamlined process takes under 5 minutes.' },
+                    { num: '03', icon: 'M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z', title: 'Receive Certificate', desc: 'Your Certificate of Incorporation is emailed directly. Your company is official.' }
+                ]; %>
+                <% steps.forEach(s => { %>
+                <div class="bg-white rounded-[2.5rem] p-10 border border-gray-100 shadow-sm hover:shadow-lg transition-all">
+                    <div class="text-6xl font-black text-gray-50 mb-4"><%= s.num %></div>
+                    <div class="w-12 h-12 bg-brand-blue/10 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="<%= s.icon %>"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-black text-gray-900 mb-3"><%= s.title %></h3>
+                    <p class="text-gray-500 font-medium leading-relaxed"><%= s.desc %></p>
+                </div>
+                <% }); %>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Grid -->
+    <section class="py-24 bg-white border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-gray-900 tracking-tighter">Why Form a Limited Company?</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <% const benefits = [
+                    { title: 'Limited Liability', desc: 'Your personal assets are legally protected. Your financial exposure is limited to your share value.', icon: '🛡️' },
+                    { title: 'Tax Efficiency', desc: 'Corporation Tax (19-25%) is often lower than Income Tax. Directors can extract profits tax-efficiently via salary and dividends.', icon: '💰' },
+                    { title: 'Credibility & Trust', desc: 'A "Limited" company commands greater market credibility and opens doors to contracts that sole traders cannot access.', icon: '⭐' },
+                    { title: 'Brand Protection', desc: 'Your company name is legally protected. No other company can be registered with the same name at Companies House.', icon: '©️' },
+                    { title: 'Easier Investment', desc: 'Raising capital from investors, banks, and grants is significantly simpler with a limited company structure.', icon: '📈' },
+                    { title: 'Separate Legal Entity', desc: 'Your company can own assets, sign contracts, and sue or be sued in its own right — independently of you.', icon: '⚖️' }
+                ]; %>
+                <% benefits.forEach(b => { %>
+                <div class="p-8 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-lg transition-all">
+                    <div class="text-4xl mb-4"><%= b.icon %></div>
+                    <h3 class="text-xl font-black text-gray-900 mb-2"><%= b.title %></h3>
+                    <p class="text-gray-500 font-medium leading-relaxed text-sm"><%= b.desc %></p>
+                </div>
+                <% }); %>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-black text-gray-900 tracking-tighter mb-6">Ready to Launch?</h2>
+            <p class="text-gray-500 font-medium mb-10">Join thousands of UK entrepreneurs who started with us. Everything is included — no hidden fees, no surprise charges.</p>
+            <a href="/pricing" class="btn-primary">Compare Packages</a>
+        </div>
+    </section>
 </main>
 
 <%- include('../partials/footer') %>
