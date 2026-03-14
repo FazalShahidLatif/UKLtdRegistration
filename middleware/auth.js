@@ -11,7 +11,7 @@ exports.isAuthenticated = (req, res, next) => {
         return res.status(401).json({ error: 'Unauthorized' });
     }
     
-    res.redirect('/login');
+    res.redirect('/auth/login');
 };
 
 exports.isAdmin = (req, res, next) => {

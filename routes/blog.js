@@ -3,12 +3,19 @@ const router = express.Router();
 
 // Blog listing page
 router.get('/', (req, res) => {
-    res.send('<h1>Blog</h1><p>Coming soon...</p><a href="/">Back to Home</a>');
+    res.render('pages/blog-list', {
+        title: 'Business Insights & Formation Guides',
+        metaDescription: 'Expert advice on UK company formation, SIC codes, banking, and business growth.'
+    });
 });
 
 // Single blog post
 router.get('/:slug', (req, res) => {
-    res.send(`<h1>Blog Post: ${req.params.slug}</h1><p>Coming soon...</p><a href="/blog">Back to Blog</a>`);
+    res.render('pages/blog-single', {
+        title: 'Blog Post', // This would normally come from a DB
+        slug: req.params.slug,
+        metaDescription: 'Read our latest insights'
+    });
 });
 
 module.exports = router;
