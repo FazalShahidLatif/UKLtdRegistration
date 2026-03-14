@@ -3,13 +3,39 @@
 
 <main>
     <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white py-20">
+    <section class="bg-white pt-24 pb-32 overflow-hidden relative">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-brand-blue/5 rounded-full blur-3xl -z-10"></div>
+        
         <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Register Your UK Limited Company</h1>
-            <p class="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">Fast, professional, and fully online. Join thousands of entrepreneurs who started their journey with us.</p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="/pricing" class="bg-white text-blue-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition shadow-lg">Start Formation</a>
-                <a href="#tools" class="bg-blue-600 text-white border border-blue-400 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-500 transition shadow-lg">Explore Tools</a>
+            <div class="inline-flex items-center space-x-2 px-4 py-2 border border-blue-100 bg-blue-50/50 rounded-full mb-8">
+                <div class="w-2 h-2 bg-brand-blue rounded-full animate-pulse"></div>
+                <span class="text-[10px] font-black uppercase tracking-widest text-brand-blue">2026 Statutory Compliant</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-8xl font-black text-gray-900 mb-8 tracking-tighter leading-tight">
+                Your Global UK <br/> <span class="text-brand-blue line-through decoration-gray-200">Website</span> <span class="text-brand-blue">Brand.</span>
+            </h1>
+            <p class="text-xl text-gray-500 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">The authoritative partner for non-resident and UK founders. 100% transparent, post-2026 verified formations.</p>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-6 mb-20">
+                <a href="/pricing" class="btn-primary">Start Formation</a>
+                <a href="/knowledge-hub" class="px-10 py-5 bg-white text-gray-900 border border-gray-100 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-gray-50 transition shadow-sm">Whitepapers & Hub</a>
+            </div>
+
+            <!-- Trust Signals -->
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-700">
+                <div class="flex items-center space-x-3">
+                    <svg class="w-8 h-8 text-gray-900" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L3 7v10l9 5 9-5V7l-9-5zm0 2.18L19 8.22v7.56l-7 3.89-7-3.89V8.22l7-4.04zM12 7a3 3 0 100 6 3 3 0 000-6z"/></svg>
+                    <span class="text-[10px] font-black uppercase tracking-[0.2em] text-gray-900">Authorized Agent</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <svg class="w-8 h-8 text-gray-900" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                    <span class="text-[10px] font-black uppercase tracking-[0.2em] text-gray-900">Post-Feb 2026 Verified</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <svg class="w-8 h-8 text-gray-900" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
+                    <span class="text-[10px] font-black uppercase tracking-[0.2em] text-gray-900">Video Guided</span>
+                </div>
             </div>
         </div>
     </section>

@@ -78,4 +78,12 @@ router.get('/contact', (req, res) => {
     });
 });
 
+// Affiliate Portal
+router.get('/partners', (req, res) => {
+    res.render('pages/affiliates', {
+        title: 'Partner Program | Build Your Formation Portfolio',
+        metaDescription: 'Earn high commissions by partnering with the UK\'s leading 2026-ready formation brand.'
+    });
+});
+
 module.exports = router;

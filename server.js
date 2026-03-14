@@ -98,6 +98,7 @@ app.use('/', homeRoutes);
 app.use('/blog', blogRoutes);
 app.use('/auth', authRoutes);
 app.use('/api', apiRoutes);
+app.use('/knowledge-hub', hubRoutes); // New route
 app.use('/', pagesRoutes); // Must be last to catch all page routes
 
 // 404 Handler
