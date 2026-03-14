@@ -12,47 +12,47 @@ router.get('/', (req, res) => {
         metaDescription: 'Professional UK Limited Company Formation from £104.99. Register your UK Ltd company in 24-48 hours. Updated 2026 fees (£100 Companies House). Non-resident friendly.',
         packages: [
             {
-                name: 'Basic',
-                price: '£104.99',
-                description: 'Essential formation for UK residents.',
+                name: 'Starter',
+                price: '£119.99',
+                description: 'Essential formation with Companies House fee included.',
                 features: [
                     'Companies House £100 fee',
                     '24-48 hour formation',
-                    'Certificate of Incorporation',
-                    'Document templates',
+                    'Digital Incorporation Docs',
+                    'Web Portal Access',
                     'Email support'
                 ],
-                cta: 'Choose Basic',
+                cta: 'Choose Starter',
                 popular: false,
-                link: '/checkout?package=basic'
+                link: '/checkout?package=starter'
             },
             {
-                name: 'Standard',
-                price: '£119.99',
-                description: 'Our most popular all-inclusive package.',
+                name: 'Standard Plus',
+                price: '£199.99',
+                description: 'Professional setup with full privacy protection.',
                 features: [
-                    'Everything in Basic',
+                    'Everything in Starter',
                     'Registered Office (1 year)',
-                    'Banking introduction',
-                    'Priority support',
-                    'Free company name check'
+                    'Director Service Address',
+                    'Business Banking Setup',
+                    'Priority support'
                 ],
                 cta: 'Choose Standard',
                 popular: true,
                 link: '/checkout?package=standard'
             },
             {
-                name: 'Premium',
-                price: '£149.99',
-                description: 'Full enterprise-level support.',
+                name: 'Enterprise Elite',
+                price: '£299.99',
+                description: 'Ultimate scaling package for global founders.',
                 features: [
                     'Everything in Standard',
-                    "Director's Service Address",
-                    'Premium registered office',
-                    'Same-day formation option',
+                    'Full non-resident support',
+                    'VAT Registration Scan',
+                    'Virtual Phone Number',
                     'Dedicated account manager'
                 ],
-                cta: 'Choose Premium',
+                cta: 'Choose Elite',
                 popular: false,
                 link: '/checkout?package=premium'
             }
