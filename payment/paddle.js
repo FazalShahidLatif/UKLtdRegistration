@@ -187,12 +187,18 @@ class PaddlePayment {
     async handleSubscriptionCreated(data) {
         console.log('New subscription created:', data.subscription_id);
         
-        // TODO: Save to database
-        // - User ID
-        // - Subscription ID
-        // - Plan ID
-        // - Status
-        // - Start date
+        try {
+            const Subscription = require('../models/Subscription');
+            await Subscription.create({
+                subscriptionId: data.subscription_id,
+                planId: data.subscription_plan_id,
+                email: data.email,
+                status: data.status,
+                startDate: new Date(data.event_time || Date.now())
+            });
+        } catch (err) {
+            console.error('Error saving subscription to DB:', err);
+        }
         
         // Send confirmation email
         const { sendEmail } = require('../config/email');
@@ -214,7 +220,23 @@ class PaddlePayment {
      */
     async handleSubscriptionUpdated(data) {
         console.log('Subscription updated:', data.subscription_id);
-        // TODO: Update database
+        
+        try {
+            const Subscription = require('../models/Subscription');
+            await Subscription.findOneAndUpdate(
+                { subscriptionId: data.subscription_id },
+                {
+                    status: data.status,
+                    nextBillDate: data.next_bill_date ? new Date(data.next_bill_date) : null,
+                    updateUrl: data.update_url,
+                    cancelUrl: data.cancel_url,
+                    lastUpdated: Date.now()
+                },
+                { upsert: true }
+            );
+        } catch (err) {
+            console.error('Error updating subscription in DB:', err);
+        }
     }
     
     /**
@@ -222,6 +244,20 @@ class PaddlePayment {
      */
     async handleSubscriptionCancelled(data) {
         console.log('Subscription cancelled:', data.subscription_id);
+        
+        try {
+            const Subscription = require('../models/Subscription');
+            await Subscription.findOneAndUpdate(
+                { subscriptionId: data.subscription_id },
+                {
+                    status: 'cancelled',
+                    cancellationDate: data.cancellation_effective_date ? new Date(data.cancellation_effective_date) : new Date(),
+                    lastUpdated: Date.now()
+                }
+            );
+        } catch (err) {
+            console.error('Error cancelling subscription in DB:', err);
+        }
         
         // Send cancellation email
         const { sendEmail } = require('../config/email');
@@ -243,7 +279,20 @@ class PaddlePayment {
      */
     async handlePaymentSucceeded(data) {
         console.log('Payment succeeded:', data.order_id);
-        // TODO: Update database, send receipt
+        
+        try {
+            const Order = require('../models/Order');
+            await Order.create({
+                orderId: data.order_id,
+                email: data.email,
+                amount: parseFloat(data.sale_gross || 0),
+                currency: data.currency,
+                receiptUrl: data.receipt_url,
+                productId: data.subscription_plan_id || data.product_id
+            });
+        } catch (err) {
+            console.error('Error saving successful payment to DB:', err);
+        }
     }
     
     /**
@@ -272,6 +321,20 @@ class PaddlePayment {
      */
     async handleOneTimePayment(data) {
         console.log('One-time payment succeeded:', data.order_id);
+        
+        try {
+            const Order = require('../models/Order');
+            await Order.create({
+                orderId: data.order_id,
+                email: data.email,
+                amount: parseFloat(data.sale_gross || 0),
+                currency: data.currency,
+                receiptUrl: data.receipt_url,
+                productId: data.product_id
+            });
+        } catch (err) {
+            console.error('Error saving one-time payment to DB:', err);
+        }
         
         // Send purchase confirmation
         const { sendEmail } = require('../config/email');
