@@ -21,7 +21,8 @@ router.get('/', (req, res) => {
                     'Digital Incorporation Set',
                     'Companies House ID Check',
                     'Portal Access & Support'
-                ]
+                ],
+                cta: 'Choose Starter'
             },
             {
                 id: 'standard',
@@ -34,7 +35,8 @@ router.get('/', (req, res) => {
                     'Prestigious London Address',
                     'Director Service Address',
                     'Banking Fast-Track'
-                ]
+                ],
+                cta: 'Go Standard Plus'
             },
             {
                 id: 'premium',
