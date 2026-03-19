@@ -1,0 +1,41 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<main class="py-24 bg-gray-50/50">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <a href="/knowledge-hub" class="inline-flex items-center text-sm font-bold text-gray-400 hover:text-brand-blue mb-8 transition-colors">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+            Back to Knowledge Hub
+        </a>
+
+        <article class="bg-white rounded-[2rem] p-8 md:p-12 shadow-sm border border-gray-100">
+            <header class="mb-10 text-center">
+                <span class="inline-block px-3 py-1 bg-blue-50 text-brand-blue text-xs font-black uppercase tracking-widest rounded-lg mb-4">Tax & Finance</span>
+                <h1 class="text-4xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">Tax Obligations for Foreign Directors</h1>
+                <p class="text-xl text-gray-500 font-medium">Understanding Corporation Tax, VAT, and personal tax liabilities when running a UK company from abroad.</p>
+            </header>
+
+            <div class="prose prose-blue max-w-none prose-headings:font-black prose-a:text-brand-blue">
+                <h2>Overview of UK Taxation for Non-Residents</h2>
+                <p>Registering a UK Limited Company as a non-resident is straightforward, but understanding your tax obligations is critical to remaining compliant with HMRC.</p>
+                
+                <h3>1. Corporation Tax</h3>
+                <p>All UK Limited Companies must pay Corporation Tax on profits derived from UK operations. The current rate is tiered between 19% and 25%, depending on the company's total profits. As a director, you are legally responsible for ensuring the company files an annual Company Tax Return (CT600).</p>
+
+                <h3>2. Value Added Tax (VAT)</h3>
+                <p>If your company's taxable turnover exceeds £90,000 (2026 threshold) in a 12-month period, you MUST register for VAT. You can also voluntarily register for VAT before hitting this threshold, which can be beneficial if you operate primarily B2B.</p>
+
+                <h3>3. Personal Tax for Foreign Directors</h3>
+                <p>As a non-UK tax resident, you generally do not pay UK income tax on dividends paid by a UK company. However, you must declare these dividends in your country of residence and pay local taxes accordingly. If you draw a salary from the UK company, it may be subject to UK PAYE (income tax) depending on Double Taxation Agreements (DTAs).</p>
+
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 mt-8">
+                    <h4 class="text-lg font-bold text-gray-900 mb-2">Need Help With Your Taxes?</h4>
+                    <p class="text-gray-600 mb-4">Our dedicated accounting partners specialize in cross-border taxation and reporting for international founders.</p>
+                    <a href="/services/accounting" class="inline-block bg-brand-blue text-white px-6 py-2 rounded-xl font-bold hover:bg-brand-navy transition">Explore Accounting Services</a>
+                </div>
+            </div>
+        </article>
+    </div>
+</main>
+
+<%- include('../../partials/footer') %>

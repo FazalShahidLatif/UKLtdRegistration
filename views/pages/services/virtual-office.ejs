@@ -1,0 +1,39 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<main class="py-24 bg-gray-50/50">
+    <div class="container mx-auto px-4 text-center max-w-3xl">
+        <h1 class="text-5xl font-black text-gray-900 mb-6 tracking-tight">Prestigious Virtual Offices</h1>
+        <p class="text-xl text-gray-600 mb-12">Establish a premium Central London presence without the overhead of physical real estate securely and affordably.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left mb-16">
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                <h3 class="text-2xl font-black text-gray-900 mb-4">Standard Virtual Office</h3>
+                <p class="text-3xl font-black text-brand-blue mb-6">&pound;199<span class="text-sm text-gray-500 font-medium">/year</span></p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex gap-2 text-gray-600"><span class="text-green-500">✔</span> Prime EC1 Registered Address</li>
+                    <li class="flex gap-2 text-gray-600"><span class="text-green-500">✔</span> Mail Scanning & Forwarding</li>
+                    <li class="flex gap-2 text-gray-600"><span class="text-green-500">✔</span> Official Government Mail Handled</li>
+                </ul>
+                <a href="/checkout?package=virtual-office-std" class="block w-full text-center bg-gray-900 text-white py-3 rounded-xl font-bold hover:bg-gray-800 transition">Select Standard</a>
+            </div>
+
+            <div class="bg-brand-blue p-8 rounded-3xl shadow-xl text-white">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-black">Premium Ecosystem</h3>
+                    <span class="bg-white text-brand-blue text-xs font-bold px-2 py-1 rounded">Popular</span>
+                </div>
+                <p class="text-3xl font-black mb-6">&pound;499<span class="text-sm text-blue-200 font-medium">/year</span></p>
+                <ul class="space-y-3 mb-8 text-blue-100">
+                    <li class="flex gap-2"><span class="text-white">✔</span> Everything in Standard</li>
+                    <li class="flex gap-2"><span class="text-white">✔</span> 020 London Virtual Phone Number</li>
+                    <li class="flex gap-2"><span class="text-white">✔</span> Call Answering & Forwarding</li>
+                    <li class="flex gap-2"><span class="text-white">✔</span> Meeting Room Access (2hr/mo)</li>
+                </ul>
+                <a href="/checkout?package=virtual-office-prem" class="block w-full text-center bg-white text-brand-blue py-3 rounded-xl font-bold hover:bg-gray-100 transition shadow-lg">Select Premium</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('../../partials/footer') %>

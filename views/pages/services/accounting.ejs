@@ -1,0 +1,54 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<main class="py-24 bg-gray-50/50">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <div class="text-center mb-16">
+            <h1 class="text-5xl font-black text-gray-900 mb-6 tracking-tight">Expert Accounting Services</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Specialized tax planning, VAT registration, and year-end compliance for international founders and digital nomads.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <!-- Freelancer -->
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col">
+                <h3 class="text-2xl font-black text-gray-900 mb-2">Freelancer</h3>
+                <p class="text-4xl font-black text-brand-blue mb-6">&pound;79<span class="text-sm text-gray-400">/mo</span></p>
+                <ul class="space-y-3 mb-8 flex-1">
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> Up to &pound;5k/mo Turnover</li>
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> Annual Accounts</li>
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> Expense Categorization</li>
+                </ul>
+                <a href="/checkout?package=accounting-freelance" class="block text-center bg-gray-900 text-white py-3 rounded-xl font-bold hover:bg-gray-800 transition">Get Started</a>
+            </div>
+
+            <!-- Small Business -->
+            <div class="bg-brand-blue p-8 rounded-3xl shadow-xl flex flex-col border border-blue-400">
+                <h3 class="text-2xl font-black text-white mb-2">Small Business</h3>
+                <p class="text-4xl font-black text-white mb-6">&pound;149<span class="text-sm text-blue-200">/mo</span></p>
+                <ul class="space-y-3 mb-8 flex-1 text-white text-sm">
+                    <li class="flex gap-2"><span class="text-white">✔</span> Up to &pound;20k/mo Turnover</li>
+                    <li class="flex gap-2"><span class="text-white">✔</span> VAT Returns</li>
+                    <li class="flex gap-2"><span class="text-white">✔</span> Payroll (Up to 5)</li>
+                    <li class="flex gap-2"><span class="text-white">✔</span> Unlimited Transactions</li>
+                </ul>
+                <a href="/checkout?package=accounting-smb" class="block text-center bg-white text-brand-blue py-3 rounded-xl font-bold hover:bg-gray-100 transition">Most Popular</a>
+            </div>
+
+            <!-- Growing -->
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col">
+                <h3 class="text-2xl font-black text-gray-900 mb-2">Growing</h3>
+                <p class="text-4xl font-black text-brand-blue mb-6">&pound;299<span class="text-sm text-gray-400">/mo</span></p>
+                <ul class="space-y-3 mb-8 flex-1">
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> Up to &pound;100k/mo Turnover</li>
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> Multi-Currency & Xero</li>
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> Dedicated Accountant</li>
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> Tax Strategy Calls</li>
+                </ul>
+                <a href="/checkout?package=accounting-grow" class="block text-center bg-gray-900 text-white py-3 rounded-xl font-bold hover:bg-gray-800 transition">Scale Up</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<%- include('../../partials/footer') %>

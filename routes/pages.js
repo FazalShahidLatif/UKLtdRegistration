@@ -30,11 +30,40 @@ router.get('/checkout', (req, res) => {
     });
 });
 
-// Services page
+// Services Main Page
 router.get('/services', (req, res) => {
     res.render('pages/services', {
         title: 'Our Services | Professional Company Formation',
         metaDescription: 'Explore our full range of UK company formation and maintenance services.'
+    });
+});
+
+// Specific Service Pages
+router.get('/services/virtual-office', (req, res) => {
+    res.render('pages/services/virtual-office', {
+        title: 'Virtual Office Services | UK Ltd Registration',
+        metaDescription: 'Prestigious Central London virtual office addresses for UK and international business founders.'
+    });
+});
+
+router.get('/services/meeting-rooms', (req, res) => {
+    res.render('pages/services/meeting-rooms', {
+        title: 'Meeting Rooms | UK Ltd Registration',
+        metaDescription: 'Book professional meeting rooms and boardrooms in Central London.'
+    });
+});
+
+router.get('/services/accounting', (req, res) => {
+    res.render('pages/services/accounting', {
+        title: 'Accounting & Tax Services | UK Ltd Registration',
+        metaDescription: 'Expert tax planning, VAT registration, and accounting packages tailored for digital nomads and startups.'
+    });
+});
+
+router.get('/services/banking', (req, res) => {
+    res.render('pages/services/banking', {
+        title: 'Business Banking Assistance | UK Ltd Registration',
+        metaDescription: 'Accelerate your UK business bank account application for residents and non-residents.'
     });
 });
 
