@@ -15,26 +15,51 @@
             <h1 class="text-5xl md:text-8xl font-black text-gray-900 mb-8 tracking-tighter leading-tight">
                 Your Global UK <br/> <span class="text-brand-blue line-through decoration-gray-200">Website</span> <span class="text-brand-blue">Brand.</span>
             </h1>
-            <p class="text-xl text-gray-500 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">The authoritative partner for non-resident and UK founders. 100% transparent, post-2026 verified formations.</p>
+            
+            <!-- Enhanced Trust Tagline -->
+            <div class="max-w-3xl mx-auto mb-12">
+                <p class="text-xl md:text-2xl text-gray-600 font-medium leading-relaxed mb-6">
+                    Trusted by <span class="text-brand-blue font-bold">5,000+ Founders</span> worldwide. 
+                    <span class="block md:inline">Accelerating global formations with 100% transparency.</span>
+                </p>
+                <div class="flex items-center justify-center space-x-4">
+                    <div class="flex items-center space-x-1 text-yellow-400">
+                        <% for(let i=0; i<5; i++) { %>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <% } %>
+                    </div>
+                    <span class="text-sm font-bold text-gray-900">4.9/5 Excellent on Trustpilot</span>
+                </div>
+            </div>
             
             <div class="flex flex-col md:flex-row justify-center gap-6 mb-20">
                 <a href="/pricing" class="btn-primary">Start Formation</a>
                 <a href="/knowledge-hub" class="px-10 py-5 bg-white text-gray-900 border border-gray-100 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-gray-50 transition shadow-sm">Whitepapers & Hub</a>
             </div>
 
-            <!-- Trust Signals -->
-            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-700">
-                <div class="flex items-center space-x-3">
-                    <svg class="w-8 h-8 text-gray-900" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L3 7v10l9 5 9-5V7l-9-5zm0 2.18L19 8.22v7.56l-7 3.89-7-3.89V8.22l7-4.04zM12 7a3 3 0 100 6 3 3 0 000-6z"/></svg>
-                    <span class="text-[10px] font-black uppercase tracking-[0.2em] text-gray-900">Authorized Agent</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                    <svg class="w-8 h-8 text-gray-900" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
-                    <span class="text-[10px] font-black uppercase tracking-[0.2em] text-gray-900">Post-Feb 2026 Verified</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                    <svg class="w-8 h-8 text-gray-900" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/></svg>
-                    <span class="text-[10px] font-black uppercase tracking-[0.2em] text-gray-900">Video Guided</span>
+            <!-- Partner Logos & Trust Signals -->
+            <div class="max-w-5xl mx-auto mt-20 pt-20 border-t border-gray-100">
+                <p class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 mb-12">Official Integration & Banking Partners</p>
+                <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-40 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-700">
+                    <!-- Wise -->
+                    <div class="flex items-center space-x-2">
+                        <svg class="h-6 w-auto" fill="currentColor" viewBox="0 0 53 18"><path d="M37.96 0c-3.13 0-5.69 2.56-5.69 5.69s2.56 5.69 5.69 5.69 5.69-2.56 5.69-5.69-2.56-5.69-5.69-5.69zm0 9.17c-1.92 0-3.48-1.56-3.48-3.48s1.56-3.48 3.48-3.48 3.48 1.56 3.48 3.48-1.56 3.48-3.48 3.48zM14.28 17.5l-2.01-6.13H4.8l-2.01 6.13H0l5.88-17.5h2.51l5.88 17.5h-2.51zm-2.61-7.85L9.13 2H8.13L5.6 9.65h6.07zM28.48 10V0h2.46v9.85c0 3.23-1.63 5.42-4.91 5.42-3.28 0-4.91-2.19-4.91-5.42V0h2.46v9.85c0 1.83.7 3.19 2.45 3.19s2.45-1.36 2.45-3.19zM48.28 2.37l-1.36 4.3c-.6-1.12-1.74-1.97-3.32-1.97-3.03 0-5.32 2.51-5.32 5.5s2.29 5.5 5.32 5.5c1.58 0 2.73-.85 3.32-1.97l1.36 4.3h2.32L47.05 0h-2.12l3.35 2.37zm-4.68 11.23c-1.77 0-3.12-1.46-3.12-3.3s1.35-3.3 3.12-3.3 3.12 1.46 3.12 3.3-1.35 3.3-3.12 3.3zm2.14-5.34l-.84 2.65-.84-2.65h1.68z"/></svg>
+                        <span class="text-xs font-bold tracking-tighter">WISE</span>
+                    </div>
+                    <!-- Stripe -->
+                    <div class="flex items-center space-x-2">
+                        <svg class="h-6 w-auto" fill="currentColor" viewBox="0 0 45 19"><path d="M44.75 3.2c0-.52-.43-.95-.95-.95h-5.07c-.45 0-.82.31-.91.73l-.33 1.53c-.34-.96-1.16-1.53-2.31-1.53-2.39 0-4 1.94-4 4.8 0 3.2 1.81 4.96 4.22 4.96.96 0 1.77-.32 2.35-1l-.54 2.38c-.1.44.23.83.67.83h5.2c.45 0 .82-.31.91-.73l2.05-9.02c.03-.13.04-.26.04-.39V3.2zM38 10.13c-1.04 0-1.68-.61-1.68-1.59 0-1.08.76-1.68 1.82-1.68.99 0 1.59.55 1.59 1.57 0 1.05-.67 1.7-1.73 1.7zm11.72-7.88h-5.07c-.45 0-.82.31-.91.73l-.34 1.48c-.54-.91-1.39-1.48-2.6-1.48-2.39 0-4 1.94-4 4.8 0 3.21 1.81 4.96 4.22 4.96 1.34 0 2.22-.68 2.64-1.68l-.29 1.25c-.1.44.23.83.67.83h5.07c.45 0 .82-.31.91-.73l2.08-9.13c.03-.12.04-.26.04-.39v-1.68h-.01c-.01-.52-.44-.95-.96-.95zM46 10.13c-1.04 0-1.68-.61-1.68-1.59 0-1.08.76-1.68 1.82-1.68.99 0 1.59.55 1.59 1.57 0 1.05-.67 1.7-1.73 1.7zm11.73-7.88h-5.07c-.45 0-.82.31-.91.73L51 5.37c-.77-.92-1.79-1.32-3.13-1.32-.45 0-.82.31-.91.73l-1.62 7.15c-.1.44.23.83.67.83h5.07c.45 0 .82-.31.91-.73l1.83-8.03c.01-.06.02-.13.02-.2v-.68c-.01-.52-.44-.95-.96-.95zM53.3 12.08h5.07c.45 0 .82-.31.91-.73l.63-2.77c.34-.96 1.16-1.53 2.31-1.53 2.39 0 4 1.94 4 4.8 0 3.2 1.81 4.96 4.22 4.96.96 0 1.77-.32 2.35-1l-.54 2.38c-.1.44.23.83.67.83h5.2c.45 0 .82-.31.91-.73l2.05-9.02c.03-.13.04-.26.04-.39V3.2c0-.52-.43-.95-.95-.95h-5.07c-.45 0-.82.31-.91.73l-.33 1.53c-.34-.96-1.16-1.53-2.31-1.53-2.39 0-4 1.94-4 4.8 0 3.2 1.81 4.96 4.22 4.96.96 0 1.77-.32 2.35-1l-.54 2.38c-.1.44.23.83.67.83h5.2c.45 0 .82-.31.91-.73l2.05-9.02c.03-.13.04-.26.04-.39V3.2c0-.52-.43-.95-.95-.95h-5.07c-.45 0-.82.31-.91.73l-.33 1.53c-.34-.96-1.16-1.53-2.31-1.53-2.39 0-4 1.94-4 4.8 0 3.2 1.81 4.96 4.22 4.96.96 0 1.77-.32 2.35-1l-.54 2.38c-.1.44.23.83.67.83h5.2c.45 0 .82-.31.91-.73l2.05-9.02c.03-.13.04-.26.04-.39V3.2c0-.52-.43-.95-.95-.95h-5.07c-.45 0-.82.31-.91.73l-.33 1.53z"/></svg>
+                        <span class="text-xs font-bold tracking-tighter uppercase whitespace-nowrap">Stripe Atlas</span>
+                    </div>
+                    <!-- Mercury -->
+                    <div class="flex items-center space-x-2">
+                        <svg class="h-6 w-auto" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        <span class="text-xs font-bold tracking-tighter uppercase whitespace-nowrap">Mercury Banking</span>
+                    </div>
+                    <!-- Companies House -->
+                    <div class="flex items-center space-x-2">
+                        <span class="text-xs font-black tracking-tighter whitespace-nowrap border-2 border-gray-900 px-2 py-0.5">COMPANIES HOUSE</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,6 +172,125 @@
                         </a>
                     </div>
                 <% }) %>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Success Stories</h2>
+                <p class="text-xl text-gray-600">Join thousands of founders who launched with UK Ltd Registration.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass p-8 rounded-3xl relative">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-blue-600 font-bold">AS</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Ahmed S.</h4>
+                            <p class="text-xs text-gray-500">Tech Founder, UAE</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">"The transition to the 2026 regulations was seamless. I had my company registered and Wise account ready in under 48 hours."</p>
+                    <div class="mt-6 flex text-yellow-400">
+                        <% for(let i=0; i<5; i++) { %>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <% } %>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass p-8 rounded-3xl relative bg-blue-50/30">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-green-600 font-bold">ML</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Maria L.</h4>
+                            <p class="text-xs text-gray-500">E-commerce, Brazil</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">"Being a non-resident, I was worried about the banking part. The team helped me get my SIC codes right for high approval rates."</p>
+                    <div class="mt-6 flex text-yellow-400">
+                        <% for(let i=0; i<5; i++) { %>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <% } %>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass p-8 rounded-3xl relative">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-purple-600 font-bold">JK</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">John K.</h4>
+                            <p class="text-xs text-gray-500">Consultant, UK</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed">"Professional, fast, and transparent. The only formation service I've found that actually explains the 2026 changes clearly."</p>
+                    <div class="mt-6 flex text-yellow-400">
+                        <% for(let i=0; i<5; i++) { %>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Snippet Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Common Questions</h2>
+                    <p class="text-xl text-gray-600">Quick answers to help you launch with confidence.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden group">
+                        <button class="w-full px-8 py-6 text-left flex items-center justify-between focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="text-lg font-bold text-gray-900">Can I register a UK company as a non-resident?</span>
+                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="px-8 pb-6 text-gray-600 border-t border-gray-50 pt-4 hidden">
+                            Yes, absolutely! Non-residents can own and manage a UK Limited company without living in the UK. We specialize in non-resident formations and provide the necessary Registered Office and Officer Service Address.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                        <button class="w-full px-8 py-6 text-left flex items-center justify-between focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="text-lg font-bold text-gray-900">How long does the registration take?</span>
+                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="px-8 pb-6 text-gray-600 border-t border-gray-50 pt-4 hidden">
+                            On average, Companies House processes registrations within 3-6 working hours. We submit your application electronically to ensure the fastest possible turnaround.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                        <button class="w-full px-8 py-6 text-left flex items-center justify-between focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="text-lg font-bold text-gray-900">Will I be able to open a business bank account?</span>
+                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="px-8 pb-6 text-gray-600 border-t border-gray-50 pt-4 hidden">
+                            Yes, we partner with specialized banking providers like Wise and Mercury that are friendly to international founders. We also provide the correct SIC code guidance which is crucial for banking approval.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="/faq" class="text-brand-blue font-bold hover:underline">View All Frequently Asked Questions &rarr;</a>
+                </div>
             </div>
         </div>
     </section>
