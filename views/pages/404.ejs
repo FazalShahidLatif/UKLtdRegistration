@@ -1,12 +1,51 @@
 <%- include('../partials/header') %>
 <%- include('../partials/navigation') %>
 
-<main class="container mx-auto px-4 py-20 text-center">
-    <div class="max-w-md mx-auto">
-        <h1 class="text-9xl font-extrabold text-blue-600">404</h1>
-        <p class="text-2xl font-bold mt-4">Page Not Found</p>
-        <p class="text-gray-600 mt-4 mb-10">The page you're looking for doesn't exist or has been moved.</p>
-        <a href="/" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition">Return Home</a>
+<main class="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-slate-50">
+    <!-- Background Decor -->
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-brand-blue/10 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-brand-green/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+    </div>
+
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-2xl mx-auto text-center">
+            <!-- Animated 404 Number -->
+            <div class="relative inline-block">
+                <h1 class="text-[12rem] md:text-[16rem] font-black text-transparent bg-clip-text bg-gradient-to-br from-brand-navy via-brand-blue to-brand-green leading-none select-none">
+                    404
+                </h1>
+                <div class="absolute inset-0 flex items-center justify-center blur-2xl opacity-30 select-none">
+                    <span class="text-[12rem] md:text-[16rem] font-black text-brand-blue">404</span>
+                </div>
+            </div>
+
+            <div class="glass p-8 md:p-12 rounded-[2.5rem] -mt-12 relative">
+                <h2 class="text-3xl md:text-4xl font-black text-brand-navy mb-4">Lost in the Registry?</h2>
+                <p class="text-lg text-gray-600 mb-8 max-w-md mx-auto">
+                    The page you're searching for seems to have been misplaced or never registered. Don't worry, we'll help you find your way back.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="/" class="btn-primary w-full sm:w-auto">
+                        Return Home
+                    </a>
+                    <a href="/services" class="px-8 py-4 rounded-2xl font-bold text-brand-navy border-2 border-brand-navy/10 hover:bg-brand-navy/5 transition-all duration-300 w-full sm:w-auto">
+                        Our Services
+                    </a>
+                </div>
+
+                <div class="mt-12 pt-8 border-t border-gray-100">
+                    <p class="text-sm font-medium text-gray-400 uppercase tracking-widest mb-6">Popular Pages</p>
+                    <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm font-bold text-brand-blue">
+                        <a href="/pricing" class="hover:text-brand-navy transition-colors">Pricing Plans</a>
+                        <a href="/blog" class="hover:text-brand-navy transition-colors">Business Blog</a>
+                        <a href="/contact" class="hover:text-brand-navy transition-colors">Support Center</a>
+                        <a href="/faq" class="hover:text-brand-navy transition-colors">Common Questions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 

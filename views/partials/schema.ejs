@@ -1,0 +1,52 @@
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "<%= siteUrl %>/#organization",
+      "name": "<%= siteName %>",
+      "url": "<%= siteUrl %>",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "<%= siteUrl %>/images/favicon.png",
+        "width": 192,
+        "height": 192
+      },
+      "sameAs": [
+        "https://twitter.com/ukltdreg",
+        "https://facebook.com/ukltdreg",
+        "https://linkedin.com/company/ukltdreg"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "<%= siteUrl %>/#website",
+      "url": "<%= siteUrl %>",
+      "name": "<%= siteName %>",
+      "publisher": {
+        "@id": "<%= siteUrl %>/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "<%= siteUrl %>/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "<%= siteUrl %><%= currentPath %>#webpage",
+      "url": "<%= siteUrl %><%= currentPath %>",
+      "name": "<%= title %> | <%= siteName %>",
+      "description": "<%= metaDescription %>",
+      "isPartOf": {
+        "@id": "<%= siteUrl %>/#website"
+      },
+      "breadcrumb": {
+        "@id": "<%= siteUrl %><%= currentPath %>#breadcrumb"
+      }
+    }
+  ]
+}
+</script>
