@@ -12,71 +12,8 @@
       "category": "Company Formation",
       "tags": ["USA", "Non-Resident", "International", "Step-by-Step"],
       "focusKeyword": "register UK company from USA",
-      "secondaryKeywords": [
-        "UK company formation USA",
-        "register UK Ltd from America",
-        "US citizen UK company",
-        "UK business registration USA",
-        "form UK company remotely"
-      ],
-      "searchIntent": "transactional",
-      "commercialIntent": "high",
-      "difficulty": "medium",
-      "searchVolume": 720,
       "excerpt": "Can US Citizens Register a UK Company? Starting a UK company from the United States has never been easier. Thanks to fully digital processes, Americans can now form a UK Limited Company without ever visiting the UK.",
-      "readTime": 12,
-      "wordCount": 3200,
-      "internalLinks": [
-        "/services/registered-office",
-        "/services/director-service-address",
-        "/services/banking-assistance",
-        "/services/vat-registration",
-        "/blog/uk-company-formation-complete-guide-2026",
-        "/blog/uk-ltd-vs-us-llc"
-      ],
-      "externalLinks": [
-        "https://www.gov.uk/government/organisations/companies-house",
-        "https://www.gov.uk/topic/business-tax/corporation-tax"
-      ],
-      "schema": {
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "How to Register a UK Company from the USA",
-        "description": "Complete step-by-step guide for US citizens to register a UK Limited Company",
-        "totalTime": "PT2H",
-        "estimatedCost": {
-          "@type": "MonetaryAmount",
-          "currency": "GBP",
-          "value": "104.99"
-        },
-        "step": [
-          {
-            "@type": "HowToStep",
-            "name": "Choose Company Name",
-            "text": "Check availability on Companies House and ensure it meets UK naming requirements"
-          },
-          {
-            "@type": "HowToStep",
-            "name": "Appoint Director",
-            "text": "At least one director required (can be US citizen)"
-          },
-          {
-            "@type": "HowToStep",
-            "name": "Get UK Address",
-            "text": "Registered office address required (we provide from £99/year)"
-          },
-          {
-            "@type": "HowToStep",
-            "name": "File with Companies House",
-            "text": "Submit IN01 form digitally (£100 fee)"
-          },
-          {
-            "@type": "HowToStep",
-            "name": "Receive Certificate",
-            "text": "Get Certificate of Incorporation within 24-48 hours"
-          }
-        ]
-      }
+      "readTime": 12
     },
     {
       "id": 2,
@@ -84,26 +21,10 @@
       "title": "UK Company Formation: Complete Guide 2026",
       "metaTitle": "UK Company Formation 2026 | £100 Fee | Complete Guide",
       "metaDescription": "Complete guide to UK Ltd company formation in 2026. Updated £100 Companies House fee, step-by-step process, documents needed, same-day options, and post-formation checklist.",
+      "category": "Company Formation",
       "focusKeyword": "UK company formation",
-      "secondaryKeywords": [
-        "register UK limited company",
-        "UK Ltd formation 2026",
-        "Companies House registration",
-        "UK business incorporation",
-        "form limited company UK"
-      ],
-      "searchIntent": "informational",
-      "commercialIntent": "high",
-      "difficulty": "high",
-      "searchVolume": 2400,
-      "wordCount": 3500,
-      "internalLinks": [
-        "/services/company-formation",
-        "/services/same-day-formation",
-        "/pricing",
-        "/blog/how-to-register-uk-company-from-usa-complete-step-by-step-guide-2026",
-        "/tools/company-name-checker"
-      ]
+      "excerpt": "A master guide to the 2026 UK formation landscape. From name checks to the final certificate, we walk through every statutory requirement for modern founders.",
+      "readTime": 15
     },
     {
       "id": 3,
@@ -111,25 +32,10 @@
       "title": "UK Ltd vs US LLC: Which Business Structure is Better in 2026?",
       "metaTitle": "UK Ltd vs US LLC 2026 Comparison | Tax, Costs, Benefits",
       "metaDescription": "Detailed comparison of UK Limited Company vs US LLC. Tax implications, formation costs, compliance, banking, credibility, and which is best for your business in 2026.",
+      "category": "Business Strategy",
       "focusKeyword": "UK Ltd vs US LLC",
-      "secondaryKeywords": [
-        "UK company vs LLC",
-        "limited company vs LLC",
-        "UK Ltd or US LLC",
-        "British company vs American LLC",
-        "UK business structure vs US"
-      ],
-      "searchIntent": "commercial",
-      "commercialIntent": "medium",
-      "difficulty": "medium",
-      "searchVolume": 880,
-      "wordCount": 2800,
-      "internalLinks": [
-        "/blog/uk-company-vs-delaware-c-corp",
-        "/blog/how-to-register-uk-company-from-usa-complete-step-by-step-guide-2026",
-        "/services/accounting",
-        "/about-us"
-      ]
+      "excerpt": "Deciding between a British Ltd and an American LLC? We compare tax efficiency, shielding, and global prestige in the 2026 climate.",
+      "readTime": 10
     },
     {
       "id": 4,
@@ -137,19 +43,10 @@
       "title": "UK Company vs Delaware C-Corp: Which is Better for Startups?",
       "metaTitle": "UK Ltd vs Delaware C-Corp for Startups | 2026 Comparison",
       "metaDescription": "Startup founders compare UK Limited Company vs Delaware C-Corporation. VC funding, tax, compliance, costs, and which structure suits tech startups best.",
+      "category": "Business Strategy",
       "focusKeyword": "UK company vs Delaware C-Corp",
-      "secondaryKeywords": [
-        "UK Ltd vs C-Corporation",
-        "Delaware C-Corp vs UK company",
-        "startup incorporation UK vs Delaware",
-        "best structure for startups",
-        "UK or Delaware for startups"
-      ],
-      "searchIntent": "commercial",
-      "commercialIntent": "medium",
-      "difficulty": "medium",
-      "searchVolume": 420,
-      "wordCount": 2600
+      "excerpt": "Founders looking for VC funding often face this choice. Learn why the UK Ltd is becoming the preferred vehicle for European and Asian tech exits.",
+      "readTime": 11
     },
     {
       "id": 5,
@@ -157,19 +54,10 @@
       "title": "Wise vs Traditional UK Banks for Non-Residents (2026 Comparison)",
       "metaTitle": "Wise vs UK Banks for Non-Residents 2026 | Best Account",
       "metaDescription": "Compare Wise, Revolut, Tide vs NatWest, Barclays for non-resident UK company owners. Approval rates, fees, features, and which is best in 2026.",
+      "category": "Banking",
       "focusKeyword": "Wise vs UK banks non-residents",
-      "secondaryKeywords": [
-        "best UK bank for non-residents",
-        "Wise business account UK",
-        "UK business bank non-resident",
-        "Revolut vs traditional banks",
-        "Tide vs NatWest"
-      ],
-      "searchIntent": "commercial",
-      "commercialIntent": "high",
-      "difficulty": "low",
-      "searchVolume": 320,
-      "wordCount": 2400
+      "excerpt": "The banking gap is wider than ever. We stack the new FinTech titans against the traditional High Street giants for non-resident directors.",
+      "readTime": 8
     },
     {
       "id": 6,
@@ -177,19 +65,10 @@
       "title": "UK Ltd vs Offshore Company: Which is Safer in 2026?",
       "metaTitle": "UK Ltd vs Offshore Company 2026 | Safety, Tax, Banking",
       "metaDescription": "Compare UK Limited Company vs offshore jurisdictions. Banking access, credibility, tax implications, and why UK Ltd is often safer in 2026.",
+      "category": "Business Strategy",
       "focusKeyword": "UK Ltd vs offshore company",
-      "secondaryKeywords": [
-        "UK company vs offshore",
-        "offshore vs UK limited company",
-        "UK Ltd or offshore jurisdiction",
-        "safest company structure",
-        "UK vs tax haven"
-      ],
-      "searchIntent": "informational",
-      "commercialIntent": "medium",
-      "difficulty": "medium",
-      "searchVolume": 290,
-      "wordCount": 2200
+      "excerpt": "Offshore isn't what it used to be. In a world of total transparency, the UK Ltd provides tax efficiency without the 'red flag' of a tax haven.",
+      "readTime": 9
     },
     {
       "id": 7,
@@ -197,185 +76,98 @@
       "title": "Business Banking for UK LTD Companies Owned by Non-Residents",
       "metaTitle": "UK Business Banking for Non-Residents 2026 | Complete Guide",
       "metaDescription": "How non-residents can open UK business bank accounts. Wise, Revolut, Tide, NatWest options, approval rates, requirements, and step-by-step process for 2026.",
+      "category": "Banking",
       "focusKeyword": "UK business banking non-residents",
-      "secondaryKeywords": [
-        "non-resident UK bank account",
-        "UK business account non-resident",
-        "open UK bank account overseas",
-        "UK company banking abroad",
-        "non-resident business banking"
-      ],
-      "searchIntent": "transactional",
-      "commercialIntent": "high",
-      "difficulty": "low",
-      "searchVolume": 480,
-      "wordCount": 2900
-    }
-  ],
-  "newArticles": [
+      "excerpt": "A practical guide to securing a GBP account from anywhere in the world. Requirements, timelines, and the ACSP advantage.",
+      "readTime": 10
+    },
     {
       "id": 8,
       "slug": "uk-company-formation-cost-breakdown-2026",
-      "title": "UK Company Formation Cost: Complete Breakdown 2026 (Hidden Fees Revealed)",
-      "metaTitle": "UK Company Formation Cost 2026 | £100 Fee + Hidden Costs",
-      "metaDescription": "Complete UK Ltd formation cost breakdown 2026. £100 Companies House fee + registered office, accounting, tax, VAT. True first-year costs revealed.",
-      "focusKeyword": "UK company formation cost",
-      "secondaryKeywords": [
-        "cost to register UK company",
-        "UK Ltd formation fees",
-        "how much to start UK company",
-        "UK company setup cost",
-        "hidden costs UK formation"
-      ],
-      "searchIntent": "commercial",
-      "commercialIntent": "high",
-      "difficulty": "low",
-      "searchVolume": 1200,
-      "wordCount": 2500,
-      "keywordDensity": {
-        "primary": 1.8,
-        "secondary": 0.6
-      }
+      "title": "UK Company Formation Cost: Complete Breakdown 2026",
+      "category": "Pricing",
+      "excerpt": "True costs revealed. From the £100 government fee to secretarial support, here is what it actually costs to run a UK company in year one.",
+      "readTime": 7
     },
     {
       "id": 9,
       "slug": "cheapest-way-register-uk-company-2026",
-      "title": "Cheapest Way to Register a UK Company in 2026 (Without Sacrificing Quality)",
-      "metaTitle": "Cheapest UK Company Formation 2026 | From £104.99",
-      "metaDescription": "Find the cheapest way to register a UK Ltd company in 2026 without hidden fees. Compare DIY vs agents, best value packages, and money-saving tips.",
-      "focusKeyword": "cheapest UK company formation",
-      "secondaryKeywords": [
-        "cheap UK company registration",
-        "lowest cost UK Ltd formation",
-        "budget UK company setup",
-        "affordable company formation UK",
-        "free UK company registration"
-      ],
-      "searchIntent": "transactional",
-      "commercialIntent": "very high",
-      "difficulty": "low",
-      "searchVolume": 890,
-      "wordCount": 2300
+      "title": "Cheapest Way to Register a UK Company in 2026",
+      "category": "Pricing",
+      "excerpt": "Budgeting for your launch? We show you how to minimize fees while maintaining the professional standards required for 2026 banking.",
+      "readTime": 6
     },
     {
       "id": 10,
       "slug": "uk-registered-office-address-requirements-2026",
-      "title": "UK Registered Office Address Requirements 2026 (What You Must Know)",
-      "metaTitle": "UK Registered Office Requirements 2026 | Legal Rules",
-      "metaDescription": "UK registered office address requirements 2026. Can you use home address? PO Box allowed? Service providers vs own address. Complete legal guide.",
-      "focusKeyword": "UK registered office requirements",
-      "secondaryKeywords": [
-        "registered office address rules",
-        "UK registered address requirements",
-        "can I use home address UK company",
-        "registered office vs trading address",
-        "virtual office UK legal"
-      ],
-      "searchIntent": "informational",
-      "commercialIntent": "medium",
-      "difficulty": "low",
-      "searchVolume": 720,
-      "wordCount": 2100
+      "title": "UK Registered Office Address Requirements 2026",
+      "category": "Compliance",
+      "excerpt": "PO Boxes are out. Appropriateness is in. Learn the new 2026 rules for your company's legal headquarters.",
+      "readTime": 8
     },
     {
       "id": 11,
       "slug": "vat-registration-threshold-uk-2026",
-      "title": "VAT Registration Threshold UK 2026: When Must You Register?",
-      "metaTitle": "UK VAT Threshold 2026 | £90,000 Registration Rules",
-      "metaDescription": "UK VAT registration threshold 2026 is £90,000. When to register, voluntary registration benefits, penalties for late registration, and step-by-step guide.",
-      "focusKeyword": "UK VAT threshold 2026",
-      "secondaryKeywords": [
-        "when to register for VAT UK",
-        "VAT registration limit",
-        "UK VAT turnover threshold",
-        "voluntary VAT registration",
-        "VAT threshold rules"
-      ],
-      "searchIntent": "informational",
-      "commercialIntent": "medium",
-      "difficulty": "low",
-      "searchVolume": 1100,
-      "wordCount": 2400
+      "title": "VAT Registration Threshold UK 2026",
+      "category": "Tax & Finance",
+      "excerpt": "The £90,000 question. When must you register, when should you register voluntarily, and how to avoid the 15% late penalty.",
+      "readTime": 7
     },
     {
       "id": 12,
       "slug": "director-service-address-uk-what-is-it",
-      "title": "What is a Director's Service Address? (UK Company Law Explained 2026)",
-      "metaTitle": "Director's Service Address UK 2026 | Protect Your Privacy",
-      "metaDescription": "What is a director's service address in UK? How it protects your home address from public register, legal requirements, and service providers from £79/year.",
-      "focusKeyword": "director's service address UK",
-      "secondaryKeywords": [
-        "what is service address",
-        "director service address explained",
-        "protect director home address",
-        "UK director privacy",
-        "service address vs residential"
-      ],
-      "searchIntent": "informational",
-      "commercialIntent": "medium",
-      "difficulty": "low",
-      "searchVolume": 620,
-      "wordCount": 1900
+      "title": "What is a Director's Service Address?",
+      "category": "Privacy",
+      "excerpt": "Protect your home address from the public eye. We explain the legal buffer every UK director should use.",
+      "readTime": 5
     },
     {
       "id": 13,
       "slug": "same-day-company-formation-uk-2026",
-      "title": "Same Day Company Formation UK 2026: How to Get Certificate Today",
-      "metaTitle": "Same Day UK Company Formation 2026 | £156 Fast Track",
-      "metaDescription": "Get UK Ltd company formed same day in 2026. £156 Companies House fast track service, requirements, cut-off times, and how to get certificate within hours.",
-      "focusKeyword": "same day company formation UK",
-      "secondaryKeywords": [
-        "fast track UK company",
-        "urgent company registration UK",
-        "quick UK Ltd formation",
-        "same day Companies House",
-        "express company formation"
-      ],
-      "searchIntent": "transactional",
-      "commercialIntent": "very high",
-      "difficulty": "low",
-      "searchVolume": 510,
-      "wordCount": 2000
+      "title": "Same Day Company Formation UK 2026",
+      "category": "Company Formation",
+      "excerpt": "In a rush? Learn about the £156 priority service and how to get your certificate within hours.",
+      "readTime": 4
     },
     {
       "id": 14,
       "slug": "uk-company-name-rules-2026",
-      "title": "UK Company Name Rules 2026: What's Allowed & What's Banned",
-      "metaTitle": "UK Company Name Rules 2026 | Naming Guidelines",
-      "metaDescription": "UK company name rules 2026. Banned words, sensitive terms, trademark issues, offensive names, and how to check availability before registration.",
-      "focusKeyword": "UK company name rules",
-      "secondaryKeywords": [
-        "UK company naming guidelines",
-        "banned company names UK",
-        "company name restrictions",
-        "sensitive words Companies House",
-        "trademark company name UK"
-      ],
-      "searchIntent": "informational",
-      "commercialIntent": "low",
-      "difficulty": "low",
-      "searchVolume": 680,
-      "wordCount": 2200
+      "title": "UK Company Name Rules 2026",
+      "category": "Compliance",
+      "excerpt": "Banned words, sensitive terms, and trademark traps. How to choose a name that Companies House will actually approve.",
+      "readTime": 6
     },
     {
       "id": 15,
       "slug": "uk-ltd-company-annual-costs-2026",
-      "title": "UK Ltd Company Annual Costs 2026: What You'll Pay Every Year",
-      "metaTitle": "UK Ltd Annual Costs 2026 | Confirmation Statement £50",
-      "metaDescription": "Annual costs for UK Ltd company 2026. £50 confirmation statement, accounting £948+, registered office £99+, total yearly expenses revealed.",
-      "focusKeyword": "UK Ltd annual costs",
-      "secondaryKeywords": [
-        "yearly cost UK company",
-        "UK Ltd running costs",
-        "annual company expenses UK",
-        "confirmation statement cost",
-        "UK company maintenance fees"
-      ],
-      "searchIntent": "commercial",
-      "commercialIntent": "medium",
-      "difficulty": "low",
-      "searchVolume": 540,
-      "wordCount": 2300
+      "title": "UK Ltd Company Annual Costs 2026",
+      "category": "Pricing",
+      "excerpt": "Budgeting beyond formation. A roadmap of renewal fees, filing costs, and administrative requirements.",
+      "readTime": 7
+    },
+    {
+      "id": 16,
+      "slug": "acsp-identity-verification-2026",
+      "title": "The Definitive 2026 Guide to ACSP Identity Verification",
+      "category": "Compliance",
+      "excerpt": "ECCTA is here. Every director and PSC must be verified. Learn how Authorized Corporate Service Providers handle this new legal mandate.",
+      "readTime": 9
+    },
+    {
+      "id": 17,
+      "slug": "closing-uk-company-guide",
+      "title": "Closing a UK Company: Strike-Off vs. Liquidation",
+      "category": "Compliance",
+      "excerpt": "Managing the corporate lifecycle. Whether you are shifting strategy or exiting, ensure your dissolution is clean and compliant.",
+      "readTime": 8
+    },
+    {
+      "id": 18,
+      "slug": "uk-company-formation-uae-guide",
+      "title": "The UK-UAE Gateway: Strategic Guide for Gulf Entrepreneurs",
+      "category": "International",
+      "excerpt": "Prestige, banking, and European market access. Why UK companies are the top choice for founders in Dubai, Riyadh, and Abu Dhabi.",
+      "readTime": 7
     }
   ],
   "seoStrategy": {
@@ -383,23 +175,7 @@
       "primary": "1.5-2.0%",
       "secondary": "0.5-0.8%",
       "LSI": "0.3-0.5%"
-    },
-    "interlinkingRules": {
-      "minInternal": 3,
-      "maxInternal": 8,
-      "minExternal": 2,
-      "maxExternal": 5
-    },
-    "commercialIntentKeywords": [
-      "cheap",
-      "best",
-      "cost",
-      "price",
-      "vs",
-      "review",
-      "how much",
-      "affordable",
-      "budget"
-    ]
+    }
   }
 }
+

@@ -11,11 +11,13 @@ const articlesPath = path.join(__dirname, '../content/blog/blog-articles.json');
 
 exports.index = (req, res) => {
     try {
-        const articles = JSON.parse(fs.readFileSync(articlesPath, 'utf8'));
+        const data = JSON.parse(fs.readFileSync(articlesPath, 'utf8'));
+        const allArticles = [...(data.articles || []), ...(data.newArticles || [])];
+        
         res.render('pages/blog-list', {
             title: 'Blog - UK Company Formation Insights',
             metaDescription: 'Latest news and guides about UK company formation.',
-            articles: articles
+            articles: allArticles
         });
     } catch (error) {
         console.error('Blog index error:', error);
@@ -30,12 +32,14 @@ exports.index = (req, res) => {
 exports.show = (req, res) => {
     try {
         const { slug } = req.params;
-        const articles = JSON.parse(fs.readFileSync(articlesPath, 'utf8'));
-        const article = articles.find(a => a.slug === slug);
+        const data = JSON.parse(fs.readFileSync(articlesPath, 'utf8'));
+        const allArticles = [...(data.articles || []), ...(data.newArticles || [])];
+        const article = allArticles.find(a => a.slug === slug);
 
         if (!article) {
             return res.status(404).render('pages/404', { title: 'Article Not Found' });
         }
+
 
         // Read markdown content if file exists
         const mdPath = path.join(__dirname, `../content/blog/${slug}.md`);
