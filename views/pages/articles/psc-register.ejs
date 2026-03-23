@@ -1,0 +1,58 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<main class="min-h-screen pt-12 pb-24">
+    <article class="max-w-4xl mx-auto px-4">
+        <nav class="flex space-x-2 mb-8 text-[10px] font-black uppercase tracking-widest text-gray-400">
+            <a href="/knowledge-hub" class="hover:text-brand-blue">Knowledge Hub</a>
+            <span>/</span>
+            <span class="text-gray-900">Compliance</span>
+        </nav>
+
+        <header class="mb-12">
+            <h1 class="text-4xl md:text-6xl font-black text-gray-900 mb-8 tracking-tighter leading-tight">
+                Understanding the <span class="text-brand-blue">PSC Register & 2026 ID Verification</span>
+            </h1>
+            <div class="flex items-center space-x-6 p-6 bg-gray-50 rounded-[2rem]">
+                <div class="w-10 h-10 rounded-full border-2 border-white bg-brand-blue flex items-center justify-center text-white text-[10px] font-black">LH</div>
+                <div>
+                    <p class="text-gray-900 font-bold text-sm">Laura Hughes</p>
+                    <p class="text-gray-400 text-xs font-medium uppercase tracking-widest">Corporate Law Advisor • March 2026 • 7 min read</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="prose prose-blue max-w-none text-gray-600 font-medium space-y-6">
+            <p class="text-xl text-gray-900 font-bold leading-relaxed">The PSC Register is no longer just a box-ticking exercise. The 2026 Economic Crime Act reforms make identity verification mandatory for all PSCs and directors. Here is exactly what that means.</p>
+
+            <h2 class="text-2xl font-black text-gray-900 mt-10 mb-4">Who Is a PSC?</h2>
+            <p>A Person with Significant Control (PSC) is anyone who meets one or more of the following conditions:</p>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Owns more than 25% of the company's shares</li>
+                <li>Holds more than 25% of the company's voting rights</li>
+                <li>Has the right to appoint or remove a majority of directors</li>
+                <li>Has significant influence or control over the company</li>
+                <li>Has significant influence or control over a trust or firm that itself meets one of the above conditions</li>
+            </ul>
+
+            <div class="p-8 bg-blue-50 rounded-[2rem] border-2 border-blue-100 my-8">
+                <h4 class="text-brand-blue font-black text-xs uppercase tracking-widest mb-4">2026 Mandate</h4>
+                <p class="text-blue-900 text-sm font-bold">From 2026, all directors and PSCs must have their identity verified with Companies House. This is mandatory. Unverified individuals cannot be appointed as directors and PSC information without verification is treated as incomplete.</p>
+            </div>
+
+            <h2 class="text-2xl font-black text-gray-900 mt-10 mb-4">How Identity Verification Works</h2>
+            <p>Companies House has partnered with certified identity verification providers. The process involves submitting a biometric document (passport or national ID), a selfie, and proof of address. This takes approximately 5-10 minutes online and is completed once — not annually.</p>
+
+            <h2 class="text-2xl font-black text-gray-900 mt-10 mb-4">PSC Register Obligations</h2>
+            <p>Every company must maintain a PSC register and file PSC information at Companies House. Changes to PSC status (new PSC, change of control %) must be reported within 14 days. Failure to maintain an accurate PSC register is a criminal offence for both the company and its officers.</p>
+
+            <div class="bg-gray-900 text-white rounded-[2.5rem] p-10 mt-12">
+                <h3 class="text-3xl font-black mb-4 tracking-tighter">We Handle Your PSC Compliance</h3>
+                <p class="text-gray-400 mb-8 font-medium">Every formation includes PSC register setup and identity verification guidance. Our secretarial packages keep you compliant year-round.</p>
+                <a href="/pricing" class="btn-primary inline-block">View All Packages</a>
+            </div>
+        </div>
+    </article>
+</main>
+
+<%- include('../../partials/footer') %>

@@ -2,36 +2,83 @@
 <%- include('../../partials/navigation') %>
 
 <main class="py-24 bg-gray-50/50">
-    <div class="container mx-auto px-4 max-w-4xl text-center">
-        <h1 class="text-5xl font-black text-gray-900 mb-6 tracking-tight">Business Banking Assistance</h1>
-        <p class="text-xl text-gray-600 mb-12">Accelerate your UK Bank Account approval with our priority partnerships and pre-clearance checks.</p>
+    <div class="container mx-auto px-4 max-w-4xl">
+        <div class="text-center mb-16">
+            <div class="inline-block px-4 py-1.5 mb-6 bg-brand-blue/10 text-brand-blue rounded-full text-xs font-black tracking-widest uppercase">Banking</div>
+            <h1 class="text-5xl font-black text-gray-900 mb-6 tracking-tight">Business Banking Assistance</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Accelerate your UK Bank Account approval with our priority partnerships and pre-clearance checks — for both residents and non-residents.</p>
+        </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <!-- UK Residents -->
             <div class="bg-white p-8 rounded-3xl shadow-sm text-left border border-gray-100">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Wirecard_Logo_2017.svg" alt="Tide Integration" class="h-8 mb-6 opacity-80 filter grayscale">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="flex gap-2">
+                        <span class="text-xl font-black text-brand-blue bg-blue-50 px-3 py-1 rounded-lg">TIDE</span>
+                        <span class="text-xl font-black text-green-600 bg-green-50 px-3 py-1 rounded-lg">MONZO</span>
+                    </div>
+                </div>
                 <h3 class="text-2xl font-black text-gray-900 mb-4">UK Residents</h3>
-                <p class="text-gray-600 mb-6">Guaranteed rapid approval with Tide or Monzo Business through our priority portal interface. Often approved within minutes of incorporation.</p>
+                <p class="text-gray-600 mb-6">Rapid approval with Tide or Monzo Business through our priority portal. Often approved within minutes of incorporation.</p>
                 <ul class="space-y-2 mb-8 text-sm text-gray-500 font-medium">
-                    <li>✔ Automated KYC Sync</li>
-                    <li>✔ No Monthly Fees</li>
-                    <li>✔ Instant Sort Code & Account No</li>
+                    <li>✔ Automated KYC Sync with formation data</li>
+                    <li>✔ No Monthly Fees (basic accounts)</li>
+                    <li>✔ Instant Sort Code & Account Number</li>
+                    <li>✔ Open Banking integrations</li>
                 </ul>
-                <p class="font-black text-brand-blue">&pound;49 <span class="text-sm font-medium text-gray-400">One-Time (or Included in Standard)</span></p>
+                <p class="font-black text-brand-blue text-lg">£49 <span class="text-sm font-medium text-gray-400">One-Time (Included in Standard+)</span></p>
             </div>
 
+            <!-- Non-Residents -->
             <div class="bg-gray-950 p-8 rounded-3xl shadow-xl text-left border border-gray-800 text-white">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Wise_Logo.svg" alt="Wise Integration" class="h-8 mb-6 brightness-0 invert">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="flex gap-2">
+                        <span class="text-xl font-black text-green-400 bg-green-900/30 px-3 py-1 rounded-lg">WISE</span>
+                        <span class="text-xl font-black text-indigo-400 bg-indigo-900/30 px-3 py-1 rounded-lg">REVOLUT</span>
+                    </div>
+                </div>
                 <h3 class="text-2xl font-black text-white mb-4">Non-Residents</h3>
-                <p class="text-gray-400 mb-6">Navigating international banking requires expertise. We handle introductions with Wise, Revolut, and Payoneer to ensure successful multi-currency account creation.</p>
+                <p class="text-gray-400 mb-6">Expert introductions to Wise Business, Revolut Business, and Payoneer — the industry standard for international directors in 2026.</p>
                 <ul class="space-y-2 mb-8 text-sm text-gray-400 font-medium">
-                    <li>✔ Director Address Proof Prep</li>
-                    <li>✔ Business Plan Structuring</li>
+                    <li>✔ Director Address Proof Preparation</li>
+                    <li>✔ Business Plan Structuring for KYC</li>
                     <li>✔ Pre-Application Review</li>
+                    <li>✔ Multi-currency account guidance</li>
                 </ul>
-                <p class="font-black text-indigo-400">&pound;149 <span class="text-sm font-medium text-gray-500">One-Time (or Included in Enterprise)</span></p>
+                <p class="font-black text-indigo-400 text-lg">£149 <span class="text-sm font-medium text-gray-500">One-Time (Included in Enterprise Elite)</span></p>
             </div>
         </div>
 
+        <!-- Partner Banks -->
+        <div class="bg-white rounded-[2.5rem] p-10 shadow-sm border border-gray-100 mb-16">
+            <h2 class="text-2xl font-black text-gray-900 mb-8 tracking-tight">Our Banking Partners</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                <div class="text-center">
+                    <div class="w-full bg-green-50 rounded-2xl p-4 mb-2 font-black text-green-600 text-lg">WISE</div>
+                    <p class="text-xs text-gray-400 font-medium">Best for non-residents</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-full bg-indigo-50 rounded-2xl p-4 mb-2 font-black text-indigo-600 text-lg">REVOLUT</div>
+                    <p class="text-xs text-gray-400 font-medium">Modern, great FX rates</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-full bg-blue-50 rounded-2xl p-4 mb-2 font-black text-brand-blue text-lg">TIDE</div>
+                    <p class="text-xs text-gray-400 font-medium">UK-focused, fast approval</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-full bg-purple-50 rounded-2xl p-4 mb-2 font-black text-purple-600 text-lg">NATWEST</div>
+                    <p class="text-xs text-gray-400 font-medium">Traditional, prestigious</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-full bg-blue-50 rounded-2xl p-4 mb-2 font-black text-blue-800 text-lg">BARCLAYS</div>
+                    <p class="text-xs text-gray-400 font-medium">Established, branch access</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="/contact" class="btn-primary inline-block">Enquire About Banking Assistance</a>
+        </div>
     </div>
 </main>
 

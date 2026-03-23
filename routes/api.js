@@ -74,4 +74,21 @@ router.get('/sic-finder', (req, res) => {
     });
 });
 
+// Contact form submission
+router.post('/contact', (req, res) => {
+    const { firstName, lastName, email, topic, message } = req.body;
+    console.log(`[Contact] ${firstName} ${lastName} <${email}> [${topic}]: ${message}`);
+    // TODO: connect to email provider (SendGrid, Mailgun, etc.)
+    res.json({ success: true, message: 'Message received. We will be in touch shortly.' });
+});
+
+// Affiliate / partner application
+router.post('/affiliate-apply', (req, res) => {
+    const { fullName, email, website, partnerType } = req.body;
+    console.log(`[Affiliate Application] ${fullName} <${email}> | ${partnerType} | ${website}`);
+    // TODO: store to DB and send notification email
+    res.json({ success: true, message: 'Application received. We review all applications within 2 business days.' });
+});
+
 module.exports = router;
+

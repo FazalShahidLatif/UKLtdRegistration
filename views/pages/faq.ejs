@@ -1,25 +1,200 @@
 <%- include('../partials/header') %>
 <%- include('../partials/navigation') %>
 
-<main class="py-20">
-    <div class="container mx-auto px-4 max-w-4xl">
-        <h1 class="text-4xl font-black text-center mb-16">Frequently Asked Questions</h1>
-        
-        <div class="space-y-8">
-            <div>
-                <h3 class="text-xl font-bold mb-2">How long does it take to register a company?</h3>
-                <p class="text-gray-600">Standard formation takes 24-48 hours. Same-day formation is available for orders placed before 3 PM.</p>
-            </div>
-            <div>
-                <h3 class="text-xl font-bold mb-2">Can non-residents register a UK company?</h3>
-                <p class="text-gray-600">Yes! We specialize in helping international entrepreneurs set up UK Limited companies from anywhere in the world.</p>
-            </div>
-            <div>
-                <h3 class="text-xl font-bold mb-2">What documents do I need?</h3>
-                <p class="text-gray-600">Usually just proof of ID and address for all directors and shareholders.</p>
+<main class="min-h-screen pt-12 pb-24">
+    <!-- Hero -->
+    <section class="max-w-7xl mx-auto px-4 py-20 text-center">
+        <div class="inline-block px-4 py-1.5 mb-8 bg-brand-blue/10 text-brand-blue rounded-full text-xs font-black tracking-widest uppercase">
+            Support Centre
+        </div>
+        <h1 class="text-5xl md:text-6xl font-black text-gray-900 mb-6 tracking-tighter">
+            Frequently Asked <span class="text-brand-blue">Questions.</span>
+        </h1>
+        <p class="text-xl text-gray-500 max-w-xl mx-auto font-medium">
+            Everything you need to know about UK company formation, compliance, and our services.
+        </p>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="max-w-4xl mx-auto px-4 pb-24">
+
+        <!-- Category: Formation -->
+        <div class="mb-12">
+            <p class="text-xs font-black text-brand-blue uppercase tracking-widest mb-6">Company Formation</p>
+            <div class="space-y-3" id="faq-formation">
+
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-black text-gray-900 text-base pr-4">How long does it take to register a UK company?</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-blue shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-body hidden px-6 pb-6">
+                        <p class="text-gray-500 font-medium leading-relaxed">Standard formation typically takes 24–48 working hours once your documents are submitted and approved. Same-day formation is available for applications received before 3 PM (UK time). We submit directly to Companies House electronically, so there are no postal delays.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-black text-gray-900 text-base pr-4">Can non-residents register a UK limited company?</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-blue shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-body hidden px-6 pb-6">
+                        <p class="text-gray-500 font-medium leading-relaxed">Yes — absolutely. There is no requirement to be a UK resident to register a UK limited company. We specialise in helping international founders and digital nomads form companies from anywhere in the world. You will need a UK registered office address (which we provide) and valid ID for all directors.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-black text-gray-900 text-base pr-4">What documents do I need to form a company?</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-blue shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-body hidden px-6 pb-6">
+                        <p class="text-gray-500 font-medium leading-relaxed">You will typically need: (1) Proof of identity for all directors and shareholders — a valid passport or national ID card. (2) Proof of residential address — a recent utility bill or bank statement dated within 3 months. (3) Your chosen company name, share structure, and nature of business (SIC code). We guide you through every step.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-black text-gray-900 text-base pr-4">What is the difference between a director and a shareholder?</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-blue shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-body hidden px-6 pb-6">
+                        <p class="text-gray-500 font-medium leading-relaxed">A <strong>director</strong> manages the day-to-day running of the company and has legal responsibilities to Companies House and HMRC. A <strong>shareholder</strong> owns a portion of the company and receives dividends from profits. The same person can (and often does) serve as both director and sole shareholder in a small company.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-black text-gray-900 text-base pr-4">Can I change my company name after registration?</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-blue shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-body hidden px-6 pb-6">
+                        <p class="text-gray-500 font-medium leading-relaxed">Yes. You can change your company name at any time after incorporation by passing a special resolution and notifying Companies House. The fee is typically £8–£20. We can handle this on your behalf as part of our company secretarial service.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
+
+        <!-- Category: Compliance & 2026 -->
+        <div class="mb-12">
+            <p class="text-xs font-black text-brand-blue uppercase tracking-widest mb-6">Compliance & 2026 Changes</p>
+            <div class="space-y-3">
+
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-black text-gray-900 text-base pr-4">What are the 2026 UK company law changes I should know about?</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-blue shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-body hidden px-6 pb-6">
+                        <p class="text-gray-500 font-medium leading-relaxed">The Economic Crime and Corporate Transparency Act introduced significant reforms. Key 2026 changes include: mandatory identity verification for all directors and PSCs (People with Significant Control), new registered office requirements (your address must be capable of receiving and acknowledging correspondence), and enhanced Companies House enforcement powers. We ensure every formation is fully compliant.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-black text-gray-900 text-base pr-4">What is a PSC (Person with Significant Control)?</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-blue shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-body hidden px-6 pb-6">
+                        <p class="text-gray-500 font-medium leading-relaxed">A PSC is anyone who owns more than 25% of the company's shares or voting rights, or otherwise has significant influence or control. All UK companies must maintain a PSC register and file this information with Companies House. From 2026, PSC identity verification is mandatory. We collect and file all required PSC data as part of your formation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-black text-gray-900 text-base pr-4">Do I need to file a Confirmation Statement every year?</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-blue shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-body hidden px-6 pb-6">
+                        <p class="text-gray-500 font-medium leading-relaxed">Yes. Every UK company must file a Confirmation Statement (previously Annual Return) with Companies House at least once every 12 months. The current filing fee is £13 (online). Failure to file can result in the company being struck off the register. Our Basic Secretarial package includes this filing for you annually.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Category: Tax & Finance -->
+        <div class="mb-12">
+            <p class="text-xs font-black text-brand-blue uppercase tracking-widest mb-6">Tax & Finance</p>
+            <div class="space-y-3">
+
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-black text-gray-900 text-base pr-4">What is the UK Corporation Tax rate?</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-blue shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-body hidden px-6 pb-6">
+                        <p class="text-gray-500 font-medium leading-relaxed">From April 2023, the UK Corporation Tax rate is 25% for profits over £250,000 and 19% (small profits rate) for profits under £50,000. A marginal rate applies between £50,000–£250,000. As a foreign director or non-resident, your personal UK tax liability depends on your tax residency — we recommend speaking to one of our accountants for a personalised assessment.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-black text-gray-900 text-base pr-4">Do I need to register for VAT?</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-blue shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-body hidden px-6 pb-6">
+                        <p class="text-gray-500 font-medium leading-relaxed">VAT registration is mandatory when your taxable turnover exceeds £90,000 in a rolling 12-month period (as of 2024). You can also register voluntarily below this threshold, which can be beneficial if you sell primarily to VAT-registered businesses. We handle the full VAT registration process from £99.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-black text-gray-900 text-base pr-4">When does my company need to file accounts?</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-blue shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-body hidden px-6 pb-6">
+                        <p class="text-gray-500 font-medium leading-relaxed">Your first accounts are due 21 months after the date of incorporation. After that, accounts must be filed within 9 months of your financial year end (for private companies). Corporation Tax returns must be filed within 12 months of the accounting period end, and any tax owed paid within 9 months and 1 day. We provide full reminders and handling through our accounting packages.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Category: Banking -->
+        <div class="mb-12">
+            <p class="text-xs font-black text-brand-blue uppercase tracking-widest mb-6">Banking</p>
+            <div class="space-y-3">
+
+                <div class="faq-item bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition-colors">
+                        <span class="font-black text-gray-900 text-base pr-4">Can a non-resident open a UK business bank account?</span>
+                        <svg class="faq-icon w-5 h-5 text-brand-blue shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-body hidden px-6 pb-6">
+                        <p class="text-gray-500 font-medium leading-relaxed">Yes, though traditional high-street banks can be challenging for non-residents. We work with Wise Business, Revolut Business, and Payoneer — all of which have strong non-resident approval rates and multi-currency support. Our Banking Assistance service includes document preparation, pre-application review, and direct introductions to maximise approval likelihood.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Still have questions -->
+        <div class="bg-brand-navy rounded-[2.5rem] p-10 text-center">
+            <h3 class="text-2xl font-black text-white mb-4">Still Have a Question?</h3>
+            <p class="text-gray-400 font-medium mb-8">Our formation specialists are available via live chat, email, and phone.</p>
+            <a href="/contact" class="btn-primary inline-block">Contact Our Team</a>
+        </div>
+
+    </section>
 </main>
+
+<script>
+    function toggleFaq(btn) {
+        const body = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        const isOpen = !body.classList.contains('hidden');
+
+        // Close all
+        document.querySelectorAll('.faq-body').forEach(b => b.classList.add('hidden'));
+        document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+        if (!isOpen) {
+            body.classList.remove('hidden');
+            icon.style.transform = 'rotate(180deg)';
+        }
+    }
+</script>
 
 <%- include('../partials/footer') %>

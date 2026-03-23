@@ -15,11 +15,38 @@
                 </div>
             </a>
             
+            <!-- Desktop Nav -->
             <div class="hidden md:flex space-x-5 lg:space-x-8 items-center">
                 <a href="/uk-residents" class="text-gray-500 hover:text-brand-blue font-bold text-xs tracking-widest transition-colors uppercase whitespace-nowrap">UK Residents</a>
                 <a href="/us-citizens" class="text-gray-500 hover:text-brand-blue font-bold text-xs tracking-widest transition-colors uppercase whitespace-nowrap">US Citizens</a>
+
+                <!-- Services Dropdown -->
+                <div class="relative group">
+                    <a href="/services" class="text-gray-500 hover:text-brand-blue font-bold text-xs tracking-widest transition-colors uppercase whitespace-nowrap flex items-center gap-1">
+                        Services
+                        <svg class="w-3 h-3 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </a>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-3 min-w-[200px]">
+                            <a href="/services/virtual-office" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 transition-colors text-sm font-bold text-gray-700 whitespace-nowrap">
+                                <span class="text-brand-blue">🏢</span> Virtual Office
+                            </a>
+                            <a href="/services/meeting-rooms" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 transition-colors text-sm font-bold text-gray-700 whitespace-nowrap">
+                                <span class="text-brand-blue">📋</span> Meeting Rooms
+                            </a>
+                            <a href="/services/accounting" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 transition-colors text-sm font-bold text-gray-700 whitespace-nowrap">
+                                <span class="text-brand-blue">📊</span> Accounting & Tax
+                            </a>
+                            <a href="/services/banking" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 transition-colors text-sm font-bold text-gray-700 whitespace-nowrap">
+                                <span class="text-brand-blue">💳</span> Business Banking
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <a href="/knowledge-hub" class="text-gray-500 hover:text-brand-blue font-bold text-xs tracking-widest transition-colors uppercase whitespace-nowrap">Knowledge Hub</a>
                 <a href="/blog" class="text-gray-500 hover:text-brand-blue font-bold text-xs tracking-widest transition-colors uppercase">Blog</a>
+                <a href="/partners" class="text-brand-green hover:text-green-700 font-bold text-xs tracking-widest transition-colors uppercase whitespace-nowrap">Partners</a>
                 
                 <% if (user) { %>
                     <div class="h-8 w-[1px] bg-gray-200"></div>
@@ -37,6 +64,55 @@
                     <a href="/pricing" class="bg-blue-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-700 shadow-xl shadow-blue-50 transition-all hover:scale-105">Form Company</a>
                 <% } %>
             </div>
+
+            <!-- Mobile Hamburger -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl hover:bg-gray-100 transition-colors" onclick="toggleMobileMenu()">
+                <svg id="hamburger-icon" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="close-icon" class="w-6 h-6 text-gray-700 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white">
+        <div class="container mx-auto px-4 py-4 space-y-1">
+            <a href="/uk-residents" class="block px-4 py-3 rounded-xl hover:bg-gray-50 font-bold text-sm text-gray-700">UK Residents</a>
+            <a href="/us-citizens" class="block px-4 py-3 rounded-xl hover:bg-gray-50 font-bold text-sm text-gray-700">US Citizens</a>
+            <div class="border-t border-gray-50 my-2 pt-2">
+                <p class="px-4 py-1 text-[10px] font-black uppercase tracking-widest text-gray-400">Services</p>
+                <a href="/services" class="block px-4 py-3 rounded-xl hover:bg-gray-50 font-bold text-sm text-gray-700">All Services</a>
+                <a href="/services/virtual-office" class="block px-4 py-3 rounded-xl hover:bg-gray-50 font-medium text-sm text-gray-500 pl-8">→ Virtual Office</a>
+                <a href="/services/meeting-rooms" class="block px-4 py-3 rounded-xl hover:bg-gray-50 font-medium text-sm text-gray-500 pl-8">→ Meeting Rooms</a>
+                <a href="/services/accounting" class="block px-4 py-3 rounded-xl hover:bg-gray-50 font-medium text-sm text-gray-500 pl-8">→ Accounting & Tax</a>
+                <a href="/services/banking" class="block px-4 py-3 rounded-xl hover:bg-gray-50 font-medium text-sm text-gray-500 pl-8">→ Business Banking</a>
+            </div>
+            <a href="/knowledge-hub" class="block px-4 py-3 rounded-xl hover:bg-gray-50 font-bold text-sm text-gray-700">Knowledge Hub</a>
+            <a href="/blog" class="block px-4 py-3 rounded-xl hover:bg-gray-50 font-bold text-sm text-gray-700">Blog</a>
+            <a href="/partners" class="block px-4 py-3 rounded-xl hover:bg-green-50 font-bold text-sm text-brand-green">Partner Program</a>
+            <div class="border-t border-gray-100 pt-3 mt-3 space-y-2">
+                <% if (user) { %>
+                    <a href="/auth/dashboard" class="block text-center bg-brand-blue text-white px-6 py-3 rounded-xl font-bold">Dashboard</a>
+                    <a href="/auth/logout" class="block text-center text-gray-500 px-6 py-3 rounded-xl font-bold hover:text-red-500">Log Out</a>
+                <% } else { %>
+                    <a href="/auth/login" class="block text-center text-gray-700 px-6 py-3 rounded-xl font-bold border border-gray-200">Login</a>
+                    <a href="/pricing" class="block text-center bg-brand-blue text-white px-6 py-3 rounded-xl font-bold">Form Your Company</a>
+                <% } %>
+            </div>
         </div>
     </div>
 </nav>
+
+<script>
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        const hamburger = document.getElementById('hamburger-icon');
+        const close = document.getElementById('close-icon');
+        menu.classList.toggle('hidden');
+        hamburger.classList.toggle('hidden');
+        close.classList.toggle('hidden');
+    }
+</script>

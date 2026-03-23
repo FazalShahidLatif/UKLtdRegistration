@@ -1,12 +1,116 @@
 <%- include('../partials/header') %>
 <%- include('../partials/navigation') %>
 
-<main class="py-20">
-    <div class="container mx-auto px-4 max-w-3xl">
-        <h1 class="text-4xl font-black mb-8">About UK Ltd Registration</h1>
-        <p class="text-xl text-gray-600 mb-6 leading-relaxed">We are dedicated to making company formation simple, fast, and accessible for everyone, whether you're in the UK or overseas.</p>
-        <p class="text-gray-500 leading-relaxed mb-6">Founded on the principles of transparency and efficiency, we provide entrepreneurs with the tools they need to secure their business identity and launch with confidence.</p>
-    </div>
+<main class="min-h-screen pt-12 pb-24">
+    <!-- Hero -->
+    <section class="max-w-7xl mx-auto px-4 py-20 text-center">
+        <div class="inline-block px-4 py-1.5 mb-8 bg-brand-blue/10 text-brand-blue rounded-full text-xs font-black tracking-widest uppercase">
+            Our Story
+        </div>
+        <h1 class="text-5xl md:text-6xl font-black text-gray-900 mb-8 tracking-tighter leading-tight">
+            Built for the <span class="text-brand-blue">Global Founder.</span>
+        </h1>
+        <p class="text-xl text-gray-500 max-w-2xl mx-auto font-medium">
+            We believe that where you were born should not determine where you can do business. UK Ltd Registration exists to remove every barrier between a great idea and a great company.
+        </p>
+    </section>
+
+    <!-- Mission Cards -->
+    <section class="max-w-7xl mx-auto px-4 mb-24">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass p-10 rounded-[2.5rem] text-center">
+                <div class="w-16 h-16 bg-blue-50 text-brand-blue rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <h3 class="text-xl font-black text-gray-900 mb-3">Transparency First</h3>
+                <p class="text-gray-500 text-sm font-medium leading-relaxed">No hidden fees. No surprise charges. Every price, every fee, every deadline — laid out clearly before you commit.</p>
+            </div>
+            <div class="glass p-10 rounded-[2.5rem] text-center">
+                <div class="w-16 h-16 bg-green-50 text-brand-green rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"></path></svg>
+                </div>
+                <h3 class="text-xl font-black text-gray-900 mb-3">Global Reach</h3>
+                <p class="text-gray-500 text-sm font-medium leading-relaxed">We serve founders from over 80 countries. Our team understands the nuances of non-resident formation, banking, and compliance.</p>
+            </div>
+            <div class="glass p-10 rounded-[2.5rem] text-center">
+                <div class="w-16 h-16 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h3 class="text-xl font-black text-gray-900 mb-3">Speed & Efficiency</h3>
+                <p class="text-gray-500 text-sm font-medium leading-relaxed">Standard formations in 24-48 hours. Same-day available. Post-2026 compliance-ready so you never fall behind.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story + Values -->
+    <section class="bg-white py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <p class="text-xs font-black text-brand-blue uppercase tracking-widest mb-4">Our Journey</p>
+                    <h2 class="text-4xl font-black text-gray-900 tracking-tighter mb-8">Why We Started</h2>
+                    <div class="space-y-6 text-gray-500 font-medium leading-relaxed">
+                        <p>UK Ltd Registration was founded after witnessing a familiar frustration: talented entrepreneurs around the world struggling to navigate the UK's company formation process — overwhelmed by confusing paperwork, opaque fees, and a lack of proper guidance.</p>
+                        <p>We built this platform from the ground up with one goal: to create a seamless, transparent, and global-first formation experience. We partner with Companies House, leading UK banks, and certified accountants to give founders everything they need from day one.</p>
+                        <p>Today we serve solo founders, digital agencies, e-commerce sellers, and consulting firms across the globe — all operating legitimate, compliant UK companies built on our platform.</p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="flex items-center gap-6 glass p-6 rounded-2xl">
+                        <div class="w-14 h-14 bg-brand-blue rounded-2xl flex items-center justify-center text-white font-black text-lg shrink-0">80+</div>
+                        <div>
+                            <p class="font-black text-gray-900">Countries Served</p>
+                            <p class="text-gray-500 text-sm font-medium">Founders in every timezone, every continent</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6 glass p-6 rounded-2xl">
+                        <div class="w-14 h-14 bg-brand-green rounded-2xl flex items-center justify-center text-white font-black text-lg shrink-0">5k+</div>
+                        <div>
+                            <p class="font-black text-gray-900">Companies Formed</p>
+                            <p class="text-gray-500 text-sm font-medium">All registered and active with Companies House</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6 glass p-6 rounded-2xl">
+                        <div class="w-14 h-14 bg-purple-500 rounded-2xl flex items-center justify-center text-white font-black text-lg shrink-0">24h</div>
+                        <div>
+                            <p class="font-black text-gray-900">Average Formation Time</p>
+                            <p class="text-gray-500 text-sm font-medium">From application to incorporation certificate</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6 glass p-6 rounded-2xl">
+                        <div class="w-14 h-14 bg-orange-500 rounded-2xl flex items-center justify-center text-white font-black text-sm shrink-0">98%</div>
+                        <div>
+                            <p class="font-black text-gray-900">Customer Satisfaction</p>
+                            <p class="text-gray-500 text-sm font-medium">Based on verified post-service reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2026 Compliance Promise -->
+    <section class="max-w-7xl mx-auto px-4 py-24">
+        <div class="bg-brand-navy rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-brand-blue/10 rounded-full blur-3xl"></div>
+            <div class="relative z-10">
+                <div class="inline-block px-4 py-1.5 mb-8 bg-brand-blue/20 text-blue-300 rounded-full text-xs font-black tracking-widest uppercase">2026-Ready</div>
+                <h2 class="text-4xl font-black text-white mb-6 tracking-tighter">Our 2026 Compliance Promise</h2>
+                <p class="text-gray-400 font-medium max-w-2xl mx-auto leading-relaxed mb-10">With landmark changes to UK company law taking full effect in 2026, we have updated every part of our process to ensure your formation is not just valid today, but verifiable and compliant for years to come. Identity verification, registered office requirements, PSC data — we handle it all.</p>
+                <a href="/knowledge-hub" class="btn-primary inline-block">Read Our Compliance Guides</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="max-w-7xl mx-auto px-4 text-center pb-12">
+        <h2 class="text-4xl font-black text-gray-900 mb-6 tracking-tighter">Ready to Start Your Company?</h2>
+        <p class="text-gray-500 font-medium mb-10">Join thousands of founders who chose UK Ltd Registration.</p>
+        <div class="flex flex-col md:flex-row gap-4 justify-center">
+            <a href="/pricing" class="btn-primary">Get Started Today</a>
+            <a href="/contact" class="px-8 py-4 bg-white text-gray-900 rounded-2xl font-black hover:bg-gray-50 transition-all duration-300 border border-gray-100 shadow-sm">Contact Our Team</a>
+        </div>
+    </section>
 </main>
 
 <%- include('../partials/footer') %>
