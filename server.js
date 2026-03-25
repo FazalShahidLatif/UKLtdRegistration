@@ -28,6 +28,8 @@ const authRoutes = require('./routes/auth');
 const apiRoutes = require('./routes/api');
 const hubRoutes = require('./routes/hub');
 const adminRoutes = require('./routes/admin');
+const redirectsMiddleware = require('./middleware/redirects');
+const { initSEOScheduler } = require('./cron/seo-scheduler');
 
 // Initialize Express app
 const app = express();
@@ -95,6 +97,9 @@ app.use((req, res, next) => {
     next();
 });
 
+// 301 Redirects Middleware
+app.use(redirectsMiddleware);
+
 // Routes
 app.use('/', homeRoutes);
 app.use('/blog', blogRoutes); // Kept original order for blogRoutes
@@ -139,6 +144,9 @@ const server = app.listen(PORT, () => {
     console.log(`  ✓ Environment: ${process.env.NODE_ENV || 'development'}`);
     console.log(`  ✓ URL: http://localhost:${PORT}`);
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+    
+    // Initialize SEO Scheduler
+    initSEOScheduler();
 });
 
 // Graceful shutdown

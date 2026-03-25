@@ -1,0 +1,14 @@
+[
+    {
+        "from": "/old-pricing",
+        "to": "/pricing"
+    },
+    {
+        "from": "/contact-us",
+        "to": "/contact"
+    },
+    {
+        "from": "/frequently-asked-questions",
+        "to": "/faq"
+    }
+]

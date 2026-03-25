@@ -49,4 +49,26 @@ router.get('/leads', (req, res) => {
     });
 });
 
+// SEO Insights & Automation
+router.get('/seo', (req, res) => {
+    const fs = require('fs');
+    const path = require('path');
+    const tasksPath = path.join(__dirname, '../content/seo-tasks.json');
+    
+    let seoTasks = [];
+    if (fs.existsSync(tasksPath)) {
+        try {
+            seoTasks = JSON.parse(fs.readFileSync(tasksPath, 'utf8'));
+        } catch (e) {
+            console.error('Error parsing SEO tasks:', e);
+        }
+    }
+
+    res.render('pages/admin/seo', {
+        title: 'SEO Intelligence | Master Control Room',
+        metaDescription: 'Automated SEO optimization roadmap and task management.',
+        tasks: seoTasks
+    });
+});
+
 module.exports = router;

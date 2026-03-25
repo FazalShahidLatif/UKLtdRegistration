@@ -1,0 +1,105 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<div class="flex min-h-screen bg-gray-50/50">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-brand-navy text-white hidden lg:flex flex-col">
+        <div class="p-8 border-b border-white/5">
+            <span class="text-xs font-black uppercase tracking-[0.2em] text-gray-400">Master Control</span>
+            <h2 class="text-xl font-black mt-1">Dashboard</h2>
+        </div>
+        <nav class="flex-1 p-4 space-y-2 mt-4">
+            <a href="/admin" class="flex items-center space-x-3 p-4 text-gray-400 hover:bg-white/5 hover:text-white rounded-2xl font-bold transition-all">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                <span>Overview</span>
+            </a>
+            <a href="/admin/seo" class="flex items-center space-x-3 p-4 bg-brand-blue/20 text-white rounded-2xl font-bold group transition-all">
+                <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                <span>SEO Strategy</span>
+            </a>
+            <a href="/admin/orders" class="flex items-center space-x-3 p-4 text-gray-400 hover:bg-white/5 hover:text-white rounded-2xl font-bold transition-all">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                <span>Orders</span>
+            </a>
+            <a href="/admin/partners" class="flex items-center space-x-3 p-4 text-gray-400 hover:bg-white/5 hover:text-white rounded-2xl font-bold transition-all">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                <span>Partners</span>
+            </a>
+            <a href="/admin/leads" class="flex items-center space-x-3 p-4 text-gray-400 hover:bg-white/5 hover:text-white rounded-2xl font-bold transition-all">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg>
+                <span>Leads</span>
+            </a>
+        </nav>
+        <div class="p-8 border-t border-white/5">
+            <a href="/auth/logout" class="text-xs font-black uppercase tracking-[0.2em] text-red-400 hover:text-red-300 transition-colors">Logout Command</a>
+        </div>
+    </aside>
+
+    <!-- Content -->
+    <main class="flex-1 p-8 lg:p-12">
+        <header class="mb-12 flex justify-between items-start">
+            <div>
+                <h1 class="text-4xl font-black text-gray-900 tracking-tighter uppercase italic">SEO Intelligence</h1>
+                <p class="text-gray-500 font-medium">Daily automated roadmap based on Google GSC data.</p>
+            </div>
+            <div class="px-6 py-3 bg-brand-green/10 rounded-2xl border border-brand-green/20">
+                <span class="text-[10px] font-black uppercase text-brand-green tracking-widest">GSC Sync</span>
+                <p class="text-xs font-bold text-gray-900">Last Synced: <%= new Date().toLocaleTimeString() %></p>
+            </div>
+        </header>
+
+        <!-- SEO Task List -->
+        <div class="grid grid-cols-1 gap-8">
+            <div class="bg-white rounded-[3rem] border border-gray-100 p-10 shadow-sm">
+                <div class="flex justify-between items-center mb-8">
+                    <h3 class="text-2xl font-black text-gray-900 tracking-tighter">Prioritized Action List</h3>
+                    <span class="px-4 py-2 bg-gray-900 text-white text-[10px] font-black uppercase tracking-widest rounded-xl">24h Cycle</span>
+                </div>
+                
+                <div class="space-y-6">
+                    <% if (tasks && tasks.length > 0) { %>
+                        <% tasks.forEach(task => { %>
+                            <div class="group p-8 border border-gray-50 hover:border-brand-blue/30 rounded-[2rem] transition-all hover:shadow-xl hover:shadow-brand-blue/5">
+                                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+                                    <div class="flex-1">
+                                        <div class="flex items-center space-x-3 mb-2">
+                                            <span class="px-3 py-1 <%= task.priority === 'High' ? 'bg-red-50 text-red-600' : 'bg-brand-blue/10 text-brand-blue' %> rounded-lg text-[10px] font-black uppercase tracking-widest">
+                                                <%= task.priority %> Priority
+                                            </span>
+                                            <span class="text-[10px] font-black uppercase text-gray-400 tracking-widest italic opacity-50"><%= task.id %></span>
+                                        </div>
+                                        <h4 class="text-xl font-black text-gray-900 mb-2 tracking-tighter"><%= task.task %></h4>
+                                        <p class="text-gray-500 font-medium text-sm leading-relaxed max-w-2xl"><%= task.details %></p>
+                                        <div class="mt-4 flex items-center space-x-6">
+                                            <div class="flex items-center space-x-2">
+                                                <div class="w-1.5 h-1.5 rounded-full bg-brand-blue"></div>
+                                                <p class="text-xs font-black text-gray-900 uppercase tracking-widest"><%= task.query %></p>
+                                            </div>
+                                            <div class="flex items-center space-x-2">
+                                                <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                                                <p class="text-xs font-bold text-gray-400 tracking-tight"><%= task.page %></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lg:text-right flex flex-col items-start lg:items-end justify-between min-w-[200px]">
+                                        <div class="mb-4">
+                                            <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1 text-left lg:text-right">Performance Context</p>
+                                            <p class="text-xs font-black text-gray-900 uppercase tracking-widest"><%= task.metrics %></p>
+                                        </div>
+                                        <button class="px-6 py-3 bg-gray-900 text-white rounded-xl text-xs font-black uppercase tracking-widest hover:bg-brand-blue transition-colors group-hover:scale-105 transform">Mark Actioned</button>
+                                    </div>
+                                </div>
+                            </div>
+                        <% }); %>
+                    <% } else { %>
+                        <div class="p-12 text-center">
+                            <p class="text-gray-400 font-bold">No SEO opportunities identified in the last cycle.</p>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<%- include('../../partials/footer') %>
