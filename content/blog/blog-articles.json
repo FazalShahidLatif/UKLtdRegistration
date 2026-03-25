@@ -159,7 +159,6 @@
       "title": "Closing a UK Company: Strike-Off vs. Liquidation",
       "category": "Compliance",
       "excerpt": "Managing the corporate lifecycle. Whether you are shifting strategy or exiting, ensure your dissolution is clean and compliant.",
-      "readTime": 8
     },
     {
       "id": 18,
@@ -167,6 +166,66 @@
       "title": "The UK-UAE Gateway: Strategic Guide for Gulf Entrepreneurs",
       "category": "International",
       "excerpt": "Prestige, banking, and European market access. Why UK companies are the top choice for founders in Dubai, Riyadh, and Abu Dhabi.",
+      "readTime": 7
+    },
+    {
+      "id": 19,
+      "slug": "remote-uk-company-registration-ireland",
+      "title": "How to Register a UK LTD from Ireland: The 2026 Remote Guide",
+      "metaTitle": "Register UK Company from Ireland 2026 | Step-by-Step Guide",
+      "metaDescription": "Learn how to register a UK Limited Company from Ireland in 2026. Fully remote process, London addresses, and digital identity verification for Irish founders.",
+      "category": "International",
+      "tags": ["Ireland", "Non-Resident", "Step-by-Step"],
+      "focusKeyword": "register UK company from Ireland",
+      "excerpt": "Expanding across the Irish Sea? We break down the fully digital process for Irish entrepreneurs looking to launch a UK LTD in 2026.",
+      "readTime": 8
+    },
+    {
+      "id": 20,
+      "slug": "banking-for-uk-ltd-owners-ireland",
+      "title": "UK Business Banking for Irish Entrepreneurs: Wise vs. Revolut vs. Traditional",
+      "metaTitle": "UK Banking for Irish Founders 2026 | Wise vs Revolut",
+      "metaDescription": "Compare Wise, Revolut, and Payoneer for Irish-owned UK companies. Best banking solutions for remote non-resident directors in 2026.",
+      "category": "Banking",
+      "tags": ["Banking", "Ireland", "FinTech"],
+      "focusKeyword": "UK banking for Ireland entrepreneurs",
+      "excerpt": "High-street or FinTech? We compare the best GBP account options for Irish directors running UK Limited companies.",
+      "readTime": 7
+    },
+    {
+      "id": 21,
+      "slug": "uk-tax-compliance-non-resident-ireland",
+      "title": "UK Tax Compliance for Irish Founders: A Non-Resident Guide (2026)",
+      "metaTitle": "UK Tax for Irish Owners 2026 | Corporation Tax & VAT Guide",
+      "metaDescription": "Essential tax guide for Irish-owned UK companies. Corporation Tax rates, VAT thresholds (£90k), and the UK-Ireland Double Taxation Agreement.",
+      "category": "Tax & Finance",
+      "tags": ["Tax", "Compliance", "Ireland"],
+      "focusKeyword": "UK tax for non-resident Ireland",
+      "excerpt": "Navigating the dual-tax environment between Ireland and the UK. What every Irish founder needs to know about HMRC compliance.",
+      "readTime": 9
+    },
+    {
+      "id": 22,
+      "slug": "required-documents-uk-ltd-ireland",
+      "title": "The Ultimate 2026 Documentation Checklist for UK Company Formation",
+      "metaTitle": "UK Company Formation Documents 2026 Checklist | Ireland",
+      "metaDescription": "Everything Irish founders need to register a UK LTD in 2026. IDs, proof of address, Articles of Association, and identity verification rules.",
+      "category": "Company Formation",
+      "tags": ["Documentation", "Checklist", "Ireland"],
+      "focusKeyword": "UK company formation documents Ireland",
+      "excerpt": "Don't let paperwork hold you back. Our 2026 checklist ensures your formation is approved on the first attempt.",
+      "readTime": 6
+    },
+    {
+      "id": 23,
+      "slug": "why-irish-entrepreneurs-choose-uk-ltd",
+      "title": "Why Irish Entrepreneurs are Choosing UK LTDs over Irish DACs in 2026",
+      "metaTitle": "UK LTD vs Irish DAC 2026 | Benefits for Entrepreneurs",
+      "metaDescription": "Why Irish founders prefer UK companies for speed, prestige, and market access. Comparing UK Ltd vs Irish Designated Activity Companies.",
+      "category": "Business Strategy",
+      "tags": ["Strategic", "Choice", "Ireland"],
+      "focusKeyword": "UK LTD vs Irish DAC",
+      "excerpt": "From faster formation to London prestige, we explore why the UK LTD is the strategic vehicle of choice for Irish startups.",
       "readTime": 7
     }
   ],
