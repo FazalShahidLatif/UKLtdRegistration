@@ -65,6 +65,45 @@
                     prose-strong:text-gray-900 prose-strong:font-black
                     prose-blockquote:border-l-4 prose-blockquote:border-blue-600 prose-blockquote:bg-gray-50 prose-blockquote:p-8 prose-blockquote:rounded-3xl prose-blockquote:not-italic
                     prose-li:text-gray-600">
+                    
+                    <% if (article.atAGlance) { %>
+                        <div class="not-prose mb-16 p-8 md:p-10 bg-blue-50/50 rounded-[2.5rem] border border-blue-100 shadow-sm relative overflow-hidden group">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-blue-100/50 rounded-full -mr-16 -mt-16 blur-2xl"></div>
+                            <h3 class="text-xl font-black text-gray-900 mb-8 flex items-center tracking-tight">
+                                <span class="w-8 h-8 bg-blue-600 text-white rounded-xl flex items-center justify-center mr-4 text-sm shadow-lg shadow-blue-200">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </span>
+                                At a Glance
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12">
+                                <% if (article.atAGlance.requirements) { %>
+                                    <div class="flex flex-col">
+                                        <span class="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">Key Requirements</span>
+                                        <p class="text-gray-600 font-bold text-sm leading-relaxed"><%= article.atAGlance.requirements %></p>
+                                    </div>
+                                <% } %>
+                                <% if (article.atAGlance.costs) { %>
+                                    <div class="flex flex-col">
+                                        <span class="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">Typical Costs</span>
+                                        <p class="text-gray-600 font-bold text-sm leading-relaxed"><%= article.atAGlance.costs %></p>
+                                    </div>
+                                <% } %>
+                                <% if (article.atAGlance.banking) { %>
+                                    <div class="flex flex-col">
+                                        <span class="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">Banking Options</span>
+                                        <p class="text-gray-600 font-bold text-sm leading-relaxed"><%= article.atAGlance.banking %></p>
+                                    </div>
+                                <% } %>
+                                <% if (article.atAGlance.timeline) { %>
+                                    <div class="flex flex-col">
+                                        <span class="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">Formation Timeline</span>
+                                        <p class="text-gray-600 font-bold text-sm leading-relaxed"><%= article.atAGlance.timeline %></p>
+                                    </div>
+                                <% } %>
+                            </div>
+                        </div>
+                    <% } %>
+
                     <%- content %>
                 </div>
 
@@ -104,7 +143,7 @@
                     </ul>
 
                     <a href="/pricing" class="block w-full text-center bg-blue-600 text-white py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-blue-700 transition shadow-xl shadow-blue-200">
-                        Start Formation
+                        <%= article.tags && article.tags.includes('SEA') ? 'View Remote Packages' : 'Start Formation' %>
                     </a>
                 </div>
 

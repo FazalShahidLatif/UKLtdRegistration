@@ -228,6 +228,160 @@
       "focusKeyword": "UK LTD vs Irish DAC",
       "excerpt": "From faster formation to London prestige, we explore why the UK LTD is the strategic vehicle of choice for Irish startups.",
       "readTime": 7
+    },
+    {
+      "id": 24,
+      "slug": "sea-founders-uk-playbook-2026",
+      "title": "The 2026 SEA Founder’s Playbook for Using a UK Company",
+      "metaTitle": "2026 SEA Founder's Playbook: UK Ltd Registration | Guide",
+      "metaDescription": "The definitive 2026 guide for Southeast Asian founders using UK companies to go global. remote verification, cross-border payments, and tax separation.",
+      "category": "International",
+      "tags": ["SEA", "Global Strategy", "Playbook", "Step-by-Step"],
+      "focusKeyword": "UK Ltd for SEA founders",
+      "excerpt": "A flagship guide for founders in Singapore, Malaysia, Vietnam, and beyond. How to leverage a UK Ltd for global trade while operating from Southeast Asia.",
+      "readTime": 18,
+      "atAGlance": {
+        "requirements": "Digital Passport, Proof of Address (Remote)",
+        "costs": "£100 - £250 (Inclusive of Address)",
+        "banking": "Wise, Payoneer, Mercury",
+        "timeline": "12-24 Hours Approval"
+      }
+    },
+    {
+      "id": 25,
+      "slug": "why-sea-founders-use-uk-ltd-global-2026",
+      "title": "Why Southeast Asian Founders Use UK Ltd Companies to Go Global in 2026",
+      "category": "Business Strategy",
+      "tags": ["SEA", "Strategy", "Global Expansion"],
+      "excerpt": "Learn why founders in Singapore, Malaysia, and Vietnam are choosing UK vehicles to access US and EU markets with ease in 2026.",
+      "readTime": 10
+    },
+    {
+      "id": 26,
+      "slug": "uk-ltd-vs-local-company-sea-startups",
+      "title": "UK Ltd vs Local Company: When an SEA Startup Should Incorporate in the UK",
+      "category": "Business Strategy",
+      "tags": ["Comparison", "SEA", "Incorporation"],
+      "excerpt": "Detailed comparison of UK Ltd vs local entities in Singapore, Malaysia, and Vietnam. Tax, banking, and global credibility factors.",
+      "readTime": 11
+    },
+    {
+      "id": 27,
+      "slug": "stripe-wise-mercury-setup-sea-founders",
+      "title": "Opening Stripe, Wise and Mercury as a Southeast Asia Founder (2026 Guide)",
+      "category": "Banking",
+      "tags": ["Banking", "Stripe", "Wise", "Mercury", "SEA"],
+      "excerpt": "Practical setup guide for digital payments. How to secure international payment gateways for your UK Ltd from anywhere in SEA.",
+      "readTime": 12
+    },
+    {
+      "id": 28,
+      "slug": "best-banking-payments-setup-sea-founders",
+      "title": "Best Banking and Payment Setup for Southeast Asia Founders with a UK Ltd",
+      "category": "Banking",
+      "tags": ["Banking", "Finance", "SEA"],
+      "excerpt": "A deep dive into FX fees, cross-border transfers, and the best bank accounts for non-resident SEA directors.",
+      "readTime": 9
+    },
+    {
+      "id": 29,
+      "slug": "get-paid-gbp-usd-eur-sea-founders",
+      "title": "Getting Paid in GBP, USD and EUR from Southeast Asia using a UK Ltd",
+      "category": "Banking",
+      "tags": ["Payments", "Global Sales", "SEA"],
+      "excerpt": "How to structure your SaaS or agency for international revenue collection with minimal friction.",
+      "readTime": 8
+    },
+    {
+      "id": 30,
+      "slug": "uk-ltd-tax-basics-sea-founders",
+      "title": "Do Southeast Asia Founders Pay Tax Twice with a UK Company? Tax Basics",
+      "category": "Tax & Finance",
+      "tags": ["Tax", "Compliance", "SEA"],
+      "excerpt": "Tax separation and double taxation agreements explained for Singapore, Malaysia, and Indonesia founders.",
+      "readTime": 10
+    },
+    {
+      "id": 31,
+      "slug": "eccta-2026-acsp-verification-sea-founders",
+      "title": "ECCTA 2026 and ACSP Verification Explained for Non-Resident SEA Founders",
+      "category": "Compliance",
+      "tags": ["Compliance", "Verification", "SEA"],
+      "excerpt": "The new verification rules for 2026. How SEA directors can comply with UK identity checks remotely.",
+      "readTime": 9
+    },
+    {
+      "id": 32,
+      "slug": "register-uk-ltd-online-singapore-2026",
+      "title": "How Singapore Founders Can Register a UK Ltd Online in 2026",
+      "category": "Pillar",
+      "tags": ["Singapore", "SEA", "How-to"],
+      "focusKeyword": "register UK Ltd Singapore",
+      "excerpt": "Step-by-step for Singapore entrepreneurs. Costs, banking, and remote registration requirements.",
+      "readTime": 8,
+      "atAGlance": {
+        "requirements": "Passport, Digital ID",
+        "costs": "£100 - £250",
+        "banking": "Wise, StraitsX Integration",
+        "timeline": "Same Day Available"
+      }
+    },
+    {
+      "id": 33,
+      "slug": "register-uk-ltd-online-malaysia-2026",
+      "title": "How Malaysia Founders Can Register a UK Ltd Online in 2026",
+      "category": "Pillar",
+      "tags": ["Malaysia", "SEA", "How-to"],
+      "focusKeyword": "register UK Ltd Malaysia",
+      "excerpt": "Guide for Malaysian entrepreneurs looking to expand to global markets via a UK entity.",
+      "readTime": 8
+    },
+    {
+      "id": 34,
+      "slug": "register-uk-ltd-online-vietnam-2026",
+      "title": "How Vietnam Founders Can Register a UK Ltd Online in 2026",
+      "category": "Pillar",
+      "tags": ["Vietnam", "SEA", "How-to"],
+      "focusKeyword": "register UK Ltd Vietnam",
+      "excerpt": "Empowering Vietnamese tech startups with UK formation, banking, and worldwide payments.",
+      "readTime": 8
+    },
+    {
+      "id": 35,
+      "slug": "register-uk-ltd-online-indonesia-2026",
+      "title": "How Indonesia Founders Can Register a UK Ltd Online in 2026",
+      "category": "Pillar",
+      "tags": ["Indonesia", "SEA", "How-to"],
+      "focusKeyword": "register UK Ltd Indonesia",
+      "excerpt": "Digital registration for Indonesian founders. Avoid local FX friction with a GBP business hub.",
+      "readTime": 8
+    },
+    {
+      "id": 36,
+      "slug": "register-uk-ltd-online-thailand-2026",
+      "title": "How Thailand Founders Can Register a UK Ltd Online in 2026",
+      "category": "Pillar",
+      "tags": ["Thailand", "SEA", "How-to"],
+      "excerpt": "Bridging the gap for Thai creators and agencies selling into US and European markets.",
+      "readTime": 8
+    },
+    {
+      "id": 37,
+      "slug": "register-uk-ltd-online-philippines-2026",
+      "title": "How Philippines Founders Can Register a UK Ltd Online in 2026",
+      "category": "Pillar",
+      "tags": ["Philippines", "SEA", "How-to"],
+      "excerpt": "Seamless UK incorporation for Filipino virtual assistants and remote agency owners.",
+      "readTime": 8
+    },
+    {
+      "id": 38,
+      "slug": "register-uk-ltd-online-india-pakistan-2026",
+      "title": "How India & Pakistan Founders Can Register a UK Ltd Online in 2026",
+      "category": "Pillar",
+      "tags": ["India", "Pakistan", "How-to"],
+      "excerpt": "Global market access for South Asian hub founders. Solving payment and credibility hurdles.",
+      "readTime": 8
     }
   ],
   "seoStrategy": {

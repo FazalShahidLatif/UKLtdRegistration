@@ -61,3 +61,24 @@ exports.show = (req, res) => {
         res.status(500).render('pages/error', { title: 'Error', error });
     }
 };
+
+exports.seaCollection = (req, res) => {
+    try {
+        const data = JSON.parse(fs.readFileSync(articlesPath, 'utf8'));
+        const allArticles = [...(data.articles || []), ...(data.newArticles || [])];
+        
+        // Filter for SEA related articles
+        const seaArticles = allArticles.filter(a => 
+            a.tags && (a.tags.includes('SEA') || a.tags.includes('Singapore') || a.tags.includes('Malaysia') || a.tags.includes('Vietnam') || a.tags.includes('Indonesia') || a.tags.includes('Thailand') || a.tags.includes('Philippines') || a.tags.includes('India') || a.tags.includes('Pakistan'))
+        );
+
+        res.render('pages/blog-sea', {
+            title: 'Southeast Asia Founders Hub - UK Company Formation',
+            metaDescription: 'Complete guide for founders in Singapore, Malaysia, Vietnam, and Indonesia using UK companies to go global.',
+            articles: seaArticles
+        });
+    } catch (error) {
+        console.error('SEA Collection error:', error);
+        res.status(500).render('pages/error', { title: 'Error', error });
+    }
+};
