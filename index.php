@@ -1,4 +1,4 @@
-<?php
+cal_days_in_month<?php
 /**
  * UK LTD Registration - Status Page
  * This page is shown if the Node.js application is starting or temporarily unavailable.
