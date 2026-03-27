@@ -10,5 +10,41 @@
     {
         "from": "/frequently-asked-questions",
         "to": "/faq"
+    },
+    {
+        "from": "/uk-ltd-formation-for-non-residents/",
+        "to": "/knowledge-hub/non-resident-guide"
+    },
+    {
+        "from": "/uk-ltd-formation-for-non-residents-complete-guide/",
+        "to": "/knowledge-hub/non-resident-guide"
+    },
+    {
+        "from": "/uk-company-formation-complete-guide-2026/",
+        "to": "/blog/uk-company-formation-complete-guide-2026"
+    },
+    {
+        "from": "/can-a-non-resident-register-a-uk-limited-company/",
+        "to": "/knowledge-hub/non-resident-guide"
+    },
+    {
+        "from": "/do-i-need-a-uk-address-to-form-a-uk-ltd-everything-you-need-to-know/",
+        "to": "/knowledge-hub/registered-office-rules"
+    },
+    {
+        "from": "/wise-vs-uk-banks-non-residents/",
+        "to": "/blog/wise-vs-uk-banks-non-residents"
+    },
+    {
+        "from": "/get-help-forming-a-uk-ltd/",
+        "to": "/contact"
+    },
+    {
+        "from": "/uk-ltd-registration-for-secure-banking/",
+        "to": "/services/banking"
+    },
+    {
+        "from": "/uk-tax-basics-for-non-residents-with-a-uk-limited-company/",
+        "to": "/knowledge-hub/tax-obligations"
     }
 ]
