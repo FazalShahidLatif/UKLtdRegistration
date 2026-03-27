@@ -11,7 +11,7 @@ UK LTD Registration ("we," "us," or "our") is committed to protecting your priva
 
 **Data Controller:**
 UK LTD Registration  
-Email: privacy@ukltdregistration.com  
+Email: support@ukltdregistration.com  
 ICO Registration Number: [TO BE OBTAINED]
 
 ---
@@ -201,7 +201,7 @@ You have the right to:
 **Complain:** Contact ICO if dissatisfied  
 
 **Exercise Your Rights:**
-Email: privacy@ukltdregistration.com  
+Email: support@ukltdregistration.com  
 Response time: 30 days maximum
 
 ---
@@ -277,7 +277,7 @@ Email: dpo@ukltdregistration.com
 Address: [Registered Office Address]
 
 **General Inquiries:**  
-Email: privacy@ukltdregistration.com  
+Email: support@ukltdregistration.com  
 Phone: +44 (0) 20 XXXX XXXX
 
 **Supervisory Authority:**  
