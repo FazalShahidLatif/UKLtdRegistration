@@ -4,12 +4,25 @@
 <main class="py-24 bg-gray-50/50">
     <div class="container mx-auto px-4">
         <!-- Page Header -->
-        <div class="text-center mb-20">
-            <h1 class="text-5xl font-black text-gray-900 mb-6 tracking-tight">Transparent Pricing, No Hidden Fees</h1>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Every package includes the mandatory <span class="font-bold text-gray-900 underline decoration-blue-500 underline-offset-4">&pound;100 Companies House filing fee</span>. 
-                What you see is what you pay.
-            </p>
+        <div class="flex flex-col md:flex-row items-center justify-between mb-20 gap-12">
+            <div class="text-center md:text-left md:w-1/2">
+                <h1 class="text-5xl font-black text-gray-900 mb-6 tracking-tight">Transparent Pricing, No Hidden Fees</h1>
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    Every package includes the mandatory <span class="font-bold text-gray-900 underline decoration-blue-500 underline-offset-4">&pound;100 Companies House filing fee</span>. 
+                    What you see is what you pay.
+                </p>
+            </div>
+            <div class="w-full md:w-1/2">
+                <div class="rounded-[2rem] overflow-hidden shadow-2xl relative">
+                    <div class="absolute inset-0 bg-brand-blue/10 mix-blend-overlay z-10 pointer-events-none"></div>
+                    <% const heroPricing = "/images/hero-pricing"; %>
+                    <picture>
+                        <source srcset="<%= heroPricing %>-1200.avif 1200w, <%= heroPricing %>-800.avif 800w, <%= heroPricing %>-400.avif 400w" type="image/avif" sizes="(max-width: 1024px) 100vw, 50vw">
+                        <source srcset="<%= heroPricing %>-1200.webp 1200w, <%= heroPricing %>-800.webp 800w, <%= heroPricing %>-400.webp 400w" type="image/webp" sizes="(max-width: 1024px) 100vw, 50vw">
+                        <img src="/images/hero-pricing.jpg" alt="Transparent UK Company Pricing" class="w-full h-auto object-cover max-h-[300px]" fetchpriority="high">
+                    </picture>
+                </div>
+            </div>
         </div>
 
         <!-- Trust Bar -->

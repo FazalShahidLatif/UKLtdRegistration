@@ -3,18 +3,31 @@
 
 <main class="bg-gray-50/50">
     <!-- Hero -->
-    <section class="bg-white py-24 border-b border-gray-100">
+    <section class="bg-white py-24 border-b border-gray-100 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="max-w-3xl">
-                <div class="inline-flex items-center space-x-2 px-4 py-2 bg-blue-50 border border-blue-100 rounded-full mb-8">
-                    <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    <span class="text-[10px] font-black uppercase tracking-widest text-brand-blue">International Founders</span>
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="max-w-3xl lg:w-1/2">
+                    <div class="inline-flex items-center space-x-2 px-4 py-2 bg-blue-50 border border-blue-100 rounded-full mb-8">
+                        <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span class="text-[10px] font-black uppercase tracking-widest text-brand-blue">International Founders</span>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-black text-gray-900 tracking-tighter leading-tight mb-6">Register a UK Ltd From Anywhere in the World.</h1>
+                    <p class="text-xl text-gray-500 font-medium leading-relaxed mb-10">Any nationality, any country. You don't need to be a UK resident to own a UK Limited Company. Our fully-managed service handles the compliance complexities for you.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="/pricing" class="btn-primary">View Global Packages</a>
+                        <a href="/knowledge-hub/non-resident-guide" class="px-10 py-5 border border-gray-100 rounded-2xl font-black text-xs uppercase tracking-widest text-gray-700 hover:bg-gray-50 transition shadow-sm">Read the Guide</a>
+                    </div>
                 </div>
-                <h1 class="text-5xl md:text-7xl font-black text-gray-900 tracking-tighter leading-tight mb-6">Register a UK Ltd From Anywhere in the World.</h1>
-                <p class="text-xl text-gray-500 font-medium leading-relaxed mb-10">Any nationality, any country. You don't need to be a UK resident to own a UK Limited Company. Our fully-managed service handles the compliance complexities for you.</p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="/pricing" class="btn-primary">View Global Packages</a>
-                    <a href="/knowledge-hub/non-resident-guide" class="px-10 py-5 border border-gray-100 rounded-2xl font-black text-xs uppercase tracking-widest text-gray-700 hover:bg-gray-50 transition shadow-sm">Read the Non-Resident Guide</a>
+                <div class="lg:w-1/2 w-full mt-10 lg:mt-0">
+                    <div class="rounded-[2.5rem] overflow-hidden shadow-2xl relative rotate-1 hover:rotate-0 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-brand-blue/10 mix-blend-overlay z-10 pointer-events-none"></div>
+                        <% const heroUs = "/images/hero-us"; %>
+                        <picture>
+                            <source srcset="<%= heroUs %>-1200.avif 1200w, <%= heroUs %>-800.avif 800w, <%= heroUs %>-400.avif 400w" type="image/avif" sizes="(max-width: 1024px) 100vw, 50vw">
+                            <source srcset="<%= heroUs %>-1200.webp 1200w, <%= heroUs %>-800.webp 800w, <%= heroUs %>-400.webp 400w" type="image/webp" sizes="(max-width: 1024px) 100vw, 50vw">
+                            <img src="/images/hero-us.jpg" alt="International UK Company Formation" class="w-full h-auto object-cover" fetchpriority="high">
+                        </picture>
+                    </div>
                 </div>
             </div>
         </div>

@@ -3,18 +3,32 @@
 
 <main class="bg-gray-50/50">
     <!-- Hero -->
-    <section class="bg-white py-24 border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="max-w-3xl">
-                <div class="inline-flex items-center space-x-2 px-4 py-2 bg-blue-50 border border-blue-100 rounded-full mb-8">
-                    <svg class="w-4 h-4 text-brand-blue" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
-                    <span class="text-[10px] font-black uppercase tracking-widest text-brand-blue">UK Residents</span>
+    <section class="bg-white py-24 border-b border-gray-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="max-w-2xl lg:w-1/2">
+                    <div class="inline-flex items-center space-x-2 px-4 py-2 bg-blue-50 border border-blue-100 rounded-full mb-8">
+                        <svg class="w-4 h-4 text-brand-blue" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+                        <span class="text-[10px] font-black uppercase tracking-widest text-brand-blue">UK Residents</span>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-black text-gray-900 tracking-tighter leading-tight mb-6">Register Your UK Ltd Company — Fast.</h1>
+                    <p class="text-xl text-gray-500 font-medium leading-relaxed mb-10">As a UK resident, you're in the fastest lane to incorporation. 100% online. Same-day processing. The mandatory £100 Companies House fee is included in every package.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="/pricing" class="btn-primary">View Packages</a>
+                        <a href="/knowledge-hub" class="px-10 py-5 border border-gray-100 rounded-2xl font-black text-xs uppercase tracking-widest text-gray-700 hover:bg-gray-50 transition shadow-sm">Read Our Guides</a>
+                    </div>
                 </div>
-                <h1 class="text-5xl md:text-7xl font-black text-gray-900 tracking-tighter leading-tight mb-6">Register Your UK Ltd Company — Fast.</h1>
-                <p class="text-xl text-gray-500 font-medium leading-relaxed mb-10">As a UK resident, you're in the fastest lane to incorporation. 100% online. Same-day processing. The mandatory £100 Companies House fee is included in every package.</p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="/pricing" class="btn-primary">View Packages</a>
-                    <a href="/knowledge-hub" class="px-10 py-5 border border-gray-100 rounded-2xl font-black text-xs uppercase tracking-widest text-gray-700 hover:bg-gray-50 transition shadow-sm">Read Our Guides</a>
+                
+                <div class="w-full lg:w-1/2 mt-10 lg:mt-0">
+                    <div class="rounded-[2.5rem] overflow-hidden shadow-2xl relative rotate-1 hover:rotate-0 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-brand-blue/10 mix-blend-overlay z-10 pointer-events-none"></div>
+                        <% const heroUk = "/images/hero-uk"; %>
+                        <picture>
+                            <source srcset="<%= heroUk %>-1200.avif 1200w, <%= heroUk %>-800.avif 800w, <%= heroUk %>-400.avif 400w" type="image/avif" sizes="(max-width: 1024px) 100vw, 50vw">
+                            <source srcset="<%= heroUk %>-1200.webp 1200w, <%= heroUk %>-800.webp 800w, <%= heroUk %>-400.webp 400w" type="image/webp" sizes="(max-width: 1024px) 100vw, 50vw">
+                            <img src="/images/hero-uk.jpg" alt="UK Residents Formation" class="w-full h-auto object-cover" fetchpriority="high">
+                        </picture>
+                    </div>
                 </div>
             </div>
         </div>

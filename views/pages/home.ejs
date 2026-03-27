@@ -37,6 +37,17 @@
                 <a href="/knowledge-hub" class="px-10 py-5 bg-white text-gray-900 border border-gray-100 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-gray-50 transition shadow-sm">Whitepapers & Hub</a>
             </div>
 
+            <!-- Hero Image -->
+            <div class="max-w-6xl mx-auto mb-20 rounded-[2.5rem] overflow-hidden shadow-2xl relative">
+                <div class="absolute inset-0 bg-brand-blue/10 mix-blend-overlay z-10 pointer-events-none"></div>
+                <% const heroHome = "/images/hero-home"; %>
+                <picture>
+                    <source srcset="<%= heroHome %>-1200.avif 1200w, <%= heroHome %>-800.avif 800w, <%= heroHome %>-400.avif 400w" type="image/avif" sizes="100vw">
+                    <source srcset="<%= heroHome %>-1200.webp 1200w, <%= heroHome %>-800.webp 800w, <%= heroHome %>-400.webp 400w" type="image/webp" sizes="100vw">
+                    <img src="/images/hero-home.jpg" alt="Global UK Business Expansion" class="w-full h-[300px] md:h-[550px] object-cover" fetchpriority="high">
+                </picture>
+            </div>
+
             <!-- Partner Logos & Trust Signals -->
             <div class="max-w-5xl mx-auto mt-20 pt-20 border-t border-gray-100">
                 <p class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 mb-12">Official Integration & Banking Partners</p>
