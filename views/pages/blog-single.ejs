@@ -70,11 +70,14 @@
                 <!-- Article Body -->
                 <div class="prose prose-xl prose-slate max-w-none 
                     prose-headings:font-black prose-headings:tracking-tight prose-headings:text-gray-900
-                    prose-h2:text-4xl prose-h2:mt-16 prose-h2:mb-8
-                    prose-p:text-gray-600 prose-p:leading-[1.8]
+                    prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-6
+                    prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-4
+                    prose-p:text-gray-600 prose-p:leading-[1.9] prose-p:mb-8
                     prose-strong:text-gray-900 prose-strong:font-black
-                    prose-blockquote:border-l-4 prose-blockquote:border-blue-600 prose-blockquote:bg-gray-50 prose-blockquote:p-8 prose-blockquote:rounded-3xl prose-blockquote:not-italic
-                    prose-li:text-gray-600">
+                    prose-ul:space-y-3 prose-li:text-gray-600 prose-li:marker:text-blue-500
+                    prose-a:text-blue-600 prose-a:font-bold prose-a:no-underline hover:prose-a:underline
+                    prose-blockquote:not-italic prose-blockquote:border prose-blockquote:border-blue-100 prose-blockquote:bg-blue-50/50 prose-blockquote:p-8 prose-blockquote:rounded-[2rem] prose-blockquote:shadow-sm prose-blockquote:mt-10 prose-blockquote:mb-10 
+                    [&_blockquote_strong]:block [&_blockquote_strong]:text-[11px] [&_blockquote_strong]:text-blue-700 [&_blockquote_strong]:uppercase [&_blockquote_strong]:tracking-[0.15em] [&_blockquote_strong]:mb-4">
                     
                     <% if (article.atAGlance) { %>
                         <div class="not-prose mb-16 p-8 md:p-10 bg-blue-50/50 rounded-[2.5rem] border border-blue-100 shadow-sm relative overflow-hidden group">
