@@ -51,10 +51,24 @@
                 <p class="text-gray-600 leading-relaxed">We share your data with <strong>Companies House</strong> (required for incorporation), identity verification partners, and our secure payment processor. We do not sell your data to third parties.</p>
             </section>
 
-            <section class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm">
+            <section class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md">
                 <h2 class="text-2xl font-black text-gray-900 mb-4">6. Your Rights</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">Under UK GDPR, you have the right to access, correct, or delete your personal data. You may also object to processing or request data portability. To exercise these rights, contact us at:</p>
-                <a href="mailto:info@ukltdregistration.com" class="text-brand-blue font-bold hover:underline">info@ukltdregistration.com</a>
+                <p class="text-gray-600 leading-relaxed mb-4">Under UK GDPR, you have the following rights:</p>
+                <div class="grid md:grid-cols-2 gap-4 mb-6">
+                    <% ['Right to Access', 'Right to Rectification', 'Right to Erasure (subject to AML laws)', 'Right to Restrict Processing', 'Right to Data Portability', 'Right to Object'].forEach(right => { %>
+                    <div class="p-4 bg-gray-50 rounded-xl text-sm font-bold text-gray-700 flex items-center space-x-2">
+                        <div class="w-1.5 h-1.5 bg-brand-blue rounded-full"></div>
+                        <span><%= right %></span>
+                    </div>
+                    <% }); %>
+                </div>
+                <p class="text-gray-600 leading-relaxed mb-4">To exercise these rights, please contact us at:</p>
+                <a href="mailto:privacy@ukltdregistration.com" class="text-brand-blue font-bold hover:underline">privacy@ukltdregistration.com</a>
+            </section>
+
+            <section class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md">
+                <h2 class="text-2xl font-black text-gray-900 mb-4">7. Data Retention</h2>
+                <p class="text-gray-600 leading-relaxed">We retain your data for as long as necessary to fulfill the purposes outlined in this policy or to comply with statutory legal requirements. Specifically, <strong>AML records must be kept for a minimum of 5 years</strong> after the end of the business relationship under UK Money Laundering Regulations.</p>
             </section>
 
             <section class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm">

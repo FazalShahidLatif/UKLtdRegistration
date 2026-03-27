@@ -138,4 +138,18 @@ router.get('/legal/cookies', (req, res) => {
     });
 });
 
+router.get('/legal/refund', (req, res) => {
+    res.render('pages/legal/refund', {
+        title: 'Refund Policy | UK Ltd Registration',
+        metaDescription: 'Our transparent refund policy, including non-refundable HMRC fees and cancellation timeframes.'
+    });
+});
+
+router.get('/legal/compliance', (req, res) => {
+    res.render('pages/legal/compliance', {
+        title: 'GDPR & Compliance | UK Ltd Registration',
+        metaDescription: 'Our commitment to UK GDPR and Anti-Money Laundering (AML) regulatory compliance.'
+    });
+});
+
 module.exports = router;
