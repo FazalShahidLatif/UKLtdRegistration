@@ -8,8 +8,8 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     res.render('pages/home', {
-        title: 'UK Company Formation 2026 | Register UK Ltd from £119.99 | Updated Fees',
-        metaDescription: 'Professional UK Limited Company Formation from £119.99. Register your UK Ltd company in 24-48 hours. Updated 2026 fees (£100 Companies House). Non-resident friendly.',
+        title: 'UK Company Formation 2026 | Register a UK Limited Company Online | Non-Resident Specialists',
+        metaDescription: 'Expert UK company formation services from £119.99. Fast UK Ltd registration for international founders, US citizens, & UK residents. Includes Companies House fees, London virtual office, & business banking support.',
         packages: [
             {
                 id: 'starter',

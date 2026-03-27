@@ -28,6 +28,7 @@ const authRoutes = require('./routes/auth');
 const apiRoutes = require('./routes/api');
 const hubRoutes = require('./routes/hub');
 const adminRoutes = require('./routes/admin');
+const sitemapRoute = require('./routes/sitemap');
 const redirectsMiddleware = require('./middleware/redirects');
 const { initSEOScheduler } = require('./cron/seo-scheduler');
 const { displayDate } = require('./utils/view-helpers');
@@ -101,6 +102,9 @@ app.use((req, res, next) => {
 
 // 301 Redirects Middleware
 app.use(redirectsMiddleware);
+
+// Search Engine Sitemap Route
+app.use('/', sitemapRoute);
 
 // Routes
 app.use('/', homeRoutes);

@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Prevent indexing of specific app features
+Disallow: /admin/
+Disallow: /auth/
+Disallow: /checkout/
+Disallow: /api/
+
+# Specify Sitemap location
+Sitemap: https://ukltdregistration.com/sitemap.xml
