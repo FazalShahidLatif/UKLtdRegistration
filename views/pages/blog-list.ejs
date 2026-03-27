@@ -20,7 +20,15 @@
                         <!-- Image Container -->
                         <div class="relative h-64 overflow-hidden">
                             <% if (article.image) { %>
-                                <img src="<%= article.image %>" alt="<%= article.title %>" class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-110 transition duration-700">
+                                <% const imageName = article.image.split('.').slice(0, -1).join('.'); %>
+                                <picture>
+                                    <source srcset="<%= imageName %>.avif" type="image/avif">
+                                    <source srcset="<%= imageName %>.webp" type="image/webp">
+                                    <img src="<%= article.image %>" 
+                                         alt="<%= article.title %>" 
+                                         loading="lazy"
+                                         class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-110 transition duration-700">
+                                </picture>
                             <% } else { %>
                                 <div class="w-full h-full bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center">
                                     <span class="text-4xl font-black text-blue-200 uppercase tracking-widest">LTD</span>
@@ -39,7 +47,7 @@
                             <div class="flex items-center space-x-3 mb-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
                                 <span>8 MIN READ</span>
                                 <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
-                                <span><%= new Date(article.publishedAt || article.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) %></span>
+                                <span><%= displayDate(article.publishedAt || article.date) %></span>
                             </div>
                             
                             <h2 class="text-2xl font-black text-gray-900 mb-4 leading-snug group-hover:text-blue-600 transition-colors">

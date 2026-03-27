@@ -24,7 +24,7 @@
                         <%= article.category %>
                     </span>
                     <span class="text-gray-500 text-[10px] font-black uppercase tracking-widest">
-                        <%= new Date(article.publishedAt || article.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) %>
+                        <%= displayDate(article.publishedAt || article.date) %>
                     </span>
                 </div>
 
@@ -53,7 +53,17 @@
                 <% if (article.image) { %>
                     <div class="mb-16 -mt-36 relative z-20 group">
                         <div class="absolute inset-0 bg-blue-600 rounded-[3rem] blur-3xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
-                        <img src="<%= article.image %>" alt="<%= article.title %>" class="w-full h-auto rounded-[3rem] shadow-2xl relative border-8 border-white/5 object-cover">
+                        <% const imageName = article.image.split('.').slice(0, -1).join('.'); %>
+                        <picture>
+                            <source srcset="<%= imageName %>-1200.avif 1200w, <%= imageName %>-800.avif 800w, <%= imageName %>-400.avif 400w" sizes="(max-width: 1200px) 100vw, 1200px" type="image/avif">
+                            <source srcset="<%= imageName %>-1200.webp 1200w, <%= imageName %>-800.webp 800w, <%= imageName %>-400.webp 400w" sizes="(max-width: 1200px) 100vw, 1200px" type="image/webp">
+                            <img src="<%= article.image %>" 
+                                 alt="<%= article.title %>" 
+                                 fetchpriority="high"
+                                 srcset="<%= imageName %>-1200.jpg 1200w, <%= imageName %>-800.jpg 800w, <%= imageName %>-400.jpg 400w"
+                                 sizes="(max-width: 1200px) 100vw, 1200px"
+                                 class="w-full h-auto rounded-[3rem] shadow-2xl relative border-8 border-white/5 object-cover">
+                        </picture>
                     </div>
                 <% } %>
 

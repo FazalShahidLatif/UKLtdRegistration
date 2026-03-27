@@ -30,6 +30,7 @@ const hubRoutes = require('./routes/hub');
 const adminRoutes = require('./routes/admin');
 const redirectsMiddleware = require('./middleware/redirects');
 const { initSEOScheduler } = require('./cron/seo-scheduler');
+const { displayDate } = require('./utils/view-helpers');
 
 // Initialize Express app
 const app = express();
@@ -94,6 +95,7 @@ app.use((req, res, next) => {
     res.locals.currentYear = new Date().getFullYear();
     res.locals.user = req.session.user || null;
     res.locals.currentPath = req.path;
+    res.locals.displayDate = displayDate;
     next();
 });
 

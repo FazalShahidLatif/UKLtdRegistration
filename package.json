@@ -9,7 +9,8 @@
     "audit": "npm audit fix",
     "audit-force": "npm audit fix --force",
     "build": "npm run build:css",
-    "build:css": "tailwindcss -i ./public/css/input.css -o ./public/css/output.css --minify"
+    "build:css": "tailwindcss -i ./public/css/input.css -o ./public/css/output.css --minify",
+    "optimize": "node scripts/optimize-images.js"
   },
   "keywords": [
     "uk-company-formation",
