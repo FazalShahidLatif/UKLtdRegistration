@@ -62,15 +62,49 @@ router.get('/company-search', (req, res) => {
     });
 });
 
-// Mock SIC Finder
+const fs = require('fs');
+const path = require('path');
+
+// Load and parse SIC Codes
+let sicCodesCache = [];
+try {
+    const sicDataPath = path.join(__dirname, '../data/sic_codes.txt');
+    const rawData = fs.readFileSync(sicDataPath, 'utf8');
+    const lines = rawData.split('\n');
+    let currentItem = null;
+    
+    for (let line of lines) {
+        line = line.trim();
+        if (!line || line === 'List of SIC codes' || line === 'SIC CODE DESCRIPTION') continue;
+        
+        const match = line.match(/^([0-9]{4,5})\s+(.+)$/);
+        if (match) {
+            if (currentItem) sicCodesCache.push(currentItem);
+            currentItem = { code: match[1], description: match[2].trim() };
+        } else if (currentItem) {
+            currentItem.description += ' ' + line;
+        }
+    }
+    if (currentItem) sicCodesCache.push(currentItem);
+    console.log(`Loaded ${sicCodesCache.length} SIC Codes.`);
+} catch (err) {
+    console.error('Failed to load SIC Codes:', err);
+}
+
+// SIC Finder Endpoint
 router.get('/sic-finder', (req, res) => {
-    const { q } = req.query;
+    const q = (req.query.q || '').toLowerCase();
+    
+    let results = sicCodesCache;
+    if (q) {
+        results = sicCodesCache.filter(item => 
+            item.code.includes(q) || item.description.toLowerCase().includes(q)
+        );
+    }
+    
+    // Return max 50 results
     res.json({
-        results: [
-            { code: '62012', description: 'Business and domestic software development' },
-            { code: '70229', description: 'Management consultancy activities other than financial management' },
-            { code: '82990', description: 'Other business support service activities n.e.c.' }
-        ]
+        results: results.slice(0, 50)
     });
 });
 
