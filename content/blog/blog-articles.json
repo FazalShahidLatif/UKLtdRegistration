@@ -13,6 +13,8 @@
       "tags": ["USA", "Non-Resident", "International", "Step-by-Step"],
       "focusKeyword": "register UK company from USA",
       "excerpt": "Can US Citizens Register a UK Company? Starting a UK company from the United States has never been easier. Learn how to manage your legal requirements and company details with our expert formation agents.",
+      "image": "/images/blog/uk-company-usa-pillar.png",
+      "imageAlt": "Modern New York office workspace with a laptop showing UK company registration certificate",
       "readTime": 12
     },
     {
@@ -24,7 +26,9 @@
       "category": "Company Formation",
       "focusKeyword": "UK company formation non resident",
       "excerpt": "A master guide to the 2026 UK formation landscape specifically for global founders. Secure your company formation with a professional registered office address today.",
-      "readTime": 15
+      "readTime": 15,
+      "image": "/images/blog_uk_formation_guide_2026.png",
+      "imageAlt": "Official UK Company Formation Guide 2026 with legal documents and digital identity verification context"
     },
     {
       "id": 3,
@@ -35,7 +39,9 @@
       "category": "Business Strategy",
       "focusKeyword": "UK Ltd vs US LLC",
       "excerpt": "Deciding between a British Ltd and an American LLC? We compare tax efficiency, shielding, and global prestige in the 2026 climate.",
-      "readTime": 10
+      "readTime": 10,
+      "image": "/images/blog_ukltd_vs_usllc_comparison.png",
+      "imageAlt": "Comparison of UK Limited Company and US LLC business structures with global prestige factors"
     },
     {
       "id": 4,
@@ -57,7 +63,9 @@
       "category": "Banking",
       "focusKeyword": "Wise vs UK banks non-residents",
       "excerpt": "The banking gap is wider than ever. We stack the new FinTech titans against the traditional High Street giants for non-resident directors.",
-      "readTime": 8
+      "readTime": 8,
+      "image": "/images/blog_wise_vs_ukbanks_guide.png",
+      "imageAlt": "Wise and UK Traditional Banking comparison for non-resident company directors"
     },
     {
       "id": 6,
