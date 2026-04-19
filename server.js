@@ -71,7 +71,7 @@ app.use(express.static(path.join(__dirname, 'public'), {
 
 // Session middleware
 app.use(session({
-    secret: process.env.SESSION_SECRET,
+    secret: process.env.SESSION_SECRET || 'ukltd-session-secret-default-2026',
     resave: false,
     saveUninitialized: false,
     store: process.env.MONGODB_URI ? MongoStore.create({
