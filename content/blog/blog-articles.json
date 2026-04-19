@@ -103,6 +103,8 @@
       "title": "Cheapest Way to Register a UK Company in 2026",
       "category": "Pricing",
       "excerpt": "Budgeting for your launch? We show you how to minimize fees while maintaining the professional standards required for 2026 banking.",
+      "image": "/images/hero-pricing.jpg",
+      "imageAlt": "UK Company Formation Cost Breakdown and Transparent Pricing Structure",
       "readTime": 6
     },
     {
@@ -111,6 +113,8 @@
       "title": "UK Registered Office Address Requirements 2026",
       "category": "Compliance",
       "excerpt": "PO Boxes are out. Appropriateness is in. Learn the new 2026 rules for your company's legal headquarters.",
+      "image": "/images/blog_uk_formation_guide_2026.png",
+      "imageAlt": "Official UK Registered Office Address requirements and ACSP compliance context",
       "readTime": 8
     },
     {
@@ -119,6 +123,8 @@
       "title": "VAT Registration Threshold UK 2026",
       "category": "Tax & Finance",
       "excerpt": "The £90,000 question. When must you register, when should you register voluntarily, and how to avoid the 15% late penalty.",
+      "image": "/images/blog_wise_vs_ukbanks_guide.png",
+      "imageAlt": "VAT Registration Threshold 2026 guide for UK Limited Companies",
       "readTime": 7
     },
     {
@@ -143,6 +149,8 @@
       "title": "UK Company Name Rules 2026",
       "category": "Compliance",
       "excerpt": "Banned words, sensitive terms, and trademark traps. How to choose a name that Companies House will actually approve.",
+      "image": "/images/blog_uk_formation_guide_2026.png",
+      "imageAlt": "Guide to legally compliant UK Company Naming rules 2026",
       "readTime": 6
     },
     {
@@ -175,6 +183,8 @@
       "title": "The UK-UAE Gateway: Strategic Guide for Gulf Entrepreneurs",
       "category": "International",
       "excerpt": "Prestige, banking, and European market access. Why UK companies are the top choice for founders in Dubai, Riyadh, and Abu Dhabi.",
+      "image": "/images/hero-uk.jpg",
+      "imageAlt": "UK-UAE Business Gateway for Gulf Entrepreneurs seeking European market access",
       "readTime": 7
     },
     {
@@ -187,6 +197,8 @@
       "tags": ["Ireland", "Non-Resident", "Step-by-Step"],
       "focusKeyword": "register UK company from Ireland",
       "excerpt": "Expanding across the Irish Sea? We break down the fully digital process for Irish entrepreneurs looking to launch a UK LTD in 2026.",
+      "image": "/images/hero-home.jpg",
+      "imageAlt": "Registering a UK Ltd from Ireland: A remote founder's digital guide",
       "readTime": 8
     },
     {
@@ -247,6 +259,8 @@
       "tags": ["SEA", "Global Strategy", "Playbook", "Step-by-Step"],
       "focusKeyword": "UK Ltd for SEA founders",
       "excerpt": "A flagship guide for founders in Singapore, Malaysia, Vietnam, and beyond. How to leverage a UK Ltd for global trade while operating from Southeast Asia.",
+      "image": "/images/hero-uk.jpg",
+      "imageAlt": "Southeast Asia Founders Guide to UK Company Formation and Global Trade",
       "readTime": 18,
       "atAGlance": {
         "requirements": "Digital Passport, Proof of Address (Remote)",
