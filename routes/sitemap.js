@@ -36,7 +36,7 @@ router.get('/sitemap.xml', (req, res) => {
             const blogPath = path.join(__dirname, '../content/blog');
             if (fs.existsSync(blogPath)) {
                 const files = fs.readdirSync(blogPath);
-                articles = files.filter(f => f.endsWith('.md')).map(f => `/knowledge-hub/${f.replace('.md', '')}`);
+                articles = files.filter(f => f.endsWith('.md')).map(f => `/blog/${f.replace('.md', '')}`);
             }
         } catch (e) {
             console.error('Error reading blog directory for sitemap:', e);

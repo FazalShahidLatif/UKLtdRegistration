@@ -31,5 +31,17 @@ module.exports = (req, res, next) => {
         console.error('Error in redirects middleware:', error);
     }
 
+    // 3. Knowledge Hub -> Blog Redirects (SEO Recovery)
+    if (urlPath.startsWith('/knowledge-hub/')) {
+        const slug = urlPath.replace('/knowledge-hub/', '');
+        const blogMdPath = path.join(__dirname, `../content/blog/${slug}.md`);
+        
+        // If it exists in the blog directory, redirect to /blog/
+        if (fs.existsSync(blogMdPath)) {
+            const queryString = Object.keys(query).length > 0 ? '?' + new URLSearchParams(query).toString() : '';
+            return res.redirect(301, `/blog/${slug}${queryString}`);
+        }
+    }
+
     next();
 };

@@ -83,6 +83,14 @@ router.get('/us-citizens', (req, res) => {
     });
 });
 
+// Non-Residents SEO Page
+router.get('/uk-ltd-formation-for-non-residents', (req, res) => {
+    res.render('pages/non-residents', {
+        title: 'Register UK Private Limited Company as Non-Resident | 2026 Guide',
+        metaDescription: 'Establish your business in the UK from anywhere in the world. Secure a London registered office address, open a UK business bank account, and register for VAT/Tax remotely. Fast 24h approval.'
+    });
+});
+
 // About page
 router.get('/about', (req, res) => {
     res.render('pages/about', {
