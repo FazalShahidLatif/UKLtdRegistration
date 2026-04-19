@@ -124,6 +124,15 @@ router.get('/partners', (req, res) => {
 });
 
 
+// Success Stories page
+router.get('/success-stories', (req, res) => {
+    res.render('pages/success-stories', {
+        title: 'Global Success Stories | Pakistani Founders Going Global',
+        metaDescription: 'Read how Pakistani entrepreneurs, freelancers, and traders are using UK Limited companies to overcome local limitations and reach global markets.'
+    });
+});
+
+
 // Legal Pages
 router.get('/legal/privacy', (req, res) => {
     res.render('pages/legal/privacy', {
