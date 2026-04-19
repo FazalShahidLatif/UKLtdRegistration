@@ -14,11 +14,36 @@
         "width": 192,
         "height": 192
       },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+92-332-213-7898",
+          "contactType": "customer support",
+          "areaServed": "PK",
+          "availableLanguage": ["English", "Urdu"]
+        }
+      ],
       "sameAs": [
         "https://twitter.com/ukltdreg",
         "https://facebook.com/ukltdreg",
         "https://linkedin.com/company/ukltdreg"
       ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "<%= siteUrl %>/#localbusiness",
+      "name": "<%= siteName %> Pakistan",
+      "image": "<%= siteUrl %>/images/og-image.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "26/792 Cantt Bazar Drigh Road",
+        "addressLocality": "Karachi",
+        "postalCode": "75350",
+        "addressCountry": "PK"
+      },
+      "telephone": "+92 332 213 7898",
+      "url": "<%= siteUrl %>",
+      "priceRange": "$$"
     },
     {
       "@type": "WebSite",
@@ -44,9 +69,69 @@
         "@id": "<%= siteUrl %>/#website"
       },
       "breadcrumb": {
-        "@id": "<%= siteUrl %><%= currentPath %>#breadcrumb"
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "<%= siteUrl %>"
+          },
+          <% if (currentPath !== '/') { %>
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "<%= title %>",
+            "item": "<%= siteUrl %><%= currentPath %>"
+          }
+          <% } %>
+        ]
       }
     }
+    <% if (typeof article !== 'undefined' && article) { %>
+    ,{
+      "@type": "BlogPosting",
+      "headline": "<%= article.title %>",
+      "description": "<%= article.metaDescription || article.excerpt %>",
+      "image": "<%= siteUrl %><%= article.image %>",
+      "author": {
+        "@type": "Organization",
+        "name": "<%= siteName %>"
+      },
+      "publisher": {
+        "@id": "<%= siteUrl %>/#organization"
+      },
+      "datePublished": "<%= article.publishedDate %>",
+      "dateModified": "<%= article.updatedDate || article.publishedDate %>",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "<%= siteUrl %><%= currentPath %>"
+      }
+    }
+    <% } %>
+    <% if (currentPath === '/faq') { %>
+    ,{
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can a non-resident register a UK company?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, anyone of any nationality can register a UK Limited Company, provided they have a UK registered office address."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to visit the UK to open a business bank account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, digital banks like Wise, Revolut, and Tide allow remote account opening for non-residents."
+          }
+        }
+      ]
+    }
+    <% } %>
   ]
 }
 </script>

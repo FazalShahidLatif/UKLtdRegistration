@@ -50,11 +50,17 @@ exports.show = (req, res) => {
             content = marked.parse(rawMd);
         }
 
+        // Find related articles (same category, different slug)
+        const relatedArticles = allArticles
+            .filter(a => a.category === article.category && a.slug !== slug)
+            .slice(0, 3);
+
         res.render('pages/blog-single', {
             title: article.title,
-            metaDescription: article.description,
+            metaDescription: article.metaDescription || article.excerpt,
             article: article,
-            content: content
+            content: content,
+            relatedArticles: relatedArticles
         });
     } catch (error) {
         console.error('Blog show error:', error);

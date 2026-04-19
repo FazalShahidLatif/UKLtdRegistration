@@ -120,6 +120,32 @@
                     <%- content %>
                 </div>
 
+                <!-- Content Clustering: Related Guides -->
+                <% if (typeof relatedArticles !== 'undefined' && relatedArticles.length > 0) { %>
+                <div class="mt-32 pt-20 border-t border-gray-100">
+                    <div class="flex items-center justify-between mb-12">
+                        <div>
+                            <p class="text-[10px] font-black text-brand-blue uppercase tracking-[0.2em] mb-2">Deep Dive</p>
+                            <h3 class="text-3xl font-black text-gray-900 tracking-tight">More in <%= article.category %></h3>
+                        </div>
+                        <a href="/knowledge-hub" class="text-xs font-black text-gray-400 hover:text-gray-900 transition-colors uppercase tracking-widest border-b-2 border-transparent hover:border-gray-900 pb-1">View All Hub</a>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <% relatedArticles.forEach(rel => { %>
+                            <a href="/blog/<%= rel.slug %>" class="group block p-6 rounded-[2rem] bg-gray-50 hover:bg-white border border-transparent hover:border-gray-100 hover:shadow-xl transition-all duration-300">
+                                <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-3 group-hover:text-blue-600 transition-colors">8 MIN READ</p>
+                                <h4 class="text-lg font-black text-gray-900 leading-snug group-hover:text-blue-600 transition-colors"><%= rel.title %></h4>
+                                <div class="mt-6 inline-flex items-center text-xs font-black text-gray-400 group-hover:text-gray-900 uppercase tracking-widest">
+                                    Read Guide
+                                    <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                </div>
+                            </a>
+                        <% }) %>
+                    </div>
+                </div>
+                <% } %>
+
                 <!-- Strategic Advice Component -->
                 <div class="mt-20 p-10 bg-gradient-to-br from-gray-900 to-blue-900 rounded-[3rem] text-white relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>

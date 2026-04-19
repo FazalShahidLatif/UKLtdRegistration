@@ -30,16 +30,18 @@ router.get('/sitemap.xml', (req, res) => {
             '/legal/compliance'
         ];
 
-        // Gather all blog articles
+        // Gather all blog articles from the source of truth (JSON)
         let articles = [];
         try {
-            const blogPath = path.join(__dirname, '../content/blog');
-            if (fs.existsSync(blogPath)) {
-                const files = fs.readdirSync(blogPath);
-                articles = files.filter(f => f.endsWith('.md')).map(f => `/blog/${f.replace('.md', '')}`);
+            const blogArticlesPath = path.join(__dirname, '../content/blog/blog-articles.json');
+            if (fs.existsSync(blogArticlesPath)) {
+                const blogData = JSON.parse(fs.readFileSync(blogArticlesPath, 'utf8'));
+                if (blogData && blogData.articles) {
+                    articles = blogData.articles.map(article => `/blog/${article.slug}`);
+                }
             }
         } catch (e) {
-            console.error('Error reading blog directory for sitemap:', e);
+            console.error('Error reading blog articles for sitemap:', e);
         }
 
         const allRoutes = [...staticRoutes, ...articles];
