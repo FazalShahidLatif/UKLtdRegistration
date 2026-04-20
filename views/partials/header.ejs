@@ -8,41 +8,8 @@
     <link rel="apple-touch-icon" href="/images/favicon.png">
     <meta name="theme-color" content="#002b5c">
     <%- include('meta') %>
-    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <link rel="stylesheet" href="/css/output.css">
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-    <script src="https://cdn.tailwindcss.com?plugins=typography,forms"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'brand': {
-                            blue: '#0056b3',
-                            green: '#28a745',
-                            navy: '#002b5c',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style type="text/tailwindcss">
-        @layer components {
-            .glass {
-                @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-xl;
-            }
-            .btn-primary {
-                @apply bg-brand-blue text-white px-8 py-4 rounded-2xl font-black hover:bg-brand-navy transition-all duration-300 shadow-lg shadow-blue-100 active:scale-95;
-            }
-            .btn-success {
-                @apply bg-brand-green text-white px-8 py-4 rounded-2xl font-black hover:opacity-90 transition-all duration-300 shadow-lg shadow-green-100 active:scale-95;
-            }
-        }
-    </style>
 </head>
 <body class="bg-gray-50 font-sans text-gray-900 overflow-x-hidden antialiased">

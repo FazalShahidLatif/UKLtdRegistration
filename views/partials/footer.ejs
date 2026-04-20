@@ -8,8 +8,13 @@
         <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
             <div class="col-span-1 md:col-span-2">
                 <div class="mb-6">
-                    <img src="/images/logo.png" alt="UK LTD Formation"
-                        class="h-10 w-auto brightness-0 invert opacity-90">
+                    <% const logoFooter = "/images/logo"; %>
+                    <picture>
+                        <source srcset="<%= logoFooter %>.avif" type="image/avif">
+                        <source srcset="<%= logoFooter %>.webp" type="image/webp">
+                        <img src="/images/logo.png" alt="UK LTD Formation"
+                            class="h-10 w-auto brightness-0 invert opacity-90">
+                    </picture>
                 </div>
                 <p class="text-gray-400 text-sm font-medium leading-relaxed max-w-sm">The authoritative partner for
                     global founders. 2026-ready, transparency-driven formations.</p>
@@ -166,7 +171,7 @@
 </style>
 
 
-<script src="/js/main.js"></script>
+<script defer src="/js/main.js"></script>
 <%- include('chatbot-widget') %>
     </body>
 
