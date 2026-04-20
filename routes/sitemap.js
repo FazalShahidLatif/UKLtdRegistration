@@ -13,6 +13,7 @@ router.get('/sitemap.xml', (req, res) => {
             '/uk-residents',
             '/us-citizens',
             '/pricing',
+            '/uk-ltd-formation-for-non-residents',
             '/services',
             '/services/virtual-office',
             '/services/meeting-rooms',

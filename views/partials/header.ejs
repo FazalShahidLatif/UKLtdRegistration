@@ -9,6 +9,9 @@
     <meta name="theme-color" content="#002b5c">
     <%- include('meta') %>
     <link rel="stylesheet" href="/css/output.css">
+    <% if (typeof currentPath !== 'undefined' && currentPath === '/') { %>
+        <link rel="preload" as="image" href="/images/hero-home-1200.avif" type="image/avif">
+    <% } %>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
