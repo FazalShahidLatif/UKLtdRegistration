@@ -76,9 +76,9 @@
             "position": 1,
             "name": "Home",
             "item": "<%= siteUrl %>"
-          },
+          }
           <% if (currentPath !== '/') { %>
-          {
+          ,{
             "@type": "ListItem",
             "position": 2,
             "name": "<%= title %>",
@@ -101,8 +101,8 @@
       "publisher": {
         "@id": "<%= siteUrl %>/#organization"
       },
-      "datePublished": "<%= article.publishedDate %>",
-      "dateModified": "<%= article.updatedDate || article.publishedDate %>",
+      "datePublished": "<%= article.publishedDate || '2026-04-27' %>",
+      "dateModified": "<%= article.updatedDate || article.publishedDate || '2026-04-27' %>",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "<%= siteUrl %><%= currentPath %>"
@@ -161,6 +161,26 @@
           }
         }
       ]
+    }
+    <% } %>
+    <% if (currentPath === '/') { %>
+    ,{
+      "@type": "VideoObject",
+      "name": "How to Register a UK Limited Company as a Non-Resident (2026 Guide)",
+      "description": "Watch our complete walkthrough on forming a UK Limited Company, setting up a registered office, and opening a business bank account remotely for global founders.",
+      "thumbnailUrl": [
+        "https://img.youtube.com/vi/e6D8na1vAm8/maxresdefault.jpg",
+        "https://img.youtube.com/vi/e6D8na1vAm8/sddefault.jpg",
+        "https://img.youtube.com/vi/e6D8na1vAm8/hqdefault.jpg"
+      ],
+      "uploadDate": "2026-02-15T08:00:00+00:00",
+      "duration": "PT5M30S",
+      "embedUrl": "https://www.youtube.com/embed/e6D8na1vAm8",
+      "interactionStatistic": {
+        "@type": "InteractionCounter",
+        "interactionType": { "@type": "WatchAction" },
+        "userInteractionCount": 1250
+      }
     }
     <% } %>
   ]
