@@ -56,6 +56,68 @@
                     </div>
                 </div>
 
+                <!-- High-Profit Industry Presets -->
+                <div class="bg-indigo-50/50 rounded-[2.5rem] p-10 border border-indigo-100/50">
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="w-12 h-12 bg-slate-900 rounded-2xl flex items-center justify-center text-white">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Global Opportunity Presets</h2>
+                            <p class="text-sm text-indigo-600 font-black uppercase tracking-widest">High-Profit Industrial Niches</p>
+                        </div>
+                    </div>
+
+                    <p class="text-slate-600 text-sm font-medium mb-8 leading-relaxed">Global founders often overlook these complex but highly lucrative industries. Use these verified SIC codes to position your UK company for high-ticket tenders and international trade.</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Preset 1 -->
+                        <button onclick="applySicPreset('46711', 'Industrial Lubricants')" class="p-5 bg-white rounded-2xl border border-indigo-100 flex items-center justify-between hover:shadow-lg hover:border-indigo-400 transition-all group">
+                            <div class="text-left">
+                                <span class="block text-[10px] font-black text-indigo-500 uppercase tracking-widest mb-1">Energy & Tendering</span>
+                                <span class="block text-sm font-bold text-slate-900">Industrial Lubricants</span>
+                            </div>
+                            <div class="bg-indigo-50 px-3 py-1 rounded-lg text-indigo-600 font-black text-xs">46711</div>
+                        </button>
+
+                        <!-- Preset 2 -->
+                        <button onclick="applySicPreset('46520', 'GPS & GPRS Tech')" class="p-5 bg-white rounded-2xl border border-indigo-100 flex items-center justify-between hover:shadow-lg hover:border-indigo-400 transition-all group">
+                            <div class="text-left">
+                                <span class="block text-[10px] font-black text-blue-500 uppercase tracking-widest mb-1">Military & Tech</span>
+                                <span class="block text-sm font-bold text-slate-900">GPS/GPRS Technology</span>
+                            </div>
+                            <div class="bg-blue-50 px-3 py-1 rounded-lg text-blue-600 font-black text-xs">46520</div>
+                        </button>
+
+                        <!-- Preset 3 -->
+                        <button onclick="applySicPreset('46630', 'Heavy Machinery')" class="p-5 bg-white rounded-2xl border border-indigo-100 flex items-center justify-between hover:shadow-lg hover:border-indigo-400 transition-all group">
+                            <div class="text-left">
+                                <span class="block text-[10px] font-black text-amber-600 uppercase tracking-widest mb-1">Construction</span>
+                                <span class="block text-sm font-bold text-slate-900">Refurbished Machinery</span>
+                            </div>
+                            <div class="bg-amber-50 px-3 py-1 rounded-lg text-amber-600 font-black text-xs">46630</div>
+                        </button>
+
+                        <!-- Preset 4 -->
+                        <button onclick="applySicPreset('45112', 'Salvage Cars')" class="p-5 bg-white rounded-2xl border border-indigo-100 flex items-center justify-between hover:shadow-lg hover:border-indigo-400 transition-all group">
+                            <div class="text-left">
+                                <span class="block text-[10px] font-black text-red-500 uppercase tracking-widest mb-1">Dubai Corridor</span>
+                                <span class="block text-sm font-bold text-slate-900">Damaged/Salvage Cars</span>
+                            </div>
+                            <div class="bg-red-50 px-1 py-1 rounded-lg text-red-600 font-black text-xs">45112</div>
+                        </button>
+
+                        <!-- Preset 5 -->
+                        <button onclick="applySicPreset('46370', 'Coffee & Spices')" class="p-5 bg-white rounded-2xl border border-indigo-100 flex items-center justify-between hover:shadow-lg hover:border-indigo-400 transition-all group">
+                            <div class="text-left">
+                                <span class="block text-[10px] font-black text-emerald-600 uppercase tracking-widest mb-1">Global Agri-Trade</span>
+                                <span class="block text-sm font-bold text-slate-900">Coffee, Meat, Seafood</span>
+                            </div>
+                            <div class="bg-emerald-50 px-3 py-1 rounded-lg text-emerald-600 font-black text-xs">46370</div>
+                        </button>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Right Column: Sidebar -->
@@ -74,6 +136,8 @@
                     <p class="text-slate-500 text-sm mb-8 font-medium">If you've verified your name and SIC code, you are ready to register your company today.</p>
                     <a href="/pricing" class="block w-full bg-indigo-600 text-white text-center py-4 rounded-2xl font-black shadow-xl shadow-indigo-100 hover:bg-indigo-700 transition">Get Started Now</a>
                 </div>
+            </div>
+
             </div>
         </div>
     </div>
@@ -143,6 +207,12 @@ async function findSicCodes() {
 function copySic(code) {
     navigator.clipboard.writeText(code);
     alert('SIC Code ' + code + ' copied to clipboard!');
+}
+
+function applySicPreset(code, label) {
+    const input = document.getElementById('sicSearchInput');
+    input.value = label;
+    findSicCodes();
 }
 </script>
 
