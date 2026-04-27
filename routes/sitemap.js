@@ -23,6 +23,10 @@ router.get('/sitemap.xml', (req, res) => {
             '/faq',
             '/contact',
             '/knowledge-hub',
+            '/blog',
+            '/blog/southeast-asia-founders',
+            '/strategic-research-hub',
+            '/success-stories',
             '/partners',
             '/legal/privacy',
             '/legal/terms',
@@ -37,8 +41,9 @@ router.get('/sitemap.xml', (req, res) => {
             const blogArticlesPath = path.join(__dirname, '../content/blog/blog-articles.json');
             if (fs.existsSync(blogArticlesPath)) {
                 const blogData = JSON.parse(fs.readFileSync(blogArticlesPath, 'utf8'));
-                if (blogData && blogData.articles) {
-                    articles = blogData.articles.map(article => `/blog/${article.slug}`);
+                const combinedArticles = [...(blogData.articles || []), ...(blogData.newArticles || [])];
+                if (combinedArticles.length > 0) {
+                    articles = combinedArticles.map(article => `/blog/${article.slug}`);
                 }
             }
         } catch (e) {
@@ -56,7 +61,8 @@ router.get('/sitemap.xml', (req, res) => {
             try {
                 const blogArticlesPath = path.join(__dirname, '../content/blog/blog-articles.json');
                 const blogData = JSON.parse(fs.readFileSync(blogArticlesPath, 'utf8'));
-                return blogData.articles.find(a => `/blog/${a.slug}` === slug);
+                const combinedArticles = [...(blogData.articles || []), ...(blogData.newArticles || [])];
+                return combinedArticles.find(a => `/blog/${a.slug}` === slug);
             } catch (e) { return null; }
         };
 

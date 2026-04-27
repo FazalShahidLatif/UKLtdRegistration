@@ -6,6 +6,11 @@ Disallow: /admin/
 Disallow: /auth/
 Disallow: /checkout/
 Disallow: /api/
+Disallow: /dashboard/
+
+# Optimize for crawl budget
+Disallow: /*?* # Disallow URLs with query parameters (prevent duplicate content)
+Allow: /blog/*?* # Allow query parameters for blog (if used for pagination/sorting)
 
 # Specify Sitemap location
 Sitemap: https://ukltdregistration.com/sitemap.xml
