@@ -599,6 +599,66 @@
       "image": "/images/blog_uk_formation_guide_2026.png",
       "imageAlt": "Agricultural and food export compliance guide for the European market",
       "readTime": 9
+    },
+    {
+      "id": 55,
+      "slug": "global-food-export-guide-coffee-meat-seafood-uk-ltd",
+      "title": "The Global Food Exporter's Roadmap: Exporting Coffee, Meat, and Seafood via a UK Hub",
+      "category": "Pillar",
+      "tags": ["Coffee", "Meat", "Seafood", "Export"],
+      "focusKeyword": "global food export UK company",
+      "excerpt": "Learn how to use a UK hub to scale your coffee, meat, and seafood export business to the USA and European markets.",
+      "image": "/images/hero-uk.jpg",
+      "imageAlt": "Global food export roadmap for coffee, meat, and seafood suppliers",
+      "readTime": 15
+    },
+    {
+      "id": 56,
+      "slug": "exporting-premium-coffee-to-uk-usa-market-guide",
+      "title": "From Farm to Cup: Scaling Your Coffee Brand in the UK and USA via a London Entity",
+      "category": "International",
+      "tags": ["Coffee", "Export", "UK Market"],
+      "focusKeyword": "export coffee to UK and USA",
+      "excerpt": "A strategic guide for coffee producers to establish a direct-to-consumer presence in the UK and USA using a London hub.",
+      "image": "/images/hero-home.jpg",
+      "imageAlt": "Premium coffee export from farm to global cup via UK hub",
+      "readTime": 10
+    },
+    {
+      "id": 57,
+      "slug": "meat-and-poultry-export-regulations-uk-eu-guide",
+      "title": "Navigating UK and EU Meat Export Regulations: The UK Ltd Advantage",
+      "category": "Compliance",
+      "tags": ["Meat", "Export", "Regulations"],
+      "focusKeyword": "meat export regulations UK and EU",
+      "excerpt": "How a UK Limited Company simplifies the complex health and safety compliance required for meat exports to Europe.",
+      "image": "/images/blog_uk_formation_guide_2026.png",
+      "imageAlt": "Meat and poultry export compliance guide for UK and EU markets",
+      "readTime": 12
+    },
+    {
+      "id": 58,
+      "slug": "seafood-export-strategies-global-markets-uk-ltd",
+      "title": "Seafood Exports Reimagined: How Global Suppliers Use UK Hubs for EU Distribution",
+      "category": "Business Strategy",
+      "tags": ["Seafood", "Export", "EU Market"],
+      "focusKeyword": "seafood export strategies EU",
+      "excerpt": "Boost your seafood export margins by using a UK-based distribution company for faster logistics and payments in Europe.",
+      "image": "/images/blog/sialkot-safety-wear.png",
+      "imageAlt": "Modern seafood production and distribution hub for the European market",
+      "readTime": 9
+    },
+    {
+      "id": 59,
+      "slug": "sic-codes-food-beverage-exporters-compliance-guide",
+      "title": "Essential SIC Codes for Food & Beverage Exporters: Ensuring Compliance and Banking Success",
+      "category": "Compliance",
+      "tags": ["SIC Codes", "Food", "Banking"],
+      "focusKeyword": "SIC codes for food exporters",
+      "excerpt": "The ultimate guide to selecting the correct industrial codes for your food and beverage export business to secure UK banking.",
+      "image": "/images/blog_uk_formation_guide_2026.png",
+      "imageAlt": "UK SIC code guide for food and beverage exporters",
+      "readTime": 8
     }
   ],
   "seoStrategy": {
