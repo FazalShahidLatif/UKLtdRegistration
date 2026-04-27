@@ -132,6 +132,37 @@
       ]
     }
     <% } %>
+    <% if (currentPath === '/uk-ltd-formation-for-non-residents') { %>
+    ,{
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How to open a company in the UK as a non-resident?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non-residents can open a UK company by using an authorized formation agent. You will need to provide basic company details, appoint directors and shareholders (no UK residency required), and have a UK registered office address."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the legal requirements for a UK non-resident company?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Legal requirements include a unique company name, at least one director, at least one shareholder, a UK registered office address, and declaring any person with significant control (PSC) to Companies House."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I open a UK business bank account from abroad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, while traditional high street banks may have stricter requirements, many UK based digital banking platforms specialized for businesses allow non-residents to open accounts remotely."
+          }
+        }
+      ]
+    }
+    <% } %>
   ]
 }
 </script>
