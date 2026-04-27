@@ -49,11 +49,19 @@ router.get('/sitemap.xml', (req, res) => {
         const today = new Date().toISOString().split('T')[0];
 
         let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-        xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+        xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n';
+
+        // Helper to find article metadata
+        const getArticleData = (slug) => {
+            try {
+                const blogArticlesPath = path.join(__dirname, '../content/blog/blog-articles.json');
+                const blogData = JSON.parse(fs.readFileSync(blogArticlesPath, 'utf8'));
+                return blogData.articles.find(a => `/blog/${a.slug}` === slug);
+            } catch (e) { return null; }
+        };
 
         allRoutes.forEach(route => {
-            // Give homepage highest priority
-            const priority = route === '/' ? '1.0' : (route.includes('/knowledge-hub/') ? '0.7' : '0.8');
+            const priority = route === '/' ? '1.0' : (route.includes('/blog/') ? '0.7' : '0.8');
             const changefreq = route === '/' ? 'daily' : 'weekly';
             
             xml += '  <url>\n';
@@ -61,6 +69,20 @@ router.get('/sitemap.xml', (req, res) => {
             xml += `    <lastmod>${today}</lastmod>\n`;
             xml += `    <changefreq>${changefreq}</changefreq>\n`;
             xml += `    <priority>${priority}</priority>\n`;
+
+            // Add image metadata for blog articles
+            if (route.startsWith('/blog/')) {
+                const article = getArticleData(route);
+                if (article && article.image) {
+                    xml += '    <image:image>\n';
+                    xml += `      <image:loc>${rootUrl}${article.image}</image:loc>\n`;
+                    if (article.imageAlt) {
+                        xml += `      <image:caption>${article.imageAlt}</image:caption>\n`;
+                    }
+                    xml += '    </image:image>\n';
+                }
+            }
+
             xml += '  </url>\n';
         });
 
