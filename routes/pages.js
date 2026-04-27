@@ -169,4 +169,11 @@ router.get('/legal/compliance', (req, res) => {
     });
 });
 
+router.get('/strategic-research-hub', (req, res) => {
+    res.render('pages/research-hub', {
+        title: 'Strategic Research Hub | UK SIC & Name Checker',
+        metaDescription: 'Verify your company name and find the correct SIC codes with our strategic research tools.'
+    });
+});
+
 module.exports = router;

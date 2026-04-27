@@ -19,6 +19,10 @@ const morgan = require('morgan');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
 const mongoose = require('mongoose');
+const passport = require('passport');
+
+// Load passport config
+require('./config/passport');
 
 // Import routes
 const homeRoutes = require('./routes/home');
@@ -87,6 +91,10 @@ app.use(session({
     },
 }));
 
+// Initialize Passport
+app.use(passport.initialize());
+app.use(passport.session());
+
 // View engine setup
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -96,7 +104,7 @@ app.use((req, res, next) => {
     res.locals.siteName = 'UK Ltd Registration';
     res.locals.siteUrl = process.env.SITE_URL || 'https://ukltdregistration.com';
     res.locals.currentYear = new Date().getFullYear();
-    res.locals.user = req.session.user || null;
+    res.locals.user = req.user || null;
     res.locals.currentPath = req.path;
     res.locals.displayDate = displayDate;
     next();
@@ -135,12 +143,11 @@ app.use((err, req, res, next) => {
     });
 });
 
-// Database connection (if using MongoDB)
-if (process.env.MONGODB_URI) {
-    mongoose.connect(process.env.MONGODB_URI)
-        .then(() => console.log('✓ MongoDB connected'))
-        .catch(err => console.error('✗ MongoDB connection error:', err));
-}
+// Database connection
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/ukltd';
+mongoose.connect(MONGODB_URI)
+    .then(() => console.log('✓ MongoDB connected'))
+    .catch(err => console.error('✗ MongoDB connection error:', err));
 
 // Start server
 const server = app.listen(PORT, () => {

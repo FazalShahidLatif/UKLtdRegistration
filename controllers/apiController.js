@@ -58,15 +58,37 @@ exports.companySearch = (req, res) => {
     const apiKey = process.env.COMPANIES_HOUSE_API_KEY;
 
     if (!apiKey) {
-        console.warn('COMPANIES_HOUSE_API_KEY is missing. Falling back to mock results.');
-        // Fallback to mock for development if key is missing
+        console.warn('COMPANIES_HOUSE_API_KEY is missing. Falling back to detailed mock results.');
+        const mockItems = [
+            { 
+                title: q.toUpperCase() + ' LIMITED', 
+                company_number: 'NI' + Math.floor(Math.random() * 900000 + 100000), 
+                company_status: 'active', 
+                date_of_creation: '2022-04-12',
+                address_snippet: '2nd Floor, 123 Business Lane, London, EC1A 1BB',
+                description: 'NI' + Math.floor(Math.random() * 900000 + 100000) + ' - Incorporated on 12 April 2022'
+            },
+            { 
+                title: q.toUpperCase() + ' SOLUTIONS LTD', 
+                company_number: '0' + Math.floor(Math.random() * 90000000 + 10000000), 
+                company_status: 'dissolved', 
+                date_of_creation: '2015-06-15',
+                address_snippet: 'Tech Park, Suite 4, Manchester, M1 1AA',
+                description: '0' + Math.floor(Math.random() * 90000000 + 10000000) + ' - Dissolved on 20 January 2024'
+            },
+            { 
+                title: q.toUpperCase() + ' GROUP HOLDINGS', 
+                company_number: 'SC' + Math.floor(Math.random() * 900000 + 100000), 
+                company_status: 'active', 
+                date_of_creation: '2026-02-01',
+                address_snippet: 'High Street Office, Edinburgh, EH1 1YZ',
+                description: 'SC' + Math.floor(Math.random() * 900000 + 100000) + ' - Incorporated on 1 February 2026'
+            }
+        ];
         return res.json({
             success: true,
             isMock: true,
-            items: [
-                { title: q.toUpperCase() + ' LIMITED', company_number: 'NI' + Math.floor(Math.random() * 900000 + 100000), company_status: 'active', date_of_creation: '2026-01-01' },
-                { title: q.toUpperCase() + ' HOLDINGS LTD', company_number: '0' + Math.floor(Math.random() * 90000000 + 10000000), company_status: 'active', date_of_creation: '2025-06-15' }
-            ]
+            items: mockItems
         });
     }
 
