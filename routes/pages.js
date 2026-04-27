@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // Pricing page
-router.get('/pricing', (req, res) => {
+router.get(['/pricing', '/packages'], (req, res) => {
     res.render('pages/pricing', {
         title: 'Pricing Packages | Simple & Transparent',
         metaDescription: 'Choose the best UK company formation package for your business. All prices include Companies House filing fees.'
