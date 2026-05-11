@@ -1,0 +1,62 @@
+[
+  {
+    "id": "aG93IHRvIH",
+    "task": "Optimize Metadata for \"how to register a company in uk\"",
+    "details": "Rewrite title tag and meta description to improve click-through rate.",
+    "impact": "Mixed",
+    "metrics": "Pos: 19.8 | Imps: 15000 | CTR: 0.50%",
+    "page": "/blog",
+    "query": "how to register a company in uk",
+    "priority": "High",
+    "status": "Pending",
+    "createdAt": "2026-05-11T05:42:27.020Z"
+  },
+  {
+    "id": "Y2hlYXBlc3",
+    "task": "Optimize Metadata for \"cheapest company formation uk\"",
+    "details": "Rewrite title tag and meta description to improve click-through rate.",
+    "impact": "Mixed",
+    "metrics": "Pos: 15.2 | Imps: 8200 | CTR: 0.80%",
+    "page": "/pricing",
+    "query": "cheapest company formation uk",
+    "priority": "High",
+    "status": "Pending",
+    "createdAt": "2026-05-11T05:42:27.021Z"
+  },
+  {
+    "id": "cmVnaXN0ZX",
+    "task": "Optimize Metadata for \"register uk company from usa\"",
+    "details": "Rewrite title tag and meta description to improve click-through rate.",
+    "impact": "Mixed",
+    "metrics": "Pos: 12.5 | Imps: 5400 | CTR: 1.20%",
+    "page": "/us-citizens",
+    "query": "register uk company from usa",
+    "priority": "High",
+    "status": "Pending",
+    "createdAt": "2026-05-11T05:42:27.021Z"
+  },
+  {
+    "id": "dWsgY29tcG",
+    "task": "Optimize Metadata for \"uk company registration for non residents\"",
+    "details": "Rewrite title tag and meta description to improve click-through rate.",
+    "impact": "Mixed",
+    "metrics": "Pos: 9.1 | Imps: 3100 | CTR: 1.80%",
+    "page": "/us-citizens",
+    "query": "uk company registration for non residents",
+    "priority": "High",
+    "status": "Pending",
+    "createdAt": "2026-05-11T05:42:27.021Z"
+  },
+  {
+    "id": "bHRkIGNvbX",
+    "task": "Boost Ranking for \"ltd company formation london\"",
+    "details": "Add internal links from high-authority pages and expand content to push for page 1.",
+    "impact": "Striking Distance",
+    "metrics": "Pos: 8.5 | Imps: 1200 | CTR: 4.50%",
+    "page": "/services/virtual-office",
+    "query": "ltd company formation london",
+    "priority": "Medium",
+    "status": "Pending",
+    "createdAt": "2026-05-11T05:42:27.021Z"
+  }
+]

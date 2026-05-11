@@ -66,9 +66,26 @@ router.get('/sitemap.xml', (req, res) => {
             } catch (e) { return null; }
         };
 
+        // Define high-priority blog slugs for main sitemap
+        const highPrioritySlugs = [
+            'uk-company-formation-complete-guide-2026',
+            'how-to-register-uk-company-from-usa-complete-step-by-step-guide-2026',
+            'sea-founders-uk-playbook-2026',
+            'register-uk-ltd-online-india-pakistan-2026',
+            'pakistan-exporter-guide-leather-textile-uk-ltd',
+            'india-manufacturer-roadmap-usa-europe-uk-ltd',
+            'global-food-export-guide-coffee-meat-seafood-uk-ltd',
+            'global-tendering-guide-uk-ltd-high-ticket-export',
+            'wise-vs-uk-banks-non-residents'
+        ];
+
         allRoutes.forEach(route => {
-            const priority = route === '/' ? '1.0' : (route.includes('/blog/') ? '0.7' : '0.8');
-            const changefreq = route === '/' ? 'daily' : 'weekly';
+            const isBlog = route.includes('/blog/');
+            const slug = isBlog ? route.replace('/blog/', '') : null;
+            const isHighPriority = slug && highPrioritySlugs.includes(slug);
+            
+            const priority = route === '/' ? '1.0' : (isHighPriority ? '0.9' : (isBlog ? '0.7' : '0.8'));
+            const changefreq = (route === '/' || isHighPriority) ? 'daily' : 'weekly';
             
             xml += '  <url>\n';
             xml += `    <loc>${rootUrl}${route}</loc>\n`;
@@ -99,6 +116,54 @@ router.get('/sitemap.xml', (req, res) => {
     } catch (error) {
         console.error('Sitemap generation error:', error);
         res.status(500).send('Error generating sitemap');
+    }
+});
+
+// Priority Sitemap for Top 20 Pages
+router.get('/priority-sitemap.xml', (req, res) => {
+    try {
+        const rootUrl = 'https://ukltdregistration.com';
+        const priorityPages = [
+            '/',
+            '/uk-ltd-formation-for-non-residents',
+            '/services/banking',
+            '/services/accounting',
+            '/services/virtual-office',
+            '/blog/how-to-register-uk-company-from-usa-complete-step-by-step-guide-2026',
+            '/blog/sea-founders-uk-playbook-2026',
+            '/blog/register-uk-ltd-online-india-pakistan-2026',
+            '/blog/pakistan-exporter-guide-leather-textile-uk-ltd',
+            '/blog/india-manufacturer-roadmap-usa-europe-uk-ltd',
+            '/blog/global-food-export-guide-coffee-meat-seafood-uk-ltd',
+            '/blog/global-tendering-guide-uk-ltd-high-ticket-export',
+            '/blog/acsp-identity-verification-2026',
+            '/blog/vat-registration-threshold-uk-2026',
+            '/blog/uk-company-formation-complete-guide-2026',
+            '/blog/wise-vs-uk-banks-non-residents',
+            '/blog/uk-ltd-vs-us-llc',
+            '/blog/uk-company-vs-delaware-c-corp',
+            '/blog/uk-registered-office-address-requirements-2026',
+            '/blog/uk-company-tax-efficiency-non-residents'
+        ];
+
+        const today = new Date().toISOString().split('T')[0];
+        let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+        xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+
+        priorityPages.forEach(route => {
+            xml += '  <url>\n';
+            xml += `    <loc>${rootUrl}${route}</loc>\n`;
+            xml += `    <lastmod>${today}</lastmod>\n`;
+            xml += '    <changefreq>daily</changefreq>\n';
+            xml += '    <priority>1.0</priority>\n';
+            xml += '  </url>\n';
+        });
+
+        xml += '</urlset>';
+        res.header('Content-Type', 'application/xml');
+        res.status(200).send(xml);
+    } catch (error) {
+        res.status(500).send('Error generating priority sitemap');
     }
 });
 
