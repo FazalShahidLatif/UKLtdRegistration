@@ -80,3 +80,46 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// 5. Conversion Tracking Logic
+document.addEventListener('DOMContentLoaded', () => {
+    // Track clicks on elements with data-track attribute
+    document.querySelectorAll('[data-track]').forEach(el => {
+        el.addEventListener('click', () => {
+            const trackId = el.getAttribute('data-track');
+            const label = el.innerText.trim() || trackId;
+            const ctaType = trackId.includes('whatsapp') ? 'WhatsApp Support' : 'Start Formation';
+            
+            // Push to GTM DataLayer
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'cta_click',
+                'cta_type': ctaType,
+                'cta_id': trackId,
+                'cta_label': label,
+                'page_category': window.pageCategory || 'General',
+                'page_path': window.location.pathname
+            });
+            
+            console.log(`GA4 Event: cta_click | Type: ${ctaType} | Category: ${window.pageCategory}`);
+        });
+    });
+
+    // Track Form Submissions (Lead Capture)
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        form.addEventListener('submit', () => {
+            const formType = form.getAttribute('data-form-type') || 'generic_lead';
+            
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'generate_lead',
+                'form_type': formType,
+                'page_category': window.pageCategory || 'General',
+                'page_path': window.location.pathname
+            });
+            
+            console.log(`GA4 Event: generate_lead | Type: ${formType} | Category: ${window.pageCategory}`);
+        });
+    });
+});
