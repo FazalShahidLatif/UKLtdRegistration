@@ -12,6 +12,7 @@ router.get('/sitemap.xml', (req, res) => {
             '/',
             '/uk-residents',
             '/us-citizens',
+            '/get-help-forming-a-uk-ltd',
             '/pricing',
             '/uk-ltd-formation-for-non-residents',
             '/services',
@@ -125,6 +126,7 @@ router.get('/priority-sitemap.xml', (req, res) => {
         const rootUrl = 'https://ukltdregistration.com';
         const priorityPages = [
             '/',
+            '/get-help-forming-a-uk-ltd',
             '/uk-ltd-formation-for-non-residents',
             '/services/banking',
             '/services/accounting',

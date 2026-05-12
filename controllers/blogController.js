@@ -65,7 +65,14 @@ exports.show = (req, res) => {
         let content = article.excerpt;
         
         if (fs.existsSync(mdPath)) {
-            const rawMd = fs.readFileSync(mdPath, 'utf8');
+            let rawMd = fs.readFileSync(mdPath, 'utf8');
+            
+            // Strip YAML frontmatter (between --- delimiters)
+            rawMd = rawMd.replace(/^---[\s\S]*?---\s*\n?/, '');
+            
+            // Strip the first H1 heading to avoid duplicate H1 (template already renders article.title as H1)
+            rawMd = rawMd.replace(/^\s*#\s+.+\n?\n?/, '');
+            
             content = marked.parse(rawMd);
         }
 

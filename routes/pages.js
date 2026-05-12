@@ -78,8 +78,16 @@ router.get('/uk-residents', (req, res) => {
 // US Citizens page
 router.get('/us-citizens', (req, res) => {
     res.render('pages/us-citizens', {
-        title: 'US Citizens & Non-Residents | UK Company Formation',
-        metaDescription: 'Register a UK company from the US or anywhere in the world. Non-resident specialists.'
+        title: 'UK Ltd for Non-Residents & US Citizens | Formation Guide 2026',
+        metaDescription: 'Register a UK Limited Company as a US citizen or non-resident. ACSP-verified formation, Wise banking setup, London registered office, and full compliance support from £119.99.'
+    });
+});
+
+// Forex Trading / Non-Resident Formation Help Page (P1 SEO Priority)
+router.get('/get-help-forming-a-uk-ltd', (req, res) => {
+    res.render('pages/forex-uk-ltd', {
+        title: 'UK Ltd for Non-Residents & Forex Traders | 2026 Formation Review',
+        metaDescription: 'Independent review of UK Ltd formation for non-residents and forex traders. Why prop traders, US citizens, and online entrepreneurs choose a UK Limited Company in 2026.'
     });
 });
 
