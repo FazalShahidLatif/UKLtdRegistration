@@ -100,4 +100,4 @@ If you have no urgent pending contracts, no desperate need to invoice a client t
 
 However, if your business operations are entirely stalled until that incorporation number is produced, paying the £205.99 premium eliminates all stress, uncertainty, and delays. 
 
-[**Fast-Track Your UK Company Today →**](/services/same-day-formation)
+[**Fast-Track Your UK Company Today →**](/pricing)

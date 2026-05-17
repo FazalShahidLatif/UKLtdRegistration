@@ -55,7 +55,7 @@ Suppose a company called **Acme Consulting Ltd** exists. You **cannot** register
 * Acme Consultings Ltd (pluralization doesn't fool the system)
 
 If the core distinctive element of the name is identical to an existing company in the exact same commercial sector, Companies House will block the application. 
-[**Use our Free Name Search Tool to verify your name instantly →**](/tools/company-name-checker)
+[**Use our Free Name Search Tool to verify your name instantly →**](/strategic-research-hub)
 
 ---
 

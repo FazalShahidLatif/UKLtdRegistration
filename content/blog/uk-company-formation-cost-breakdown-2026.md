@@ -132,7 +132,7 @@ Beyond formation, every UK company **must** pay these costs:
 
 **78% of our clients** choose virtual office service to keep their home address private.
 
-[**Get Registered Office from £99/year →**](/services/registered-office)
+[**Get Registered Office from £99/year →**](/services/virtual-office)
 
 ### 2. Accounting & Bookkeeping: £948-3,600/year
 
@@ -189,7 +189,7 @@ These optional (but highly recommended) costs catch most founders by surprise:
 
 **Cost:** £79/year (basic) | £149/year (premium London address)
 
-[**Protect Your Privacy →**](/services/director-service-address)
+[**Protect Your Privacy →**](/services/virtual-office)
 
 ### 2. Business Bank Account: £0-25/month
 
@@ -205,7 +205,7 @@ These optional (but highly recommended) costs catch most founders by surprise:
 
 **💡 Recommended:** [Wise](https://wise.com) for non-residents (free, fast approval)
 
-[**Get Banking Help →**](/services/banking-assistance)
+[**Get Banking Help →**](/services/banking)
 
 ### 3. VAT Registration: £99-299 (if needed)
 
@@ -226,7 +226,7 @@ These optional (but highly recommended) costs catch most founders by surprise:
 
 **We Partner With:** Leading UK business insurers (10-15% commission, no extra cost to you)
 
-[**Get Insurance Quote →**](/services/business-insurance)
+[**Get Insurance Quote →**](/services)
 
 ---
 
