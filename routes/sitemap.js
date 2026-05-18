@@ -143,6 +143,8 @@ router.get('/priority-sitemap.xml', (req, res) => {
         const rootUrl = 'https://ukltdregistration.com';
         const priorityPages = [
             '/',
+            '/services',
+            '/blog/southeast-asia-founders',
             '/get-help-forming-a-uk-ltd',
             '/uk-ltd-formation-for-non-residents',
             '/register-a-limited-company-uk',
