@@ -1,16 +1,12 @@
 User-agent: *
 Allow: /
 
-# Prevent indexing of specific app features
+# Block administrative pathways, checkout, and search query strings
 Disallow: /admin/
-Disallow: /auth/
-Disallow: /checkout/
-Disallow: /api/
-Disallow: /dashboard/
+Disallow: /checkout
+Disallow: /*?*
+Disallow: /*?
 
-# Optimize for crawl budget
-Disallow: /*?* # Disallow URLs with query parameters (prevent duplicate content)
-Allow: /blog/*?* # Allow query parameters for blog (if used for pagination/sorting)
-
-# Specify Sitemap location
+# Reference Active XML Sitemaps
 Sitemap: https://ukltdregistration.com/sitemap.xml
+Sitemap: https://ukltdregistration.com/priority-sitemap.xml

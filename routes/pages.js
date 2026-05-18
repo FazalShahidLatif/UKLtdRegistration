@@ -249,4 +249,47 @@ router.get('/register-company-edinburgh', (req, res) => {
     });
 });
 
+// 6 New Service Pages
+router.get('/registered-office-address', (req, res) => {
+    res.render('pages/services/registered-office-address', {
+        title: 'Registered Office Address UK | Prestigious London Business Address',
+        metaDescription: 'Get a prestigious London registered office address for your UK company from just £49.99/year. Keep your home address private and comply with Companies House.'
+    });
+});
+
+router.get('/company-secretary', (req, res) => {
+    res.render('pages/services/company-secretary', {
+        title: 'Company Secretary Service UK | Managed Corporate Secretary',
+        metaDescription: 'Outsource your corporate compliance with our professional company secretary service in the UK. Comprehensive filing, share management, and legal compliance support.'
+    });
+});
+
+router.get('/vat-registration', (req, res) => {
+    res.render('pages/services/vat-registration', {
+        title: 'VAT Registration UK | Professional Online Filing Service',
+        metaDescription: 'Fast and secure VAT registration service in the UK. Voluntary and mandatory filings for residents and non-residents. Simplify your business tax compliance today.'
+    });
+});
+
+router.get('/confirmation-statement', (req, res) => {
+    res.render('pages/services/confirmation-statement', {
+        title: 'Companies House Confirmation Statement Service | CS01 Filing',
+        metaDescription: 'File your mandatory annual Companies House Confirmation Statement (CS01) easily. Fast processing, statutory fee included, and 100% compliant and secure.'
+    });
+});
+
+router.get('/company-name-check', (req, res) => {
+    res.render('pages/services/company-name-check', {
+        title: 'Check Company Name Availability UK | Free Search & Trademark Tool',
+        metaDescription: 'Verify if your UK company name is available instantly. Check against Companies House registry, sensitive word lists, and trademark databases for free.'
+    });
+});
+
+router.get('/non-uk-resident-company', (req, res) => {
+    res.render('pages/services/non-uk-resident-company', {
+        title: 'Register UK Company as Non-Resident | Remote International Formation',
+        metaDescription: 'Register a limited company in the UK as a non-resident remotely. Fully digital process, prestigious London address, Wise business banking setup, and ECCTA compliant.'
+    });
+});
+
 module.exports = router;
