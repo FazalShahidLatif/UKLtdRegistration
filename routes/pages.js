@@ -184,4 +184,69 @@ router.get('/strategic-research-hub', (req, res) => {
     });
 });
 
+// LTD Company Formation Page (Core Conversion Page)
+router.get('/register-a-limited-company-uk', (req, res) => {
+    res.render('pages/ltd-formation', {
+        title: 'Register a Limited Company UK | Same-Day Online Formation',
+        metaDescription: 'Register a limited company in the UK online with our same-day formation service. 100% online, Companies House approved, with Wise banking setup.'
+    });
+});
+
+// Regional Landing Pages
+router.get('/register-company-england', (req, res) => {
+    res.render('pages/regions/england', {
+        title: 'Register a Company in England | England Limited Company Formation',
+        metaDescription: 'Set up your limited company in England. Fast, reliable same-day online formation. Approved Companies House agent, complete with registered office address options.'
+    });
+});
+
+router.get('/register-company-scotland', (req, res) => {
+    res.render('pages/regions/scotland', {
+        title: 'Register a Company in Scotland | Scottish LTD Company Formation',
+        metaDescription: 'Register your limited company in Scotland online. Fast same-day formation with Companies House, catering to unique Scottish jurisdiction legal requirements.'
+    });
+});
+
+router.get('/register-company-wales', (req, res) => {
+    res.render('pages/regions/wales', {
+        title: 'Register a Company in Wales | Welsh Limited Company Registration',
+        metaDescription: 'Form a limited company in Wales online. Companies House approved same-day registration with bilingual Welsh certificate options.'
+    });
+});
+
+router.get('/register-company-london', (req, res) => {
+    res.render('pages/regions/london', {
+        title: 'Register a Company London | London Limited Company Formation',
+        metaDescription: 'Set up your limited company in London with a prestigious Central London registered office address. Same-day registration and banking support.'
+    });
+});
+
+router.get('/register-company-manchester', (req, res) => {
+    res.render('pages/regions/manchester', {
+        title: 'Company Registration Manchester | Manchester LTD Company Setup',
+        metaDescription: 'Form a limited company in Manchester. Perfect setup for digital, creative, and tech startups in the North. Companies House approved and same-day setup.'
+    });
+});
+
+router.get('/register-company-birmingham', (req, res) => {
+    res.render('pages/regions/birmingham', {
+        title: 'Company Registration Birmingham | Birmingham Company Formation Agent',
+        metaDescription: 'Register a limited company in Birmingham. Fast, professional same-day online setup with active regional support.'
+    });
+});
+
+router.get('/register-company-leeds', (req, res) => {
+    res.render('pages/regions/leeds', {
+        title: 'Company Registration Leeds | Leeds LTD Company Formation',
+        metaDescription: 'Set up your limited company in Leeds. Fast-track online company registration with full banking and VAT support.'
+    });
+});
+
+router.get('/register-company-edinburgh', (req, res) => {
+    res.render('pages/regions/edinburgh', {
+        title: 'Company Registration Edinburgh | Edinburgh Limited Company',
+        metaDescription: 'Register a limited company in Edinburgh. Comprehensive Scottish company formation service, fully remote and online.'
+    });
+});
+
 module.exports = router;
