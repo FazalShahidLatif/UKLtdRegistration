@@ -10,6 +10,15 @@
  */
 
 require('dotenv').config();
+
+// Crash resilience handlers for local development environments
+process.on('uncaughtException', err => {
+    console.error('✗ Uncaught Exception captured:', err.message);
+});
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('✗ Unhandled Rejection captured:', reason);
+});
+
 const express = require('express');
 const path = require('path');
 const helmet = require('helmet');
@@ -50,8 +59,8 @@ app.use(helmet({
             fontSrc: ["'self'", "fonts.gstatic.com"],
             scriptSrc: ["'self'", "'unsafe-inline'"],
             imgSrc: ["'self'", "data:", "https:"],
-            frameSrc: ["'self'", "https://www.youtube.com"],
-            childSrc: ["'self'", "https://www.youtube.com"],
+            frameSrc: ["'self'", "https://www.youtube.com", "https://*.youtube.com", "https://*.youtube-nocookie.com"],
+            childSrc: ["'self'", "https://www.youtube.com", "https://*.youtube.com", "https://*.youtube-nocookie.com"],
         },
     },
 }));
@@ -145,6 +154,9 @@ app.use((err, req, res, next) => {
 
 // Database connection
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/ukltd';
+mongoose.connection.on('error', err => {
+    console.error('✗ Mongoose connection error event:', err.message);
+});
 mongoose.connect(MONGODB_URI)
     .then(() => console.log('✓ MongoDB connected'))
     .catch(err => console.error('✗ MongoDB connection error:', err));
