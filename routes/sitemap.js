@@ -92,7 +92,9 @@ router.get('/sitemap.xml', (req, res) => {
             'india-manufacturer-roadmap-usa-europe-uk-ltd',
             'global-food-export-guide-coffee-meat-seafood-uk-ltd',
             'global-tendering-guide-uk-ltd-high-ticket-export',
-            'wise-vs-uk-banks-non-residents'
+            'wise-vs-uk-banks-non-residents',
+            'revolut-business-vs-wise-business-uk-ltd-2026',
+            'payoneer-business-account-uk-ltd-setup-guide-2026'
         ];
 
         allRoutes.forEach(route => {
@@ -176,7 +178,9 @@ router.get('/priority-sitemap.xml', (req, res) => {
             '/blog/uk-ltd-vs-us-llc',
             '/blog/uk-company-vs-delaware-c-corp',
             '/blog/uk-registered-office-address-requirements-2026',
-            '/blog/uk-company-tax-efficiency-non-residents'
+            '/blog/uk-company-tax-efficiency-non-residents',
+            '/blog/revolut-business-vs-wise-business-uk-ltd-2026',
+            '/blog/payoneer-business-account-uk-ltd-setup-guide-2026'
         ];
 
         const today = new Date().toISOString().split('T')[0];
