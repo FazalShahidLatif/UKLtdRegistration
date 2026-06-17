@@ -1,0 +1,90 @@
+<nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-20">
+            <a href="/" class="flex items-center">
+                <% const logoName = "/images/logo"; %>
+                <picture>
+                    <source srcset="<%= logoName %>.avif" type="image/avif">
+                    <source srcset="<%= logoName %>.webp" type="image/webp">
+                    <img src="/images/logo.png" 
+                         alt="UK LTD Formation" 
+                         class="h-12 w-auto" 
+                         fetchpriority="high"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                </picture>
+                <!-- Fallback text logo if image fails -->
+                <div class="hidden items-center space-x-3">
+                    <div class="w-10 h-10 bg-brand-navy rounded-xl flex items-center justify-center">
+                        <span class="text-brand-gold font-black text-lg">U</span>
+                    </div>
+                    <div class="flex flex-col -space-y-1">
+                        <span class="text-xl font-black text-brand-navy tracking-tighter uppercase">UK<span class="text-brand-blue">LTD</span></span>
+                        <span class="text-[8px] font-black text-gray-400 uppercase tracking-[0.2em]">Formation</span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex ml-10 lg:ml-16 space-x-5 lg:space-x-8 items-center">
+                <a href="/uk-residents" class="text-gray-500 hover:text-brand-blue font-bold text-xs tracking-widest transition-colors uppercase whitespace-nowrap">UK Residents</a>
+                <a href="/us-citizens" class="text-gray-500 hover:text-brand-blue font-bold text-xs tracking-widest transition-colors uppercase whitespace-nowrap">US Citizens</a>
+                <a href="/services" class="text-gray-500 hover:text-brand-blue font-bold text-xs tracking-widest transition-colors uppercase whitespace-nowrap">Services</a>
+
+                <a href="/success-stories" class="text-gray-500 hover:text-brand-blue font-bold text-xs tracking-widest transition-colors uppercase whitespace-nowrap">Success Stories</a>
+                <a href="/about" class="text-gray-500 hover:text-brand-blue font-bold text-xs tracking-widest transition-colors uppercase whitespace-nowrap">About</a>
+
+
+                
+                <% if (user) { %>
+                    <div class="h-8 w-[1px] bg-gray-200"></div>
+                    <% if (user.role === 'admin') { %>
+                        <a href="/admin" class="text-brand-blue hover:text-brand-navy p-2 rounded-xl transition-all" title="Master Control Room">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                        </a>
+                    <% } %>
+                    <a href="/auth/dashboard" class="bg-brand-blue text-white px-6 py-2.5 rounded-xl font-bold hover:bg-brand-navy shadow-lg shadow-blue-50 transition-all">Dashboard</a>
+                    <a href="/auth/logout" class="text-gray-400 hover:text-red-500 transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+                    </a>
+                <% } else { %>
+                    <a href="/auth/login" class="text-gray-500 hover:text-blue-600 font-bold text-sm tracking-wide transition-colors uppercase">Login</a>
+                    <a href="/pricing" class="bg-blue-600 text-white px-5 py-2.5 rounded-xl font-bold hover:bg-blue-700 shadow-xl shadow-blue-50 transition-all hover:scale-105">Form Company</a>
+                <% } %>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <button id="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden p-2 rounded-xl hover:bg-gray-100 transition-colors" onclick="toggleMobileMenu()">
+                <svg id="hamburger-icon" aria-hidden="true" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="close-icon" class="w-6 h-6 text-gray-700 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white">
+        <div class="container mx-auto px-4 py-4 space-y-1">
+            <a href="/uk-residents" class="block px-4 py-3 rounded-xl hover:bg-gray-50 font-bold text-sm text-gray-700">UK Residents</a>
+            <a href="/us-citizens" class="block px-4 py-3 rounded-xl hover:bg-gray-50 font-bold text-sm text-gray-700">US Citizens</a>
+            <a href="/services" class="block px-4 py-3 rounded-xl hover:bg-gray-50 font-bold text-sm text-gray-700">Services</a>
+
+            <a href="/success-stories" class="block px-4 py-3 rounded-xl hover:bg-gray-50 font-bold text-sm text-gray-700">Success Stories</a>
+            <a href="/about" class="block px-4 py-3 rounded-xl hover:bg-gray-50 font-bold text-sm text-gray-700">About</a>
+
+            <div class="border-t border-gray-100 pt-3 mt-3 space-y-2">
+                <% if (user) { %>
+                    <a href="/auth/dashboard" class="block text-center bg-brand-blue text-white px-6 py-3 rounded-xl font-bold">Dashboard</a>
+                    <a href="/auth/logout" class="block text-center text-gray-500 px-6 py-3 rounded-xl font-bold hover:text-red-500">Log Out</a>
+                <% } else { %>
+                    <a href="/auth/login" class="block text-center text-gray-700 px-6 py-3 rounded-xl font-bold border border-gray-200">Login</a>
+                    <a href="/pricing" class="block text-center bg-brand-blue text-white px-6 py-3 rounded-xl font-bold">Form Your Company</a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</nav>
+
+

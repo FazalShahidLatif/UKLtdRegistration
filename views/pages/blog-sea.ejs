@@ -1,0 +1,100 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navigation') %>
+
+<main class="bg-gray-50/50 min-h-screen pt-32 pb-24" x-data="{ activeFilter: 'All' }">
+    <div class="container mx-auto px-4">
+        <!-- SEA Hero Header -->
+        <div class="max-w-4xl mx-auto text-center mb-20">
+            <div class="inline-flex items-center space-x-2 bg-blue-50 px-4 py-2 rounded-full mb-6 border border-blue-100">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                </span>
+                <span class="text-[10px] font-black text-blue-600 uppercase tracking-widest leading-none">SEA Founder's Hub 2026</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black text-gray-900 mb-6 tracking-tight leading-tight">
+                Scale Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">SEA Startup</span> Globally
+            </h1>
+            <p class="text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
+                Strategic guides for founders in Singapore, Malaysia, Vietnam, and Indonesia looking to leverage UK structures for international growth.
+            </p>
+        </div>
+
+        <!-- Country Filters -->
+        <div class="flex flex-wrap justify-center gap-4 mb-20 max-w-5xl mx-auto">
+            <% ['All', 'Singapore', 'Malaysia', 'Vietnam', 'Indonesia', 'Thailand', 'Philippines', 'India'].forEach(country => { %>
+                <button 
+                    @click="activeFilter = '<%= country %>'"
+                    :class="activeFilter === '<%= country %>' ? 'bg-blue-600 text-white shadow-xl shadow-blue-200 border-blue-600' : 'bg-white text-gray-500 hover:border-gray-300 border-gray-100'"
+                    class="px-8 py-3 rounded-2xl text-xs font-black uppercase tracking-widest border transition-all duration-300">
+                    <%= country %>
+                </button>
+            <% }) %>
+        </div>
+        
+        <% if (articles && articles.length > 0) { %>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 xl:gap-12">
+                <% articles.forEach((article) => { %>
+                    <article 
+                        x-show="activeFilter === 'All' || '<%= article.tags.join(' ') %>'.includes(activeFilter)"
+                        x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 transform scale-95"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        class="group relative bg-white/70 backdrop-blur-xl rounded-[2.5rem] border border-white shadow-2xl shadow-gray-200/50 overflow-hidden hover:-translate-y-2 transition-all duration-500 flex flex-col">
+                        
+                        <!-- Image Container -->
+                        <div class="relative h-64 overflow-hidden">
+                            <div class="w-full h-full bg-gradient-to-br from-blue-600 to-indigo-900 p-10 flex flex-col justify-end relative overflow-hidden">
+                                <div class="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full -mr-24 -mt-24 blur-3xl"></div>
+                                <div class="relative z-10">
+                                    <span class="text-white/60 text-[10px] font-black uppercase tracking-widest mb-2 block"><%= article.category %></span>
+                                    <h3 class="text-white text-xl font-black leading-tight"><%= article.title %></h3>
+                                </div>
+                            </div>
+                            <!-- Tags -->
+                            <div class="absolute top-6 left-6 flex flex-wrap gap-2">
+                                <% article.tags.slice(0, 2).forEach(tag => { %>
+                                    <span class="bg-white/90 backdrop-blur-md text-gray-900 px-3 py-1 rounded-full text-[8px] font-black uppercase tracking-widest border border-white shadow-sm">
+                                        <%= tag %>
+                                    </span>
+                                <% }) %>
+                            </div>
+                        </div>
+
+                        <!-- Content Area -->
+                        <div class="p-8 md:p-10 flex-1 flex flex-col">
+                            <div class="flex items-center space-x-3 mb-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                                <span><%= article.readTime %> MIN READ</span>
+                                <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                                <span>2026 EDITION</span>
+                            </div>
+                            
+                            <p class="text-gray-500 text-sm leading-relaxed mb-8 flex-1 line-clamp-3">
+                                <%= article.excerpt %>
+                            </p>
+
+                            <div class="mt-auto">
+                                <a href="/blog/<%= article.slug %>" class="inline-flex items-center text-xs font-black text-gray-900 group-hover:text-blue-600 transition-all uppercase tracking-widest">
+                                    Secure the Playbook
+                                    <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                <% }) %>
+            </div>
+        <% } %>
+
+        <!-- Bottom CTA -->
+        <div class="mt-32 text-center max-w-3xl mx-auto p-12 bg-white rounded-[3rem] border border-gray-100 shadow-2xl relative overflow-hidden">
+            <div class="absolute bottom-0 right-0 w-64 h-64 bg-blue-50 rounded-full -mr-32 -mb-32"></div>
+            <h2 class="text-3xl font-black text-gray-900 mb-6 relative z-10">Ready to form from Southeast Asia?</h2>
+            <p class="text-gray-500 mb-10 text-lg leading-relaxed relative z-10">Get everything you need—from a prestige London address to international banking—in one seamless digital package.</p>
+            <a href="/pricing" class="bg-blue-600 text-white px-12 py-5 rounded-[2rem] font-black uppercase tracking-widest hover:bg-blue-700 transition-all inline-block shadow-2xl shadow-blue-200 relative z-10">
+                View Non-Resident Packages
+            </a>
+        </div>
+    </div>
+</main>
+
+<%- include('../partials/footer') %>

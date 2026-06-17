@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Build outputs
+dist/
+build/
+public/css/output.css
+
+# Testing
+coverage/
+.nyc_output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PM2
+.pm2/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Uploads (in production)
+uploads/
+public/uploads/
+
+# Database
+*.sqlite
+*.db
+
+# Session store
+sessions/
+
+# SSL certificates
+*.pem
+*.key
+*.crt

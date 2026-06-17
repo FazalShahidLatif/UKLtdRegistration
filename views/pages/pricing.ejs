@@ -1,0 +1,256 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navigation') %>
+
+<main class="py-24 bg-gradient-to-b from-gray-50 to-white min-h-screen">
+    <div class="container mx-auto px-4 max-w-7xl">
+        <!-- Page Header -->
+        <div class="flex flex-col lg:flex-row items-center justify-between mb-20 gap-16">
+            <div class="text-center lg:text-left lg:w-1/2">
+                <span class="inline-block px-4 py-1.5 mb-6 bg-brand-blue/10 text-brand-blue rounded-full text-xs font-black tracking-widest uppercase">
+                    100% Transparent Billing
+                </span>
+                <h1 class="text-5xl md:text-6xl font-black text-gray-900 mb-6 tracking-tight leading-tight">
+                    Transparent UK Company Registration Cost
+                </h1>
+                <p class="text-lg text-gray-600 leading-relaxed font-medium">
+                    At UK Ltd Registration, we believe in complete financial clarity. Every company formation package we offer completely includes the official Companies House online filing fee. There are absolutely no hidden registration costs, surprise checkout add-ons, or forced monthly subscriptions. What you see is exactly what you pay.
+                </p>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <div class="rounded-[2.5rem] overflow-hidden shadow-2xl relative border-8 border-white">
+                    <div class="absolute inset-0 bg-brand-blue/10 mix-blend-overlay z-10 pointer-events-none"></div>
+                    <% const heroPricing = "/images/hero-pricing"; %>
+                    <picture>
+                        <source srcset="<%= heroPricing %>-1200.avif 1200w, <%= heroPricing %>-800.avif 800w, <%= heroPricing %>-400.avif 400w" type="image/avif" sizes="(max-width: 1024px) 100vw, 50vw">
+                        <source srcset="<%= heroPricing %>-1200.webp 1200w, <%= heroPricing %>-800.webp 800w, <%= heroPricing %>-400.webp 400w" type="image/webp" sizes="(max-width: 1024px) 100vw, 50vw">
+                        <img src="/images/hero-pricing.jpg" alt="Transparent UK Company Pricing" class="w-full h-auto object-cover max-h-[350px]" fetchpriority="high">
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Bar -->
+        <div class="mb-20">
+            <div class="flex flex-wrap justify-center gap-12 py-8 border-y border-gray-100 opacity-80">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-gray-900 text-white rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <span class="text-[10px] font-black uppercase tracking-[0.2em] text-gray-900">Companies House Authorized Agent</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-gray-900 text-white rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <span class="text-[10px] font-black uppercase tracking-[0.2em] text-gray-900">2026 Regulatory Compliant</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-gray-900 text-white rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    </div>
+                    <span class="text-[10px] font-black uppercase tracking-[0.2em] text-gray-900">ACSP Certified biometric security</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch mb-24">
+
+            <!-- Starter Package -->
+            <div class="bg-white rounded-[2.5rem] border border-gray-100 p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                <div class="mb-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-2xl font-black text-gray-900">Starter</h3>
+                        <span class="text-[9px] font-black text-gray-400 uppercase tracking-widest bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-100">UK Resident</span>
+                    </div>
+                    <p class="text-gray-400 text-sm font-medium">Essential digital incorporation for UK-based founders.</p>
+                </div>
+
+                <!-- Price Box -->
+                <div class="mb-8 p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                    <div class="flex items-baseline gap-1">
+                        <span class="text-4xl font-black text-gray-900">&pound;119.99</span>
+                        <span class="text-gray-400 text-sm font-medium">+ VAT</span>
+                    </div>
+                    <p class="text-[10px] font-black text-brand-blue uppercase tracking-[0.15em] mt-2">Includes &pound;100 Statutory Fee</p>
+                </div>
+
+                <div class="flex-1 space-y-4 mb-8">
+                    <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest">Included Deliverables</p>
+                    <% [
+                        ['Post-Feb 2026 Gov Fee (&pound;100)', 'Official registry filing fee completely included.'],
+                        ['Digital Certificate & Articles', 'Official PDF incorporation documents sent instantly.'],
+                        ['Secure Biometric ID Check', 'Fast remote identity check for AML compliance.'],
+                        ['Company Name Availability Check', 'Verified against register & sensitive word databases.']
+                    ].forEach(([title, sub]) => { %>
+                    <div class="flex items-start gap-3">
+                        <svg class="w-4 h-4 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        <div>
+                            <span class="block text-gray-900 font-bold text-sm"><%= title %></span>
+                            <span class="text-xs text-gray-400"><%= sub %></span>
+                        </div>
+                    </div>
+                    <% }); %>
+                </div>
+
+                <div class="pt-4 border-t border-gray-50 mb-6">
+                    <p class="text-[10px] text-gray-400 font-medium italic">Renewal: &pound;0 &mdash; No hidden annual subscription</p>
+                </div>
+                <a href="/contact" class="block text-center py-4 bg-gray-900 text-white rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-gray-800 transition">Select Starter</a>
+            </div>
+
+            <!-- Standard Plus Package -->
+            <div class="relative bg-white rounded-[2.5rem] border-2 border-brand-blue p-8 shadow-2xl shadow-blue-100/60 flex flex-col">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-blue text-white px-5 py-1.5 rounded-full text-[9px] font-black tracking-[0.2em] uppercase shadow-lg whitespace-nowrap">Most Popular</div>
+
+                <div class="mb-6 mt-2">
+                    <h3 class="text-2xl font-black text-gray-900 mb-3">Standard Plus</h3>
+                    <p class="text-gray-400 text-sm font-medium">Professional privacy & registered office presence.</p>
+                </div>
+
+                <!-- Price Box -->
+                <div class="mb-8 p-6 bg-brand-blue rounded-2xl">
+                    <div class="flex items-baseline gap-1">
+                        <span class="text-4xl font-black text-white">&pound;189.99</span>
+                        <span class="text-blue-200 text-sm font-medium">+ VAT</span>
+                    </div>
+                    <p class="text-[10px] font-black text-blue-100 uppercase tracking-[0.15em] mt-2">Registry Fee & Privacy Included</p>
+                </div>
+
+                <div class="flex-1 space-y-4 mb-8">
+                    <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest">Everything in Starter, plus:</p>
+                    <% [
+                        ['Prestigious London Address', 'W1/EC1 Registered Office (12 months).'],
+                        ['Director Service Address', 'Keep your private home address off public record.'],
+                        ['Tide/Monzo Banking Fast-Track', 'Business account setup with high approval rate.'],
+                        ['Same-Day Priority Processing', 'Immediate queue bypass for fast registrar approval.']
+                    ].forEach(([title, sub]) => { %>
+                    <div class="flex items-start gap-3">
+                        <div class="w-4 h-4 bg-brand-blue/10 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                            <svg class="w-2.5 h-2.5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4"></path></svg>
+                        </div>
+                        <div>
+                            <span class="block text-gray-900 font-bold text-sm"><%= title %></span>
+                            <span class="text-xs text-gray-400"><%= sub %></span>
+                        </div>
+                    </div>
+                    <% }); %>
+                </div>
+
+                <div class="p-4 bg-gray-50 rounded-2xl border border-dashed border-gray-200 mb-6">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-[10px] font-black text-gray-900 uppercase tracking-widest">Address Renewal</p>
+                            <p class="text-[10px] text-gray-400 italic">Optional registered office address renewal</p>
+                        </div>
+                        <p class="text-sm font-black text-brand-blue">&pound;49.99/yr</p>
+                    </div>
+                </div>
+                <a href="/contact" class="block text-center py-4 bg-brand-blue text-white rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-blue-700 transition shadow-xl shadow-blue-200">Go Standard Plus</a>
+            </div>
+
+            <!-- Enterprise Elite Package -->
+            <div class="bg-gray-950 rounded-[2.5rem] p-8 shadow-2xl flex flex-col text-white">
+                <div class="mb-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-2xl font-black text-white">Enterprise Elite</h3>
+                        <span class="text-[9px] font-black text-blue-400 uppercase tracking-widest bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">Global / Non-Resident</span>
+                    </div>
+                    <p class="text-gray-400 text-sm font-medium">Complete remote setup for international founders.</p>
+                </div>
+
+                <!-- Price Box -->
+                <div class="mb-8 p-6 bg-white/5 rounded-2xl border border-white/10">
+                    <div class="flex items-baseline gap-1">
+                        <span class="text-4xl font-black text-white">&pound;299.99</span>
+                        <span class="text-gray-400 text-sm font-medium">+ VAT</span>
+                    </div>
+                    <p class="text-[10px] font-black text-indigo-400 uppercase tracking-[0.15em] mt-2">Includes Non-Resident KYC & Banking</p>
+                </div>
+
+                <div class="flex-1 space-y-4 mb-8">
+                    <p class="text-[10px] font-black text-gray-500 uppercase tracking-widest">Ultimate Global Ecosystem</p>
+                    <% [
+                        ['Prestigious London Address', '12 months registered office & virtual business presence.'],
+                        ['Wise & Stripe Bank Intro', 'Remote global business banking & card processor introductions.'],
+                        ['London 020 Virtual Phone', 'Real-time call divert and dedicated VoIP app access.'],
+                        ['Annual CS01 Compliance', 'We compile and file your mandatory Confirmation Statement.'],
+                        ['Non-Resident Biometric KYC', 'Seamless international identity verification under ECCTA.']
+                    ].forEach(([title, sub]) => { %>
+                    <div class="flex items-start gap-3">
+                        <svg class="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                        <div>
+                            <span class="block text-white font-bold text-sm"><%= title %></span>
+                            <span class="text-xs text-gray-500"><%= sub %></span>
+                        </div>
+                    </div>
+                    <% }); %>
+                </div>
+
+                <div class="pt-4 border-t border-white/5 mb-6 text-center">
+                    <p class="text-[10px] text-gray-500 font-medium italic">Standard optional compliance renewals apply in Year 2.</p>
+                </div>
+                <a href="/contact" class="block text-center py-4 bg-white text-gray-900 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-gray-100 transition shadow-lg">Select Elite</a>
+            </div>
+        </div>
+
+        <!-- Explainer Sections -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
+            <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900 mb-4">What's Covered in Our Fees</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    Our pricing is completely inclusive of all tasks required to get your company active. This covers the official statutory registry fee, secure remote biometric identity checks required by UK anti-money laundering (AML) laws, corporate document drafting (Memorandum & Articles of Association), direct API processing for rapid registrar approval, and ongoing expert support from our London corporate desk. There are zero hidden costs.
+                </p>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-3xl border border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Understanding the Companies House Fee</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    Companies House charges a mandatory statutory filing fee to process and list a new company registration. Under current 2026 regulations, the online registry fee is £100 (having been increased from £50 under ECCTA). We handle this statutory cost directly on your behalf, paying the registrar instantly upon submission. This fee is fully integrated into every pricing tier we display, guaranteeing that there are no hidden government charges added during checkout.
+                </p>
+            </div>
+        </div>
+
+        <!-- 100% Money-Back Guarantee -->
+        <div class="max-w-4xl mx-auto mb-24 bg-gradient-to-r from-blue-900 to-indigo-950 p-10 rounded-[2.5rem] text-white relative overflow-hidden shadow-xl">
+            <div class="absolute top-0 right-0 w-48 h-48 bg-white/5 rounded-full -mr-24 -mt-24"></div>
+            <div class="relative z-10 flex flex-col md:flex-row items-center gap-8">
+                <div class="w-20 h-20 bg-white/10 rounded-2xl border border-white/20 flex items-center justify-center shrink-0">
+                    <svg class="w-10 h-10 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-black mb-2">Our 100% Money-Back Guarantee</h3>
+                    <p class="text-blue-100 text-sm leading-relaxed">
+                        We are confident in our seamless digital formation workflow. If Companies House rejects your company registration due to an agent error, or if you change your mind prior to submission, we will issue a full 100% refund of your package fee, including the statutory filing fee, immediately.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQs Section -->
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-black text-gray-900 tracking-tight text-center mb-12">
+                Pricing & Account FAQs
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <h4 class="text-lg font-bold text-gray-900 mb-2">Are there any recurring annual fees?</h4>
+                    <p class="text-sm text-gray-600">The Starter package has zero recurring fees; it is a one-off digital registration. For the Standard Plus and Enterprise Elite packages, the registered office address and virtual office services are billed annually. Standard renewal of a prestigious London registered office address is £49.99/year + VAT, completely optional.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <h4 class="text-lg font-bold text-gray-900 mb-2">Can I upgrade my package at a later stage?</h4>
+                    <p class="text-sm text-gray-600">Yes, absolutely. If you start with our basic Starter package and later decide you want to keep your home address private, you can add our Registered Office and Director Privacy address services to your account at any time directly through your founder dashboard.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <h4 class="text-lg font-bold text-gray-900 mb-2">What payment methods do you accept?</h4>
+                    <p class="text-sm text-gray-600">We accept all major international credit and debit cards, including Visa, Mastercard, American Express, and Discover. We also accept direct UK bank transfers (BACS/Faster Payments) and multi-currency international wire transfers via Wise.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <h4 class="text-lg font-bold text-gray-900 mb-2">Do you provide VAT invoices for my business accounting?</h4>
+                    <p class="text-sm text-gray-600">Yes. Immediately after purchase, a compliant digital VAT invoice is automatically generated and emailed to you. This contains our full corporate registration details, registered office address, and VAT registration number, allowing you to easily book it as a company pre-incorporation expense.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('../partials/footer') %>

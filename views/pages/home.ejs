@@ -1,0 +1,697 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navigation') %>
+
+<main class="overflow-x-hidden">
+    <!-- Hero Section -->
+    <section class="bg-white pt-24 pb-32 overflow-hidden relative">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-brand-blue/5 rounded-full blur-3xl -z-10"></div>
+        
+        <div class="container mx-auto px-4 text-center">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 border border-blue-100 bg-blue-50/50 rounded-full mb-8">
+                <div class="w-2 h-2 bg-brand-blue rounded-full animate-pulse"></div>
+                <span class="text-[10px] font-black uppercase tracking-widest text-brand-blue">2026 Statutory Compliant</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-8xl font-black text-gray-900 mb-8 tracking-tighter leading-tight">
+                Set Up Your UK Limited <br/> <span class="text-brand-blue">Company in Minutes.</span>
+            </h1>
+            
+            <div class="max-w-3xl mx-auto mb-12">
+                <p class="text-xl md:text-2xl text-gray-700 font-medium leading-relaxed mb-6">
+                    100% online. Companies House approved. Same-day formation from £119.99 including mandatory statutory fees. Trusted by 10,000+ founders worldwide to accelerate their global business launch.
+                </p>
+                <div class="flex items-center justify-center space-x-4">
+                    <div class="flex items-center space-x-1 text-yellow-400">
+                        <% for(let i=0; i<5; i++) { %>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <% } %>
+                    </div>
+                    <span class="text-sm font-bold text-gray-900">4.9/5 Excellent on Trustpilot</span>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-6 mb-20">
+                <a href="/register-a-limited-company-uk" class="btn-primary">Start Registration</a>
+                <a href="/pricing" class="px-10 py-5 bg-white text-gray-900 border border-gray-100 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-gray-50 transition shadow-sm">Compare Packages</a>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="max-w-6xl mx-auto mb-10 rounded-[2.5rem] overflow-hidden shadow-2xl relative">
+                <div class="absolute inset-0 bg-brand-blue/10 mix-blend-overlay z-10 pointer-events-none"></div>
+                <% const heroHome = "/images/hero-home"; %>
+                <picture>
+                    <source srcset="<%= heroHome %>-1200.avif 1200w, <%= heroHome %>-800.avif 800w, <%= heroHome %>-400.avif 400w" type="image/avif" sizes="100vw">
+                    <source srcset="<%= heroHome %>-1200.webp 1200w, <%= heroHome %>-800.webp 800w, <%= heroHome %>-400.webp 400w" type="image/webp" sizes="100vw">
+                    <img src="/images/hero-home.webp" alt="Global UK Business Expansion" class="w-full h-[300px] md:h-[550px] object-cover" fetchpriority="high" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="py-10 bg-gray-50 border-y border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto text-center">
+                <div class="flex flex-col items-center justify-center p-4">
+                    <span class="text-brand-blue text-2xl mb-2">✓</span>
+                    <p class="text-xs font-black uppercase tracking-wider text-gray-900">Companies House Approved</p>
+                </div>
+                <div class="flex flex-col items-center justify-center p-4">
+                    <span class="text-brand-blue text-2xl mb-2">✓</span>
+                    <p class="text-xs font-black uppercase tracking-wider text-gray-900">Same-Day Service</p>
+                </div>
+                <div class="flex flex-col items-center justify-center p-4">
+                    <span class="text-brand-blue text-2xl mb-2">✓</span>
+                    <p class="text-xs font-black uppercase tracking-wider text-gray-900">10,000+ Companies Formed</p>
+                </div>
+                <div class="flex flex-col items-center justify-center p-4">
+                    <span class="text-brand-blue text-2xl mb-2">✓</span>
+                    <p class="text-xs font-black uppercase tracking-wider text-gray-900">UK-Based Expert Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO Informative Body Copy Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6 prose prose-lg prose-blue">
+            <h2 class="text-3xl font-black text-gray-900 tracking-tighter mb-6">How to Register a Limited Company in the UK</h2>
+            <p>Forming a new corporate structure in the United Kingdom is a straightforward and secure process when guided by an approved agent. Under the Companies Act 2006, a <strong>UK Limited Company</strong> (often abbreviated as <strong>UK Ltd</strong>) represents a separate legal identity from its shareholders and directors. This distinction offers extensive liability protection, ensuring your personal assets remain completely shielded from business obligations and debts.</p>
+            <p>At <strong>UK LTD Registration</strong>, we guide you seamlessly through the entire setup process. Our fully online system is directly connected to the Companies House API, allowing for secure name verification, immediate SIC code search, and instant electronic filing. Whether you are a resident looking to establish a sole-director consultancy or an international entrepreneur seeking an e-commerce hub, we complete formations within 3 to 24 hours.</p>
+            <p><em>Note: Under the new 2026 guidelines, Companies House enforces strict identity check regulations (ACSP verification) to enhance transparency and security. All our packages are fully compliant with these statutory updates, ensuring your registration is safe and resilient from day one.</em></p>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-24 bg-gray-50/50 border-y border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight mb-4">How It Works</h2>
+                <p class="text-lg text-gray-600">Form your UK Limited Company in three simple steps. Our automated portal handles all communication with Companies House so you can focus on building your brand.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto relative">
+                <!-- Step 1 -->
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm relative z-10 text-center">
+                    <div class="w-16 h-16 bg-blue-50 text-brand-blue rounded-2xl flex items-center justify-center font-black text-2xl mx-auto mb-6 shadow-md">01</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Enter Details</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Input your desired company name, select the business activities (SIC codes), and enter director and shareholder details. Our system checks name availability against the registry instantly.
+                    </p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm relative z-10 text-center">
+                    <div class="w-16 h-16 bg-blue-50 text-brand-blue rounded-2xl flex items-center justify-center font-black text-2xl mx-auto mb-6 shadow-md">02</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Choose Package</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Select a package tailored to your privacy needs. Choose Starter for basic digital setup, Standard Plus for director address privacy, or Enterprise Elite for full virtual office features.
+                    </p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm relative z-10 text-center">
+                    <div class="w-16 h-16 bg-blue-50 text-brand-blue rounded-2xl flex items-center justify-center font-black text-2xl mx-auto mb-6 shadow-md">03</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">We File & Finalize</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Our ACSP-verified agents review your details and transmit them directly to Companies House. Once approved, your digital Certificate and official documents are emailed immediately.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us? Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight mb-4">Why Choose Us?</h2>
+                <p class="text-lg text-gray-600">The premier choice for fast, compliant, and transparent corporate formations.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div class="p-8 bg-white border border-gray-100 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Lowest Price Guarantee</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        We guarantee the most competitive rates for our services. Every plan is flat-rate and fully transparent, including the £100 statutory fee with zero hidden recurring surprises.
+                    </p>
+                </div>
+                
+                <div class="p-8 bg-white border border-gray-100 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Same-Day Filing</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        Your registration is reviewed and forwarded to the government instantly. On average, official Companies House approval is processed in 3 to 6 working hours.
+                    </p>
+                </div>
+                
+                <div class="p-8 bg-white border border-gray-100 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Free Address Option</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        Opt for our premium standard or elite packages to secure a prestigious London W1/EC1 address for your office, keeping your home address completely private.
+                    </p>
+                </div>
+                
+                <div class="p-8 bg-white border border-gray-100 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M18.364 5.636l-3.536 3.536m0 0A7.5 7.5 0 115.636 5.636h12.728z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Expert UK Support</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        Speak directly with experienced company registration agents who understand corporate tax structure, international bank integrations, and regulatory compliance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Showcase Section -->
+    <section class="py-24 bg-gray-50 border-t border-b border-gray-100">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center space-x-2 px-4 py-2 border border-blue-100 bg-blue-50/50 rounded-full mb-4">
+                    <span class="text-[10px] font-black uppercase tracking-widest text-brand-blue">Video Walkthrough</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">How to Set Up Your UK Company</h2>
+                <p class="text-lg text-gray-700 font-medium leading-relaxed max-w-2xl mx-auto">
+                    Watch our step-by-step 2026 video walkthrough to learn how international and UK founders can register a company and open business banking remotely.
+                </p>
+            </div>
+            
+            <!-- Sleek Responsive Video Player Card -->
+            <div class="bg-white p-4 rounded-[2.5rem] shadow-2xl border border-gray-100 relative group overflow-hidden">
+                <div class="relative h-0 rounded-[2rem] overflow-hidden shadow-inner bg-black" style="padding-bottom: 56.25%;">
+                    <iframe 
+                        class="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/e6D8na1vAm8" 
+                        title="How to Register a UK Limited Company as a Non-Resident (2026 Guide)"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="py-24 bg-gray-50 border-t border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Formation Packages</h2>
+                <p class="text-xl text-gray-700">All prices include the statutory £100 Companies House filing fee. Complete transparency.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <% packages.forEach(pkg => { %>
+                    <div class="relative bg-white p-8 rounded-3xl border <%= pkg.popular ? 'border-blue-600 shadow-2xl scale-105 z-10' : 'border-gray-200 hover:shadow-xl' %> transition-all duration-300 flex flex-col">
+                        <% if (pkg.popular) { %>
+                            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-6 py-1 rounded-full font-bold text-sm tracking-wide shadow-lg">
+                                MOST POPULAR
+                            </div>
+                        <% } %>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2"><%= pkg.name %></h3>
+                            <p class="text-gray-600 text-sm h-10"><%= pkg.description %></p>
+                        </div>
+
+                        <div class="flex items-baseline mb-8">
+                            <span class="text-5xl font-black text-gray-900">£<%= pkg.price %></span>
+                            <span class="text-gray-500 ml-2 font-medium">+ VAT</span>
+                        </div>
+
+                        <ul class="space-y-4 mb-10 flex-1">
+                            <% pkg.features.forEach((feature, idx) => { %>
+                                <li class="flex items-start">
+                                    <div class="mt-1 flex-shrink-0 w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
+                                        <svg class="w-3.5 h-3.5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                    </div>
+                                    <span class="ml-3 text-gray-700 <%= (pkg.popular && idx < 3) ? 'font-semibold' : '' %>"><%= feature %></span>
+                                </li>
+                            <% }) %>
+                        </ul>
+
+                        <a href="/contact" class="block text-center py-4 rounded-xl font-extrabold text-lg transition-all duration-300 <%= pkg.popular ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-blue-200 shadow-lg' : 'border-2 border-blue-600 text-blue-600 hover:bg-blue-50' %>">
+                            <%= pkg.cta %>
+                        </a>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who It's For Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight mb-4">Who It's For</h2>
+                <p class="text-lg text-gray-600">A UK Limited Company structure is highly versatile and fits various commercial needs.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 max-w-7xl mx-auto">
+                <div class="p-6 bg-gray-50 rounded-3xl border border-gray-100">
+                    <h3 class="font-bold text-gray-900 text-lg mb-3">Freelancers</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        Transition from self-employment to an LTD to gain instant credibility with premium corporate clients. Benefit from tax efficiency options, allowing you to split corporate income through dividends and lower your overall annual tax burden legally.
+                    </p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-3xl border border-gray-100">
+                    <h3 class="font-bold text-gray-900 text-lg mb-3">Small Business</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        Establish your enterprise with a clean, separated legal entity. Protect your personal assets from commercial operational debts, easily appoint co-directors, and scale up your hiring, licensing, and trade partnerships with complete ease.
+                    </p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-3xl border border-gray-100">
+                    <h3 class="font-bold text-gray-900 text-lg mb-3">Online Sellers</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        Unlock global e-commerce avenues. A UK LTD company provides instant access to premium payment processors, Amazon FBA UK/European store registries, and allows international merchants to trade globally with reputable corporate standing.
+                    </p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-3xl border border-gray-100">
+                    <h3 class="font-bold text-gray-900 text-lg mb-3">Tradespeople</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        Build your contracting operations with local authority trust. A registered company conveys professional backing and guarantees liability security when undertaking large-scale commercial property renovations or local civil maintenance contracts.
+                    </p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-3xl border border-gray-100">
+                    <h3 class="font-bold text-gray-900 text-lg mb-3">Consultants</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        Position your high-value advisory operations appropriately. Establish a clean brand structure, safeguard yourself against professional liability, and contract with blue-chip multinationals that mandate dealing strictly with limited companies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LTD Company vs Sole Trader Section -->
+    <section class="py-24 bg-gray-50 border-y border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight mb-4">LTD Company vs Sole Trader</h2>
+                <p class="text-lg text-gray-600">Understand the key differences between trading as a Sole Trader versus incorporating as a UK Limited Company.</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-brand-navy text-white text-xs uppercase tracking-wider font-black">
+                                <th class="p-6">Feature</th>
+                                <th class="p-6">LTD Company</th>
+                                <th class="p-6">Sole Trader</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 text-sm">
+                            <tr>
+                                <td class="p-6 font-bold text-gray-900 bg-gray-50/50">Personal Liability</td>
+                                <td class="p-6 text-gray-600 leading-relaxed"><strong class="text-green-600">Limited.</strong> Shielded personal assets; you are only liable for the shares you own.</td>
+                                <td class="p-6 text-gray-600 leading-relaxed"><strong class="text-red-500">Unlimited.</strong> You and the business are one entity; personal assets are at risk for business debts.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-6 font-bold text-gray-900 bg-gray-50/50">Tax Efficiency</td>
+                                <td class="p-6 text-gray-600 leading-relaxed"><strong class="text-brand-blue">High.</strong> Pay Corporation Tax (19%–25%) and distribute funds via low-tax dividends.</td>
+                                <td class="p-6 text-gray-600 leading-relaxed"><strong class="text-gray-500">Low to Moderate.</strong> Subject to Income Tax rates up to 45% on all earnings, plus National Insurance.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-6 font-bold text-gray-900 bg-gray-50/50">Market Credibility</td>
+                                <td class="p-6 text-gray-600 leading-relaxed"><strong class="text-brand-blue">Excellent.</strong> Prestigious corporate status. Large suppliers and corporations prefer Ltd clients.</td>
+                                <td class="p-6 text-gray-600 leading-relaxed"><strong class="text-gray-500">Moderate.</strong> Some multinational corporations refuse to contract with unincorporated entities.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-6 font-bold text-gray-900 bg-gray-50/50">Access to Funding</td>
+                                <td class="p-6 text-gray-600 leading-relaxed"><strong class="text-brand-blue">Easy.</strong> Can secure commercial debt, equity investment, or issue shares to raise growth capital.</td>
+                                <td class="p-6 text-gray-600 leading-relaxed"><strong class="text-gray-500">Restricted.</strong> Limited strictly to personal loans or standard retail business credit options.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="p-6 bg-gray-50 border-t border-gray-100 text-center">
+                    <p class="text-xs text-gray-500">
+                        Want a deep-dive analysis on structure tax optimization? 
+                        <a href="/blog/uk-company-tax-efficiency-non-residents" class="text-brand-blue font-bold hover:underline ml-1">Read our comprehensive Sole Trader vs Limited Company guide &rarr;</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight mb-4">What's Included</h2>
+                <p class="text-lg text-gray-600">A complete, compliance-ready startup kit. Zero additional document purchases needed.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 max-w-6xl mx-auto">
+                <div class="p-6 border border-gray-100 rounded-3xl bg-white shadow-sm hover:shadow-md transition-shadow text-center">
+                    <div class="w-12 h-12 bg-blue-50 text-brand-blue rounded-2xl flex items-center justify-center mx-auto mb-4 font-bold">✓</div>
+                    <h3 class="font-bold text-gray-900 text-sm mb-2">Certificate of Incorporation</h3>
+                    <p class="text-[11px] text-gray-500 leading-relaxed">The official birth certificate of your company, stamped and approved by Companies House.</p>
+                </div>
+                
+                <div class="p-6 border border-gray-100 rounded-3xl bg-white shadow-sm hover:shadow-md transition-shadow text-center">
+                    <div class="w-12 h-12 bg-blue-50 text-brand-blue rounded-2xl flex items-center justify-center mx-auto mb-4 font-bold">✓</div>
+                    <h3 class="font-bold text-gray-900 text-sm mb-2">Memorandum & Articles</h3>
+                    <p class="text-[11px] text-gray-500 leading-relaxed">The formal constitutional bylaws governing company management, operations, and share capital.</p>
+                </div>
+                
+                <div class="p-6 border border-gray-100 rounded-3xl bg-white shadow-sm hover:shadow-md transition-shadow text-center">
+                    <div class="w-12 h-12 bg-blue-50 text-brand-blue rounded-2xl flex items-center justify-center mx-auto mb-4 font-bold">✓</div>
+                    <h3 class="font-bold text-gray-900 text-sm mb-2">Share Certificates</h3>
+                    <p class="text-[11px] text-gray-500 leading-relaxed">Digital certificates officially proving the ownership breakdown and allotment for initial shareholders.</p>
+                </div>
+                
+                <div class="p-6 border border-gray-100 rounded-3xl bg-white shadow-sm hover:shadow-md transition-shadow text-center">
+                    <div class="w-12 h-12 bg-blue-50 text-brand-blue rounded-2xl flex items-center justify-center mx-auto mb-4 font-bold">✓</div>
+                    <h3 class="font-bold text-gray-900 text-sm mb-2">HMRC UTR Notification</h3>
+                    <p class="text-[11px] text-gray-500 leading-relaxed">HMRC is automatically notified of your incorporation. Your UTR letter is sent securely to your office.</p>
+                </div>
+                
+                <div class="p-6 border border-gray-100 rounded-3xl bg-white shadow-sm hover:shadow-md transition-shadow text-center">
+                    <div class="w-12 h-12 bg-blue-50 text-brand-blue rounded-2xl flex items-center justify-center mx-auto mb-4 font-bold">✓</div>
+                    <h3 class="font-bold text-gray-900 text-sm mb-2">Digital Document Pack</h3>
+                    <p class="text-[11px] text-gray-500 leading-relaxed">High-resolution, secure PDF copies of all your statutory corporate registers and paperwork.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Launch Center (SIC & Company Name Check) -->
+    <section id="tools" class="py-24 bg-gray-50 overflow-hidden border-t border-gray-100">
+        <div class="container mx-auto px-4 relative">
+            <div class="max-w-5xl mx-auto relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Strategic Research Hub</h2>
+                    <p class="text-xl text-gray-700">Everything you need to validate your brand and classify your vision.</p>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-xl border border-gray-100 p-2 md:p-4 overflow-hidden">
+                    <div class="flex flex-col lg:flex-row">
+                        <!-- Step 1: Company Search -->
+                        <div class="flex-1 p-8 md:p-12 border-b lg:border-b-0 lg:border-r border-gray-100">
+                            <div class="flex items-center mb-6">
+                                <span class="w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-black text-xl shadow-lg shadow-blue-200 mr-4">01</span>
+                                <h3 class="text-2xl font-bold text-gray-900">Brand Availability</h3>
+                            </div>
+                            <p class="text-gray-700 mb-8 font-medium">Search the official registry to secure your unique business name instantly.</p>
+                            
+                            <div class="relative group">
+                                <input type="text" id="company-q" placeholder="Enter desired name..." 
+                                    class="w-full pl-6 pr-32 py-5 bg-gray-50 border-2 border-transparent focus:border-blue-600 focus:bg-white rounded-2xl transition-all duration-300 outline-none text-lg font-medium shadow-inner">
+                                <button onclick="searchCompany()" 
+                                    class="absolute right-2 top-2 bottom-2 bg-blue-600 text-white px-8 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-100 active:scale-95">
+                                    Verify
+                                </button>
+                            </div>
+                            <div id="company-results" class="mt-6 space-y-3 max-h-60 overflow-y-auto pr-2 custom-scrollbar"></div>
+                        </div>
+
+                        <!-- Step 2: SIC Finder -->
+                        <div class="flex-1 p-8 md:p-12 bg-gray-50/50">
+                            <div class="flex items-center mb-6">
+                                <span class="w-12 h-12 bg-indigo-600 text-white rounded-2xl flex items-center justify-center font-black text-xl shadow-lg shadow-indigo-200 mr-4">02</span>
+                                <h3 class="text-2xl font-bold text-gray-900">Activity Classification</h3>
+                            </div>
+                            <p class="text-gray-700 mb-8 font-medium">Identify the correct SIC codes to define your company's official scope of operations.</p>
+                            
+                            <div class="relative group">
+                                <input type="text" id="sic-q" placeholder="Search activities (e.g. tech, retail)..." 
+                                    class="w-full pl-6 pr-32 py-5 bg-white border-2 border-transparent focus:border-indigo-600 rounded-2xl transition-all duration-300 outline-none text-lg font-medium shadow-sm">
+                                <button onclick="searchSIC()" 
+                                    class="absolute right-2 top-2 bottom-2 bg-indigo-600 text-white px-8 rounded-xl font-bold hover:bg-indigo-700 transition shadow-lg shadow-indigo-100 active:scale-95">
+                                    Search
+                                </button>
+                            </div>
+                            <div id="sic-results" class="mt-6 space-y-3 max-h-60 overflow-y-auto pr-2 custom-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategic Tip -->
+                <div class="mt-12 flex items-center justify-center text-gray-600 bg-white/50 backdrop-blur-sm py-4 px-8 rounded-full border border-gray-100 w-fit mx-auto">
+                    <svg class="w-5 h-5 text-yellow-500 mr-3" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1a1 1 0 112 0v1a1 1 0 11-2 0zM13.464 15.657a1 1 0 010-1.414l.707-.707a1 1 0 111.414 1.414l-.707.707a1 1 0 01-1.414 0zM10 8a2 2 0 100 4 2 2 0 000-4z"></path></svg>
+                    <span class="text-sm font-medium">Pro Tip: Choosing the most specific SIC code ensures your corporate bank account gets approved significantly faster.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- South Asia Founder Spotlight -->
+    <section class="py-24 bg-brand-blue/5 relative overflow-hidden border-t border-gray-100">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+                <div class="flex-1">
+                    <div class="inline-flex items-center space-x-2 px-4 py-1.5 bg-blue-100 text-blue-700 rounded-full mb-6">
+                        <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                        <span class="text-[10px] font-black uppercase tracking-widest">South Asia Spotlight</span>
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-black text-gray-900 mb-8 tracking-tight">The Bridge for <br/> <span class="text-blue-600">South Asian Exporters.</span></h2>
+                    <p class="text-lg text-gray-700 mb-10 leading-relaxed font-medium">
+                        Are you a founder in **Sialkot, Bangalore, Dhaka, or Colombo**? We specialize in solving the "High-Risk" banking hurdle for SAARC region founders, unlocking Amazon FBA, global IT contracts, and wholesale textile exports remotely.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="/blog/register-uk-ltd-online-india-pakistan-2026" class="px-8 py-4 bg-gray-900 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-black transition-all shadow-xl">Pakistan Master Guide</a>
+                        <a href="/blog/pakistan-exporter-guide-leather-textile-uk-ltd" class="px-8 py-4 bg-white text-gray-900 border border-gray-200 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-gray-50 transition-all shadow-sm">Exporter Playbook</a>
+                    </div>
+                </div>
+                <div class="flex-1 relative">
+                    <div class="absolute inset-0 bg-blue-600/10 rounded-[3rem] blur-3xl -z-10"></div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-8 bg-white rounded-[2rem] shadow-xl border border-blue-50">
+                            <p class="text-3xl font-black text-blue-600 mb-2">15k+</p>
+                            <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">Founders in SAARC</p>
+                        </div>
+                        <div class="p-8 bg-white rounded-[2rem] shadow-xl border border-blue-50 mt-8">
+                            <p class="text-3xl font-black text-blue-600 mb-2">£50M+</p>
+                            <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">Export Revenue Routed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews / Testimonials Section -->
+    <section class="py-24 bg-white overflow-hidden border-t border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Reviews & Testimonials</h2>
+                <p class="text-xl text-gray-700">Join thousands of verified business owners who launched with UK Ltd Registration.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-gray-50 p-8 rounded-3xl relative border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center mr-4 font-black">SL</div>
+                        <div>
+                            <h3 class="font-bold text-gray-900">Sarah L.</h3>
+                            <p class="text-xs text-gray-500 font-medium">E-commerce Founder, London</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic text-sm leading-relaxed">
+                        "The Standard Plus package was a lifesaver. I got my Certificate of Incorporation and London address the very same day, keeping my private residential details off the public record. Extremely professional."
+                    </p>
+                    <div class="mt-6 flex text-yellow-400">
+                        <% for(let i=0; i<5; i++) { %>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <% } %>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-3xl relative border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center mr-4 font-black">AM</div>
+                        <div>
+                            <h3 class="font-bold text-gray-900">Arshad M.</h3>
+                            <p class="text-xs text-gray-500 font-medium">Textile Exporter, Karachi</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic text-sm leading-relaxed">
+                        "Being an exporter in Pakistan, setting up a global bank account was always a struggle. The team registered our LTD, reviewed our SIC codes, and helped us secure a Wise account in less than 48 hours."
+                    </p>
+                    <div class="mt-6 flex text-yellow-400">
+                        <% for(let i=0; i<5; i++) { %>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <% } %>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-3xl relative border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center mr-4 font-black">DK</div>
+                        <div>
+                            <h3 class="font-bold text-gray-900">David K.</h3>
+                            <p class="text-xs text-gray-500 font-medium">IT Consultant, Manchester</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic text-sm leading-relaxed">
+                        "The absolute fastest formation agent I've ever dealt with. Excellent support, clear explanations of 2026 ACSP regulations, and seamless integration with Tide banking. 100% recommended."
+                    </p>
+                    <div class="mt-6 flex text-yellow-400">
+                        <% for(let i=0; i<5; i++) { %>
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-gray-50 border-t border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                    <p class="text-xl text-gray-700">Clear, expert answers to common limited company questions.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                        <button class="w-full px-8 py-6 text-left flex items-center justify-between focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="text-lg font-bold text-gray-900">How long does the registration take?</span>
+                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="px-8 pb-6 text-gray-700 border-t border-gray-50 pt-4 hidden">
+                            Our dynamic registry links submit all filings directly to Companies House. Typically, official approval is returned in 3 to 6 working hours, though this can vary up to 24 hours depending on the government's daily processing volume.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                        <button class="w-full px-8 py-6 text-left flex items-center justify-between focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="text-lg font-bold text-gray-900">What is a limited company?</span>
+                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="px-8 pb-6 text-gray-700 border-t border-gray-50 pt-4 hidden">
+                            A UK Limited Company is an independent, legal corporate entity created under the Companies Act. It stands completely distinct from its owners (shareholders) and managers (directors), providing complete limited liability asset protection.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                        <button class="w-full px-8 py-6 text-left flex items-center justify-between focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="text-lg font-bold text-gray-900">Do I need an accountant to form a company?</span>
+                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="px-8 pb-6 text-gray-700 border-t border-gray-50 pt-4 hidden">
+                            No, you do not need an accountant to register. Our streamlined, step-by-step wizard guides you through the entire name search, SIC classification, and document submission seamlessly. You can easily consult an accountant post-formation for ongoing tax advice.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                        <button class="w-full px-8 py-6 text-left flex items-center justify-between focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="text-lg font-bold text-gray-900">Can I use my home address for the registration?</span>
+                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="px-8 pb-6 text-gray-700 border-t border-gray-50 pt-4 hidden">
+                            Yes, you can use a residential address. However, please be aware that the registered office and director service addresses become part of the public, searchable registry. We highly recommend our Standard Plus or Enterprise Elite packages, which provide prestigious London addresses to protect your domestic privacy.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                        <button class="w-full px-8 py-6 text-left flex items-center justify-between focus:outline-none" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180')">
+                            <span class="text-lg font-bold text-gray-900">What does Companies House do?</span>
+                            <svg class="w-5 h-5 text-gray-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="px-8 pb-6 text-gray-700 border-t border-gray-50 pt-4 hidden">
+                            Companies House is the official United Kingdom government registry. It incorporates and dissolves limited companies, stores statutory corporate information, and makes it available to the public, ensuring trading transparency.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Homepage FAQ Schema -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {"@type":"Question","name":"How long does the registration take?","acceptedAnswer":{"@type":"Answer","text":"Our dynamic registry links submit all filings directly to Companies House. Typically, official approval is returned in 3 to 6 working hours, though this can vary up to 24 hours depending on the government's daily processing volume."}},
+            {"@type":"Question","name":"What is a limited company?","acceptedAnswer":{"@type":"Answer","text":"A UK Limited Company is an independent, legal corporate entity created under the Companies Act. It stands completely distinct from its owners (shareholders) and managers (directors), providing complete limited liability asset protection."}},
+            {"@type":"Question","name":"Do I need an accountant to form a company?","acceptedAnswer":{"@type":"Answer","text":"No, you do not need an accountant to register. Our streamlined, step-by-step wizard guides you through the entire name search, SIC classification, and document submission seamlessly. You can easily consult an accountant post-formation for ongoing tax advice."}},
+            {"@type":"Question","name":"Can I use my home address for the registration?","acceptedAnswer":{"@type":"Answer","text":"Yes, you can use a residential address. However, please be aware that the registered office and director service addresses become part of the public, searchable registry. We highly recommend our Standard Plus or Enterprise Elite packages, which provide prestigious London addresses to protect your domestic privacy."}},
+            {"@type":"Question","name":"What does Companies House do?","acceptedAnswer":{"@type":"Answer","text":"Companies House is the official United Kingdom government registry. It incorporates and dissolves limited companies, stores statutory corporate information, and makes it available to the public, ensuring trading transparency."}}
+          ]
+        }
+        </script>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-24 bg-brand-navy text-white text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-blue-600/15 mix-blend-overlay pointer-events-none"></div>
+        <div class="container mx-auto px-4 relative z-10 max-w-4xl">
+            <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tight">Ready to Go?</h2>
+            <p class="text-xl text-gray-300 mb-10 leading-relaxed font-medium">Start your company registration now and establish your UK enterprise today.</p>
+            <a href="/register-a-limited-company-uk" class="px-12 py-6 bg-brand-blue text-white rounded-2xl font-black text-lg uppercase tracking-wider hover:bg-white hover:text-brand-navy shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95">Start Registration</a>
+        </div>
+    </section>
+</main>
+
+<script>
+    async function searchCompany() {
+        const q = document.getElementById('company-q').value;
+        const resDiv = document.getElementById('company-results');
+        if (!q) return;
+        resDiv.innerHTML = '<div class="flex items-center justify-center py-6"><div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div></div>';
+        try {
+            const resp = await fetch(`/api/company-search?q=${q}`);
+            const data = await resp.json();
+            if (data.items.length > 0) {
+                resDiv.innerHTML = data.items.map(item => `
+                    <div class="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow flex justify-between items-center group text-left">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center mr-3 font-bold text-xs">UK</div>
+                            <div>
+                                <span class="font-bold text-gray-900 block group-hover:text-blue-600 transition-colors">${item.title}</span>
+                                <p class="text-xs text-gray-600 uppercase tracking-wider">${item.company_number} • ${item.status}</p>
+                            </div>
+                        </div>
+                        <span class="text-[10px] font-bold px-2 py-1 bg-green-100 text-green-700 rounded-md">AVAILABLE</span>
+                    </div>
+                `).join('');
+            } else {
+                resDiv.innerHTML = '<div class="p-4 bg-red-50 text-red-600 rounded-xl text-sm font-medium">No direct matches found. Your name is likely available!</div>';
+            }
+        } catch (e) { resDiv.innerHTML = '<div class="p-4 bg-red-50 text-red-600 rounded-xl text-sm font-medium">Connection failed. Please try again.</div>'; }
+    }
+
+    async function searchSIC() {
+        const q = document.getElementById('sic-q').value;
+        const resDiv = document.getElementById('sic-results');
+        if (!q) return;
+        resDiv.innerHTML = '<div class="flex items-center justify-center py-6"><div class="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div></div>';
+        try {
+            const resp = await fetch(`/api/sic-finder?query=${q}`);
+            const data = await resp.json();
+            if (data.results.length > 0) {
+                resDiv.innerHTML = data.results.map(item => `
+                    <div class="p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow text-left">
+                        <div class="flex items-center mb-1">
+                            <span class="font-black text-indigo-600 mr-2">#${item.code}</span>
+                            <span class="text-xs font-bold text-gray-500 bg-gray-100 px-2 py-0.5 rounded uppercase">Standard Code</span>
+                        </div>
+                        <p class="text-sm text-gray-700 leading-relaxed font-medium">${item.description}</p>
+                    </div>
+                `).join('');
+            } else {
+                resDiv.innerHTML = '<div class="p-4 bg-red-50 text-red-600 rounded-xl text-sm font-medium">No codes found for this activity. Try a generic term.</div>';
+            }
+        } catch (e) { resDiv.innerHTML = '<div class="p-4 bg-red-50 text-red-600 rounded-xl text-sm font-medium">Search failed.</div>'; }
+    }
+</script>
+
+<%- include('../partials/footer') %>

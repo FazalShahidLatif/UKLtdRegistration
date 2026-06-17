@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Block administrative pathways, checkout, and search query strings
+Disallow: /admin/
+Disallow: /checkout
+Disallow: /*?*
+Disallow: /*?
+
+# Reference Active XML Sitemaps
+Sitemap: https://ukltdregistration.com/sitemap.xml
+Sitemap: https://ukltdregistration.com/priority-sitemap.xml

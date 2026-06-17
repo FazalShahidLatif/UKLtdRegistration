@@ -1,0 +1,59 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<main class="min-h-screen pt-12 pb-24">
+    <article class="max-w-4xl mx-auto px-4">
+        <nav class="flex space-x-2 mb-8 text-[10px] font-black uppercase tracking-widest text-gray-400">
+            <a href="/knowledge-hub" class="hover:text-brand-blue">Knowledge Hub</a>
+            <span>/</span>
+            <span class="text-gray-900">Tax & Finance</span>
+        </nav>
+
+        <header class="mb-12">
+            <h1 class="text-4xl md:text-6xl font-black text-gray-900 mb-8 tracking-tighter leading-tight">
+                When & How to Register for <span class="text-brand-blue">UK VAT as a Foreign Business</span>
+            </h1>
+            <div class="flex items-center space-x-6 p-6 bg-gray-50 rounded-[2rem]">
+                <div class="w-10 h-10 rounded-full border-2 border-white bg-brand-blue flex items-center justify-center text-white text-[10px] font-black">SP</div>
+                <div>
+                    <p class="text-gray-900 font-bold text-sm">Sarah Patel, CTA</p>
+                    <p class="text-gray-400 text-xs font-medium uppercase tracking-widest">VAT Specialist • March 2026 • 9 min read</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="prose prose-blue max-w-none text-gray-600 font-medium space-y-6">
+            <p class="text-xl text-gray-900 font-bold leading-relaxed">VAT (Value Added Tax) is the UK's consumption tax at 20% standard rate. Understanding when you must register — and when it's beneficial to register voluntarily — can save or cost you thousands.</p>
+
+            <h2 class="text-2xl font-black text-gray-900 mt-10 mb-4">The VAT Registration Threshold</h2>
+            <p>As of 2024/25, the compulsory VAT registration threshold is <strong>£90,000</strong> in taxable turnover within any rolling 12-month period. If you exceed this threshold, you must register within 30 days. Non-compliance results in penalties backdated to when you should have registered.</p>
+
+            <div class="p-8 bg-blue-50 rounded-[2rem] border-2 border-blue-100 my-8">
+                <h4 class="text-brand-blue font-black text-xs uppercase tracking-widest mb-4">Non-Resident Rule</h4>
+                <p class="text-blue-900 text-sm font-bold">If you make taxable supplies in the UK as a non-UK-established business, there is NO threshold — you must register from the first pound of UK taxable supply. This catches many international sellers.</p>
+            </div>
+
+            <h2 class="text-2xl font-black text-gray-900 mt-10 mb-4">Voluntary Registration</h2>
+            <p>You can voluntarily register for VAT even below the threshold. This is beneficial if: your customers are primarily VAT-registered businesses (they can reclaim VAT, so your price isn't more expensive), you have significant input VAT to reclaim (e.g., on equipment or subscriptions), or you want to appear more credible/established.</p>
+
+            <h2 class="text-2xl font-black text-gray-900 mt-10 mb-4">VAT Schemes Available</h2>
+            <ul class="list-disc pl-6 space-y-2">
+                <li><strong>Standard Rate Scheme:</strong> Charge 20% VAT, reclaim VAT on costs. Most common.</li>
+                <li><strong>Flat Rate Scheme:</strong> Pay a fixed % of gross turnover (varies by sector). Simpler admin, potentially more profitable for service businesses.</li>
+                <li><strong>Cash Accounting Scheme:</strong> Only pay VAT when customers pay you (not when invoiced). Better cashflow for B2B businesses.</li>
+                <li><strong>Annual Accounting Scheme:</strong> One annual return with monthly/quarterly advance payments. Less admin.</li>
+            </ul>
+
+            <h2 class="text-2xl font-black text-gray-900 mt-10 mb-4">The VAT Registration Process</h2>
+            <p>Registration is done online through HMRC's Government Gateway. You'll need your company registration number, bank details, business activity description, and expected turnover. HMRC typically issues your VAT number within 3–6 weeks. You may trade under a VAT number during this period but must account for VAT from the effective date of registration.</p>
+
+            <div class="bg-gray-900 text-white rounded-[2.5rem] p-10 mt-12">
+                <h3 class="text-3xl font-black mb-4 tracking-tighter">VAT Registration from £99</h3>
+                <p class="text-gray-400 mb-8 font-medium">We handle the application, scheme selection, and threshold assessment. Priority processing available in 7-10 days.</p>
+                <a href="/contact" class="btn-primary inline-block">Get Started</a>
+            </div>
+        </div>
+    </article>
+</main>
+
+<%- include('../../partials/footer') %>

@@ -1,0 +1,119 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<main class="py-24 bg-gray-50/50">
+    <div class="max-w-4xl mx-auto px-6">
+        <div class="mb-16 text-center">
+            <span class="inline-block px-3 py-1 rounded-full bg-brand-blue/10 text-[10px] font-black uppercase tracking-[0.2em] text-brand-blue mb-4">Service Policy</span>
+            <h1 class="text-5xl font-black text-gray-900 tracking-tight mt-2">Refund & Cancellation Policy</h1>
+            <p class="text-gray-500 mt-4 text-xl font-medium max-w-2xl mx-auto text-balance">Transparent guidelines regarding service cancellations, non-refundable government fees, and claim timeframes.</p>
+        </div>
+
+        <div class="prose prose-lg max-w-none space-y-8">
+            <!-- 1. General Principles -->
+            <section class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="w-12 h-12 bg-brand-blue/10 rounded-2xl flex items-center justify-center text-brand-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-black text-gray-900 m-0">1. Overview</h2>
+                </div>
+                <p class="text-gray-600 leading-relaxed">At UK Ltd Registration, we strive to provide a seamless and efficient company formation experience. However, due to the nature of digital filings and mandatory government fees paid on your behalf, our refund policy reflects the specific costs incurred during the processing stages.</p>
+            </section>
+
+            <!-- 2. Non-Refundable Amounts -->
+            <section class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="w-12 h-12 bg-red-50 rounded-2xl flex items-center justify-center text-red-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-black text-gray-900 m-0">2. Non-Refundable Amounts</h2>
+                </div>
+                <p class="text-gray-600 leading-relaxed mb-6">Certain costs are irreversible once your order is placed or the processing sequence begins. These amounts are deducted from any eligible refund:</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Government Filing Fees</h3>
+                        <p class="text-sm text-gray-600">Companies House incorporation fees (£100 as of Feb 2026) are non-refundable once the application is electronically submitted, regardless of whether the company is successfully formed or rejected for user error.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">AML & KYC Compliance</h3>
+                        <p class="text-sm text-gray-600">Administrative costs for Anti-Money Laundering (AML) checks and identity verification (typically £15.00) are non-refundable once the search is initiated.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Service Setup Fees</h3>
+                        <p class="text-sm text-gray-600">Setup costs for Virtual Office, Registered Office Address, or Director Service Address are non-refundable once the address is allocated to your order.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Bank Referral Service</h3>
+                        <p class="text-sm text-gray-600">Fees for business bank account introductions or referrals are non-refundable once the data has been securely transmitted to the partner bank.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Cancellation Timeframes -->
+            <section class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="w-12 h-12 bg-brand-green/10 rounded-2xl flex items-center justify-center text-brand-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-black text-gray-900 m-0">3. Claim Timeframes</h2>
+                </div>
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 rounded-full bg-brand-blue text-white flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">24-Hour Cooling-Off Period</h3>
+                            <p class="text-gray-600 leading-relaxed">You may request a full refund (minus AML search fees, if already performed) within <strong>24 hours</strong> of your purchase, provided your company formation has not yet been submitted to Companies House.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="w-8 h-8 rounded-full bg-brand-blue text-white flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-1">14-Day Refund Window</h3>
+                            <p class="text-gray-600 leading-relaxed">All refund claims must be formally submitted via email to our support department within <strong>14 calendar days</strong> of the original transaction date. After 14 days, no refunds will be issued.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Processing Time -->
+            <section class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md">
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="w-12 h-12 bg-brand-blue/10 rounded-2xl flex items-center justify-center text-brand-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-black text-gray-900 m-0">4. Processing Refunds</h2>
+                </div>
+                <p class="text-gray-600 leading-relaxed mb-4">Once your refund is approved, it will be processed using the original payment method. Please allow <strong>5 to 10 business days</strong> for the funds to appear in your account, depending on your bank's processing times.</p>
+                <div class="mt-8 p-6 bg-brand-blue rounded-3xl text-white">
+                    <h3 class="text-lg font-bold mb-2">How to Request a Refund</h3>
+                    <p class="text-brand-blue-light mb-4 text-sm">Please email our compliance team with your order number and reason for cancellation.</p>
+                    <a href="mailto:support@ukltdregistration.com" class="inline-flex items-center font-bold hover:underline transition-all">
+                        support@ukltdregistration.com
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 5. Account Credits -->
+            <section class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md">
+                <h2 class="text-2xl font-black text-gray-900 mb-4 text-center">Important HMRC Notification</h2>
+                <div class="bg-gray-50 rounded-2xl p-6 border-l-4 border-brand-blue text-sm text-gray-600 italic">
+                    "Please be advised that government filing fees are collected and paid directly to Companies House and HMRC on your behalf. These fees are statutory and serve as a direct recovery of government costs. Once these funds have been transmitted to the government portal, UK Ltd Registration cannot retrieve these funds and therefore cannot include them in any refund calculation."
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+<%- include('../../partials/footer') %>
