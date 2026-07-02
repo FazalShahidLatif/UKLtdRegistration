@@ -33,7 +33,7 @@ When you use our services, we collect:
 
 **Payment Information:**
 - Billing address
-- Payment method details (processed securely via Paddle)
+- Payment method details (processed securely via trusted providers where applicable)
 - VAT number (if applicable)
 
 **Optional Information:**
@@ -124,7 +124,6 @@ We process your personal data under:
 We share data with trusted third parties:
 
 **Payment Processing:**
-- Paddle (payment gateway) - PCI DSS compliant
 
 **Identity Verification:**
 - Onfido / Trulioo - KYC/AML checks
@@ -162,7 +161,6 @@ If you were referred by an affiliate:
 **Third Countries:**
 - USA: Only with adequate safeguards (Standard Contractual Clauses)
 - OpenAI (USA): Data Processing Addendum in place
-- Paddle (Ireland/USA): EU-US Data Privacy Framework certified
 
 ---
 

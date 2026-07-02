@@ -137,7 +137,7 @@ UKLtdRegistration/
 │   ├── contactController.js ✅ Contact form handling
 │   ├── affiliateController.js ✅ Affiliate management
 │   ├── apiController.js     ✅ API endpoints
-│   └── webhookController.js ✅ Paddle webhooks
+│   └── webhookController.js ✅ Legacy webhook handling removed
 │
 ├── routes/
 │   ├── auth.js              ✅ Auth routes (thin)

@@ -132,8 +132,3 @@ exports.companySearch = (req, res) => {
     request.end();
 };
 
-exports.paddleWebhook = (req, res) => {
-    console.log('Paddle Webhook received:', req.body);
-    // Add validation and processing logic here
-    res.status(200).send('OK');
-};

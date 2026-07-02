@@ -52,8 +52,7 @@ router.get('/', (req, res) => {
                     'Dedicated Account Manager'
                 ],
                 cta: 'Choose Elite',
-                popular: false,
-                link: '/checkout?package=premium'
+                popular: false
             }
         ]
     });

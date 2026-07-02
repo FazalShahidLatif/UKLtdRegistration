@@ -89,15 +89,15 @@ const helmetConfig = helmet({
             defaultSrc: ["'self'"],
             styleSrc: ["'self'", "'unsafe-inline'", "fonts.googleapis.com", "cdn.tailwindcss.com"],
             fontSrc: ["'self'", "fonts.gstatic.com"],
-            scriptSrc: ["'self'", "'unsafe-inline'", "cdn.paddle.com", "js.paddle.com"],
-            imgSrc: ["'self'", "data:", "https:", "*.paddle.com"],
-            connectSrc: ["'self'", "api.paddle.com", "sandbox-api.paddle.com"],
-            frameSrc: ["'self'", "*.paddle.com"],
+            scriptSrc: ["'self'", "'unsafe-inline'"],
+            imgSrc: ["'self'", "data:", "https:"],
+            connectSrc: ["'self'"],
+            frameSrc: ["'self'"],
             objectSrc: ["'none'"],
             upgradeInsecureRequests: []
         }
     },
-    crossOriginEmbedderPolicy: false, // Required for Paddle
+    crossOriginEmbedderPolicy: false,
     referrerPolicy: { policy: 'strict-origin-when-cross-origin' }
 });
 

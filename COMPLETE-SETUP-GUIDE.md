@@ -6,7 +6,7 @@
 - ✅ Custom Email (info@, support@, hello@)
 - ✅ Email Templates & Autoresponders  
 - ✅ AI Support Chatbot
-- ✅ Paddle Payment Gateway (Sandbox)
+- ✅ Secure registration workflow (no third-party payment gateway required)
 
 Created by **BlueOceanHub** - https://blueoceanhub.info
 
@@ -33,7 +33,7 @@ Created by **BlueOceanHub** - https://blueoceanhub.info
 - **24/7 Availability**
 
 ### 3. Payment Integration
-- **Paddle Gateway** (Sandbox mode for testing)
+- **No external payment gateway required** for the current registration flow
 - **3 Package Tiers:** Basic, Standard, Premium
 - **Webhook Handling:** Automatic payment notifications
 - **Email Receipts:** Sent automatically
@@ -126,11 +126,7 @@ EMAIL_HELLO=hello@ukltdregistration.com
 # Session Secret (GENERATE: openssl rand -hex 32)
 SESSION_SECRET=REPLACE_WITH_RANDOM_32_CHAR_STRING
 
-# Paddle (Get from paddle.com)
-PADDLE_VENDOR_ID=YOUR_VENDOR_ID
-PADDLE_API_KEY=YOUR_API_KEY
-PADDLE_PUBLIC_KEY=YOUR_PUBLIC_KEY
-PADDLE_ENVIRONMENT=sandbox
+# Payment gateway configuration removed from the current build
 
 # AI Chatbot (Get from openai.com or anthropic.com)
 AI_PROVIDER=openai
@@ -189,7 +185,7 @@ node -e "require('./config/email').verifyConnection('info')"
 
 **Test Payment:**
 - Click on a package
-- Should redirect to Paddle sandbox checkout
+- Should direct users to the secure registration workflow without a third-party checkout
 
 ---
 
@@ -271,12 +267,12 @@ Add to your page:
 
 ---
 
-## 💳 PADDLE PAYMENT SETUP
+## 💳 PAYMENT SETUP
 
 ### Sandbox Testing
 
 **Get Sandbox Credentials:**
-1. Visit: https://sandbox-vendors.paddle.com
+1. No Paddle setup is required for the current registration workflow.
 2. Sign up for free sandbox account
 3. Get Vendor ID and API Key
 4. Add to .env
@@ -290,7 +286,7 @@ CVC: Any 3 digits
 
 ### Create Products
 
-1. Login to Paddle Sandbox
+1. No Paddle sandbox login is required.
 2. Catalog → Products → **New Product**
 3. Create 3 products:
    - **Basic Package** (£0 or any amount)
@@ -299,17 +295,13 @@ CVC: Any 3 digits
 4. Copy Product IDs
 5. Add to .env:
 ```env
-PADDLE_PRODUCT_BASIC=12345
-PADDLE_PRODUCT_STANDARD=12346
-PADDLE_PRODUCT_PREMIUM=12347
 ```
 
 ### Webhook Setup
 
-1. Paddle → Developer Tools → Webhooks
+1. No webhook configuration is required for the current build.
 2. Add webhook URL:
 ```
-https://ukltdregistration.com/api/paddle/webhook
 ```
 3. Select all events
 4. Save
@@ -318,9 +310,6 @@ https://ukltdregistration.com/api/paddle/webhook
 
 When ready for live payments:
 ```env
-PADDLE_ENVIRONMENT=production
-PADDLE_VENDOR_ID=[production vendor id]
-PADDLE_API_KEY=[production api key]
 ```
 
 ---
@@ -356,9 +345,9 @@ curl https://api.openai.com/v1/models \
 ### Payment Not Working
 
 **Check:**
-1. Verify Paddle credentials in .env
+1. Verify that no payment gateway secrets are present in .env
 2. Check webhook is set up
-3. View Paddle logs in sandbox dashboard
+3. Review application logs for the registration flow only
 4. Check browser console for errors
 
 ### App Not Starting
@@ -397,8 +386,8 @@ pm2 logs ukltd-app | grep "Email"
 ### Payment Logs
 
 ```bash
-# View Paddle events
-pm2 logs ukltd-app | grep "Paddle"
+# Review app events
+pm2 logs ukltd-app
 ```
 
 ---
@@ -429,7 +418,6 @@ Before going live:
 
 **Documentation:**
 - Node.js: nodejs.org/docs
-- Paddle: developer.paddle.com
 - OpenAI: platform.openai.com/docs
 
 ---
@@ -445,7 +433,7 @@ Before going live:
 - [ ] Website accessible
 - [ ] Email sending works
 - [ ] Chatbot responds
-- [ ] Payment redirects to Paddle
+- [x] Registration flow does not redirect to a third-party payment gateway
 - [ ] SSL certificate active
 - [ ] Backups enabled
 

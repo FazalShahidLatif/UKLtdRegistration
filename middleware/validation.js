@@ -185,21 +185,6 @@ const validateNameCheck = [
 ];
 
 /**
- * Payment webhook validation
- */
-const validatePaddleWebhook = [
-    body('alert_name')
-        .notEmpty().withMessage('Alert name is required')
-        .isString(),
-    
-    body('p_signature')
-        .notEmpty().withMessage('Signature is required')
-        .isString(),
-    
-    // Don't run handleValidationErrors here - webhook needs custom handling
-];
-
-/**
  * Affiliate registration validation
  */
 const validateAffiliateRegister = [
@@ -276,7 +261,6 @@ module.exports = {
     validateLogin,
     validateRegister,
     validateNameCheck,
-    validatePaddleWebhook,
     validateAffiliateRegister,
     validateVATRegistration,
     sanitizeMongoQuery

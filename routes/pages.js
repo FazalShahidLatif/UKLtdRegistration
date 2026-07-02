@@ -9,27 +9,6 @@ router.get(['/pricing', '/packages'], (req, res) => {
     });
 });
 
-// Checkout page
-router.get('/checkout', (req, res) => {
-    const packageId = req.query.package || 'starter';
-    const packages = {
-        'starter': { name: 'Starter', price: '119.99' },
-        'basic': { name: 'Starter', price: '119.99' },
-        'standard': { name: 'Standard Plus', price: '189.99' },
-        'premium': { name: 'Enterprise Elite', price: '299.99' }
-    };
-    
-    const pkg = packages[packageId] || packages['starter'];
-    
-    res.render('pages/checkout', {
-        title: 'Complete Your Order',
-        metaDescription: 'Complete your UK company formation registration securely.',
-        packageId: packageId,
-        packageName: pkg.name,
-        packagePrice: pkg.price
-    });
-});
-
 // Services Main Page
 router.get('/services', (req, res) => {
     res.render('pages/services', {
