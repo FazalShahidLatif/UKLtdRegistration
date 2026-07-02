@@ -156,9 +156,25 @@ const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/ukltd'
 mongoose.connection.on('error', err => {
     console.error('✗ Mongoose connection error event:', err.message);
 });
-mongoose.connect(MONGODB_URI)
-    .then(() => console.log('✓ MongoDB connected'))
-    .catch(err => console.error('✗ MongoDB connection error:', err));
+
+// Connect to MongoDB with timeout
+const connectTimeout = setTimeout(() => {
+    console.warn('⚠ MongoDB connection timeout - app will continue without database');
+}, 5000);
+
+mongoose.connect(MONGODB_URI, {
+    serverSelectionTimeoutMS: 5000,
+    socketTimeoutMS: 5000,
+})
+    .then(() => {
+        clearTimeout(connectTimeout);
+        console.log('✓ MongoDB connected');
+    })
+    .catch(err => {
+        clearTimeout(connectTimeout);
+        console.warn('⚠ MongoDB connection failed:', err.message);
+        console.warn('  App will continue in limited mode');
+    });
 
 // Start server
 const server = app.listen(PORT, () => {
@@ -171,8 +187,21 @@ const server = app.listen(PORT, () => {
     console.log(`  ✓ URL: http://localhost:${PORT}`);
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
     
-    // Initialize SEO Scheduler
-    initSEOScheduler();
+    // Initialize SEO Scheduler (non-blocking to prevent serverless timeout)
+    try {
+        if (process.env.NODE_ENV !== 'production' || process.env.RUN_SEO_SCHEDULER !== 'false') {
+            // Schedule in background without blocking server startup
+            setImmediate(() => {
+                try {
+                    initSEOScheduler();
+                } catch (err) {
+                    console.error('[SEO Scheduler] Failed to initialize:', err.message);
+                }
+            });
+        }
+    } catch (err) {
+        console.error('[SEO Scheduler] Initialization error:', err.message);
+    }
 });
 
 // Graceful shutdown
