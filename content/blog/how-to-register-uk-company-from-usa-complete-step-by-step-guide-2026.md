@@ -167,6 +167,8 @@ Using our secure app, you upload a scan of your US Passport or state-issued Real
 ### 3. Establish a London Virtual Office Address
 To shield your private home from public exposure, you should deploy a **London virtual office for US startups**. All official documents are routed here, keeping your physical US residence off the public registry while projecting a prestigious central London presence.
 
+> **Pro Tip:** Learn how to use a [london virtual office address](/services/virtual-office) to safeguard your privacy and pass all Companies House compliance checks remotely.
+
 ### 4. Direct Filing and Incorporation
 We compile your Articles of Association and file directly with Companies House. Your certification, share allocations, and memorandum are generated digitally within 24 hours of submission.
 
@@ -175,6 +177,8 @@ We compile your Articles of Association and file directly with Companies House. 
 ## Banks for US Owners: Wise and Mercury
 
 Getting physical banking in the UK as an overseas director without a local branch visit is nearly impossible. Thankfully, modern fintech solutions have solved this constraint, allowing you to **open UK bank account from US** borders completely online:
+
+> **Important:** Discover the exact steps for [setting up a UK business bank account for non-residents](/blog/business-banking-uk-ltd-non-residents) to ensure a 95%+ approval rate with Wise or Mercury.
 
 * **Wise Business:** The absolute standard for international founders. Wise provides you with local UK sort codes and IBANs, allowing you to pay and receive GBP, EUR, and USD at real mid-market exchange rates.
 * **Mercury:** If your startup seeks VC funding or relies on US-based software subscriptions, Mercury allows you to open a US bank account for your UK-registered entity.
@@ -280,4 +284,4 @@ Don't let geographic boundaries restrict your business growth. Join thousands of
 
 [**Explore UK Formation Packages →**](/pricing)
 [**Schedule a Consultation with our US-UK Team →**](/contact)
-[**Read the Complete Business Banking Guide →**](/blog/business-banking-uk-ltd-non-residents)
+[**Read the Complete Guide on Setting up a UK Business Bank Account for Non-Residents →**](/blog/business-banking-uk-ltd-non-residents)

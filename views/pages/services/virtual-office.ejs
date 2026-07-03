@@ -24,10 +24,19 @@
             <p class="text-gray-500 leading-relaxed text-left md:text-center max-w-3xl mx-auto text-sm md:text-base">
                 A professional business presence is especially vital for remote teams, freelancers, and international companies seeking to access the UK market. Without a credible physical footprint, securing institutional business accounts or earning the trust of local clients can be incredibly challenging. Our virtual solution bridges this gap, giving your enterprise an elite front-facing address that commands respect, satisfies modern compliance checks, and provides a solid foundation for growth.
             </p>
+
+            <!-- Quick Jump Nav -->
+            <div class="mt-10 max-w-2xl mx-auto flex flex-wrap justify-center gap-3">
+                <a href="#packages" class="px-4 py-2 bg-gray-100 hover:bg-brand-blue hover:text-white text-gray-700 text-xs font-bold rounded-full transition-colors shadow-sm">View Packages</a>
+                <a href="#mail-handling" class="px-4 py-2 bg-gray-100 hover:bg-brand-blue hover:text-white text-gray-700 text-xs font-bold rounded-full transition-colors shadow-sm">Mail Handling</a>
+                <a href="#privacy" class="px-4 py-2 bg-gray-100 hover:bg-brand-blue hover:text-white text-gray-700 text-xs font-bold rounded-full transition-colors shadow-sm">Privacy Protection</a>
+                <a href="#location" class="px-4 py-2 bg-gray-100 hover:bg-brand-blue hover:text-white text-gray-700 text-xs font-bold rounded-full transition-colors shadow-sm">London Location</a>
+                <a href="#faq" class="px-4 py-2 bg-gray-100 hover:bg-brand-blue hover:text-white text-gray-700 text-xs font-bold rounded-full transition-colors shadow-sm">FAQs</a>
+            </div>
         </div>
 
         <!-- FEATURE & PACKAGE BREAKDOWN (Phase 2: 300 - 800 words) -->
-        <div class="border-t border-gray-100 pt-16 mb-24">
+        <div id="packages" class="border-t border-gray-100 pt-16 mb-24">
             <div class="text-center max-w-3xl mx-auto mb-12">
                 <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-4">
                     Our Service Packages & Infrastructure
@@ -110,7 +119,7 @@
             </div>
 
             <!-- Mail Handling Deep Dive -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16 bg-gray-50 p-8 rounded-[2.5rem] border border-gray-100">
+            <div id="mail-handling" class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16 bg-gray-50 p-8 rounded-[2.5rem] border border-gray-100">
                 <div>
                     <h3 class="text-2xl font-black text-gray-900 mb-4">Secure Mail Handling & Forwarding Workflows</h3>
                     <p class="text-gray-600 text-sm leading-relaxed mb-4">
@@ -173,7 +182,7 @@
         </div>
 
         <!-- AUTHORITY & TRUST BUILDING (Phase 3: 800 - 1200 words) -->
-        <div class="border-t border-gray-100 pt-16 mb-24">
+        <div id="privacy" class="border-t border-gray-100 pt-16 mb-24">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                 <div class="space-y-6 text-gray-600 leading-relaxed text-sm">
                     <h2 class="text-3xl font-black text-gray-900 tracking-tight">
@@ -245,7 +254,7 @@
         </div>
 
         <!-- LOCATION & AMENITY DETAILS (Phase 4: 1200 - 1500+ words) -->
-        <div class="border-t border-gray-100 pt-16 mb-24">
+        <div id="location" class="border-t border-gray-100 pt-16 mb-24">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-4">
                     Prestigious Central London Business Location
@@ -312,7 +321,7 @@
             </div>
 
             <!-- FAQs (Phase 4: Conclude with punchy Frequently Asked Questions) -->
-            <div class="max-w-4xl mx-auto">
+            <div id="faq" class="max-w-4xl mx-auto">
                 <h2 class="text-3xl font-black text-gray-900 tracking-tight text-center mb-12">
                     Frequently Asked Questions
                 </h2>
@@ -353,16 +362,19 @@
 
         <!-- Related Services (Internal Links) -->
         <div class="border-t border-gray-100 pt-16">
-            <h4 class="text-xs font-black text-gray-400 uppercase tracking-widest text-center mb-8">Explore Related Compliance Services</h4>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
-                <a href="/services/company-secretary" class="p-6 rounded-2xl bg-white hover:bg-brand-blue hover:text-white border border-gray-100 transition-all duration-300 block font-bold text-gray-900 shadow-sm">
+            <h4 class="text-xs font-black text-gray-400 uppercase tracking-widest text-center mb-8">Explore Related Compliance Services & Guides</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <a href="/services/company-secretary" class="p-6 rounded-2xl bg-white hover:bg-brand-blue hover:text-white border border-gray-100 transition-all duration-300 block font-bold text-gray-900 shadow-sm flex flex-col items-center justify-center h-full">
                     Company Secretary Service
                 </a>
-                <a href="/services/confirmation-statement" class="p-6 rounded-2xl bg-white hover:bg-brand-blue hover:text-white border border-gray-100 transition-all duration-300 block font-bold text-gray-900 shadow-sm">
+                <a href="/services/confirmation-statement" class="p-6 rounded-2xl bg-white hover:bg-brand-blue hover:text-white border border-gray-100 transition-all duration-300 block font-bold text-gray-900 shadow-sm flex flex-col items-center justify-center h-full">
                     Confirmation Statement CS01
                 </a>
-                <a href="/services/vat-registration" class="p-6 rounded-2xl bg-white hover:bg-brand-blue hover:text-white border border-gray-100 transition-all duration-300 block font-bold text-gray-900 shadow-sm">
-                    VAT Registration Service
+                <a href="/blog/business-banking-uk-ltd-non-residents" class="p-6 rounded-2xl bg-white hover:bg-brand-blue hover:text-white border border-gray-100 transition-all duration-300 block font-bold text-gray-900 shadow-sm flex flex-col items-center justify-center h-full">
+                    Open a UK Business Bank Account as a Non-Resident
+                </a>
+                <a href="/us-citizens" class="p-6 rounded-2xl bg-white hover:bg-brand-blue hover:text-white border border-gray-100 transition-all duration-300 block font-bold text-gray-900 shadow-sm flex flex-col items-center justify-center h-full">
+                    Register a UK Company from the USA
                 </a>
             </div>
         </div>
