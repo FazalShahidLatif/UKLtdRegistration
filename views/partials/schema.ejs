@@ -163,10 +163,79 @@
       ]
     }
     <% } %>
-    <% if (['/get-help-forming-a-uk-ltd','/blog/business-banking-uk-ltd-non-residents','/services/virtual-office'].includes(currentPath)) { %>
+    <% if (currentPath === '/get-help-forming-a-uk-ltd') { %>
     ,{
       "@type": "Service",
-      "name": "UK LTD Registration Formation, Banking & Virtual Office Services",
+      "name": "UK LTD Registration Formation",
+      "provider": {
+        "@id": "<%= siteUrl %>/#organization"
+      },
+      "areaServed": "Worldwide",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "128",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "119.99",
+        "priceCurrency": "GBP",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    <% } %>
+    <% if (currentPath === '/services/virtual-office') { %>
+    ,{
+      "@type": "Service",
+      "name": "virtual office uk london",
+      "provider": {
+        "@id": "<%= siteUrl %>/#organization"
+      },
+      "areaServed": "Worldwide",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "128",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "119.99",
+        "priceCurrency": "GBP",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    <% } %>
+    <% if (currentPath === '/blog/business-banking-uk-ltd-non-residents') { %>
+    ,{
+      "@type": "Service",
+      "name": "uk business bank account for non residents",
+      "provider": {
+        "@id": "<%= siteUrl %>/#organization"
+      },
+      "areaServed": "Worldwide",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "128",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "119.99",
+        "priceCurrency": "GBP",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    <% } %>
+    <% if (currentPath === '/blog/can-i-register-a-uk-company-as-a-non-uk-resident') { %>
+    ,{
+      "@type": "Service",
+      "name": "company registration in uk for non residents",
       "provider": {
         "@id": "<%= siteUrl %>/#organization"
       },
