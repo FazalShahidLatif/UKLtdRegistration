@@ -73,7 +73,7 @@ router.get('/get-help-forming-a-uk-ltd', (req, res) => {
 // Non-Residents SEO Page
 router.get('/uk-ltd-formation-for-non-residents', (req, res) => {
     res.render('pages/non-residents', {
-        title: 'Open Company in UK Non Resident | 2026 Registration Guide',
+        title: 'open company in uk non resident',
         metaDescription: 'Learn how to open company in UK non resident. Our 2026 guide covers how to form a UK company, register with Companies House, and open a bank account.'
     });
 });
