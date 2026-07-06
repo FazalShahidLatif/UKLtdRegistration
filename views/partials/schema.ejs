@@ -14,6 +14,13 @@
         "width": 192,
         "height": 192
       },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "312",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
       "contactPoint": [
         {
           "@type": "ContactPoint",
@@ -279,6 +286,40 @@
         {"@type":"Question","name":"Is a UK Ltd the same as an LLC?","acceptedAnswer":{"@type":"Answer","text":"No. The UK does not have an LLC structure. A UK Ltd is the closest equivalent, providing limited liability but with separate-entity taxation rather than pass-through taxation."}},
         {"@type":"Question","name":"Can I open a UK bank account from the US?","acceptedAnswer":{"@type":"Answer","text":"Yes. Wise Business has a 95%+ approval rate and Mercury provides a US bank account for your UK entity. Both offer fully remote onboarding."}},
         {"@type":"Question","name":"Can I use a UK Ltd for forex trading?","acceptedAnswer":{"@type":"Answer","text":"Yes. Many US-based traders form a UK Ltd to receive prop firm payouts and access FCA-regulated brokers."}}
+      ]
+    }
+    <% } %>
+    <% if (currentPath === '/blog/vat-registration-threshold-uk-2026') { %>
+    ,{
+      "@type": "Service",
+      "name": "UK VAT Registration Service 2026",
+      "provider": {
+        "@id": "<%= siteUrl %>/#organization"
+      },
+      "areaServed": "GB",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "312",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "119.99",
+        "priceCurrency": "GBP",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    ,{
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"What is the current UK VAT registration threshold in March 2026?","acceptedAnswer":{"@type":"Answer","text":"The current UK VAT registration threshold in March 2026 is £90,000. This threshold has been confirmed frozen for the 2025/26 and 2026/27 tax years. Businesses whose taxable turnover exceeds £90,000 in any rolling 12-month period must register for VAT within 30 days."}},
+        {"@type":"Question","name":"What is the UK standard VAT rate in 2026?","acceptedAnswer":{"@type":"Answer","text":"The UK standard VAT rate in 2026 is 20%. A reduced rate of 5% applies to certain goods such as home energy and children's car seats. A zero rate of 0% applies to most food, children's clothing, and books."}},
+        {"@type":"Question","name":"What is the UK VAT registration threshold 2026?","acceptedAnswer":{"@type":"Answer","text":"The UK VAT registration threshold in 2026 is £90,000 of taxable turnover measured on a rolling 12-month basis. This applies to sole traders, limited companies, and partnerships. The deregistration threshold is £88,000."}},
+        {"@type":"Question","name":"Do I need to register for VAT when I form a UK Ltd?","acceptedAnswer":{"@type":"Answer","text":"No. VAT registration is separate from company formation. When you register a UK Limited Company at Companies House, you are not automatically VAT-registered. You must register with HMRC for VAT separately once your taxable turnover exceeds £90,000, or voluntarily at any point."}},
+        {"@type":"Question","name":"Can a non-resident UK Ltd company owner register for VAT?","acceptedAnswer":{"@type":"Answer","text":"Yes. VAT registration is based on the company's UK taxable turnover, not the director's residency. Non-resident owners of UK Ltd companies must register for VAT if their UK taxable turnover exceeds £90,000 in any 12-month period."}},
+        {"@type":"Question","name":"What penalties apply for late VAT registration in the UK?","acceptedAnswer":{"@type":"Answer","text":"HMRC penalties for late VAT registration range from 5% to 15% of the net VAT owed: up to 9 months late = 5%; 9–18 months late = 10%; over 18 months late = 15%. The minimum penalty is £50."}}
       ]
     }
     <% } %>

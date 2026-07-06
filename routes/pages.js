@@ -114,8 +114,8 @@ router.get('/partners', (req, res) => {
 // Success Stories page
 router.get('/success-stories', (req, res) => {
     res.render('pages/success-stories', {
-        title: 'Global Success Stories | Pakistani Founders Going Global',
-        metaDescription: 'Read how Pakistani entrepreneurs, freelancers, and traders are using UK Limited companies to overcome local limitations and reach global markets.'
+        title: 'Form UK Ltd Company from Pakistan for E-commerce | Global Success Stories',
+        metaDescription: 'Discover how founders from Pakistan, India, Bangladesh, and Sri Lanka formed UK Ltd companies for e-commerce, Amazon FBA, and global trade. Real success stories and a step-by-step guide to form a UK Ltd company from Pakistan for e-commerce.'
     });
 });
 
@@ -166,8 +166,8 @@ router.get('/strategic-research-hub', (req, res) => {
 // LTD Company Formation Page (Core Conversion Page)
 router.get('/register-a-limited-company-uk', (req, res) => {
     res.render('pages/ltd-formation', {
-        title: 'Register a Limited Company UK | Same-Day Online Formation',
-        metaDescription: 'Register a limited company in the UK online with our same-day formation service. 100% online, Companies House approved, with Wise banking setup.'
+        title: 'Register a Limited Company UK | Ltd Company UK Registration | Same-Day Online Formation',
+        metaDescription: 'Register a limited company in the UK online. Fast Ltd company UK registration and full UK company formation service from £119.99. Same-day filing, Companies House approved, ACSP-verified, with Wise banking setup.'
     });
 });
 
