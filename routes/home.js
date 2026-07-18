@@ -8,7 +8,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     res.render('pages/home', {
-        title: 'UK Limited Company Formation | Register Online from £119.99',
+        title: 'UK Ltd Company Formation | Register UKLtd Online from £119.99',
         metaDescription: 'Register a UK Limited Company online from £119.99. Trusted by 5,000+ founders. Non-resident specialists with ACSP verification, London registered office, and Wise banking setup.',
         packages: [
             {

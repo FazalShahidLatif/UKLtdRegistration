@@ -20,8 +20,8 @@ router.get('/services', (req, res) => {
 // Specific Service Pages
 router.get('/services/virtual-office', (req, res) => {
     res.render('pages/services/virtual-office', {
-        title: 'Virtual Office UK London | UK Ltd Registration',
-        metaDescription: 'Get a prestigious virtual office UK London address for your business. Perfect for international founders.'
+        title: 'Virtual Office UK London | UK Postbox Alternative | UK Ltd Registration',
+        metaDescription: 'Get a prestigious virtual office UK London address for your business. The perfect UK Postbox alternative for international founders.'
     });
 });
 
@@ -174,8 +174,8 @@ router.get('/register-a-limited-company-uk', (req, res) => {
 // Regional Landing Pages
 router.get('/register-company-england', (req, res) => {
     res.render('pages/regions/england', {
-        title: 'Register a Company in England | England Limited Company Formation',
-        metaDescription: 'Set up your limited company in England. Fast, reliable same-day online formation. Approved Companies House agent, complete with registered office address options.'
+        title: 'Register a Company in England | England Limited Company Solutions',
+        metaDescription: 'Set up your England Limited company online. Fast, reliable same-day online formation. Approved Companies House agent, complete with registered office options.'
     });
 });
 

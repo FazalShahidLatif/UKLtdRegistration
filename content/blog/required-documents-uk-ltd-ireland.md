@@ -1,7 +1,7 @@
 ---
 title: "The Ultimate 2026 Documentation Checklist for UK Company Formation"
-metaTitle: "Required Documents for UK Company Registration | Irish Founders"
-metaDescription: "A complete 2026 checklist of the documents required for an Irish founder or non-resident to register a UK Limited Company, including ACSP ID verification."
+metaTitle: "Required Documents for UK Company Formation 2026 | Irish Founders"
+metaDescription: "Don't get your application rejected! See the complete 2026 checklist of exact documents Irish founders need to form a UK Limited Company."
 slug: required-documents-uk-ltd-ireland
 author: UK LTD Registration
 publishedDate: 2026-05-18

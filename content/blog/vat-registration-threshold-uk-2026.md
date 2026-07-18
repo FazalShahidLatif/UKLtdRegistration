@@ -112,6 +112,8 @@ Many startups and UK Ltd companies register for VAT *before* hitting the £90,00
 - **EU trade** — a UK VAT number simplifies cross-border compliance with EU customers and suppliers
 - **Cash flow advantage** — you can reclaim VAT on start-up costs before you earn a pound of revenue
 
+If you're unsure about the setup, our [premium formation packages](/pricing) include full VAT registration assistance.
+
 **Drawbacks to consider:**
 - Quarterly VAT returns add administrative burden and recurring deadlines
 - You must charge 20% VAT on all standard-rated sales, which can make you less competitive against non-registered B2C rivals
@@ -179,7 +181,7 @@ If you own a UK Limited Company from outside the UK — whether you are based in
 **What happens if you have no UK physical presence?**
 You can still be VAT-registered. HMRC deals with overseas-based directors routinely. All correspondence is handled digitally. Your UK Ltd's registered office address (e.g., your London W1 address through our service) becomes the official correspondence point.
 
-Our **Enterprise package** includes full VAT consultation, registration filing, and MTD compliance setup with HMRC — managed by our team.
+Our [**Enterprise package**](/pricing) includes full VAT consultation, registration filing, and MTD compliance setup with HMRC — managed by our team.
 
 ---
 
@@ -189,7 +191,7 @@ Follow these steps to register your UK Ltd for VAT:
 
 1. **Confirm your eligibility** — verify that your rolling 12-month taxable turnover has exceeded or is approaching £90,000
 2. **Choose your VAT scheme** — compare Standard Accounting, Cash Accounting, Flat Rate, and Annual Accounting against your business model
-3. **Register online** — use the HMRC VAT registration portal (VAT1 form) or instruct a formation agent to file on your behalf
+3. **Register online** — use the HMRC VAT registration portal (VAT1 form) or instruct our team via our [premium formation packages](/pricing) to file on your behalf
 4. **Receive your VAT number** — HMRC typically issues your VAT registration number within **5–14 working days** of a complete application
 5. **Update all sales invoices** — add your VAT number to every invoice and begin charging 20% (or the applicable rate) from your effective registration date
 6. **Set up MTD-compatible software** — link your accounting software to the HMRC MTD API before your first return is due
