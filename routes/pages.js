@@ -271,4 +271,18 @@ router.get('/non-uk-resident-company', (req, res) => {
     });
 });
 
+router.get('/services/apostille', (req, res) => {
+    res.render('pages/services/apostille', {
+        title: 'UK Company Document Apostille & Legalisation Service',
+        metaDescription: 'Official UK FCDO document apostille and legalisation service for Certificate of Incorporation, Memorandum, and Articles. Fast-track options with DHL delivery.'
+    });
+});
+
+router.get('/services/dissolution', (req, res) => {
+    res.render('pages/services/dissolution', {
+        title: 'Close UK Company Online | Managed DS01 Strike-Off Service',
+        metaDescription: 'Dissolve and strike off your UK Limited Company safely online. Managed DS01 Companies House filing service to avoid late penalties and close HMRC accounts.'
+    });
+});
+
 module.exports = router;

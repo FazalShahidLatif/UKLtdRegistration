@@ -1,0 +1,69 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<main class="py-24 bg-gray-50/50">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <div class="text-center mb-16">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 bg-red-50 border border-red-100 rounded-full mb-6">
+                <svg class="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                <span class="text-[10px] font-black uppercase tracking-widest text-red-600">Company Closure</span>
+            </div>
+            <h1 class="text-5xl font-black text-gray-900 mb-6 tracking-tight">Close UK Company Online</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Safely dissolve and strike off your UK Limited Company with our managed DS01 filing service. Avoid late filing fines and keep your record clean. Return to our <a href="/" class="text-brand-blue hover:underline font-bold">UK company registration homepage</a> if you ever need to launch a new venture.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <!-- Basic Strike-off -->
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col">
+                <h3 class="text-2xl font-black text-gray-900 mb-2">Basic Closure</h3>
+                <p class="text-4xl font-black text-brand-blue mb-6">&pound;49<span class="text-xs text-gray-400"> + gov fee</span></p>
+                <ul class="space-y-3 mb-8 flex-1">
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> DS01 Form Preparation</li>
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> Secure Digital Submission</li>
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> Status Tracking Alerts</li>
+                </ul>
+                <a href="/contact" class="block text-center bg-gray-900 text-white py-3 rounded-xl font-bold hover:bg-gray-800 transition">Get Basic Closure</a>
+            </div>
+
+            <!-- Fully Managed -->
+            <div class="bg-brand-blue p-8 rounded-3xl shadow-xl flex flex-col border border-blue-400 text-white">
+                <h3 class="text-2xl font-black mb-2">Fully Managed</h3>
+                <p class="text-4xl font-black mb-6">&pound;99<span class="text-sm text-blue-200"> /all-inc</span></p>
+                <ul class="space-y-3 mb-8 flex-1 text-sm">
+                    <li class="flex gap-2"><span class="text-white">✔</span> Companies House Fee Included</li>
+                    <li class="flex gap-2"><span class="text-white">✔</span> Board Resolution Preparation</li>
+                    <li class="flex gap-2"><span class="text-white">✔</span> Director & Shareholder Signatures</li>
+                    <li class="flex gap-2"><span class="text-white">✔</span> Final Accounts Guidance</li>
+                </ul>
+                <a href="/contact" class="block text-center bg-white text-brand-blue py-3 rounded-xl font-bold hover:bg-gray-100 transition">Go Managed</a>
+            </div>
+
+            <!-- Premium Strike-Off & Tax Close -->
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col">
+                <h3 class="text-2xl font-black text-gray-900 mb-2">Elite Close</h3>
+                <p class="text-4xl font-black text-brand-blue mb-6">&pound;199<span class="text-sm text-gray-400"> /full</span></p>
+                <ul class="space-y-3 mb-8 flex-1">
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> Fully Managed DS01 Filing</li>
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> HMRC Corporation Tax Close</li>
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> HMRC VAT Deregistration</li>
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> Confirmation of Closure</li>
+                </ul>
+                <a href="/contact" class="block text-center bg-gray-900 text-white py-3 rounded-xl font-bold hover:bg-gray-800 transition">Select Elite</a>
+            </div>
+        </div>
+
+        <!-- Informative section for readability -->
+        <div class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm max-w-4xl mx-auto">
+            <h2 class="text-3xl font-black text-gray-900 mb-6">How to Safely Dissolve a UK Company</h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">Closing a UK Limited Company requires following a specific legal workflow. You must inform all interested parties, including shareholders, creditors, and HMRC. Our managed service ensures your DS01 application is submitted correctly to Companies House, preventing any delays or rejections.</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Requirements for Strike-off:</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 text-sm">
+                <li>The company must not have traded or sold any stock in the last 3 months.</li>
+                <li>The company must not have changed its name in the last 3 months.</li>
+                <li>The company must not have any active legal proceedings against it.</li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<%- include('../../partials/footer') %>

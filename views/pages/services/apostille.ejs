@@ -1,0 +1,68 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation') %>
+
+<main class="py-24 bg-gray-50/50">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <div class="text-center mb-16">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 bg-blue-50 border border-blue-100 rounded-full mb-6">
+                <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                <span class="text-[10px] font-black uppercase tracking-widest text-brand-blue">Global Compliance</span>
+            </div>
+            <h1 class="text-5xl font-black text-gray-900 mb-6 tracking-tight">UK Company Document Apostille</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Get your Companies House registry documents fully legalised with our official UK Foreign & Commonwealth Office (FCDO) apostille service. Start setting up your global corporate footprint from our <a href="/" class="text-brand-blue hover:underline font-bold">UK company registration homepage</a>.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <!-- Standard -->
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col">
+                <h3 class="text-2xl font-black text-gray-900 mb-2">Standard</h3>
+                <p class="text-4xl font-black text-brand-blue mb-6">&pound;99<span class="text-sm text-gray-400"> /doc</span></p>
+                <ul class="space-y-3 mb-8 flex-1">
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> Official UK FCDO Seal</li>
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> 5-7 Business Days</li>
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> Scan Copy Sent via Email</li>
+                </ul>
+                <a href="/contact" class="block text-center bg-gray-900 text-white py-3 rounded-xl font-bold hover:bg-gray-800 transition">Select Standard</a>
+            </div>
+
+            <!-- Premium Fast Track -->
+            <div class="bg-brand-blue p-8 rounded-3xl shadow-xl flex flex-col border border-blue-400 text-white">
+                <h3 class="text-2xl font-black mb-2">Fast Track</h3>
+                <p class="text-4xl font-black mb-6">&pound;179<span class="text-sm text-blue-200"> /doc</span></p>
+                <ul class="space-y-3 mb-8 flex-1 text-sm">
+                    <li class="flex gap-2"><span class="text-white">✔</span> FCDO Same-Day Processing</li>
+                    <li class="flex gap-2"><span class="text-white">✔</span> 2-3 Business Days Turnaround</li>
+                    <li class="flex gap-2"><span class="text-white">✔</span> Digital Scan + Registered Mail</li>
+                </ul>
+                <a href="/contact" class="block text-center bg-white text-brand-blue py-3 rounded-xl font-bold hover:bg-gray-100 transition">Go Fast Track</a>
+            </div>
+
+            <!-- Complete Bundle -->
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col">
+                <h3 class="text-2xl font-black text-gray-900 mb-2">Global Pack</h3>
+                <p class="text-4xl font-black text-brand-blue mb-6">&pound;299<span class="text-sm text-gray-400"> /set</span></p>
+                <ul class="space-y-3 mb-8 flex-1">
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> Legalise Incorporation Set</li>
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> FCDO & Notarisation Fees</li>
+                    <li class="flex gap-2 text-gray-600 text-sm"><span class="text-green-500">✔</span> DHL Worldwide Express Shipping</li>
+                </ul>
+                <a href="/contact" class="block text-center bg-gray-900 text-white py-3 rounded-xl font-bold hover:bg-gray-800 transition">Get Complete Pack</a>
+            </div>
+        </div>
+
+        <!-- Informative section for readability -->
+        <div class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm max-w-4xl mx-auto">
+            <h2 class="text-3xl font-black text-gray-900 mb-6">Why Do You Need an Apostille?</h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">If you plan to use your UK Limited Company to open a bank account in your home country, sign corporate agreements, or register foreign branches, local authorities will require verified documents. An apostille certificate confirms that your UK incorporation documents are authentic and legally recognized under the Hague Convention.</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Documents We Legalise:</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 text-sm">
+                <li>Certificate of Incorporation</li>
+                <li>Memorandum and Articles of Association</li>
+                <li>Companies House CS01 Confirmation Statement</li>
+                <li>Share Certificates and Register of Members</li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<%- include('../../partials/footer') %>
