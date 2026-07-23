@@ -130,22 +130,14 @@
     ,{
       "@type": "FAQPage",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Can a non-resident register a UK company?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, anyone of any nationality can register a UK Limited Company, provided they have a UK registered office address."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need to visit the UK to open a business bank account?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No, digital banks like Wise, Revolut, and Tide allow remote account opening for non-residents."
-          }
-        }
+        {"@type":"Question","name":"What is ltd company UK registration and how does it work?","acceptedAnswer":{"@type":"Answer","text":"Ltd company UK registration is the official process of incorporating a private limited company at Companies House. You submit a Memorandum of Association, Articles of Association, and an IN01 form. Companies House issues a Certificate of Incorporation confirming your company number and registered name. The entire process is done electronically. Our ACSP-verified agents transmit directly to the government gateway, achieving same-day approval in most cases."}},
+        {"@type":"Question","name":"How long does a new ltd company registration take?","acceptedAnswer":{"@type":"Answer","text":"A new ltd company registration submitted via our same-day service before 3 PM UK time is typically approved by Companies House within 3-6 working hours. Standard registrations are processed within 24-48 working hours. We submit electronically directly to the government gateway with no postal delays."}},
+        {"@type":"Question","name":"Can non-residents complete a new ltd company registration in the UK?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is no requirement to be a UK resident to complete a new ltd company registration. We specialise in helping international founders form companies from anywhere in the world. You need a UK registered office address (which we provide) and valid ID for all directors."}},
+        {"@type":"Question","name":"How do I check company name availability UK?","acceptedAnswer":{"@type":"Answer","text":"Use our free company names search tool at /company-name-check to check company name availability UK instantly. It queries the live Companies House register (over 5 million companies) applying the same too-like matching rules used by Companies House internally."}},
+        {"@type":"Question","name":"What are the rules for ltd company names?","acceptedAnswer":{"@type":"Answer","text":"Ltd company names must: end in Limited or Ltd (or Welsh equivalents), not be identical or too similar to an existing registered name, not contain sensitive words (Bank, Royal, Chartered) without approval, not imply a government connection, and not be offensive or illegal."}},
+        {"@type":"Question","name":"What is the ltd company names register?","acceptedAnswer":{"@type":"Answer","text":"The ltd company names register is the official Companies House index of all incorporated UK companies - both active and dissolved - containing over 5 million entries. When you apply for a new ltd company registration, Companies House checks your name against this register using its same-as algorithm."}},
+        {"@type":"Question","name":"Can I reserve a company name before registration?","acceptedAnswer":{"@type":"Answer","text":"No. Companies House does not allow name reservations. The only way to secure a ltd company name is to actively incorporate it. Our same-day ltd company UK registration service locks your name within hours of completing our online application."}},
+        {"@type":"Question","name":"Can a non-resident open a UK business bank account?","acceptedAnswer":{"@type":"Answer","text":"Yes. Digital banks like Wise Business, Revolut Business, and Payoneer allow remote account opening for non-residents. Our Banking Assistance service includes document preparation, pre-application review, and direct introductions to maximise approval likelihood."}}
       ]
     }
     <% } %>
@@ -177,6 +169,29 @@
             "text": "Yes, while traditional high street banks may have stricter requirements, many UK based digital banking platforms specialized for businesses allow non-residents to open accounts remotely."
           }
         }
+      ]
+    }
+    <% } %>
+    <% if (currentPath === '/company-name-check') { %>
+    ,{
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"How do I check company name availability in the UK?","acceptedAnswer":{"@type":"Answer","text":"Use our free company names search tool. Enter your desired name and it instantly queries the live Companies House register - over 5 million companies. Results show existing active and dissolved companies so you can assess whether your chosen name clears the too-like rule. Once clear, proceed to ltd company UK registration via our same-day formation service."}},
+        {"@type":"Question","name":"What does check for company name availability actually involve?","acceptedAnswer":{"@type":"Answer","text":"Checking for company name availability means running your proposed name through three tests: (1) the Companies House same-as comparison against 5 million+ registered names, (2) the sensitive words list under the Company Names Regulations 2015, and (3) optionally the UK IPO trademark database to rule out brand conflicts."}},
+        {"@type":"Question","name":"What are ltd company names and what are the rules?","acceptedAnswer":{"@type":"Answer","text":"Ltd company names are official trading names for private limited companies registered at Companies House. Every valid UK ltd company name must end in Limited or Ltd, must not be too like an existing name, must not include restricted words without approval, must not imply a government connection, and must not be offensive."}},
+        {"@type":"Question","name":"What does Too Like mean under UK company name rules?","acceptedAnswer":{"@type":"Answer","text":"A name is considered too like an existing name if it differs only by common words, punctuation, spacing, or generic suffixes. For example Plumbing London Ltd is legally identical to Plumbing London Group Ltd. Companies House will automatically reject the duplicate. Our search highlights potential too-like matches before your new ltd company registration."}},
+        {"@type":"Question","name":"Can I reserve a company name without incorporating?","acceptedAnswer":{"@type":"Answer","text":"No. Companies House does not permit name reservations. The only way to secure and protect a ltd company name is to actively incorporate it - either as a trading company or as a dormant shell for future use. Our same-day ltd company UK registration service can lock in your name within hours."}},
+        {"@type":"Question","name":"How long does check company name availability UK take?","acceptedAnswer":{"@type":"Answer","text":"Using our real-time company names search, the check takes under 5 seconds. Our tool queries the Companies House API directly. Once you confirm your ltd company name is available, our formation process takes as little as 3-6 working hours for same-day registrations submitted before 3 PM UK time."}}
+      ]
+    }
+    <% } %>
+    <% if (currentPath === '/strategic-research-hub') { %>
+    ,{
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"How do I search ltd company names in the UK?","acceptedAnswer":{"@type":"Answer","text":"Use the company names search tool on this page. Enter your desired ltd company name and it instantly queries the live Companies House register containing over 5 million entries. Results show all active and dissolved companies matching your search so you can identify name conflicts before starting your new ltd company registration."}},
+        {"@type":"Question","name":"What is the best way to check company name availability UK?","acceptedAnswer":{"@type":"Answer","text":"The best way to check company name availability UK is to use our free real-time search tool above. It applies the same same-as matching algorithm that Companies House uses internally, so you get an accurate assessment before paying any registration fees."}},
+        {"@type":"Question","name":"What SIC code do I need for a tech company in the UK?","acceptedAnswer":{"@type":"Answer","text":"Most UK tech startups and software companies use SIC code 62012 (Business and domestic software development) or 62020 (Information technology consultancy activities). Use the SIC Code Finder tool above to search by industry keyword and find the most accurate code for your business."}}
       ]
     }
     <% } %>

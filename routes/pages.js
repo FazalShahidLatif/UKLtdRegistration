@@ -89,8 +89,8 @@ router.get('/about', (req, res) => {
 // FAQ page
 router.get('/faq', (req, res) => {
     res.render('pages/faq', {
-        title: 'Frequently Asked Questions',
-        metaDescription: 'Find answers to common questions about UK company formation.'
+        title: 'Ltd Company UK Registration FAQ | New Ltd Company Questions Answered',
+        metaDescription: 'Answers to every question about ltd company UK registration, new ltd company registration, checking company name availability, and ltd company names. Free expert guidance.'
     });
 });
 
@@ -158,16 +158,16 @@ router.get('/legal/compliance', (req, res) => {
 
 router.get('/strategic-research-hub', (req, res) => {
     res.render('pages/research-hub', {
-        title: 'Strategic Research Hub | UK SIC & Name Checker',
-        metaDescription: 'Verify your company name and find the correct SIC codes with our strategic research tools.'
+        title: 'Company Names Search | Check Company Name Availability UK — Free Tool',
+        metaDescription: 'Free company names search tool. Check company name availability UK instantly against the official Companies House register. Search ltd company names and verify trademarks before you register.'
     });
 });
 
 // LTD Company Formation Page (Core Conversion Page)
 router.get('/register-a-limited-company-uk', (req, res) => {
     res.render('pages/ltd-formation', {
-        title: 'Register a Limited Company UK | Ltd Company UK Registration | Same-Day Online Formation',
-        metaDescription: 'Register a limited company in the UK online. Fast Ltd company UK registration and full UK company formation service from £119.99. Same-day filing, Companies House approved, ACSP-verified, with Wise banking setup.'
+        title: 'Ltd Company UK Registration | New Ltd Company Registration | Same-Day Online',
+        metaDescription: 'Start your new ltd company registration today from £119.99. Fast ltd company UK registration via Companies House — same-day filing, ACSP-verified agents, Wise banking setup included.'
     });
 });
 
@@ -259,8 +259,8 @@ router.get('/confirmation-statement', (req, res) => {
 
 router.get('/company-name-check', (req, res) => {
     res.render('pages/services/company-name-check', {
-        title: 'Check Company Name Availability UK | Free Search & Trademark Tool',
-        metaDescription: 'Verify if your UK company name is available instantly. Check against Companies House registry, sensitive word lists, and trademark databases for free.'
+        title: 'Check Company Name Availability UK | Ltd Company Names Search — Free',
+        metaDescription: 'Check company name availability UK for free. Search ltd company names against the live Companies House register, sensitive word lists, and trademark databases. Find your perfect ltd company name and register today.'
     });
 });
 
