@@ -21,6 +21,11 @@ router.post('/chat', async (req, res) => {
     res.json(result);
 });
 
+// Redirect GET chat requests (from search engines/direct visits) to homepage
+router.get('/chat', (req, res) => {
+    res.redirect(301, '/');
+});
+
 // Mock Company Search
 router.get('/company-search', (req, res) => {
     const { q } = req.query;

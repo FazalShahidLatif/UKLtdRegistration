@@ -74,5 +74,29 @@
     {
         "from": "/blog/wise-vs-uk-banks-2026",
         "to": "/blog/wise-vs-uk-banks-non-residents"
+    },
+    {
+        "from": "/uk-ltd-vs-us-llc",
+        "to": "/blog/uk-ltd-vs-us-llc"
+    },
+    {
+        "from": "/uk-company-vs-delaware-c-corp",
+        "to": "/blog/uk-company-vs-delaware-c-corp"
+    },
+    {
+        "from": "/do-i-need-uk-address-to-form-uk-ltd",
+        "to": "/blog/uk-registered-office-address-requirements-2026"
+    },
+    {
+        "from": "/uk-ltd-formation-for-non-residents-complete-guide",
+        "to": "/blog/uk-company-formation-complete-guide-2026"
+    },
+    {
+        "from": "/business-banking-for-uk-ltd-companies-owned-by-non-residents",
+        "to": "/blog/business-banking-uk-ltd-non-residents"
+    },
+    {
+        "from": "/blog/cheapest-way-to-register-uk-company-2026",
+        "to": "/blog/cheapest-way-register-uk-company-2026"
     }
 ]
