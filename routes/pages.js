@@ -167,7 +167,7 @@ router.get('/strategic-research-hub', (req, res) => {
 router.get('/register-a-limited-company-uk', (req, res) => {
     res.render('pages/ltd-formation', {
         title: 'Ltd Company UK Registration | New Ltd Company Registration | Same-Day Online',
-        metaDescription: 'Start your new ltd company registration today from £119.99. Fast ltd company UK registration via Companies House — same-day filing, ACSP-verified agents, Wise banking setup included.'
+        metaDescription: 'Start your new ltd company registration today from £119.99. Fast UK limited (United Kingdom private limited) company registration via Companies House — same-day filing, ACSP-verified agents, Wise banking setup included.'
     });
 });
 
