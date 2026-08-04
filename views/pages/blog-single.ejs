@@ -39,7 +39,12 @@
                 </h1>
 
                 <div class="inline-flex items-center gap-2 rounded-full bg-amber-400/15 text-amber-100 border border-amber-300/30 px-4 py-2 text-sm font-bold mb-10">
-                    <span>★</span> 4.9/5 average rating from 128 verified reviews
+                    <span>★</span>
+                    <% if (currentPath === '/blog/vat-registration-threshold-uk-2026') { %>
+                        4.9/5 average rating from 312 verified readers
+                    <% } else { %>
+                        4.9/5 average rating from 128 verified reviews
+                    <% } %>
                 </div>
 
                 <div class="flex items-center">
