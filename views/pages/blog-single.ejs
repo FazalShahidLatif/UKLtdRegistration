@@ -177,6 +177,42 @@
                 </div>
                 <% } %>
 
+                <!-- VAT Calculator & Recommended Reads (VAT article specific) -->
+                <% if (currentPath === '/blog/vat-registration-threshold-uk-2026') { %>
+                <div class="mt-12 p-8 bg-blue-50 rounded-2xl border border-blue-100">
+                    <h3 class="text-2xl font-black mb-4">VAT Threshold Calculator</h3>
+                    <p class="text-gray-600 mb-4">Estimate your rolling 12-month turnover and see if you need to register.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-end">
+                        <label class="text-sm font-bold text-gray-700">Average Monthly Revenue (GBP)</label>
+                        <input id="monthlyRevenue" type="number" class="p-3 rounded-lg border border-gray-200" placeholder="e.g. 7500">
+                        <button id="calcBtn" class="md:col-span-2 bg-brand-blue text-white py-3 rounded-xl font-bold">Calculate Rolling 12-Month Total</button>
+                        <div id="calcResult" class="md:col-span-2 text-gray-800 font-bold mt-4"></div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-3">This simple estimator multiplies your average monthly revenue by 12 to show an annualised total. For exact HMRC rolling calculations, export monthly invoices and sum any consecutive 12-month window.</p>
+                </div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function(){
+                        const btn = document.getElementById('calcBtn');
+                        btn && btn.addEventListener('click', function(){
+                            const m = parseFloat(document.getElementById('monthlyRevenue').value) || 0;
+                            const total = (m * 12).toLocaleString('en-GB', {style:'currency', currency:'GBP'});
+                            const needs = (m * 12) >= 90000;
+                            document.getElementById('calcResult').textContent = `Rolling 12-month estimate: ${total}. ` + (needs ? 'You likely need to register for VAT.' : 'You are below the current £90,000 threshold.');
+                        });
+                    });
+                </script>
+
+                <div class="mt-8 p-6 bg-white rounded-xl border border-gray-100">
+                    <h4 class="font-black mb-3">Recommended Reading</h4>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        <li><a href="/blog/uk-company-formation-complete-guide-2026" class="text-brand-blue font-bold">UK Company Formation 2026: The Ultimate Guide</a></li>
+                        <li><a href="/blog/uk-company-formation-cost-breakdown-2026" class="text-brand-blue font-bold">UK Company Formation Cost: Complete Breakdown</a></li>
+                        <li><a href="/blog/business-banking-uk-ltd-non-residents" class="text-brand-blue font-bold">Business Banking for Non-Residents</a></li>
+                    </ul>
+                </div>
+                <% } %>
+
                 <!-- Strategic Advice Component -->
                 <div class="mt-20 p-10 bg-gradient-to-br from-gray-900 to-blue-900 rounded-[3rem] text-white relative overflow-hidden">
                     <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
