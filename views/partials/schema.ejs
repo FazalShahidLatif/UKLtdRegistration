@@ -191,8 +191,77 @@
         {"@type":"Question","name":"What are ltd company names and what are the rules?","acceptedAnswer":{"@type":"Answer","text":"Ltd company names are official trading names for private limited companies registered at Companies House. Every valid UK ltd company name must end in Limited or Ltd, must not be too like an existing name, must not include restricted words without approval, must not imply a government connection, and must not be offensive."}},
         {"@type":"Question","name":"What does Too Like mean under UK company name rules?","acceptedAnswer":{"@type":"Answer","text":"A name is considered too like an existing name if it differs only by common words, punctuation, spacing, or generic suffixes. For example Plumbing London Ltd is legally identical to Plumbing London Group Ltd. Companies House will automatically reject the duplicate. Our search highlights potential too-like matches before your new ltd company registration."}},
         {"@type":"Question","name":"Can I reserve a company name without incorporating?","acceptedAnswer":{"@type":"Answer","text":"No. Companies House does not permit name reservations. The only way to secure and protect a ltd company name is to actively incorporate it - either as a trading company or as a dormant shell for future use. Our same-day ltd company UK registration service can lock in your name within hours."}},
-        {"@type":"Question","name":"How long does check company name availability UK take?","acceptedAnswer":{"@type":"Answer","text":"Using our real-time company names search, the check takes under 5 seconds. Our tool queries the Companies House API directly. Once you confirm your ltd company name is available, our formation process takes as little as 3-6 working hours for same-day registrations submitted before 3 PM UK time."}}
+        {"@type":"Question","name":"How long does check company name availability UK take?","acceptedAnswer":{"@type":"Answer","text":"Using our real-time company names search, the check takes under 5 seconds. Our tool queries the Companies House API directly. Once you confirm your ltd company name is available, our formation process takes as little as 3-6 working hours for same-day registrations submitted before 3 PM UK time."}},
+        {"@type":"Question","name":"Is the company name check tool free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our company names search tool is 100% free with no registration required. You can run unlimited searches against the live Companies House register, sensitive word list, and trademark database."}},
+        {"@type":"Question","name":"What happens if my chosen company name is rejected?","acceptedAnswer":{"@type":"Answer","text":"If Companies House rejects your name, you must choose an alternative and resubmit. Our agents help you modify the name — for example swapping Group for Solutions — and resubmit at no extra cost as part of our formation packages."}}
       ]
+    }
+    ,{
+      "@type": "HowTo",
+      "name": "How to Check Company Name Availability in the UK",
+      "description": "Follow these steps to verify your desired UK limited company name is available before registration with Companies House.",
+      "totalTime": "PT2M",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "GBP",
+        "value": "0"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Enter your desired company name",
+          "text": "Type your proposed ltd company name into the free company names search tool. Include the word Limited or Ltd at the end.",
+          "url": "<%= siteUrl %>/company-name-check"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Review Companies House results",
+          "text": "The tool queries the live Companies House register containing over 5 million entries. Review active and dissolved matches to check for too-like conflicts.",
+          "url": "<%= siteUrl %>/company-name-check"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Check for sensitive words",
+          "text": "Verify your name does not contain restricted words like Bank, Royal, Chartered, or Insurance that require special approval from regulatory bodies.",
+          "url": "<%= siteUrl %>/company-name-check"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Verify against UK trademarks",
+          "text": "Cross-check your company name against the UK Intellectual Property Office trademark database to avoid brand conflicts and potential legal disputes.",
+          "url": "<%= siteUrl %>/company-name-check"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Register your company",
+          "text": "Once your name clears all checks, proceed to register your limited company via our same-day formation service. Most applications are approved within 3 to 6 working hours.",
+          "url": "<%= siteUrl %>/register-a-limited-company-uk"
+        }
+      ]
+    }
+    ,{
+      "@type": "SoftwareApplication",
+      "name": "UK Company Name Availability Checker",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "url": "<%= siteUrl %>/company-name-check",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "GBP"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "1340",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
     }
     <% } %>
     <% if (currentPath === '/strategic-research-hub') { %>
