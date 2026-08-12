@@ -203,24 +203,27 @@ router.get('/sitemap.xml', (req, res) => {
 router.get('/priority-sitemap.xml', (req, res) => {
     try {
         const rootUrl = 'https://ukltdregistration.com';
+        // Build priority pages list dynamically from top articles
+        let priorityBlogRoutes = [];
+        try {
+            const blogArticlesPath = path.join(__dirname, '../content/blog/blog-articles.json');
+            if (fs.existsSync(blogArticlesPath)) {
+                const blogData = JSON.parse(fs.readFileSync(blogArticlesPath, 'utf8'));
+                const articles = blogData.articles || [];
+                // Take first 40 articles from the source of truth as priority
+                priorityBlogRoutes = articles.slice(0, 40).map(a => `/blog/${a.slug}`);
+            }
+        } catch (e) {
+            console.error('Error building priority blog routes:', e);
+        }
+
         const priorityPages = [
             '/',
             '/services',
             '/about',
-            '/blog/southeast-asia-founders',
-            '/blog/export-hub',
-            '/blog/regional-guides',
             '/get-help-forming-a-uk-ltd',
             '/uk-ltd-formation-for-non-residents',
             '/register-a-limited-company-uk',
-            '/register-company-england',
-            '/register-company-scotland',
-            '/register-company-wales',
-            '/register-company-london',
-            '/register-company-manchester',
-            '/register-company-birmingham',
-            '/register-company-leeds',
-            '/register-company-edinburgh',
             '/services/banking',
             '/services/apostille',
             '/services/dissolution',
@@ -231,32 +234,8 @@ router.get('/priority-sitemap.xml', (req, res) => {
             '/vat-registration',
             '/confirmation-statement',
             '/company-name-check',
-            '/non-uk-resident-company',
-            '/blog/can-i-register-a-uk-company-as-a-non-uk-resident',
-            '/blog/how-to-register-uk-company-from-usa-complete-step-by-step-guide-2026',
-            '/blog/sea-founders-uk-playbook-2026',
-            '/blog/register-uk-ltd-online-india-pakistan-2026',
-            '/blog/pakistan-exporter-guide-leather-textile-uk-ltd',
-            '/blog/india-manufacturer-roadmap-usa-europe-uk-ltd',
-            '/blog/global-food-export-guide-coffee-meat-seafood-uk-ltd',
-            '/blog/global-tendering-guide-uk-ltd-high-ticket-export',
-            '/blog/acsp-identity-verification-2026',
-            '/blog/vat-registration-threshold-uk-2026',
-            '/blog/uk-company-formation-complete-guide-2026',
-            '/blog/wise-vs-uk-banks-non-residents',
-            '/blog/uk-ltd-vs-us-llc',
-            '/blog/uk-company-vs-delaware-c-corp',
-            '/blog/uk-registered-office-address-requirements-2026',
-            '/blog/uk-company-tax-efficiency-non-residents',
-            '/blog/revolut-business-vs-wise-business-uk-ltd-2026',
-            '/blog/payoneer-business-account-uk-ltd-setup-guide-2026',
-            // use canonical registration page
-            '/register-a-limited-company-uk',
-            '/blog/bangalore-fintech-startups-uk-ltd',
-            '/blog/dhaka-garment-exporters-uk-ltd-guide-2026',
-            '/blog/colombo-call-centers-bpo-uk-company',
-            '/blog/nepal-it-freelancers-uk-ltd-payment-gateways'
-        ];
+            '/non-uk-resident-company'
+        ].concat(priorityBlogRoutes);
 
         const today = new Date().toISOString().split('T')[0];
         let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
