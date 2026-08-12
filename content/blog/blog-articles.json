@@ -1032,6 +1032,43 @@
       "imageAlt": "African tech entrepreneur accessing global payment gateways",
       "readTime": 9
     }
+    ,
+    {
+      "id": 86,
+      "slug": "new-ltd-company-registration",
+      "title": "New LTD Company Registration in the UK",
+      "metaTitle": "New LTD Company Registration — Fast UK Company Formation",
+      "metaDescription": "Register a new LTD company in the UK: step-by-step guidance, name checks, timelines, and service options.",
+      "category": "Company Formation",
+      "tags": ["formation", "how-to", "companies house"],
+      "focusKeyword": "new ltd company registration",
+      "excerpt": "Complete guide to registering a new UK LTD company, name checks, costs, and timelines.",
+      "readTime": 8
+    },
+    {
+      "id": 87,
+      "slug": "ltd-company-uk-registration",
+      "title": "LTD Company UK Registration",
+      "metaTitle": "LTD Company UK Registration — Start Your Company Today",
+      "metaDescription": "Complete guide to LTD company registration in the UK: documents, director requirements, registered office, and filing with Companies House.",
+      "category": "Company Formation",
+      "tags": ["formation", "compliance", "companies house"],
+      "focusKeyword": "ltd company uk registration",
+      "excerpt": "Practical steps and compliance guidance to register an LTD in the UK.",
+      "readTime": 7
+    },
+    {
+      "id": 88,
+      "slug": "check-company-name-availability-uk",
+      "title": "Check Company Name Availability UK",
+      "metaTitle": "Check Company Name Availability UK — Free Search & Guide",
+      "metaDescription": "Learn how to check UK company name availability, avoid trademark conflicts, and choose a compliant name before incorporation.",
+      "category": "Company Formation",
+      "tags": ["name search", "companies house", "trademark"],
+      "focusKeyword": "check company name availability uk",
+      "excerpt": "How to check Companies House and trademark availability before you register.",
+      "readTime": 6
+    }
   ],
   "seoStrategy": {
     "keywordRatios": {
