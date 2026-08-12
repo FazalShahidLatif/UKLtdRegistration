@@ -136,6 +136,49 @@
       <% } %>
     }
     <% } %>
+    <% if (currentPath === '/new-ltd-company-registration' || currentPath === '/ltd-company-uk-registration') { %>
+    ,{
+      "@type": "HowTo",
+      "name": "How to Register a New LTD Company in the UK",
+      "description": "Step-by-step process to register a new LTD company in the UK via Companies House and our formation service.",
+      "totalTime": "PT1H",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "GBP",
+        "value": "104.99"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Check company name availability",
+          "text": "Use the company name check tool to verify your proposed ltd name is available and not too-like existing names.",
+          "url": "<%= siteUrl %>/check-company-name-availability-uk"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Provide director and PSC details",
+          "text": "Collect director details, PSC information and ID documents for ACSP verification.",
+          "url": "<%= siteUrl %><%= currentPath %>"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Select registered office and SIC codes",
+          "text": "Choose a UK registered office address and the appropriate SIC codes for your business activities.",
+          "url": "<%= siteUrl %><%= currentPath %>"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Submit incorporation filing",
+          "text": "We file your incorporation with Companies House and obtain your Certificate of Incorporation.",
+          "url": "<%= siteUrl %><%= currentPath %>"
+        }
+      ]
+    }
+    <% } %>
     <% if (currentPath === '/faq') { %>
     ,{
       "@type": "FAQPage",
