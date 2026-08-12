@@ -1,0 +1,59 @@
+name: Verify Production Sitemap
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: {}
+
+jobs:
+  verify-sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch sitemap
+        run: |
+          set -e
+          echo "Fetching sitemap..."
+          curl -sS https://ukltdregistration.com/sitemap.xml -o sitemap.xml
+          echo "Saved sitemap to sitemap.xml"
+
+      - name: Check for problematic slugs
+        run: |
+          set -e
+          PATTERNS=(
+            "register-uk-ltd-online-singapore-2026"
+            "register-uk-ltd-online-malaysia-2026"
+            "register-uk-ltd-online-philippines-2026"
+            "register-uk-ltd-online-vietnam-2026"
+            "register-uk-ltd-online-indonesia-2026"
+            "register-uk-ltd-online-thailand-2026"
+            "services/company-secretary"
+            "services/confirmation-statement"
+            "ltd-company-uk-registration"
+            "new-ltd-company-registration"
+            "check-company-name-availability-uk"
+          )
+
+          FOUND=0
+          for p in "${PATTERNS[@]}"; do
+            if grep -qF "$p" sitemap.xml; then
+              echo "PROBLEMATIC: found $p in sitemap"
+              FOUND=1
+            fi
+          done
+
+          if [ "$FOUND" -ne 0 ]; then
+            echo "One or more problematic slugs were found in sitemap.xml"
+            exit 1
+          fi
+
+          echo "No problematic slugs found in sitemap.xml"
+
+      - name: (Optional) Ping Search Engines
+        if: ${{ always() }}
+        run: |
+          echo "Pinging Google and Bing (responses are informational)..."
+          curl -sS "https://www.google.com/ping?sitemap=https://ukltdregistration.com/sitemap.xml" || true
+          curl -sS "https://www.bing.com/webmaster/ping.aspx?siteMap=https://ukltdregistration.com/sitemap.xml" || true
