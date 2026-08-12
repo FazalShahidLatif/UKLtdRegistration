@@ -29,8 +29,7 @@ router.get('/sitemap.xml', (req, res) => {
             '/services/meeting-rooms',
             '/services/accounting',
             '/services/banking',
-            '/services/company-secretary',
-            '/services/confirmation-statement',
+            // Note: canonical service pages are under top-level paths (see routes/pages.js)
             '/services/apostille',
             '/services/dissolution',
             '/registered-office-address',
@@ -38,9 +37,6 @@ router.get('/sitemap.xml', (req, res) => {
             '/vat-registration',
             '/confirmation-statement',
             '/company-name-check',
-            '/new-ltd-company-registration',
-            '/ltd-company-uk-registration',
-            '/check-company-name-availability-uk',
             '/non-uk-resident-company',
             '/about',
             '/faq',
@@ -75,7 +71,29 @@ router.get('/sitemap.xml', (req, res) => {
             console.error('Error reading blog articles for sitemap:', e);
         }
 
-        const allRoutes = [...staticRoutes, ...articles];
+        // Load redirect sources and avoid listing redirecting URLs in the sitemap
+        let redirectSources = new Set();
+        try {
+            const redirectsPath = path.join(__dirname, '../content/redirects.json');
+            if (fs.existsSync(redirectsPath)) {
+                const redirectsData = JSON.parse(fs.readFileSync(redirectsPath, 'utf8'));
+                redirectsData.forEach(r => redirectSources.add(r.from));
+            }
+        } catch (e) {
+            console.error('Error reading redirects for sitemap filtering:', e);
+        }
+
+        // Filter out any routes that are redirect sources and deduplicate while preserving order
+        const filteredStatic = staticRoutes.filter(r => !redirectSources.has(r));
+        const filteredArticles = articles.filter(r => !redirectSources.has(r));
+        const allRoutes = [];
+        const seen = new Set();
+        (filteredStatic.concat(filteredArticles)).forEach(route => {
+            if (!seen.has(route)) {
+                seen.add(route);
+                allRoutes.push(route);
+            }
+        });
         const today = new Date().toISOString().split('T')[0];
 
         let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
@@ -232,9 +250,8 @@ router.get('/priority-sitemap.xml', (req, res) => {
             '/blog/uk-company-tax-efficiency-non-residents',
             '/blog/revolut-business-vs-wise-business-uk-ltd-2026',
             '/blog/payoneer-business-account-uk-ltd-setup-guide-2026',
-            '/new-ltd-company-registration',
-            '/ltd-company-uk-registration',
-            '/check-company-name-availability-uk',
+            // use canonical registration page
+            '/register-a-limited-company-uk',
             '/blog/bangalore-fintech-startups-uk-ltd',
             '/blog/dhaka-garment-exporters-uk-ltd-guide-2026',
             '/blog/colombo-call-centers-bpo-uk-company',
