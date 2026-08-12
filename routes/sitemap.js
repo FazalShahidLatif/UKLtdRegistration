@@ -29,6 +29,8 @@ router.get('/sitemap.xml', (req, res) => {
             '/services/meeting-rooms',
             '/services/accounting',
             '/services/banking',
+            '/services/company-secretary',
+            '/services/confirmation-statement',
             '/services/apostille',
             '/services/dissolution',
             '/registered-office-address',
