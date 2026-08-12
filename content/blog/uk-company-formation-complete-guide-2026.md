@@ -58,3 +58,5 @@ Our mission is to bridge the gap between your vision and a fully functional UK c
 **Advance with Authority**: Ready to scale? Our formation platform is optimized for the 2026 regulatory environment. Choose a package that reflects the scale of your ambition.
 
 [View Our 2026 Formation Packages](/pricing)
+
+If you're ready to begin incorporating now, start with our step-by-step registration page: [/new-ltd-company-registration](/new-ltd-company-registration) and verify your proposed name first at [/check-company-name-availability-uk](/check-company-name-availability-uk).

@@ -39,6 +39,9 @@ This guide uncovers the **cheaper ways to incorporate in 2026**, exposes the tra
 
 ---
 
+Ready to incorporate today? Start here: [/new-ltd-company-registration](/new-ltd-company-registration) and check name availability at [/check-company-name-availability-uk](/check-company-name-availability-uk).
+
+
 ## The Bare Minimum Cost (Companies House)
 
 As of early 2026, the absolute basement price for registering a UK Limited Company is **£100**. This is the mandatory digital filing fee charged directly by the UK government (Companies House).
