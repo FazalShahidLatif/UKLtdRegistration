@@ -19,7 +19,6 @@ pids/
 # Build outputs
 dist/
 build/
-public/css/output.css
 
 # Testing
 coverage/
