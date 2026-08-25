@@ -1,13 +1,31 @@
+---
+title: "ACSP Identity Verification 2026: What UK Directors Need to Know"
+metaTitle: "ACSP Identity Verification 2026 | UK Director Compliance Guide"
+metaDescription: "Understand ACSP identity verification for UK company directors and PSCs in 2026, what an authorised provider does, which documents may be needed, and where to verify current Companies House requirements."
+slug: acsp-identity-verification-2026
+author: UK LTD Registration
+publishedDate: 2026-04-12
+updatedDate: 2026-08-25
+category: Compliance
+tags: [ACSP, identity verification, Companies House, compliance, directors]
+focusKeyword: ACSP identity verification 2026
+secondaryKeywords: [Companies House identity verification, UK director ID check, PSC verification]
+searchIntent: informational
+readTime: 9
+---
+
 # The Definitive 2026 Guide to ACSP Identity Verification
 
+**Short answer:** An Authorised Corporate Service Provider (ACSP) is a provider authorised by Companies House to carry out specified identity-verification services. Requirements and implementation dates can change, so directors should check the latest [Companies House guidance](https://www.gov.uk/government/organisations/companies-house) before filing.
+
 ## Executive Summary: The Era of Corporate Transparency
-Beginning in 2026, the **Economic Crime and Corporate Transparency Act (ECCTA)** fundamentally alters the DNA of UK business formation. No longer can directors remain "hidden" or unverified. Every individual with significant control (PSC) and every director must now undergo rigorous **Identity Verification** before their appointment is legally recognized.
+The **Economic Crime and Corporate Transparency Act (ECCTA)** introduces stronger identity and register-integrity measures. Directors and people with significant control (PSCs) should confirm when verification applies to their role and filing; implementation is phased and should not be assumed to be identical for every company.
 
 > [!IMPORTANT]
-> Failure to verify identity by the 2026 deadline is not just a compliance error—it is a criminal offense that can lead to director disqualification and significant financial penalties.
+> Do not rely on a formation agent's marketing summary for deadlines or penalties. Check the current Companies House identity-verification timetable and keep evidence of completed checks.
 
 ## What is an Authorized Corporate Service Provider (ACSP)?
-An **ACSP** is an elite tier of professional services—like **UK Ltd Registration**—that has been rigorously vetted and authorized by the Registrar of Companies to conduct high-stakes identity verification on their behalf.
+An **ACSP** is a professional service provider authorised by Companies House to conduct identity verification on its behalf. Confirm that a provider is authorised for the service you need before sharing identity documents.
 
 ### The Role of the ACSP in 2026:
 1. **Source of Truth**: We act as the bridge between your private identity documents and the public record.
