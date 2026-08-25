@@ -15,8 +15,9 @@ exports.index = (req, res) => {
         const allArticles = [...(data.articles || []), ...(data.newArticles || [])];
         
         res.render('pages/blog-list', {
-            title: 'Blog - UK Company Formation Insights',
-            metaDescription: 'Latest news and guides about UK company formation.',
+            title: 'How to Register a Company in the UK | 2026 Guides',
+            metaDescription: 'Learn how to register a company in the UK in 2026. Compare Companies House requirements, costs, timelines, registered office options, banking, and non-resident formation in one practical guide hub.',
+            metaKeywords: 'how to register a company in UK, UK company registration, UK limited company formation, Companies House registration, non-resident UK company',
             articles: allArticles
         });
     } catch (error) {
@@ -85,6 +86,9 @@ exports.show = (req, res) => {
         res.render('pages/blog-single', {
             title: article.title,
             metaDescription: article.metaDescription || article.excerpt,
+            metaKeywords: [article.focusKeyword, ...(article.tags || [])].filter(Boolean).join(', '),
+            ogType: 'article',
+            articleImage: article.image,
             article: article,
             content: content,
             relatedArticles: relatedArticles,

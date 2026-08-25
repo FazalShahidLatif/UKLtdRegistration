@@ -4,8 +4,9 @@ const router = express.Router();
 // Pricing page
 router.get(['/pricing', '/packages'], (req, res) => {
     res.render('pages/pricing', {
-        title: 'Pricing Packages | Simple & Transparent',
-        metaDescription: 'Choose the best UK company formation package for your business. All prices include Companies House filing fees.'
+        title: 'Cheapest Company Formation UK | Transparent 2026 Pricing',
+        metaDescription: 'Compare affordable UK company formation packages from £119.99. Companies House filing fee included, with clear pricing for UK residents, non-residents, registered office, and banking support.',
+        metaKeywords: 'cheapest company formation UK, affordable UK company registration, UK limited company formation cost, Companies House fee included'
     });
 });
 
@@ -20,8 +21,9 @@ router.get('/services', (req, res) => {
 // Specific Service Pages
 router.get('/services/virtual-office', (req, res) => {
     res.render('pages/services/virtual-office', {
-        title: 'Virtual Office UK London | UK Postbox Alternative | UK Ltd Registration',
-        metaDescription: 'Get a prestigious virtual office UK London address for your business. The perfect UK Postbox alternative for international founders.'
+        title: 'Virtual Office UK London | London Business Address',
+        metaDescription: 'Get a compliant virtual office UK London address from £99 per year. Protect your home address, receive company mail, and establish a credible London business presence for your UK Ltd.',
+        metaKeywords: 'virtual office UK London, London business address, virtual office address UK, registered office London, UK Postbox alternative'
     });
 });
 

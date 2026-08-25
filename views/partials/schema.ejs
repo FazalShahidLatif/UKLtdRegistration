@@ -110,6 +110,18 @@
       "headline": "<%= article.title %>",
       "description": "<%= article.metaDescription || article.excerpt %>",
       "image": "<%= siteUrl %><%= article.image %>",
+      "keywords": "<%= [article.focusKeyword, ...(article.tags || [])].filter(Boolean).join(', ') %>",
+      "about": {
+        "@type": "Thing",
+        "name": "<%= article.focusKeyword || article.category %>"
+      },
+      "mentions": [
+        {
+          "@type": "Organization",
+          "name": "Companies House",
+          "url": "https://www.gov.uk/government/organisations/companies-house"
+        }
+      ],
       "author": {
         "@type": "Organization",
         "name": "<%= siteName %>"
