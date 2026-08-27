@@ -152,6 +152,15 @@
                     <%- content %>
                 </div>
 
+                <% if (currentPath === '/blog/vat-registration-threshold-uk-2026') { %>
+                <aside class="not-prose mt-12 p-8 md:p-10 bg-amber-50 border border-amber-200 rounded-2xl shadow-sm" aria-label="2026 founder compliance checklist">
+                    <p class="text-xs font-black text-amber-800 uppercase tracking-widest mb-3">2026 Founder Compliance Checklist</p>
+                    <h3 class="text-2xl font-black text-gray-900 mb-3">Stay compliant from day one</h3>
+                    <p class="text-gray-700 leading-relaxed mb-6">Get the formation and VAT support your UK Ltd needs, including non-resident filing guidance and threshold checks.</p>
+                    <a href="/pricing" class="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded-xl font-black text-xs uppercase tracking-widest hover:bg-gray-700 transition" data-track="cta-vat-checklist">View formation and compliance plans</a>
+                </aside>
+                <% } %>
+
                 <!-- Content Clustering: Related Guides -->
                 <% if (typeof relatedArticles !== 'undefined' && relatedArticles.length > 0) { %>
                 <div class="mt-32 pt-20 border-t border-gray-100">

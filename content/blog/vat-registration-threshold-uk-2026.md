@@ -1,7 +1,7 @@
 ---
 title: "UK VAT Registration Threshold 2026: Current Rates, Dates & Rules"
-metaTitle: "UK VAT Registration Threshold 2026 | £90,000 Rule Explained"
-metaDescription: "The UK VAT registration threshold is £90,000 in 2026. Learn how the rolling 12-month test, 20% standard rate, deadlines, voluntary registration, and HMRC rules apply to UK Ltd companies."
+metaTitle: "UK VAT Threshold 2026: £90,000 Rule and Exemptions Explained"
+metaDescription: "The UK VAT threshold has changed for 2026. Find the exact £90,000 turnover limit, registration deadline, and whether your non-resident UK Ltd company is exempt."
 slug: vat-registration-threshold-uk-2026
 author: UK LTD Registration
 publishedDate: 2026-04-20

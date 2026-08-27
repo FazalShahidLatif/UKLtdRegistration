@@ -1,4 +1,21 @@
-# The Hidden Costs of UK Company Formation: Radical Transparency Report
+---
+title: "UK Ltd Company Annual Running Costs 2026: The Complete Budget"
+metaTitle: "UK Ltd Company Annual Costs 2026 | Full Running Cost Guide"
+metaDescription: "See the real annual running costs of a UK limited company in 2026, including Companies House fees, registered office, accounting, VAT, banking, and non-resident compliance."
+slug: uk-ltd-company-annual-costs-2026
+author: UK LTD Registration
+publishedDate: 2026-06-01
+updatedDate: 2026-08-27
+category: Pricing
+tags: [UK Ltd, company costs, compliance, non-resident, pricing]
+focusKeyword: limited company annual running costs UK
+secondaryKeywords: [hidden costs of UK company formation, UK Ltd annual compliance costs, non resident UK company tax rules]
+searchIntent: commercial
+commercialIntent: high
+readTime: 8
+---
+
+# UK Ltd Company Annual Running Costs 2026: The Complete Budget
 
 ## Perspective: Beyond the "Headline Price"
 The UK company formation market is saturated with "£12.99" and "Free" headline offers. However, for a sophisticated entrepreneur, the **Total Cost of Ownership (TCO)** is the only metric that matters. This report exposes the gaps in competitor pricing and provides a benchmark for professional budgeting.

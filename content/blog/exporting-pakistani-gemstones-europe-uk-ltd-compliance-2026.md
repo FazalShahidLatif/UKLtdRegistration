@@ -1,15 +1,15 @@
 ---
 title: "Exporting Pakistani Gemstones to Europe: UK Ltd Registration, Banking & Compliance Roadmap 2026"
-metaTitle: "Pakistani Gemstone Export to Europe 2026 | UK Ltd Compliance Roadmap"
-metaDescription: "Dedicated guide for Pakistani gemstone dealers in Peshawar, Gilgit, and Quetta. UK company registration, European import regulations, banking setup, and trade show strategy for 2026."
+metaTitle: "SIC Code for Jewelry Export UK | Pakistani Gemstone Guide 2026"
+metaDescription: "Pakistani gemstone dealers: choose the right SIC code for jewelry export to Europe through a UK Ltd. Covers registration, import compliance, banking, and Companies House checks for 2026."
 slug: exporting-pakistani-gemstones-europe-uk-ltd-compliance-2026
 author: UK LTD Registration
 publishedDate: 2026-06-01
 updatedDate: 2026-06-01
 category: International
 tags: [Pakistan, gemstones, emeralds, export, Europe, Peshawar, Gilgit, compliance, banking]
-focusKeyword: register UK company gemstone trader Pakistan
-secondaryKeywords: [Pakistani gemstone export Europe, Peshawar emerald export UK, Gilgit aquamarine trade, UK company for emerald export, Pakistan gem trade compliance]
+focusKeyword: SIC code for jewelry export UK
+secondaryKeywords: [Pakistani gemstone dealer UK registration, Pakistani gemstone export Europe, Peshawar emerald export UK, Gilgit aquamarine trade, Pakistan gem trade compliance]
 searchIntent: commercial
 commercialIntent: high
 featured: false

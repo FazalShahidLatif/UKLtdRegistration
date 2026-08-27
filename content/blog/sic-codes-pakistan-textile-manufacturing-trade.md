@@ -1,4 +1,21 @@
-# Navigating SIC Codes for Pakistani Textile Manufacturers: Choosing the Right Category for Global Trade
+---
+title: "SIC Codes for Pakistani Textile Manufacturers: The 2026 Trade Guide"
+metaTitle: "Wholesale Textile SIC Codes for Companies House | Pakistan Export Guide"
+metaDescription: "Find the right SIC code for Pakistani textile manufacturers, wholesalers, and exporters registering a UK Ltd. Avoid Companies House and banking delays with the correct category."
+slug: sic-codes-pakistan-textile-manufacturing-trade
+author: UK LTD Registration
+publishedDate: 2026-06-01
+updatedDate: 2026-08-27
+category: Compliance
+tags: [SIC Codes, textile, Pakistan, export, Companies House]
+focusKeyword: wholesale textile SIC code Companies House
+secondaryKeywords: [SIC code for textile export UK, Pakistani textile manufacturer UK registration, Faisalabad textile manufacturer London front office]
+searchIntent: commercial
+commercialIntent: high
+readTime: 8
+---
+
+# SIC Codes for Pakistani Textile Manufacturers: The 2026 Trade Guide
 
 For a Pakistani textile manufacturer in Faisalabad or Karachi, the decision to **form a uk company** is a strategic move to access **USA and European markets**. However, a common technical hurdle during the registration process is selecting the correct **SIC Code** (Standard Industrial Classification).
 

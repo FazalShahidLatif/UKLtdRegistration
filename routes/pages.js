@@ -176,8 +176,8 @@ router.get('/register-a-limited-company-uk', (req, res) => {
 // Regional Landing Pages
 router.get('/register-company-england', (req, res) => {
     res.render('pages/regions/england', {
-        title: 'Register a Company in England | England Limited Company Solutions',
-        metaDescription: 'Set up your England Limited company online. Fast, reliable same-day online formation. Approved Companies House agent, complete with registered office options.'
+        title: 'Register a Company in England Online | £119.99 Same-Day Formation',
+        metaDescription: 'Form an England limited company online today. Includes the £100 state fee, official London registered office options, and active 2026 ACSP verification from £119.99.'
     });
 });
 
@@ -204,29 +204,29 @@ router.get('/register-company-london', (req, res) => {
 
 router.get('/register-company-manchester', (req, res) => {
     res.render('pages/regions/manchester', {
-        title: 'Company Registration Manchester | Manchester LTD Company Setup',
-        metaDescription: 'Form a limited company in Manchester. Perfect setup for digital, creative, and tech startups in the North. Companies House approved and same-day setup.'
+        title: 'Manchester Company Formation Agents | Same-Day Online Setup',
+        metaDescription: 'Register a Manchester limited company online with same-day filing, £100 state fee included, and a London registered office option for your North West business.'
     });
 });
 
 router.get('/register-company-birmingham', (req, res) => {
     res.render('pages/regions/birmingham', {
-        title: 'Company Registration Birmingham | Birmingham Company Formation Agent',
-        metaDescription: 'Register a limited company in Birmingham. Fast, professional same-day online setup with active regional support.'
+        title: 'Register a Company in Birmingham | Online Formation from £119.99',
+        metaDescription: 'Form a Birmingham limited company online today with same-day Companies House filing, £100 state fee included, and registered office and banking support.'
     });
 });
 
 router.get('/register-company-leeds', (req, res) => {
     res.render('pages/regions/leeds', {
-        title: 'Company Registration Leeds | Leeds LTD Company Formation',
-        metaDescription: 'Set up your limited company in Leeds. Fast-track online company registration with full banking and VAT support.'
+        title: 'Same-Day Company Registration Leeds | Online Formation',
+        metaDescription: 'Register a Leeds limited company online with same-day filing, £100 state fee included, and a professional London registered office for your Yorkshire business.'
     });
 });
 
 router.get('/register-company-edinburgh', (req, res) => {
     res.render('pages/regions/edinburgh', {
-        title: 'Company Registration Edinburgh | Edinburgh Limited Company',
-        metaDescription: 'Register a limited company in Edinburgh. Comprehensive Scottish company formation service, fully remote and online.'
+        title: 'Incorporate a Business in Edinburgh | Online Scottish Formation',
+        metaDescription: 'Incorporate an Edinburgh limited company online with same-day Companies House filing, £100 state fee included, and remote Scottish formation support.'
     });
 });
 
@@ -247,8 +247,8 @@ router.get('/company-secretary', (req, res) => {
 
 router.get('/vat-registration', (req, res) => {
     res.render('pages/services/vat-registration', {
-        title: 'VAT Registration UK | Professional Online Filing Service',
-        metaDescription: 'Fast and secure VAT registration service in the UK. Voluntary and mandatory filings for residents and non-residents. Simplify your business tax compliance today.'
+        title: 'VAT Registration UK 2026 | HMRC Filing for Residents and Non-Residents',
+        metaDescription: 'Need VAT registration in the UK? Get HMRC filing support for mandatory or voluntary registration, the £90,000 2026 threshold, EORI setup, and non-resident UK Ltd compliance.'
     });
 });
 

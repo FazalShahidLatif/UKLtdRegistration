@@ -1,4 +1,21 @@
-# Choosing the Perfect SIC Code for Agricultural and Food Exports to the EU
+---
+title: "Choosing the Perfect SIC Code for Food Exports to the EU (Avoid Rejection)"
+metaTitle: "SIC Code for Food Exports to the EU | UK Ltd Guide 2026"
+metaDescription: "Choose the correct SIC code for food, agricultural, and spice exports to the EU through a UK Ltd. See wholesale codes, VAT considerations, and banking checks before registration."
+slug: sic-codes-agricultural-food-exports-eu-guide
+author: UK LTD Registration
+publishedDate: 2026-06-01
+updatedDate: 2026-08-27
+category: Compliance
+tags: [SIC Codes, food exports, agriculture, spices, EU]
+focusKeyword: how to choose SIC code for food export
+secondaryKeywords: [SIC code for jewelry export UK, export spices to Europe via UK Ltd, food export Companies House code]
+searchIntent: commercial
+commercialIntent: high
+readTime: 9
+---
+
+# Choosing the Perfect SIC Code for Food Exports to the EU (Avoid Rejection)
 
 For a South Asian exporter specialized in **spices**, **textiles**, or **agricultural products**, the technical side of **uk company registration** is as important as the trade itself. A critical part of this is the **SIC Code** (Standard Industrial Classification), which defines your business activity to **Companies House** and the **HMRC**.
 
