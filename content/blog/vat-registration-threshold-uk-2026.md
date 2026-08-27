@@ -68,7 +68,7 @@ Here is the full breakdown:
 | Zero Rate | **0%** | Most food, children's clothing, books, public transport |
 | Exempt | N/A | Insurance, financial services, education, NHS prescriptions |
 
-For most UK Limited Companies providing professional services or selling general goods, the **20% standard rate** applies to every sales invoice.
+For most UK Limited Companies providing professional services or selling general goods, the **20% standard rate** applies to standard-rated sales invoices. The correct rate depends on what you sell, where your customer belongs, and whether a zero-rated or exempt rule applies.
 
 ---
 
@@ -191,10 +191,10 @@ Since April 2022, **Making Tax Digital (MTD) for VAT** has been mandatory for **
 If you own a UK Limited Company from outside the UK — whether you are based in Pakistan, India, Bangladesh, the UAE, or anywhere else — VAT obligations apply to your **company's UK taxable turnover**, not your personal location.
 
 **Key rules for non-resident directors:**
-- Your UK Ltd must register for VAT if its UK taxable turnover exceeds **£90,000** in any 12-month period
+- Your UK Ltd must register for VAT if its taxable turnover exceeds **£90,000** in any rolling 12-month period, subject to the rules for taxable supplies and place of supply
 - VAT applies to **B2C UK sales** and most UK-to-UK B2B transactions
 - Sales **exclusively to non-UK customers** (exports) are typically zero-rated or outside the scope of UK VAT entirely
-- Selling **digital services directly to UK consumers** triggers a **£0 registration threshold** — you must register from the very first sale
+- Selling **digital services directly to UK consumers** can trigger VAT obligations from the first sale under the place-of-supply rules; the normal UK domestic threshold is not a blanket exemption for cross-border supplies
 
 **What happens if you have no UK physical presence?**
 You can still be VAT-registered. HMRC deals with overseas-based directors routinely. All correspondence is handled digitally. Your UK Ltd's registered office address (e.g., your London W1 address through our service) becomes the official correspondence point.
