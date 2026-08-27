@@ -1,3 +1,5 @@
+# UK SIC codes used by the company-name and industry tools.
+# Format: CODE DESCRIPTION
 SIC CODE DESCRIPTION
 1010 Mining & agglomeration of hard coal
 1020 Mining and agglomeration of lignite

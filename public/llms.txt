@@ -1,5 +1,7 @@
 # UK LTD Registration
 
+Last updated: 2026-08-27
+
 UK LTD Registration helps UK residents and international founders form and maintain a private limited company online. The service provides Companies House filing support, registered office options, identity-check guidance, and post-incorporation support. It does not provide legal, tax, immigration, or banking approval guarantees.
 
 ## Core Answers
@@ -46,6 +48,13 @@ Keep company details and people with significant control up to date, file annual
 - Companies House: https://www.gov.uk/government/organisations/companies-house
 - Register a private limited company: https://www.gov.uk/limited-company-formation
 - HMRC VAT registration: https://www.gov.uk/vat-registration
+
+## 2026 Topic Guides
+
+- UK VAT threshold and registration: https://ukltdregistration.com/blog/vat-registration-threshold-uk-2026
+- Non-resident business banking: https://ukltdregistration.com/blog/wise-vs-uk-banks-non-residents
+- UK Ltd annual running costs: https://ukltdregistration.com/blog/uk-ltd-company-annual-costs-2026
+- SIC codes for food exports: https://ukltdregistration.com/blog/sic-codes-agricultural-food-exports-eu-guide
 
 ## Site Navigation
 

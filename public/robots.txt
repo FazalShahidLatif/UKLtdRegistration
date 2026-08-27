@@ -1,12 +1,13 @@
 User-agent: *
 Allow: /
-
-# Block administrative pathways, checkout, and search query strings
 Disallow: /admin/
+Disallow: /auth/
+Disallow: /api/
+
+# Block checkout and search query strings; canonical pages remain crawlable.
 Disallow: /checkout
 Disallow: /*?*
 Disallow: /*?
 
-# Reference Active XML Sitemaps
+# Use the canonical sitemap index served by the application.
 Sitemap: https://ukltdregistration.com/sitemap.xml
-Sitemap: https://ukltdregistration.com/priority-sitemap.xml

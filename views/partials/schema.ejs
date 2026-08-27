@@ -50,14 +50,7 @@
       },
       "telephone": "WhatsApp +92 332 213 7898",
       "url": "<%= siteUrl %>",
-      "priceRange": "$$",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "312",
-        "bestRating": "5",
-        "worstRating": "1"
-      }
+      "priceRange": "$$"
     },
     {
       "@type": "WebSite",
@@ -67,11 +60,6 @@
       "publisher": {
         "@type": "Organization",
         "@id": "<%= siteUrl %>/#organization"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "<%= siteUrl %>/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
       }
     },
     {
@@ -109,7 +97,9 @@
       "@type": "BlogPosting",
       "headline": "<%= article.title %>",
       "description": "<%= article.metaDescription || article.excerpt %>",
+      <% if (article.image) { %>
       "image": "<%= siteUrl %><%= article.image %>",
+      <% } %>
       "keywords": "<%= [article.focusKeyword, ...(article.tags || [])].filter(Boolean).join(', ') %>",
       "about": {
         "@type": "Thing",
@@ -132,6 +122,7 @@
       },
       "datePublished": "<%= article.publishedDate || '2026-04-27' %>",
       "dateModified": "<%= article.updatedDate || article.publishedDate || '2026-04-27' %>",
+      "inLanguage": "en-GB",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "<%= siteUrl %><%= currentPath %>"

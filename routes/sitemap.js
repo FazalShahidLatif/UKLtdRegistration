@@ -95,6 +95,12 @@ router.get('/sitemap.xml', (req, res) => {
             }
         });
         const today = new Date().toISOString().split('T')[0];
+        const xmlEscape = value => String(value)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&apos;');
 
         let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
         xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">\n';
@@ -152,23 +158,18 @@ router.get('/sitemap.xml', (req, res) => {
             const slug = isBlog ? route.replace('/blog/', '') : null;
             const isHighPriority = slug && highPrioritySlugs.includes(slug);
             
-            const priority = route === '/' ? '1.0' : (isHighPriority ? '0.9' : (isBlog ? '0.7' : '0.8'));
-            const changefreq = (route === '/' || isHighPriority) ? 'daily' : 'weekly';
-            
             xml += '  <url>\n';
-            xml += `    <loc>${rootUrl}${route}</loc>\n`;
-            xml += `    <lastmod>${today}</lastmod>\n`;
-            xml += `    <changefreq>${changefreq}</changefreq>\n`;
-            xml += `    <priority>${priority}</priority>\n`;
+            xml += `    <loc>${xmlEscape(rootUrl + route)}</loc>\n`;
+            const article = isBlog ? getArticleData(route) : null;
+            xml += `    <lastmod>${xmlEscape((article && (article.updatedDate || article.publishedDate)) || today)}</lastmod>\n`;
 
             // Add image metadata for blog articles
             if (route.startsWith('/blog/')) {
-                const article = getArticleData(route);
                 if (article && article.image) {
                     xml += '    <image:image>\n';
-                    xml += `      <image:loc>${rootUrl}${article.image}</image:loc>\n`;
+                    xml += `      <image:loc>${xmlEscape(rootUrl + article.image)}</image:loc>\n`;
                     if (article.imageAlt) {
-                        xml += `      <image:caption>${article.imageAlt}</image:caption>\n`;
+                        xml += `      <image:caption>${xmlEscape(article.imageAlt)}</image:caption>\n`;
                     }
                     xml += '    </image:image>\n';
                 }
@@ -179,10 +180,10 @@ router.get('/sitemap.xml', (req, res) => {
                 const video = videoPages[route];
                 xml += '    <video:video>\n';
                 xml += `      <video:thumbnail_loc>${video.thumbnailLoc}</video:thumbnail_loc>\n`;
-                xml += `      <video:title>${video.title}</video:title>\n`;
-                xml += `      <video:description>${video.description}</video:description>\n`;
-                xml += `      <video:content_loc>${video.contentLoc}</video:content_loc>\n`;
-                xml += `      <video:player_loc>${video.playerLoc}</video:player_loc>\n`;
+                xml += `      <video:title>${xmlEscape(video.title)}</video:title>\n`;
+                xml += `      <video:description>${xmlEscape(video.description)}</video:description>\n`;
+                xml += `      <video:content_loc>${xmlEscape(video.contentLoc)}</video:content_loc>\n`;
+                xml += `      <video:player_loc>${xmlEscape(video.playerLoc)}</video:player_loc>\n`;
                 xml += '    </video:video>\n';
             }
 
@@ -245,8 +246,6 @@ router.get('/priority-sitemap.xml', (req, res) => {
             xml += '  <url>\n';
             xml += `    <loc>${rootUrl}${route}</loc>\n`;
             xml += `    <lastmod>${today}</lastmod>\n`;
-            xml += '    <changefreq>daily</changefreq>\n';
-            xml += '    <priority>1.0</priority>\n';
             xml += '  </url>\n';
         });
 
