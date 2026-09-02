@@ -1,0 +1,331 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navigation') %>
+
+<main class="overflow-x-hidden">
+    <!-- Hero Section -->
+    <section class="bg-white pt-24 pb-32 overflow-hidden relative">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-green-400/5 rounded-full blur-3xl -z-10"></div>
+        
+        <div class="container mx-auto px-4 text-center">
+            <div class="inline-flex items-center space-x-2 px-4 py-2 border border-green-100 bg-green-50/50 rounded-full mb-8">
+                <div class="w-2 h-2 bg-green-600 rounded-full animate-pulse"></div>
+                <span class="text-[10px] font-black uppercase tracking-widest text-green-600">💰 Cheapest UK Company Registration</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-black text-gray-900 mb-6 tracking-tighter leading-tight">
+                Cheap UK LTD <br/> <span class="text-green-600">Registration from £119.99</span>
+            </h1>
+            
+            <div class="max-w-3xl mx-auto mb-12">
+                <p class="text-xl md:text-2xl text-gray-700 font-medium leading-relaxed mb-6">
+                    The cheapest UK company registration with zero hidden fees. Companies House filing included. Official formation from as little as £119.99.
+                </p>
+                <div class="flex items-center justify-center space-x-4">
+                    <div class="flex items-center space-x-1 text-yellow-400">
+                        <% for(let i=0; i<5; i++) { %>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <% } %>
+                    </div>
+                    <span class="text-sm font-bold text-gray-900">4.9/5 Best Value on Trustpilot</span>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-6 mb-20">
+                <a href="/register-a-limited-company-uk" class="btn-primary">💰 Start Cheap Formation</a>
+                <a href="/pricing" class="px-10 py-5 bg-white text-gray-900 border border-gray-100 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-gray-50 transition shadow-sm">View All Pricing</a>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="max-w-6xl mx-auto mb-10 rounded-[2.5rem] overflow-hidden shadow-2xl relative">
+                <div class="absolute inset-0 bg-green-400/10 mix-blend-overlay z-10 pointer-events-none"></div>
+                <% const heroHome = "/images/hero-home"; %>
+                <picture>
+                    <source srcset="<%= heroHome %>-1200.avif 1200w, <%= heroHome %>-800.avif 800w, <%= heroHome %>-400.avif 400w" type="image/avif" sizes="100vw">
+                    <source srcset="<%= heroHome %>-1200.webp 1200w, <%= heroHome %>-800.webp 800w, <%= heroHome %>-400.webp 400w" type="image/webp" sizes="100vw">
+                    <img src="/images/hero-home.webp" alt="Cheap UK Company Registration" width="1200" height="550" class="w-full h-[300px] md:h-[550px] object-cover" fetchpriority="high" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Comparison Section -->
+    <section class="py-24 bg-gray-50 border-b border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900 tracking-tighter mb-6 text-center">Cheapest UK Company Registration - No Hidden Fees</h2>
+                <p class="text-xl text-gray-700 font-medium text-center mb-16 max-w-3xl mx-auto">We publish exact pricing. No "estimated" fees. No surprise charges at checkout. The cheapest UK LTD registration with complete transparency.</p>
+
+                <!-- Pricing Table -->
+                <div class="bg-white rounded-[2rem] overflow-hidden shadow-lg border border-gray-100">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-0 divide-y md:divide-y-0 md:divide-x divide-gray-200">
+                        <!-- Starter -->
+                        <div class="p-8 text-center hover:bg-green-50/50 transition">
+                            <h3 class="text-2xl font-black text-gray-900 mb-2">Starter</h3>
+                            <p class="text-gray-600 text-sm mb-4">Cheapest option</p>
+                            <div class="mb-8">
+                                <span class="text-5xl font-black text-green-600">£119.99</span>
+                                <p class="text-gray-700 text-sm mt-2">One-time, all-inclusive</p>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8 text-sm text-gray-700">
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-green-600 font-black">✓</span>
+                                    <span>Companies House £100 fee included</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-green-600 font-black">✓</span>
+                                    <span>ACSP verified filing</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-green-600 font-black">✓</span>
+                                    <span>Certificate of Incorporation</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-green-600 font-black">✓</span>
+                                    <span>Portal access</span>
+                                </li>
+                            </ul>
+                            <a href="/pricing" class="w-full px-6 py-3 bg-green-100 text-green-700 font-black rounded-xl hover:bg-green-200 transition text-sm">Cheapest Option</a>
+                        </div>
+
+                        <!-- Standard Plus (Most Popular) -->
+                        <div class="p-8 text-center bg-gradient-to-b from-brand-blue/10 to-transparent border-t-4 border-brand-blue md:border-t-0 md:border-l-4 transform md:scale-105 relative">
+                            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-blue text-white px-4 py-1 rounded-full text-xs font-black">MOST POPULAR</div>
+                            <h3 class="text-2xl font-black text-gray-900 mb-2 mt-4">Standard Plus</h3>
+                            <p class="text-gray-600 text-sm mb-4">Best value for non-residents</p>
+                            <div class="mb-8">
+                                <span class="text-5xl font-black text-brand-blue">£189.99</span>
+                                <p class="text-gray-700 text-sm mt-2">All-inclusive, no extras needed</p>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8 text-sm text-gray-700">
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-brand-blue font-black">✓</span>
+                                    <span>Everything in Starter</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-brand-blue font-black">✓</span>
+                                    <span>London registered office address</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-brand-blue font-black">✓</span>
+                                    <span>Director service address</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-brand-blue font-black">✓</span>
+                                    <span>Banking Fast-Track support</span>
+                                </li>
+                            </ul>
+                            <a href="/register-a-limited-company-uk" class="w-full px-6 py-3 bg-brand-blue text-white font-black rounded-xl hover:bg-blue-800 transition text-sm">Choose Now</a>
+                        </div>
+
+                        <!-- Enterprise Elite -->
+                        <div class="p-8 text-center hover:bg-purple-50/50 transition">
+                            <h3 class="text-2xl font-black text-gray-900 mb-2">Enterprise Elite</h3>
+                            <p class="text-gray-600 text-sm mb-4">Complete solution</p>
+                            <div class="mb-8">
+                                <span class="text-5xl font-black text-purple-600">£299.99</span>
+                                <p class="text-gray-700 text-sm mt-2">Full business package</p>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8 text-sm text-gray-700">
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-purple-600 font-black">✓</span>
+                                    <span>Everything in Standard Plus</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-purple-600 font-black">✓</span>
+                                    <span>London 020 virtual phone</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-purple-600 font-black">✓</span>
+                                    <span>Mail forwarding service</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <span class="text-purple-600 font-black">✓</span>
+                                    <span>Dedicated account manager</span>
+                                </li>
+                            </ul>
+                            <a href="/pricing" class="w-full px-6 py-3 bg-purple-100 text-purple-700 font-black rounded-xl hover:bg-purple-200 transition text-sm">Full Package</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breakdown of Costs -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-4xl font-black text-gray-900 tracking-tighter mb-16 text-center">Why We're the Cheapest UK Company Registration</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    <!-- What's Included -->
+                    <div>
+                        <h3 class="text-2xl font-black text-gray-900 mb-8">✓ What's Included</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start space-x-3">
+                                <span class="text-green-600 font-black text-lg flex-shrink-0">✓</span>
+                                <span class="text-gray-700"><strong>Companies House fee:</strong> £100 included in all packages</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-green-600 font-black text-lg flex-shrink-0">✓</span>
+                                <span class="text-gray-700"><strong>ACSP verification:</strong> No extra identity checks</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-green-600 font-black text-lg flex-shrink-0">✓</span>
+                                <span class="text-gray-700"><strong>Government filing:</strong> Direct to Companies House</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-green-600 font-black text-lg flex-shrink-0">✓</span>
+                                <span class="text-gray-700"><strong>Portal access:</strong> Manage company after formation</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-green-600 font-black text-lg flex-shrink-0">✓</span>
+                                <span class="text-gray-700"><strong>Support:</strong> Lifetime customer access</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- What You Won't Pay For -->
+                    <div>
+                        <h3 class="text-2xl font-black text-gray-900 mb-8">✓ Zero Hidden Costs</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start space-x-3">
+                                <span class="text-green-600 font-black text-lg flex-shrink-0">✓</span>
+                                <span class="text-gray-700"><strong>No "processing fees"</strong> added at checkout</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-green-600 font-black text-lg flex-shrink-0">✓</span>
+                                <span class="text-gray-700"><strong>No "verification charges"</strong> during filing</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-green-600 font-black text-lg flex-shrink-0">✓</span>
+                                <span class="text-gray-700"><strong>No "resubmission fees"</strong> if rejection occurs</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-green-600 font-black text-lg flex-shrink-0">✓</span>
+                                <span class="text-gray-700"><strong>No "fast-track surcharge"</strong> for speed</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-green-600 font-black text-lg flex-shrink-0">✓</span>
+                                <span class="text-gray-700"><strong>No ongoing "renewal fees"</strong> unless upgraded</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Comparison -->
+                <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-[2rem] p-8 border border-green-100">
+                    <h3 class="text-xl font-black text-gray-900 mb-6">How We Keep UK Company Registration So Cheap</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <p class="text-sm font-black text-green-600 mb-2">Automation</p>
+                            <p class="text-gray-700 text-sm">Our system automatically validates all information before filing. No manual review = lower costs passed to you.</p>
+                        </div>
+                        <div>
+                            <p class="text-sm font-black text-brand-blue mb-2">Volume Efficiency</p>
+                            <p class="text-gray-700 text-sm">Thousands of formations per month means economies of scale. We pass savings directly to customers.</p>
+                        </div>
+                        <div>
+                            <p class="text-sm font-black text-purple-600 mb-2">No Middlemen</p>
+                            <p class="text-gray-700 text-sm">We file directly with Companies House. No agent markups. Transparent, cheap pricing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-black text-gray-900 tracking-tighter mb-16 text-center">Cheap UK Company Registration Questions</h2>
+
+                <div class="space-y-6">
+                    <div class="bg-white rounded-[1.5rem] p-8 border border-gray-100">
+                        <h3 class="text-xl font-black text-gray-900 mb-3">Is the £119.99 the cheapest UK company registration available?</h3>
+                        <p class="text-gray-700 leading-relaxed">Yes. Our Starter package at £119.99 is among the cheapest UK company registrations available when you include the £100 Companies House fee. Any cheaper options typically don't include the government filing fee, hidden charges, or later upsells.</p>
+                    </div>
+
+                    <div class="bg-white rounded-[1.5rem] p-8 border border-gray-100">
+                        <h3 class="text-xl font-black text-gray-900 mb-3">What makes £119.99 for UK company registration so cheap?</h3>
+                        <p class="text-gray-700 leading-relaxed">Automation, scale, and no middlemen. Our platform processes thousands of formations automatically with zero manual intervention until your company is approved. We file directly with Companies House, eliminating agent markups and passing savings to you.</p>
+                    </div>
+
+                    <div class="bg-white rounded-[1.5rem] p-8 border border-gray-100">
+                        <h3 class="text-xl font-black text-gray-900 mb-3">Why don't other formation agents offer cheap UK company registration?</h3>
+                        <p class="text-gray-700 leading-relaxed">Many rely on manual processing and high overhead. Some use misleading pricing with the Companies House fee hidden or additional charges later. We've invested in automation technology to offer genuinely cheap UK company registration without compromises on quality or speed.</p>
+                    </div>
+
+                    <div class="bg-white rounded-[1.5rem] p-8 border border-gray-100">
+                        <h3 class="text-xl font-black text-gray-900 mb-3">If I choose the cheapest package, do I lose quality or support?</h3>
+                        <p class="text-gray-700 leading-relaxed">No. All packages from £119.99 include ACSP-verified filing, official Companies House incorporation, and lifetime portal access. Support quality is identical. The difference between packages is features like registered office address, phone numbers, and banking assistance—not core registration quality.</p>
+                    </div>
+
+                    <div class="bg-white rounded-[1.5rem] p-8 border border-gray-100">
+                        <h3 class="text-xl font-black text-gray-900 mb-3">Can I upgrade later if the cheap starter package isn't enough?</h3>
+                        <p class="text-gray-700 leading-relaxed">Yes. Start with our cheapest £119.99 Starter package and upgrade to Standard Plus (London address + banking help) or Enterprise Elite (phone + mail) later. You'll pay the difference, and previous payment applies toward the upgrade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-gradient-to-r from-green-600 to-green-700 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-black tracking-tighter mb-6">Get the Cheapest UK Company Registration Today</h2>
+                <p class="text-xl font-medium mb-12 opacity-90">From £119.99. Companies House fee included. No hidden charges. Form your UK Ltd now.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/register-a-limited-company-uk" class="px-10 py-5 bg-white text-green-600 font-black uppercase tracking-widest rounded-2xl hover:bg-gray-100 transition shadow-xl">💰 Start Cheap Now</a>
+                    <a href="/pricing" class="px-10 py-5 border-2 border-white text-white font-black uppercase tracking-widest rounded-2xl hover:bg-white/10 transition">Compare Packages</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services Links -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-black text-gray-900 tracking-tighter mb-12 text-center">Explore Other Formation Options</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <a href="/fastest-uk-company-registration" class="bg-gradient-to-br from-green-50 to-white border-2 border-green-200 rounded-[1.5rem] p-6 hover:shadow-lg transition-all group">
+                        <div class="text-3xl mb-4">⚡</div>
+                        <h3 class="text-xl font-black text-gray-900 mb-2 group-hover:text-green-600 transition">Fast Track</h3>
+                        <p class="text-gray-700 text-sm mb-4">Same-day approval in 3-6 working hours</p>
+                        <span class="inline-flex items-center text-green-600 font-black text-sm group-hover:translate-x-1 transition-transform">
+                            Same-Day Formation <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                        </span>
+                    </a>
+
+                    <a href="/uk-ltd-formation-for-non-residents" class="bg-gradient-to-br from-purple-50 to-white border-2 border-purple-200 rounded-[1.5rem] p-6 hover:shadow-lg transition-all group">
+                        <div class="text-3xl mb-4">🌍</div>
+                        <h3 class="text-xl font-black text-gray-900 mb-2 group-hover:text-purple-600 transition">For Non-Residents</h3>
+                        <p class="text-gray-700 text-sm mb-4">International founders welcome, banking setup included</p>
+                        <span class="inline-flex items-center text-purple-600 font-black text-sm group-hover:translate-x-1 transition-transform">
+                            Non-Resident Guide <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                        </span>
+                    </a>
+
+                    <a href="/" class="bg-gradient-to-br from-blue-50 to-white border-2 border-brand-blue rounded-[1.5rem] p-6 hover:shadow-lg transition-all group">
+                        <div class="text-3xl mb-4">📋</div>
+                        <h3 class="text-xl font-black text-gray-900 mb-2 group-hover:text-brand-blue transition">All Packages</h3>
+                        <p class="text-gray-700 text-sm mb-4">Compare all UK LTD formation options in one place</p>
+                        <span class="inline-flex items-center text-brand-blue font-black text-sm group-hover:translate-x-1 transition-transform">
+                            View All Options <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <%- include('../partials/footer') %>
+</main>

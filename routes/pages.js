@@ -75,8 +75,8 @@ router.get('/get-help-forming-a-uk-ltd', (req, res) => {
 // Non-Residents SEO Page
 router.get('/uk-ltd-formation-for-non-residents', (req, res) => {
     res.render('pages/non-residents', {
-        title: 'open company in uk non resident',
-        metaDescription: 'Learn how to open company in UK non resident. Our 2026 guide covers how to form a UK company, register with Companies House, and open a bank account.'
+        title: 'UK LTD Formation for Non-Residents | Register Company from Abroad in 24 Hours',
+        metaDescription: 'Form a UK LTD company as a non-resident from anywhere worldwide. Same-day registration, London address, Wise banking setup, and full ACSP verification. From £189.99.'
     });
 });
 
@@ -284,6 +284,40 @@ router.get('/services/dissolution', (req, res) => {
     res.render('pages/services/dissolution', {
         title: 'Close UK Company Online | Managed DS01 Strike-Off Service',
         metaDescription: 'Dissolve and strike off your UK Limited Company safely online. Managed DS01 Companies House filing service to avoid late penalties and close HMRC accounts.'
+    });
+});
+
+// High-Intent Landing Pages for SEO
+
+// Same-Day Fast Formation Landing Page
+router.get('/fastest-uk-company-registration', (req, res) => {
+    res.render('pages/fast-formation', {
+        title: 'Fastest UK LTD Registration | Same-Day Company Formation in 3-6 Hours',
+        metaDescription: 'Same-day UK company registration from £189.99. Companies House approval in 3-6 working hours. Fastest LTD formation guaranteed before 3 PM UK time. Start trading within 24 hours.'
+    });
+});
+
+// Cheap/Budget Formation Landing Page
+router.get('/cheapest-uk-company-registration', (req, res) => {
+    res.render('pages/budget-formation', {
+        title: 'Cheapest UK Company Registration | £119.99 All-Inclusive Formation',
+        metaDescription: 'Cheapest UK LTD registration at £119.99. Companies House fee included, no hidden charges. Transparent pricing, zero upsells. Form your company now.'
+    });
+});
+
+// Enhanced UK Residents Page
+router.get('/uk-company-formation-for-residents', (req, res) => {
+    res.render('pages/uk-residents', {
+        title: 'UK Company Registration for UK Residents | £119.99 Formation',
+        metaDescription: 'Register a UK Limited Company as a resident from £119.99. Same-day formation, Companies House filing included, ACSP-verified with full compliance support.'
+    });
+});
+
+// Enhanced Non-Residents Page with better keywords
+router.get('/uk-company-registration-for-foreigners', (req, res) => {
+    res.render('pages/non-residents', {
+        title: 'UK Company Registration for Foreigners | Non-Residents Formation Guide',
+        metaDescription: 'Register a UK company as a foreigner from anywhere. International founders welcome. Same-day formation, London registered office, Wise banking assistance, and ACSP-verified. From £189.99.'
     });
 });
 
