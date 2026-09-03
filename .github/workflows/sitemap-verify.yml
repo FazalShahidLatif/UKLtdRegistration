@@ -63,6 +63,15 @@ jobs:
           fi
           echo "No legacy company-name-check links found in source"
 
+      - name: Check WhatsApp links
+        run: |
+          set -e
+          if git grep -nE 'https://wa\.me/' -- ':!content/redirects.json'; then
+            echo "WhatsApp short link found in source; use api.whatsapp.com/send"
+            exit 1
+          fi
+          echo "No WhatsApp short links found in source"
+
       - name: (Optional) Ping Search Engines
         if: ${{ always() }}
         run: |

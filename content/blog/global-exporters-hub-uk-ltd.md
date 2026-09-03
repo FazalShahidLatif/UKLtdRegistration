@@ -123,5 +123,5 @@ Don't let borders limit your brand. At UK LTD Registration, we specialize in hel
 
 [**View our Export-Focused Formation Packages →**](/pricing)
 [**Book a Strategic Expansion Call →**](/contact)
-[**Chat with our Export Advisor on WhatsApp →**](https://wa.me/923322137898)
+[**Chat with our Export Advisor →**](/contact)
 
