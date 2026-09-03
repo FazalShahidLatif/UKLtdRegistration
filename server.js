@@ -28,6 +28,7 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo');
 const mongoose = require('mongoose');
 const passport = require('passport');
+const { minify } = require('html-minifier-terser');
 
 // Load passport config
 require('./config/passport');
@@ -108,6 +109,33 @@ app.use(passport.session());
 // View engine setup
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+
+// Reduce repeated template whitespace without altering API, XML, or static responses.
+app.use((req, res, next) => {
+    const originalRender = res.render;
+    res.render = function (view, options, callback) {
+        const renderOptions = typeof options === 'function' ? undefined : options;
+        const renderCallback = typeof options === 'function' ? options : callback;
+        return originalRender.call(this, view, renderOptions, (error, html) => {
+            if (error) return renderCallback ? renderCallback(error) : next(error);
+            minify(html, {
+                collapseWhitespace: true,
+                removeComments: true,
+                minifyCSS: true,
+                minifyJS: true,
+                removeRedundantAttributes: true,
+                removeAttributeQuotes: true,
+                collapseBooleanAttributes: true,
+                useShortDoctype: true
+            })
+                .then(minifiedBody => renderCallback
+                    ? renderCallback(null, minifiedBody)
+                    : this.send(minifiedBody))
+                .catch(renderCallback || next);
+        });
+    };
+    next();
+});
 
 // Make environment variables available to views
 app.use((req, res, next) => {
