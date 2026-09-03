@@ -204,6 +204,17 @@ router.get('/sitemap.xml', (req, res) => {
 router.get('/priority-sitemap.xml', (req, res) => {
     try {
         const rootUrl = 'https://ukltdregistration.com';
+        let redirectSources = new Set();
+        try {
+            const redirectsPath = path.join(__dirname, '../content/redirects.json');
+            if (fs.existsSync(redirectsPath)) {
+                const redirectsData = JSON.parse(fs.readFileSync(redirectsPath, 'utf8'));
+                redirectsData.forEach(r => redirectSources.add(r.from));
+            }
+        } catch (e) {
+            console.error('Error reading redirects for priority sitemap filtering:', e);
+        }
+
         // Build priority pages list dynamically from top articles
         let priorityBlogRoutes = [];
         try {
@@ -236,7 +247,9 @@ router.get('/priority-sitemap.xml', (req, res) => {
             '/confirmation-statement',
             '/company-name-check',
             '/non-uk-resident-company'
-        ].concat(priorityBlogRoutes);
+        ].concat(priorityBlogRoutes)
+            .filter(route => !redirectSources.has(route))
+            .filter((route, index, routes) => routes.indexOf(route) === index);
 
         const today = new Date().toISOString().split('T')[0];
         let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';

@@ -12,12 +12,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch sitemap
+      - name: Fetch sitemaps
         run: |
           set -e
-          echo "Fetching sitemap..."
+          echo "Fetching sitemaps..."
           curl -sS https://ukltdregistration.com/sitemap.xml -o sitemap.xml
-          echo "Saved sitemap to sitemap.xml"
+          curl -sS https://ukltdregistration.com/priority-sitemap.xml -o priority-sitemap.xml
+          echo "Saved sitemap.xml and priority-sitemap.xml"
 
       - name: Check for problematic slugs
         run: |
@@ -37,19 +38,21 @@ jobs:
           )
 
           FOUND=0
-          for p in "${PATTERNS[@]}"; do
-            if grep -qF "$p" sitemap.xml; then
-              echo "PROBLEMATIC: found $p in sitemap"
-              FOUND=1
-            fi
+          for sitemap in sitemap.xml priority-sitemap.xml; do
+            for p in "${PATTERNS[@]}"; do
+              if grep -qF "$p" "$sitemap"; then
+                echo "PROBLEMATIC: found $p in $sitemap"
+                FOUND=1
+              fi
+            done
           done
 
           if [ "$FOUND" -ne 0 ]; then
-            echo "One or more problematic slugs were found in sitemap.xml"
+            echo "One or more problematic slugs were found in the sitemaps"
             exit 1
           fi
 
-          echo "No problematic slugs found in sitemap.xml"
+          echo "No problematic slugs found in either sitemap"
 
       - name: (Optional) Ping Search Engines
         if: ${{ always() }}

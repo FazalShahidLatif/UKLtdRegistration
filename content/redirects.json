@@ -8,6 +8,26 @@
         "to": "/contact"
     },
     {
+        "from": "/ltd-company-uk-registration",
+        "to": "/register-a-limited-company-uk"
+    },
+    {
+        "from": "/new-ltd-company-registration",
+        "to": "/register-a-limited-company-uk"
+    },
+    {
+        "from": "/check-company-name-availability-uk",
+        "to": "/company-name-check"
+    },
+    {
+        "from": "/services/company-secretary",
+        "to": "/company-secretary"
+    },
+    {
+        "from": "/services/confirmation-statement",
+        "to": "/confirmation-statement"
+    },
+    {
         "from": "/frequently-asked-questions",
         "to": "/faq"
     },
