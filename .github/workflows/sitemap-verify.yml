@@ -54,6 +54,15 @@ jobs:
 
           echo "No problematic slugs found in either sitemap"
 
+      - name: Check source for legacy outgoing links
+        run: |
+          set -e
+          if git grep -nF "/check-company-name-availability-uk" -- ':!content/redirects.json'; then
+            echo "Legacy company-name-check link found outside the redirect map"
+            exit 1
+          fi
+          echo "No legacy company-name-check links found in source"
+
       - name: (Optional) Ping Search Engines
         if: ${{ always() }}
         run: |
