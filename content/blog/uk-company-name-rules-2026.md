@@ -55,7 +55,7 @@ Suppose a company called **Acme Consulting Ltd** exists. You **cannot** register
 * Acme Consultings Ltd (pluralization doesn't fool the system)
 
 If the core distinctive element of the name is identical to an existing company in the exact same commercial sector, Companies House will block the application. 
-  [**Use our Free Name Search Tool to verify your name instantly →**](/check-company-name-availability-uk)
+  [**Use our Free Name Search Tool to verify your name instantly →**](/company-name-check)
 
 ---
 
@@ -110,4 +110,4 @@ You could successfully register "Starbucks Coffee Retail Ltd" precisely because 
 Finding an available, legally sound name is a balancing act of creativity and compliance. Once you find the perfect one, protect it fast. Good names vanish quickly in the UK registry. 
 
 Got a compliant name in mind?
-[**Check its availability instantly →**](/check-company-name-availability-uk) or incorporate today for £104.99 via our formation page: [/new-ltd-company-registration](/new-ltd-company-registration)
+[**Check its availability instantly →**](/company-name-check) or incorporate today for £104.99 via our formation page: [/register-a-limited-company-uk](/register-a-limited-company-uk)

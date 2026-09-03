@@ -49,5 +49,5 @@ Yes. Non-residents can incorporate a UK company, but you'll need a UK service ad
 }
 </script>
 
-[Check company name availability](/check-company-name-availability-uk)
+[Check company name availability](/company-name-check)
 

@@ -44,7 +44,7 @@ Whether you are launching a Delaware C-Corp alternative, setting up a UK branch 
 
 This master guide walks you through the step-by-step process of **UK company formation for US citizens**, contrasting it with domestic entities, analyzing the tax structures, and showing you how to set up banking and compliance remotely.
 
-Ready to start? Use our step-by-step registration walkthrough: [/new-ltd-company-registration](/new-ltd-company-registration) — and check name availability first at [/check-company-name-availability-uk](/check-company-name-availability-uk).
+Ready to start? Use our step-by-step registration walkthrough: [/register-a-limited-company-uk](/register-a-limited-company-uk) — and check name availability first at [/company-name-check](/company-name-check).
 
 ---
 

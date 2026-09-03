@@ -31,5 +31,5 @@ Before you register, confirm your proposed name is available and compliant with 
 }
 </script>
 
-[Start a new LTD registration](/new-ltd-company-registration)
+[Start a new LTD registration](/register-a-limited-company-uk)
 

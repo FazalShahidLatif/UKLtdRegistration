@@ -34,5 +34,5 @@ We prepare and file all incorporation paperwork, provide standard Articles of As
 }
 </script>
 
-[Start your registration process](/new-ltd-company-registration)
+[Start your registration process](/register-a-limited-company-uk)
 

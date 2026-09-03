@@ -39,7 +39,7 @@ This guide uncovers the **cheaper ways to incorporate in 2026**, exposes the tra
 
 ---
 
-Ready to incorporate today? Start here: [/new-ltd-company-registration](/new-ltd-company-registration) and check name availability at [/check-company-name-availability-uk](/check-company-name-availability-uk).
+Ready to incorporate today? Start here: [/register-a-limited-company-uk](/register-a-limited-company-uk) and check name availability at [/company-name-check](/company-name-check).
 
 
 ## The Bare Minimum Cost (Companies House)
