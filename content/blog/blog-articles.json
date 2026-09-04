@@ -1389,6 +1389,54 @@
       "image": "/images/blog_wise_vs_ukbanks_guide.png",
       "imageAlt": "Nepali IT freelancer accessing global payment gateways",
       "readTime": 8
+    },
+    {
+      "id": 85,
+      "slug": "companies-house-vs-formation-agent-uk-2026",
+      "title": "Companies House vs Formation Agent: Which Is Best in 2026?",
+      "metaTitle": "Companies House vs Formation Agent: 2026 Guide",
+      "metaDescription": "Compare direct Companies House registration with a UK formation agent. See costs, ID checks, address needs, support, and when each route fits.",
+      "author": "UK LTD Registration",
+      "publishedDate": "2026-09-08",
+      "updatedDate": "2026-09-04",
+      "publishAt": "2026-09-08T09:00:00+01:00",
+      "status": "scheduled",
+      "category": "Company Formation",
+      "tags": ["Companies House", "formation agent", "ACSP", "costs", "comparison"],
+      "focusKeyword": "Companies House vs formation agent",
+      "excerpt": "A plain-English comparison of direct filing and agent support, with a cost checklist and a simple route for new UK founders.",
+      "image": "/images/blog_uk_formation_guide_2026.png",
+      "imageAlt": "Checklist comparing direct Companies House filing with a UK formation agent",
+      "readTime": 9,
+      "faq": [
+        {"question": "Can I register a UK company directly with Companies House?", "answer": "Yes. You can file directly if you have the required company details, a suitable UK registered office, and the identity information Companies House requests."},
+        {"question": "What does a formation agent add?", "answer": "A formation agent can prepare and submit the filing, guide identity checks, offer address services, and provide support. Check the package for each included service."},
+        {"question": "Is a formation agent required?", "answer": "No. A formation agent is optional. The right choice depends on your time, confidence, address needs, and need for filing support."}
+      ]
+    },
+    {
+      "id": 86,
+      "slug": "non-resident-uk-company-setup-checklist-2026",
+      "title": "Non-Resident UK Company Setup Checklist for 2026",
+      "metaTitle": "Non-Resident UK Company Setup Checklist 2026",
+      "metaDescription": "Use this non-resident UK company checklist to plan your name, director ID check, registered office, SIC code, banking, tax, and first filings.",
+      "author": "UK LTD Registration",
+      "publishedDate": "2026-09-15",
+      "updatedDate": "2026-09-04",
+      "publishAt": "2026-09-15T09:00:00+01:00",
+      "status": "scheduled",
+      "category": "Regional",
+      "tags": ["non-resident", "checklist", "registered office", "banking", "compliance"],
+      "focusKeyword": "non-resident UK company setup checklist",
+      "excerpt": "A practical checklist for overseas founders who want to plan a UK company setup before they start an online application.",
+      "image": "/images/blog_uk_formation_guide_2026.png",
+      "imageAlt": "Non-resident UK company setup checklist with identity, address, banking, and filing steps",
+      "readTime": 10,
+      "faq": [
+        {"question": "Can a non-resident set up a UK limited company?", "answer": "Yes. A director does not generally need to live in the UK. The company still needs a suitable UK registered office and the required identity details."},
+        {"question": "Do non-residents get a UK bank account automatically?", "answer": "No. Banks and payment providers make their own decisions. A UK company does not guarantee approval for a bank account or payment service."},
+        {"question": "What should I check before applying?", "answer": "Check the name, director and shareholder details, registered office, SIC code, identity documents, tax plan, and post-incorporation filing dates."}
+      ]
     }
   ]
 }

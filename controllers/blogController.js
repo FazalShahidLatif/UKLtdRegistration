@@ -5,6 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 const marked = require('marked');
+const { getPublishedArticles, getPublishedArticleBySlug } = require('../utils/blog-data');
 
 // Use a simple JSON database for articles
 const articlesPath = path.join(__dirname, '../content/blog/blog-articles.json');
@@ -23,12 +24,11 @@ const buildPageTitle = article => {
 
 exports.index = (req, res) => {
     try {
-        const data = JSON.parse(fs.readFileSync(articlesPath, 'utf8'));
-        const allArticles = [...(data.articles || []), ...(data.newArticles || [])];
+        const allArticles = getPublishedArticles();
         
         res.render('pages/blog-list', {
-            title: 'How to Register a Company in the UK | 2026 Guides',
-            metaDescription: 'Learn how to register a company in the UK in 2026. Compare Companies House requirements, costs, timelines, registered office options, banking, and non-resident formation in one practical guide hub.',
+            title: 'How to Register a Company in the UK | Step-by-Step 2026',
+            metaDescription: 'How to register a company in the UK step by step. Expert guides on UK limited company formation costs, Companies House filing, registered offices, banking, and non-resident setup for 2026.',
             metaKeywords: 'how to register a company in UK, UK company registration, UK limited company formation, Companies House registration, non-resident UK company',
             articles: allArticles
         });
@@ -45,9 +45,8 @@ exports.index = (req, res) => {
 exports.show = (req, res) => {
     try {
         const { slug } = req.params;
-        const data = JSON.parse(fs.readFileSync(articlesPath, 'utf8'));
-        const allArticles = [...(data.articles || []), ...(data.newArticles || [])];
-        const article = allArticles.find(a => a.slug === slug);
+        const allArticles = getPublishedArticles();
+        const article = getPublishedArticleBySlug(slug);
 
         if (!article) {
             return res.status(404).render('pages/404', { title: 'Article Not Found' });
@@ -115,8 +114,7 @@ exports.show = (req, res) => {
 
 exports.seaCollection = (req, res) => {
     try {
-        const data = JSON.parse(fs.readFileSync(articlesPath, 'utf8'));
-        const allArticles = [...(data.articles || []), ...(data.newArticles || [])];
+        const allArticles = getPublishedArticles();
         
         const seaArticles = allArticles.filter(a => 
             a.tags && (a.tags.includes('SEA') || a.tags.includes('Singapore') || a.tags.includes('Malaysia') || a.tags.includes('Vietnam') || a.tags.includes('Indonesia') || a.tags.includes('Thailand') || a.tags.includes('Philippines') || a.tags.includes('India') || a.tags.includes('Pakistan') || a.tags.includes('Bangladesh') || a.tags.includes('Sri Lanka') || a.tags.includes('Nepal'))
@@ -135,8 +133,7 @@ exports.seaCollection = (req, res) => {
 
 exports.exportCollection = (req, res) => {
     try {
-        const data = JSON.parse(fs.readFileSync(articlesPath, 'utf8'));
-        const allArticles = [...(data.articles || []), ...(data.newArticles || [])];
+        const allArticles = getPublishedArticles();
         
         // Filter for export-related articles
         const exportArticles = allArticles.filter(a => 
@@ -156,8 +153,7 @@ exports.exportCollection = (req, res) => {
 
 exports.regionalCollection = (req, res) => {
     try {
-        const data = JSON.parse(fs.readFileSync(articlesPath, 'utf8'));
-        const allArticles = [...(data.articles || []), ...(data.newArticles || [])];
+        const allArticles = getPublishedArticles();
         
         // Filter for regional expansion guides
         const regionalArticles = allArticles.filter(a => 

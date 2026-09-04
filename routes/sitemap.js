@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 const fs = require('fs');
+const { getPublishedArticles } = require('../utils/blog-data');
 
 router.get('/sitemap.xml', (req, res) => {
     try {
@@ -61,10 +62,9 @@ router.get('/sitemap.xml', (req, res) => {
         try {
             const blogArticlesPath = path.join(__dirname, '../content/blog/blog-articles.json');
             if (fs.existsSync(blogArticlesPath)) {
-                const blogData = JSON.parse(fs.readFileSync(blogArticlesPath, 'utf8'));
-                const combinedArticles = [...(blogData.articles || []), ...(blogData.newArticles || [])];
-                if (combinedArticles.length > 0) {
-                    articles = combinedArticles.map(article => `/blog/${article.slug}`);
+                const publishedArticles = getPublishedArticles();
+                if (publishedArticles.length > 0) {
+                    articles = publishedArticles.map(article => `/blog/${article.slug}`);
                 }
             }
         } catch (e) {
@@ -109,9 +109,7 @@ router.get('/sitemap.xml', (req, res) => {
         const getArticleData = (slug) => {
             try {
                 const blogArticlesPath = path.join(__dirname, '../content/blog/blog-articles.json');
-                const blogData = JSON.parse(fs.readFileSync(blogArticlesPath, 'utf8'));
-                const combinedArticles = [...(blogData.articles || []), ...(blogData.newArticles || [])];
-                return combinedArticles.find(a => `/blog/${a.slug}` === slug);
+                return getPublishedArticles().find(a => `/blog/${a.slug}` === slug);
             } catch (e) { return null; }
         };
 
@@ -220,8 +218,7 @@ router.get('/priority-sitemap.xml', (req, res) => {
         try {
             const blogArticlesPath = path.join(__dirname, '../content/blog/blog-articles.json');
             if (fs.existsSync(blogArticlesPath)) {
-                const blogData = JSON.parse(fs.readFileSync(blogArticlesPath, 'utf8'));
-                const articles = blogData.articles || [];
+                const articles = getPublishedArticles();
                 // Take first 40 articles from the source of truth as priority
                 priorityBlogRoutes = articles.slice(0, 40).map(a => `/blog/${a.slug}`);
             }
@@ -246,7 +243,9 @@ router.get('/priority-sitemap.xml', (req, res) => {
             '/vat-registration',
             '/confirmation-statement',
             '/company-name-check',
-            '/non-uk-resident-company'
+            '/non-uk-resident-company',
+            '/blog/companies-house-vs-formation-agent-uk-2026',
+            '/blog/non-resident-uk-company-setup-checklist-2026'
         ].concat(priorityBlogRoutes)
             .filter(route => !redirectSources.has(route))
             .filter((route, index, routes) => routes.indexOf(route) === index);

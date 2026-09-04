@@ -4,8 +4,8 @@ const router = express.Router();
 // Pricing page
 router.get(['/pricing', '/packages'], (req, res) => {
     res.render('pages/pricing', {
-        title: 'Cheapest Company Formation UK | Transparent 2026 Pricing',
-        metaDescription: 'Compare affordable UK company formation packages from £119.99. Companies House filing fee included, with clear pricing for UK residents, non-residents, registered office, and banking support.',
+        title: 'Cheapest Company Formation UK from £119.99 | All-In 2026',
+        metaDescription: 'Cheapest company formation UK from £119.99 — Companies House fee included, zero hidden charges. Compare all-inclusive packages with registered office, banking, and ACSP verification.',
         metaKeywords: 'cheapest company formation UK, affordable UK company registration, UK limited company formation cost, Companies House fee included'
     });
 });
@@ -21,9 +21,9 @@ router.get('/services', (req, res) => {
 // Specific Service Pages
 router.get('/services/virtual-office', (req, res) => {
     res.render('pages/services/virtual-office', {
-        title: 'Virtual Office UK London | London Business Address',
-        metaDescription: 'Get a compliant virtual office UK London address from £99 per year. Protect your home address, receive company mail, and establish a credible London business presence for your UK Ltd.',
-        metaKeywords: 'virtual office UK London, London business address, virtual office address UK, registered office London, UK Postbox alternative'
+        title: 'Ltd Company Formation London | Virtual Office & Address',
+        metaDescription: 'Ltd company formation London with a prestigious virtual office from £99/year. Registered office, mail handling, and director service address — compliant and trusted by 1,000+ founders.',
+        metaKeywords: 'ltd company formation london, virtual office UK London, London business address, virtual office address UK, registered office London'
     });
 });
 
@@ -59,8 +59,8 @@ router.get('/uk-residents', (req, res) => {
 // US Citizens page
 router.get('/us-citizens', (req, res) => {
     res.render('pages/us-citizens', {
-        title: 'UK Ltd for Non Residents & US Citizens | Formation Guide 2026',
-        metaDescription: 'Set up a UK Ltd for non residents and US citizens. ACSP-verified formation, Wise banking setup, London registered office, and full compliance support from £119.99.'
+        title: 'Register UK Company from USA | Non-Resident Formation 2026',
+        metaDescription: 'Register a UK company from the USA or any country. UK company registration for non residents includes ACSP verification, London registered office, and Wise banking — from £119.99.'
     });
 });
 

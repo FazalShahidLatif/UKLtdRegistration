@@ -96,6 +96,7 @@
     ,{
       "@type": "BlogPosting",
       "headline": "<%= article.title %>",
+      "url": "<%= siteUrl %><%= currentPath %>",
       "description": "<%= article.metaDescription || article.excerpt %>",
       <% if (article.image) { %>
       "image": "<%= siteUrl %><%= article.image %>",
@@ -130,6 +131,16 @@
       <% if (currentPath === '/blog/vat-registration-threshold-uk-2026') { %>
       ,"keywords": "uk vat registration threshold 2026, uk vat registration threshold march 2026, uk standard vat rate 2026"
       <% } %>
+    }
+    <% } %>
+    <% if (typeof article !== 'undefined' && article && article.faq && article.faq.length) { %>
+    ,{
+      "@type": "FAQPage",
+      "mainEntity": <%- JSON.stringify(article.faq.map(item => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": { "@type": "Answer", "text": item.answer }
+      }))) %>
     }
     <% } %>
     <% if (currentPath === '/register-a-limited-company-uk') { %>
