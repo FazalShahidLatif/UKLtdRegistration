@@ -67,7 +67,7 @@ router.get('/us-citizens', (req, res) => {
 // Forex Trading / Non-Resident Formation Help Page (P1 SEO Priority)
 router.get('/get-help-forming-a-uk-ltd', (req, res) => {
     res.render('pages/forex-uk-ltd', {
-        title: 'UK Ltd for Non Resident Review for Forex Trading 2026 | Tide Business Account Review',
+        title: 'UK Ltd Forex Trading Review 2026',
         metaDescription: 'Comprehensive UK Ltd for non resident review for forex trading in 2026, including Tide eligibility, non-resident banking rules, and the best alternatives for traders.'
     });
 });
@@ -75,7 +75,7 @@ router.get('/get-help-forming-a-uk-ltd', (req, res) => {
 // Non-Residents SEO Page
 router.get('/uk-ltd-formation-for-non-residents', (req, res) => {
     res.render('pages/non-residents', {
-        title: 'UK LTD Formation for Non-Residents | Register Company from Abroad in 24 Hours',
+        title: 'UK LTD Formation for Non-Residents 2026',
         metaDescription: 'Form a UK LTD company as a non-resident from anywhere worldwide. Same-day registration, London address, Wise banking setup, and full ACSP verification. From £189.99.'
     });
 });
@@ -168,7 +168,7 @@ router.get('/strategic-research-hub', (req, res) => {
 // LTD Company Formation Page (Core Conversion Page)
 router.get('/register-a-limited-company-uk', (req, res) => {
     res.render('pages/ltd-formation', {
-        title: 'Ltd Company UK Registration | New Ltd Company Registration | Same-Day Online',
+        title: 'Ltd Company UK Registration | Same-Day Online',
         metaDescription: 'Start your new ltd company registration today from £119.99. Fast UK limited (United Kingdom private limited) company registration via Companies House — same-day filing, ACSP-verified agents, Wise banking setup included.'
     });
 });

@@ -8,6 +8,18 @@ const marked = require('marked');
 
 // Use a simple JSON database for articles
 const articlesPath = path.join(__dirname, '../content/blog/blog-articles.json');
+const maxTitleLength = 55;
+
+const buildPageTitle = article => {
+    const sourceTitle = (article.metaTitle || article.title || '').trim();
+    if (sourceTitle.length <= maxTitleLength) return sourceTitle;
+
+    const truncatedTitle = sourceTitle
+        .slice(0, maxTitleLength - 3)
+        .replace(/\s+\S*$/, '')
+        .trim();
+    return `${truncatedTitle}...`;
+};
 
 exports.index = (req, res) => {
     try {
@@ -84,7 +96,7 @@ exports.show = (req, res) => {
             .slice(0, 3);
 
         res.render('pages/blog-single', {
-            title: `${article.title} | UK Ltd Registration`,
+            title: buildPageTitle(article),
             metaDescription: article.metaDescription || article.excerpt,
             metaKeywords: [article.focusKeyword, ...(article.tags || [])].filter(Boolean).join(', '),
             ogType: 'article',
