@@ -57,7 +57,8 @@ jobs:
       - name: Check source for legacy outgoing links
         run: |
           set -e
-          if git grep -nF "/check-company-name-availability-uk" -- ':!content/redirects.json'; then
+          LEGACY_LINK="/check-company-name-availability-uk"
+          if git grep -nF "$LEGACY_LINK" -- ':!content/redirects.json' ':!.github/*'; then
             echo "Legacy company-name-check link found outside the redirect map"
             exit 1
           fi
@@ -66,7 +67,8 @@ jobs:
       - name: Check WhatsApp links
         run: |
           set -e
-          if git grep -nE 'https://wa\.me/' -- ':!content/redirects.json'; then
+          WA_REGEX='https://wa\.me/'
+          if git grep -nE "$WA_REGEX" -- ':!content/redirects.json' ':!.github/*'; then
             echo "WhatsApp short link found in source; use api.whatsapp.com/send"
             exit 1
           fi
