@@ -84,7 +84,7 @@ exports.show = (req, res) => {
             .slice(0, 3);
 
         res.render('pages/blog-single', {
-            title: article.title,
+            title: `${article.title} | UK Ltd Registration`,
             metaDescription: article.metaDescription || article.excerpt,
             metaKeywords: [article.focusKeyword, ...(article.tags || [])].filter(Boolean).join(', '),
             ogType: 'article',
