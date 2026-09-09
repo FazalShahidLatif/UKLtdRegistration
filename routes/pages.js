@@ -91,7 +91,7 @@ router.get('/about', (req, res) => {
 // FAQ page
 router.get('/faq', (req, res) => {
     res.render('pages/faq', {
-        title: 'Ltd Company UK Registration FAQ | New Ltd Company Questions Answered',
+        title: 'Ltd Company UK Registration FAQ',
         metaDescription: 'Answers to every question about ltd company UK registration, new ltd company registration, checking company name availability, and ltd company names. Free expert guidance.'
     });
 });
@@ -116,7 +116,7 @@ router.get('/partners', (req, res) => {
 // Success Stories page
 router.get('/success-stories', (req, res) => {
     res.render('pages/success-stories', {
-        title: 'Form UK Ltd Company from Pakistan for E-commerce | Global Success Stories',
+        title: 'Form UK Ltd Company from Pakistan for E-commerce',
         metaDescription: 'Discover how founders from Pakistan, India, Bangladesh, and Sri Lanka formed UK Ltd companies for e-commerce, Amazon FBA, and global trade. Real success stories and a step-by-step guide to form a UK Ltd company from Pakistan for e-commerce.'
     });
 });
@@ -160,7 +160,7 @@ router.get('/legal/compliance', (req, res) => {
 
 router.get('/strategic-research-hub', (req, res) => {
     res.render('pages/research-hub', {
-        title: 'Company Names Search | Check Company Name Availability UK — Free Tool',
+        title: 'Company Names Search',
         metaDescription: 'Free company names search tool. Check company name availability UK instantly against the official Companies House register. Search ltd company names and verify trademarks before you register.'
     });
 });
@@ -176,21 +176,21 @@ router.get('/register-a-limited-company-uk', (req, res) => {
 // Regional Landing Pages
 router.get('/register-company-england', (req, res) => {
     res.render('pages/regions/england', {
-        title: 'Register a Company in England Online | £119.99 Same-Day Formation',
+        title: 'Register a Company in England Online',
         metaDescription: 'Form an England limited company online today. Includes the £100 state fee, official London registered office options, and active 2026 ACSP verification from £119.99.'
     });
 });
 
 router.get('/register-company-scotland', (req, res) => {
     res.render('pages/regions/scotland', {
-        title: 'Register a Company in Scotland | Scottish LTD Company Formation',
+        title: 'Register a Company in Scotland',
         metaDescription: 'Register your limited company in Scotland online. Fast same-day formation with Companies House, catering to unique Scottish jurisdiction legal requirements.'
     });
 });
 
 router.get('/register-company-wales', (req, res) => {
     res.render('pages/regions/wales', {
-        title: 'Register a Company in Wales | Welsh Limited Company Registration',
+        title: 'Register a Company in Wales',
         metaDescription: 'Form a limited company in Wales online. Companies House approved same-day registration with bilingual Welsh certificate options.'
     });
 });
@@ -211,7 +211,7 @@ router.get('/register-company-manchester', (req, res) => {
 
 router.get('/register-company-birmingham', (req, res) => {
     res.render('pages/regions/birmingham', {
-        title: 'Register a Company in Birmingham | Online Formation from £119.99',
+        title: 'Register a Company in Birmingham',
         metaDescription: 'Form a Birmingham limited company online today with same-day Companies House filing, £100 state fee included, and registered office and banking support.'
     });
 });
@@ -225,7 +225,7 @@ router.get('/register-company-leeds', (req, res) => {
 
 router.get('/register-company-edinburgh', (req, res) => {
     res.render('pages/regions/edinburgh', {
-        title: 'Incorporate a Business in Edinburgh | Online Scottish Formation',
+        title: 'Incorporate a Business in Edinburgh',
         metaDescription: 'Incorporate an Edinburgh limited company online with same-day Companies House filing, £100 state fee included, and remote Scottish formation support.'
     });
 });
@@ -233,7 +233,7 @@ router.get('/register-company-edinburgh', (req, res) => {
 // 6 New Service Pages
 router.get('/registered-office-address', (req, res) => {
     res.render('pages/services/registered-office-address', {
-        title: 'Registered Office Address UK | Prestigious London Business Address',
+        title: 'Registered Office Address UK',
         metaDescription: 'Get a prestigious London registered office address for your UK company from just £49.99/year. Keep your home address private and comply with Companies House.'
     });
 });
@@ -247,7 +247,7 @@ router.get('/company-secretary', (req, res) => {
 
 router.get('/vat-registration', (req, res) => {
     res.render('pages/services/vat-registration', {
-        title: 'VAT Registration UK 2026 | HMRC Filing for Residents and Non-Residents',
+        title: 'VAT Registration UK 2026',
         metaDescription: 'Need VAT registration in the UK? Get HMRC filing support for mandatory or voluntary registration, the £90,000 2026 threshold, EORI setup, and non-resident UK Ltd compliance.'
     });
 });
@@ -261,14 +261,14 @@ router.get('/confirmation-statement', (req, res) => {
 
 router.get('/company-name-check', (req, res) => {
     res.render('pages/services/company-name-check', {
-        title: 'Check Company Name Availability UK | Ltd Company Names Search — Free',
+        title: 'Check Company Name Availability UK',
         metaDescription: 'Check company name availability UK for free. Search ltd company names against the live Companies House register, sensitive word lists, and trademark databases. Find your perfect ltd company name and register today.'
     });
 });
 
 router.get('/non-uk-resident-company', (req, res) => {
     res.render('pages/services/non-uk-resident-company', {
-        title: 'Register UK Company as Non-Resident | Remote International Formation',
+        title: 'Register UK Company as Non-Resident',
         metaDescription: 'Register a limited company in the UK as a non-resident remotely. Fully digital process, prestigious London address, Wise business banking setup, and ECCTA compliant.'
     });
 });
@@ -292,7 +292,7 @@ router.get('/services/dissolution', (req, res) => {
 // Same-Day Fast Formation Landing Page
 router.get('/fastest-uk-company-registration', (req, res) => {
     res.render('pages/fast-formation', {
-        title: 'Fastest UK LTD Registration | Same-Day Company Formation in 3-6 Hours',
+        title: 'Fastest UK LTD Registration',
         metaDescription: 'Same-day UK company registration from £189.99. Companies House approval in 3-6 working hours. Fastest LTD formation guaranteed before 3 PM UK time. Start trading within 24 hours.'
     });
 });
@@ -300,7 +300,7 @@ router.get('/fastest-uk-company-registration', (req, res) => {
 // Cheap/Budget Formation Landing Page
 router.get('/cheapest-uk-company-registration', (req, res) => {
     res.render('pages/budget-formation', {
-        title: 'Cheapest UK Company Registration | £119.99 All-Inclusive Formation',
+        title: 'Cheapest UK Company Registration',
         metaDescription: 'Cheapest UK LTD registration at £119.99. Companies House fee included, no hidden charges. Transparent pricing, zero upsells. Form your company now.'
     });
 });
@@ -316,7 +316,7 @@ router.get('/uk-company-formation-for-residents', (req, res) => {
 // Enhanced Non-Residents Page with better keywords
 router.get('/uk-company-registration-for-foreigners', (req, res) => {
     res.render('pages/non-residents', {
-        title: 'UK Company Registration for Foreigners | Non-Residents Formation Guide',
+        title: 'UK Company Registration for Foreigners',
         metaDescription: 'Register a UK company as a foreigner from anywhere. International founders welcome. Same-day formation, London registered office, Wise banking assistance, and ACSP-verified. From £189.99.'
     });
 });
