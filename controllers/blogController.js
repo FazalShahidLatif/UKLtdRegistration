@@ -12,7 +12,13 @@ const articlesPath = path.join(__dirname, '../content/blog/blog-articles.json');
 const maxTitleLength = 55;
 
 const buildPageTitle = article => {
-    const sourceTitle = (article.metaTitle || article.title || '').trim();
+    let sourceTitle = (article.metaTitle || article.title || '').trim();
+    
+    // Ensure title tag is not identical to H1 to fix Semrush warning
+    if (sourceTitle === article.title) {
+        sourceTitle = `Guide: ${sourceTitle}`;
+    }
+
     if (sourceTitle.length <= maxTitleLength) return sourceTitle;
 
     const truncatedTitle = sourceTitle
