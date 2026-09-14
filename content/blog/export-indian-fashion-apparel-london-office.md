@@ -24,4 +24,40 @@ Operating as a UK entity allows you to manage VAT registration more effectively.
 ## Earning for India
 By scaling your fashion brand through a UK hub, you generate significant foreign exchange. These funds, when repatriated to India, help fuel your local manufacturing units and contribute to India's position as a global export leader.
 
+
+---
+
+## Open a Wise Business Account for Your UK LTD
+
+[Wise Business](https://wise.com/uk/business) gives your UK Limited Company a local GBP account with a sort code and account number — no UK residency required. Receive payments in 40+ currencies and pay suppliers in their local currency at the mid-market rate.
+
+**Why non-resident founders choose Wise:**
+- **GBP, USD, EUR account details** under your UK LTD name
+- **Borderless debit card** for spending in 150+ countries
+- **Integration with Stripe, Shopify, and PayPal** for e-commerce
+- **Setup in under 3 days** with remote biometric verification
+
+[**Open a Wise Business Account →**](https://wise.com/uk/business)
+
+*UK LTD Registration may receive a commission if you sign up through our links. This supports our free guides at no extra cost to you.*
+
+---
+
+## Set Up a Payoneer Account for Your UK LTD
+
+[Payoneer](https://www.payoneer.com/) is a global payment platform trusted by millions of businesses. It gives your UK LTD the ability to receive payments from marketplaces, clients, and partners worldwide — with local receiving accounts in USD, EUR, GBP, and more.
+
+**Why UK LTD owners use Payoneer:**
+- **Receive payments from 200+ countries** in multiple currencies
+- **Local bank details** for USD, EUR, GBP, AUD, and CAD
+- **Integration with Amazon, eBay, Fiverr, Upwork, and Stripe**
+- **Low, transparent fees** with no hidden charges
+
+[**Sign Up for Payoneer →**](https://www.payoneer.com/)
+
+*UK LTD Registration may receive a commission if you sign up through our links. This supports our free guides at no extra cost to you.*
+
+
+
+
 [Launch Your Fashion Brand Globally](/pricing)
