@@ -21,9 +21,9 @@ router.get('/services', (req, res) => {
 // Specific Service Pages
 router.get('/services/virtual-office', (req, res) => {
     res.render('pages/services/virtual-office', {
-        title: 'Ltd Company Formation London | Virtual Office & Address',
-        metaDescription: 'Ltd company formation London with a prestigious virtual office from £99/year. Registered office, mail handling, and director service address — compliant and trusted by 1,000+ founders.',
-        metaKeywords: 'ltd company formation london, virtual office UK London, London business address, virtual office address UK, registered office London'
+        title: 'Virtual Office London — Prestigious UK Business Address from £49.99/Year',
+        metaDescription: 'Get a prestigious virtual office address in London for your UK Ltd company. Registered office, mail handling, and director service address — from £49.99/year. Protect your privacy and comply with Companies House.',
+        metaKeywords: 'virtual office London, London business address, registered office UK, virtual office address, Companies House address, prestige London address'
     });
 });
 
@@ -116,8 +116,9 @@ router.get('/partners', (req, res) => {
 // Success Stories page
 router.get('/success-stories', (req, res) => {
     res.render('pages/success-stories', {
-        title: 'Form UK Ltd Company from Pakistan for E-commerce',
-        metaDescription: 'Discover how founders from Pakistan, India, Bangladesh, and Sri Lanka formed UK Ltd companies for e-commerce, Amazon FBA, and global trade. Real success stories and a step-by-step guide to form a UK Ltd company from Pakistan for e-commerce.'
+        title: 'UK LTD Success Stories — How Founders From Pakistan, India & Bangladesh Built Global Businesses',
+        metaDescription: 'Real success stories of founders from Pakistan, India, Bangladesh, and Sri Lanka who formed UK Ltd companies for e-commerce, Amazon FBA, and global trade. See how they did it — and how you can too. Step-by-step guides included.',
+        metaKeywords: 'UK LTD success stories, form UK company from Pakistan, Amazon FBA UK LTD, e-commerce UK company success, non-resident business success stories'
     });
 });
 
@@ -168,8 +169,9 @@ router.get('/strategic-research-hub', (req, res) => {
 // LTD Company Formation Page (Core Conversion Page)
 router.get('/register-a-limited-company-uk', (req, res) => {
     res.render('pages/ltd-formation', {
-        title: 'Ltd Company UK Registration | Same-Day Online',
-        metaDescription: 'Start your new ltd company registration today from £119.99. Fast UK limited (United Kingdom private limited) company registration via Companies House — same-day filing, ACSP-verified agents, Wise banking setup included.'
+        title: 'Register a Limited Company UK — Same-Day Formation from £119.99',
+        metaDescription: 'Register a limited company in the UK online today. Same-day Companies House filing, ACSP-verified agents, free registered office for 3 months, and Wise business banking setup. From £119.99. Trusted by 10,000+ founders.',
+        metaKeywords: 'register a limited company UK, UK company registration, form a limited company, register ltd company online, Companies House registration, non-resident UK company'
     });
 });
 
@@ -247,8 +249,9 @@ router.get('/company-secretary', (req, res) => {
 
 router.get('/vat-registration', (req, res) => {
     res.render('pages/services/vat-registration', {
-        title: 'VAT Registration UK 2026',
-        metaDescription: 'Need VAT registration in the UK? Get HMRC filing support for mandatory or voluntary registration, the £90,000 2026 threshold, EORI setup, and non-resident UK Ltd compliance.'
+        title: 'UK VAT Registration 2026 — Threshold £90,000 | Register with HMRC from £149',
+        metaDescription: 'UK VAT registration threshold 2026 is £90,000. Register your UK Ltd for VAT with HMRC — mandatory or voluntary. Non-resident friendly. Full HMRC filing support from £149. Same-day service available.',
+        metaKeywords: 'UK VAT registration 2026, VAT threshold £90,000, register for VAT UK, HMRC VAT registration, non-resident VAT registration UK, VAT registration service'
     });
 });
 

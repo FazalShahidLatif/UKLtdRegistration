@@ -81,15 +81,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// 5. Conversion Tracking Logic
+// 5. Conversion & CTA Tracking Logic
 document.addEventListener('DOMContentLoaded', () => {
     // Track clicks on elements with data-track attribute
     document.querySelectorAll('[data-track]').forEach(el => {
-        el.addEventListener('click', () => {
-            const trackId = el.getAttribute('data-track');
-            const label = el.innerText.trim() || trackId;
-            const ctaType = trackId.includes('whatsapp') ? 'WhatsApp Support' : 'Start Formation';
-            
+        el.addEventListener('click', function(e) {
+            const trackId = this.getAttribute('data-track');
+            const label = this.innerText.trim() || trackId;
+            let ctaType = 'General CTA';
+
+            if (trackId.includes('formation')) ctaType = 'Formation CTA';
+            else if (trackId.includes('contact')) ctaType = 'Contact CTA';
+            else if (trackId.includes('whatsapp')) ctaType = 'WhatsApp Support';
+            else if (trackId.includes('consultation')) ctaType = 'Consultation CTA';
+            else if (trackId.includes('strategy')) ctaType = 'Strategy CTA';
+            else if (trackId.includes('enquiry') || trackId.includes('lead')) ctaType = 'Lead Capture';
+
             // Push to GTM DataLayer
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
@@ -98,28 +105,116 @@ document.addEventListener('DOMContentLoaded', () => {
                 'cta_id': trackId,
                 'cta_label': label,
                 'page_category': window.pageCategory || 'General',
-                'page_path': window.location.pathname
+                'page_path': window.location.pathname,
+                'page_title': document.title
             });
-            
-            console.log(`GA4 Event: cta_click | Type: ${ctaType} | Category: ${window.pageCategory}`);
+
+            // Also fire GA4 event directly (fallback if GTM not loaded)
+            if (typeof gtag === 'function') {
+                gtag('event', 'cta_click', {
+                    cta_type: ctaType,
+                    cta_id: trackId,
+                    cta_label: label,
+                    page_category: window.pageCategory || 'General',
+                    page_path: window.location.pathname
+                });
+            }
+
+            console.log(`GA4 Event: cta_click | Type: ${ctaType} | ID: ${trackId} | Page: ${window.location.pathname}`);
         });
     });
 
     // Track Form Submissions (Lead Capture)
-    const forms = document.querySelectorAll('form');
+    const forms = document.querySelectorAll('form[data-form-type]');
     forms.forEach(form => {
-        form.addEventListener('submit', () => {
-            const formType = form.getAttribute('data-form-type') || 'generic_lead';
-            
+        form.addEventListener('submit', function(e) {
+            const formType = this.getAttribute('data-form-type') || 'generic_lead';
+            const formAction = this.getAttribute('action') || 'inline';
+
             window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
                 'event': 'generate_lead',
                 'form_type': formType,
+                'form_action': formAction,
                 'page_category': window.pageCategory || 'General',
-                'page_path': window.location.pathname
+                'page_path': window.location.pathname,
+                'form_fields_count': this.elements.length
             });
-            
-            console.log(`GA4 Event: generate_lead | Type: ${formType} | Category: ${window.pageCategory}`);
+
+            if (typeof gtag === 'function') {
+                gtag('event', 'generate_lead', {
+                    form_type: formType,
+                    form_action: formAction,
+                    page_category: window.pageCategory || 'General',
+                    page_path: window.location.pathname
+                });
+            }
+
+            console.log(`GA4 Event: generate_lead | Type: ${formType} | Page: ${window.location.pathname}`);
         });
     });
+
+    // Track Scroll Depth (25%, 50%, 75%, 90%) — reduces bounce rate signal
+    let scrollDepths = new Set();
+    window.addEventListener('scroll', function() {
+        const scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
+        if (scrollPercent >= 25 && !scrollDepths.has('25')) {
+            scrollDepths.add('25');
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'scroll_depth',
+                'depth': 25,
+                'page_path': window.location.pathname
+            });
+            if (typeof gtag === 'function') {
+                gtag('event', 'scroll_depth', { depth: 25, page_path: window.location.pathname });
+            }
+        }
+        if (scrollPercent >= 50 && !scrollDepths.has('50')) {
+            scrollDepths.add('50');
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'scroll_depth',
+                'depth': 50,
+                'page_path': window.location.pathname
+            });
+            if (typeof gtag === 'function') {
+                gtag('event', 'scroll_depth', { depth: 50, page_path: window.location.pathname });
+            }
+        }
+        if (scrollPercent >= 75 && !scrollDepths.has('75')) {
+            scrollDepths.add('75');
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'scroll_depth',
+                'depth': 75,
+                'page_path': window.location.pathname
+            });
+        }
+        if (scrollPercent >= 90 && !scrollDepths.has('90')) {
+            scrollDepths.add('90');
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'scroll_depth',
+                'depth': 90,
+                'page_path': window.location.pathname
+            });
+        }
+    }, { passive: true });
+
+    // Track Time on Page (engaged session signal)
+    let pageEngaged = false;
+    const trackEngagement = () => {
+        if (!pageEngaged && (window.scrollY > 100 || window.history.scrollRestoration)) {
+            pageEngaged = true;
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'page_engagement',
+                'engagement_type': 'scroll',
+                'page_path': window.location.pathname
+            });
+        }
+    };
+    // Mark engaged after 10 seconds or on first scroll
+    setTimeout(trackEngagement, 10000);
 });
