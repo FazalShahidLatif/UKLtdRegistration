@@ -1,7 +1,7 @@
 ---
-title: "UK Registration From USA: The 2026 Step-by-Step Guide"
-metaTitle: "UK Registration from USA 2026 | Guide for US Entrepreneurs"
-metaDescription: "Master guide for US citizens performing a UK registration. UK Ltd vs US LLC, banking for Americans, ACSP verification, and tax strategy for 2026."
+title: "Register a UK LTD from the USA 2026 — Complete Step-by-Step Guide for American Founders"
+metaTitle: "UK LTD for US Founders 2026 — Register Online from USA | LLC vs LTD, Banking, Tax"
+metaDescription: "US citizens: register a UK LTD online in 2026. Same-day formation from $229 (£119.99). LLC vs UK LTD comparison, Wise/Revolut/Mercury banking from USA, ACSP verification, and US-UK tax strategy. London registered office included."
 slug: how-to-register-uk-company-from-usa-complete-step-by-step-guide-2026
 author: UK LTD Registration
 publishedDate: 2026-03-20

@@ -5,23 +5,23 @@
 <meta name="keywords" content="<%= metaKeywords %>">
 <% } %>
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="<%= siteUrl %><%= currentPath %>">
+<link rel="canonical" href="<%= (typeof siteUrl !== 'undefined' && siteUrl) ? siteUrl : 'https://ukltdregistration.com' %><%= (typeof currentPath !== 'undefined' && currentPath) ? currentPath : '' %>">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="<%= (typeof ogType !== 'undefined' && ogType) ? ogType : 'website' %>">
-<meta property="og:url" content="<%= siteUrl %><%= currentPath %>">
+<meta property="og:url" content="<%= (typeof siteUrl !== 'undefined' && siteUrl) ? siteUrl : 'https://ukltdregistration.com' %><%= (typeof currentPath !== 'undefined' && currentPath) ? currentPath : '' %>">
 <meta property="og:title" content="<%= title %> | <%= siteName %>">
 <meta property="og:description" content="<%= metaDescription %>">
-<meta property="og:image" content="<%= (typeof articleImage !== 'undefined' && articleImage) ? siteUrl + articleImage : siteUrl + '/images/og-image.jpg' %>">
+<meta property="og:image" content="<%= (typeof articleImage !== 'undefined' && articleImage) ? (typeof siteUrl !== 'undefined' && siteUrl ? siteUrl : 'https://ukltdregistration.com') + articleImage : (typeof siteUrl !== 'undefined' && siteUrl ? siteUrl : 'https://ukltdregistration.com') + '/images/og-image.jpg' %>">
 
 <%- include('schema') %>
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="<%= siteUrl %><%= currentPath %>">
+<meta property="twitter:url" content="<%= (typeof siteUrl !== 'undefined' && siteUrl) ? siteUrl : 'https://ukltdregistration.com' %><%= (typeof currentPath !== 'undefined' && currentPath) ? currentPath : '' %>">
 <meta property="twitter:title" content="<%= title %> | <%= siteName %>">
 <meta property="twitter:description" content="<%= metaDescription %>">
-<meta property="twitter:image" content="<%= (typeof articleImage !== 'undefined' && articleImage) ? siteUrl + articleImage : siteUrl + '/images/og-image.jpg' %>">
+<meta property="twitter:image" content="<%= (typeof articleImage !== 'undefined' && articleImage) ? (typeof siteUrl !== 'undefined' && siteUrl ? siteUrl : 'https://ukltdregistration.com') + articleImage : (typeof siteUrl !== 'undefined' && siteUrl ? siteUrl : 'https://ukltdregistration.com') + '/images/og-image.jpg' %>">
 
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="/images/favicon.png">

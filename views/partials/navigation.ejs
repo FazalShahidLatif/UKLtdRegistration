@@ -36,7 +36,7 @@
 
 
                 
-                <% if (user) { %>
+                <% if (typeof user !== 'undefined' && user) { %>
                     <div class="h-8 w-[1px] bg-gray-200"></div>
                     <% if (user.role === 'admin') { %>
                         <a href="/admin" class="text-brand-blue hover:text-brand-navy p-2 rounded-xl transition-all" title="Master Control Room">

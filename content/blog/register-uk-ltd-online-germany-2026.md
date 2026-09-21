@@ -1,7 +1,7 @@
 ---
-title: "How German Founders Can Register a UK LTD Online in 2026"
-metaTitle: "Register UK Company from Germany 2026 | German Founder's Guide"
-metaDescription: "Complete 2026 guide for German founders to register a UK Limited Company online. Remote setup, London address, Wise/Revolut banking, ACSP verification, and tax tips from €220."
+title: "Register a UK LTD from Germany 2026 — Step-by-Step Guide for German Founders"
+metaTitle: "UK LTD for German Founders 2026 — Register Online from Germany | ACSP, Wise, Tax"
+metaDescription: "German founders: register a UK LTD online in 2026. Same-day formation from €220. ACSP verification from Germany, Wise/Revolut business banking, London registered office. No UK visa needed. GmbH vs UK LTD explained."
 slug: register-uk-ltd-online-germany-2026
 author: UK LTD Registration
 publishedDate: 2026-09-14
