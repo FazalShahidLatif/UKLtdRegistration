@@ -160,9 +160,10 @@ mongoose.connection.on('error', err => {
     console.error('✗ Mongoose connection error event:', err.message);
 });
 
-// Connect to MongoDB with timeout
+// Connect to MongoDB, then boot server
 const connectTimeout = setTimeout(() => {
-    console.warn('⚠ MongoDB connection timeout - app will continue without database');
+    console.warn('⚠ MongoDB connection timeout - booting without database');
+    bootServer();
 }, 5000);
 
 mongoose.connect(MONGODB_URI, {
@@ -172,55 +173,61 @@ mongoose.connect(MONGODB_URI, {
     .then(() => {
         clearTimeout(connectTimeout);
         console.log('✓ MongoDB connected');
+        bootServer();
     })
     .catch(err => {
         clearTimeout(connectTimeout);
         console.warn('⚠ MongoDB connection failed:', err.message);
-        console.warn('  App will continue in limited mode');
+        console.warn('  Booting in limited mode');
+        bootServer();
     });
 
-// Start server
-const server = app.listen(PORT, () => {
-    console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-    console.log('  UK LTD Registration - Node.js Server');
-    console.log('  Created by BlueOceanHub');
-    console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-    console.log(`  ✓ Server running on port ${PORT}`);
-    console.log(`  ✓ Environment: ${process.env.NODE_ENV || 'development'}`);
-    console.log(`  ✓ URL: http://localhost:${PORT}`);
-    console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-    
-    // Initialize SEO Scheduler (non-blocking to prevent serverless timeout)
-        // Disabled in production to avoid cold-start delays from heavy googleapis require
+module.exports = app;
+let server;
+
+function bootServer() {
+    server = app.listen(PORT, () => {
+        console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+        console.log('  UK LTD Registration - Node.js Server');
+        console.log('  Created by BlueOceanHub');
+        console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+        console.log(`  ✓ Server running on port ${PORT}`);
+        console.log(`  ✓ Environment: ${process.env.NODE_ENV || 'development'}`);
+        console.log(`  ✓ URL: http://localhost:${PORT}`);
+        console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+
+        // Initialize SEO Scheduler (non-blocking to prevent serverless timeout)
         if (process.env.NODE_ENV !== 'production') {
             try {
                 setImmediate(() => {
-                    try {
-                        initSEOScheduler();
-                    } catch (err) {
-                        console.error('[SEO Scheduler] Failed to initialize:', err.message);
-                    }
+                    try { initSEOScheduler(); }
+                    catch (err) { console.error('[SEO Scheduler] Failed:', err.message); }
                 });
-            } catch (err) {
-                console.error('[SEO Scheduler] Initialization error:', err.message);
-            }
-        }
-});
-
-// Graceful shutdown
-process.on('SIGTERM', () => {
-    console.log('SIGTERM signal received: closing HTTP server');
-    server.close(() => {
-        console.log('HTTP server closed');
-        if (process.env.MONGODB_URI) {
-            mongoose.connection.close(false, () => {
-                console.log('MongoDB connection closed');
-                process.exit(0);
-            });
-        } else {
-            process.exit(0);
+            } catch (err) { console.error('[SEO Scheduler] Init error:', err.message); }
         }
     });
-});
 
-module.exports = app;
+    process.on('SIGTERM', () => {
+        console.log('SIGTERM received. Closing server...');
+        server.close(() => {
+            console.log('Server closed.');
+            if (mongoose.connection.readyState !== 0) {
+                mongoose.connection.close(false, () => { console.log('MongoDB closed.'); process.exit(0); });
+            } else { process.exit(0); }
+        });
+        setTimeout(() => process.exit(1), 10000);
+    });
+
+    process.on('SIGINT', () => {
+        console.log('SIGINT received. Closing server...');
+        server.close(() => {
+            console.log('Server closed.');
+            if (mongoose.connection.readyState !== 0) {
+                mongoose.connection.close(false, () => { console.log('MongoDB closed.'); process.exit(0); });
+            } else { process.exit(0); }
+        });
+        setTimeout(() => process.exit(1), 10000);
+    });
+}
+
+// Connect to MongoDB, then boot server
