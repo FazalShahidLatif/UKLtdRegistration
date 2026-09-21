@@ -1,7 +1,7 @@
 ---
 title: "How to Register a UK Company from Pakistan: The 2026 Founder's Guide"
-metaTitle: "Register UK Company from Pakistan 2026 | PKR Cost & Guide"
-metaDescription: "The definitive 2026 guide for Pakistani founders. Register a UK Private Limited Company from Karachi, Lahore, or Islamabad. Amazon FBA, Wise banking, and Tax details included."
+metaTitle: "Register UK Company from Pakistan 2026 | PKR Cost, India & Pakistan Guide"
+metaDescription: "The definitive 2026 guide for Pakistani and Indian founders. Register a UK Private Limited Company from Karachi, Lahore, Islamabad, Delhi, or Mumbai. Amazon FBA, Wise banking, and Tax details incl...[truncated]
 slug: register-uk-ltd-online-india-pakistan-2026
 author: UK LTD Registration
 publishedDate: 2026-03-10

@@ -59,8 +59,9 @@ router.get('/uk-residents', (req, res) => {
 // US Citizens page
 router.get('/us-citizens', (req, res) => {
     res.render('pages/us-citizens', {
-        title: 'Register UK Company from USA | Non-Resident Formation 2026',
-        metaDescription: 'Register a UK company from the USA or any country. UK company registration for non residents includes ACSP verification, London registered office, and Wise banking — from £119.99.'
+        title: 'Register a UK Company from the USA 2026 — Same-Day Formation from $229 | LLC vs UK LTD, Mercury Banking, ACSP',
+        metaDescription: 'US citizens: register a UK LTD from the USA in 2026. Same-day Companies House filing from $229 (£119.99). LLC vs UK LTD comparison, Mercury/Wise banking for Americans, ACSP verification, London registered office. No US LLC Form 5472 headaches.',
+        metaKeywords: 'register UK company from USA, US citizens UK LTD, UK Ltd vs US LLC, form UK company American, Mercury banking UK, non-resident UK company USA, ACSP verification USA'
     });
 });
 
@@ -311,8 +312,8 @@ router.get('/cheapest-uk-company-registration', (req, res) => {
 // Enhanced UK Residents Page
 router.get('/uk-company-formation-for-residents', (req, res) => {
     res.render('pages/uk-residents', {
-        title: 'UK Company Registration for UK Residents | £119.99 Formation',
-        metaDescription: 'Register a UK Limited Company as a resident from £119.99. Same-day formation, Companies House filing included, ACSP-verified with full compliance support.'
+        title: 'UK Company Formation for UK Residents 2026 — Same-Day from £119.99',
+        metaDescription: 'UK residents: form a limited company in 2026 from £119.99. Same-day Companies House filing, ACSP-verified agents, biometric ID verification, and full post-incorporation support. Register your UK LTD today — price includes the £100 statutory fee.'
     });
 });
 
