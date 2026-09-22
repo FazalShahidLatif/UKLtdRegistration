@@ -154,13 +154,12 @@ app.use((err, req, res, next) => {
     });
 });
 
-// Database connection
+// Database connection - fire and forget (non-blocking for Vercel serverless)
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/ukltd';
 mongoose.connection.on('error', err => {
     console.error('✗ Mongoose connection error event:', err.message);
 });
 
-// Connect to MongoDB with timeout
 const connectTimeout = setTimeout(() => {
     console.warn('⚠ MongoDB connection timeout - app will continue without database');
 }, 5000);
@@ -179,48 +178,5 @@ mongoose.connect(MONGODB_URI, {
         console.warn('  App will continue in limited mode');
     });
 
-// Start server
-const server = app.listen(PORT, () => {
-    console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-    console.log('  UK LTD Registration - Node.js Server');
-    console.log('  Created by BlueOceanHub');
-    console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-    console.log(`  ✓ Server running on port ${PORT}`);
-    console.log(`  ✓ Environment: ${process.env.NODE_ENV || 'development'}`);
-    console.log(`  ✓ URL: http://localhost:${PORT}`);
-    console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-    
-    // Initialize SEO Scheduler (non-blocking to prevent serverless timeout)
-        // Disabled in production to avoid cold-start delays from heavy googleapis require
-        if (process.env.NODE_ENV !== 'production') {
-            try {
-                setImmediate(() => {
-                    try {
-                        initSEOScheduler();
-                    } catch (err) {
-                        console.error('[SEO Scheduler] Failed to initialize:', err.message);
-                    }
-                });
-            } catch (err) {
-                console.error('[SEO Scheduler] Initialization error:', err.message);
-            }
-        }
-});
-
-// Graceful shutdown
-process.on('SIGTERM', () => {
-    console.log('SIGTERM signal received: closing HTTP server');
-    server.close(() => {
-        console.log('HTTP server closed');
-        if (process.env.MONGODB_URI) {
-            mongoose.connection.close(false, () => {
-                console.log('MongoDB connection closed');
-                process.exit(0);
-            });
-        } else {
-            process.exit(0);
-        }
-    });
-});
-
+// Export app for Vercel (do NOT call app.listen - Vercel manages the HTTP layer)
 module.exports = app;

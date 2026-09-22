@@ -30,17 +30,32 @@ const emailAccounts = {
 // Create reusable transporter for SMTP
 const createTransporter = (fromAccount = 'info') => {
     const account = emailAccounts[fromAccount];
-    
+
+    const smtpHost = process.env.SMTP_HOST || 'smtp.example.com';
+    const smtpUser = account.email;
+    const smtpPass = process.env.SMTP_PASS;
+
+    // No-op transporter when SMTP not configured — prevents crashes
+    if (!smtpHost || smtpHost === 'smtp.example.com' || !smtpPass || smtpPass === 'EMAIL_PASSWORD_example') {
+        console.warn('⚠ SMTP not configured — emails will not be sent');
+        return {
+            sendMail: async () => {
+                console.warn('⚠ Email not sent — SMTP not configured');
+                return { messageId: 'not-configured' };
+            }
+        };
+    }
+
     return nodemailer.createTransport({
-        host: process.env.SMTP_HOST || 'smtp.example.com',
+        host: smtpHost,
         port: parseInt(process.env.SMTP_PORT) || 587,
-        secure: process.env.SMTP_SECURE === 'true', // true for 465, false for other ports
+        secure: process.env.SMTP_SECURE === 'true',
         auth: {
-            user: account.email,
-            pass: process.env.SMTP_PASS
+            user: smtpUser,
+            pass: smtpPass
         },
         tls: {
-            rejectUnauthorized: false // For development only
+            rejectUnauthorized: false
         }
     });
 };

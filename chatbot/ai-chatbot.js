@@ -87,56 +87,68 @@ Important Guidelines:
      * Chat with OpenAI GPT-4
      */
     async chatWithGPT(history) {
-        const response = await fetch('https://api.openai.com/v1/chat/completions', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${this.apiKey}`
-            },
-            body: JSON.stringify({
-                model: 'gpt-4',
-                messages: [
-                    { role: 'system', content: this.systemPrompt },
-                    ...history
-                ],
-                max_tokens: 500,
-                temperature: 0.7
-            })
-        });
-        
-        if (!response.ok) {
-            throw new Error(`OpenAI API error: ${response.statusText}`);
+        if (!this.apiKey || this.apiKey.startsWith('ANTHRO') || this.apiKey === 'dummy' || this.apiKey.length < 10) {
+            return "I'm not connected to the AI service right now. Our formation specialists are available at support@ukltdregistration.com — or check our guides at /blog.";
         }
-        
-        const data = await response.json();
-        return data.choices[0].message.content;
+        try {
+            const response = await fetch('https://api.openai.com/v1/chat/completions', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${this.apiKey}`
+                },
+                body: JSON.stringify({
+                    model: 'gpt-4',
+                    messages: [
+                        { role: 'system', content: this.systemPrompt },
+                        ...history
+                    ],
+                    max_tokens: 500,
+                    temperature: 0.7
+                })
+            });
+            if (!response.ok) {
+                throw new Error(`OpenAI API error: ${response.statusText}`);
+            }
+            const data = await response.json();
+            return data.choices[0].message.content;
+        } catch (error) {
+            console.error('GPT chat error:', error.message);
+            return "I'm having trouble connecting right now. Please try again or email support@ukltdregistration.com.";
+        }
     }
     
     /**
      * Chat with Anthropic Claude
      */
     async chatWithClaude(history) {
-        const response = await fetch('https://api.anthropic.com/v1/messages', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'x-api-key': this.apiKey,
-                'anthropic-version': '2023-06-01'
-            },
-            body: JSON.stringify({
-                model: 'claude-3-sonnet-20240229',
-                max_tokens: 500,
-                system: this.systemPrompt,
-                messages: history
-            })
-        });
-        
-        if (!response.ok) {
-            throw new Error(`Anthropic API error: ${response.statusText}`);
+        if (!this.apiKey || this.apiKey.startsWith('dummy') || this.apiKey.length < 10) {
+            return "I'm not connected to the AI service right now. Our formation specialists are available at support@ukltdregistration.com — or check our guides at /blog.";
         }
-        
-        const data = await response.json();
-        return data.content[0].text;
+        try {
+            const response = await fetch('https://api.anthropic.com/v1/messages', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'x-api-key': this.apiKey,
+                    'anthropic-version': '2023-06-01'
+                },
+                body: JSON.stringify({
+                    model: 'claude-3-sonnet-20240229',
+                    max_tokens: 500,
+                    system: this.systemPrompt,
+                    messages: history
+                })
+            });
+            if (!response.ok) {
+                throw new Error(`Anthropic API error: ${response.statusText}`);
+            }
+            const data = await response.json();
+            return data.content[0].text;
+        } catch (error) {
+            console.error('Claude chat error:', error.message);
+            return "I'm having trouble connecting right now. Please try again or email support@ukltdregistration.com.";
+        }
     }
     
     /**
