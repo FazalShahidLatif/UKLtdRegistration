@@ -334,6 +334,33 @@
             </aside>
         </div>
     </div>
-</main>
+
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "<%= article.metaTitle || article.title %>",
+          "description": "<%= metaDescription %>",
+          "image": "<%= (typeof articleImage !== 'undefined' && articleImage) ? (typeof siteUrl !== 'undefined' && siteUrl ? siteUrl : 'https://ukltdregistration.com') + articleImage : (typeof siteUrl !== 'undefined' && siteUrl ? siteUrl : 'https://ukltdregistration.com') + '/images/og-image.jpg' %>",
+          "datePublished": "<%= article.datePublished || article.createdAt || '2026-01-01' %>",
+          "dateModified": "<%= article.dateModified || article.updatedAt || '2026-01-01' %>",
+          "author": {
+            "@type": "Organization",
+            "name": "UK LTD Registration"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "UK LTD Registration",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "<%= (typeof siteUrl !== 'undefined' && siteUrl) ? siteUrl + '/images/logo.png' : 'https://ukltdregistration.com/images/logo.png' %>"
+            }
+          },
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "<%= (typeof siteUrl !== 'undefined' && siteUrl) ? siteUrl + currentPath : 'https://ukltdregistration.com' + currentPath %>"
+          }
+        }
+        </script></main>
 
 <%- include('../partials/footer') %>

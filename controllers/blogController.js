@@ -14,9 +14,10 @@ const maxTitleLength = 55;
 const buildPageTitle = article => {
     let sourceTitle = (article.metaTitle || article.title || '').trim();
     
-    // Ensure title tag is not identical to H1 to fix Semrush warning
+    // Ensure title tag is different from H1 to fix Semrush warning
+    // Use a dash separator instead of "Guide:" prefix for cleaner titles
     if (sourceTitle === article.title) {
-        sourceTitle = `Guide: ${sourceTitle}`;
+        sourceTitle = `${article.title} — UK LTD Registration`;
     }
 
     if (sourceTitle.length <= maxTitleLength) return sourceTitle;

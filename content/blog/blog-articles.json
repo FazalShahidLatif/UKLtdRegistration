@@ -4,7 +4,7 @@
       "id": 1,
       "slug": "acsp-identity-verification-2026",
       "title": "ACSP Identity Verification 2026: What UK Directors Need to Know",
-      "metaTitle": "ACSP Identity Verification 2026",
+      "metaTitle": "ACSP Identity Verification 2026 — UK Directors Guide",
       "metaDescription": "Understand ACSP identity verification for UK company directors and PSCs in 2026, what an authorised provider does, which documents may be needed, and where to verify current Companies House requirements.",
       "category": "Compliance",
       "updatedDate": "2026-08-25",
@@ -101,7 +101,8 @@
       "image": "/images/hero-uk.jpg",
       "imageAlt": "South Asian trade handbook for spice and garment exports to global markets",
       "readTime": 16,
-      "updatedDate": "2026-09-14"
+      "updatedDate": "2026-09-14",
+      "metaTitle": "Bangladesh Exporter Guide — Spices & Garments via UK LTD"
     },
     {
       "id": 6,
@@ -117,13 +118,14 @@
       "excerpt": "How RMG factory owners can capture higher margins by dealing directly with European buyers through a UK entity.",
       "image": "/images/blog/sialkot-safety-wear.png",
       "imageAlt": "Modern RMG production facility in Bangladesh serving European fashion houses",
-      "readTime": 12
+      "readTime": 12,
+      "metaTitle": "Bangladesh RMG Revolution — Boost Exports via UK Hubs"
     },
     {
       "id": 7,
       "slug": "banking-for-uk-ltd-owners-ireland",
       "title": "UK Business Banking for Irish Entrepreneurs: Wise vs. Revolut vs. Traditional",
-      "metaTitle": "UK Banking for Irish Founders 2026 | Wise vs Revolut",
+      "metaTitle": "UK Banking for Irish Entrepreneurs — Wise vs Revolut",
       "metaDescription": "Compare Wise, Revolut, and Payoneer for Irish-owned UK companies. Best banking solutions for remote non-resident directors in 2026.",
       "category": "Banking",
       "tags": [
@@ -146,7 +148,8 @@
         "SEA"
       ],
       "excerpt": "A deep dive into FX fees, cross-border transfers, and the best bank accounts for non-resident SEA directors.",
-      "readTime": 9
+      "readTime": 9,
+      "metaTitle": "Best Banking Setup for SEA Founders with UK LTD"
     },
     {
       "id": 9,
@@ -174,7 +177,7 @@
       "id": 10,
       "slug": "business-banking-uk-ltd-non-residents",
       "title": "UK Business Banking for Non-Residents: The 2026 Complete Setup Guide",
-      "metaTitle": "UK Business Banking for Non-Residents 2026 | Wise vs Revolut",
+      "metaTitle": "UK Business Banking for Non-Residents 2026 — Guide",
       "metaDescription": "Master guide to UK business banking for international founders. Learn how to open Wise, Revolut, and Mercury accounts, handle high-risk jurisdictions, and ACSP verification.",
       "category": "Banking",
       "tags": [
@@ -225,7 +228,8 @@
       "excerpt": "Budgeting for your launch? We show you how to minimize fees while maintaining the professional standards required for 2026 banking.",
       "image": "/images/hero-pricing.jpg",
       "imageAlt": "UK Company Formation Cost Breakdown and Transparent Pricing Structure",
-      "readTime": 6
+      "readTime": 6,
+      "metaTitle": "Cheapest UK Company Registration 2026 — From £119.99"
     },
     {
       "id": 13,
@@ -235,7 +239,8 @@
       "excerpt": "Managing the corporate lifecycle. Whether you are shifting strategy or exiting, ensure your dissolution is clean and compliant.",
       "readTime": 8,
       "image": "/images/blog_uk_formation_guide_2026.png",
-      "imageAlt": "Closing a UK company guide"
+      "imageAlt": "Closing a UK company guide",
+      "metaTitle": "Close a UK Company Online — Strike-Off vs Liquidation"
     },
     {
       "id": 14,
@@ -314,7 +319,8 @@
       "excerpt": "The ultimate guide to the Dubai-UK salvage car corridor. Acquire inventory in the UK and distribute globally via Dubai hubs.",
       "image": "/images/blog_ukltd_vs_usllc_comparison.png",
       "imageAlt": "Exporting damaged and salvage cars from UK via Dubai logistics hub",
-      "readTime": 9
+      "readTime": 9,
+      "metaTitle": "The Dubai-UK Corridor: Exporting Damaged & Salvage Cars..."
     },
     {
       "id": 17,
@@ -349,7 +355,8 @@
       "excerpt": "Protect your home address from the public eye. We explain the legal buffer every UK director should use.",
       "readTime": 5,
       "image": "/images/blog_uk_formation_guide_2026.png",
-      "imageAlt": "Director service address explained"
+      "imageAlt": "Director service address explained",
+      "metaTitle": "Director's Service Address UK: What It Is & Why"
     },
     {
       "id": 19,
@@ -362,7 +369,8 @@
         "SEA"
       ],
       "excerpt": "The new verification rules for 2026. How SEA directors can comply with UK identity checks remotely.",
-      "readTime": 9
+      "readTime": 9,
+      "metaTitle": "ECCTA 2026: ACSP Verification for SEA Founders"
     },
     {
       "id": 20,
@@ -405,7 +413,8 @@
       "excerpt": "How a prestigious London address boosts the credibility of Indian fashion brands in the eyes of premium European retailers.",
       "image": "/images/hero-us.jpg",
       "imageAlt": "Luxury London storefront representing a high-end Indian fashion brand presence",
-      "readTime": 11
+      "readTime": 11,
+      "metaTitle": "Export Indian Fashion to Europe — London Office Guide"
     },
     {
       "id": 22,
@@ -421,7 +430,8 @@
       "excerpt": "How to scale high-ticket global tenders for industrial lubricants and gases by positioning your brand as a premium UK supplier.",
       "image": "/images/blog/pakistan-leather-textile-pillar.png",
       "imageAlt": "Industrial lubricant and gas export guide for global tendering",
-      "readTime": 10
+      "readTime": 10,
+      "metaTitle": "Industrial Lubricants & Gases: Scaling High-Ticket Global Tenders..."
     },
     {
       "id": 23,
@@ -463,7 +473,8 @@
       "excerpt": "A strategic guide for coffee producers to establish a direct-to-consumer presence in the UK and USA using a London hub.",
       "image": "/images/hero-home.jpg",
       "imageAlt": "Premium coffee export from farm to global cup via UK hub",
-      "readTime": 10
+      "readTime": 10,
+      "metaTitle": "Scale Your Coffee Brand in UK & USA — London Entity"
     },
     {
       "id": 25,
@@ -479,7 +490,8 @@
       "excerpt": "Case study style guide for Faisalabad founders on using UK hubs for distribution and sales across the European continent.",
       "image": "/images/hero-home.jpg",
       "imageAlt": "Modern textile mill infrastructure representing Faisalabad's industrial capacity",
-      "readTime": 9
+      "readTime": 9,
+      "metaTitle": "Faisalabad Textiles: Expand to Europe via UK LTD"
     },
     {
       "id": 26,
@@ -492,7 +504,8 @@
         "SEA"
       ],
       "excerpt": "How to structure your SaaS or agency for international revenue collection with minimal friction.",
-      "readTime": 8
+      "readTime": 8,
+      "metaTitle": "Get Paid in GBP, USD & EUR — UK LTD for SEA Founders"
     },
     {
       "id": 27,
@@ -532,7 +545,8 @@
       "excerpt": "Learn how to use a UK hub to scale your coffee, meat, and seafood export business to the USA and European markets.",
       "image": "/images/hero-uk.jpg",
       "imageAlt": "Global food export roadmap for coffee, meat, and seafood suppliers",
-      "readTime": 15
+      "readTime": 15,
+      "metaTitle": "Global Food Export Roadmap — Coffee, Meat, Seafood"
     },
     {
       "id": 29,
@@ -549,7 +563,8 @@
       "excerpt": "A master playbook for global founders to win high-ticket government and military tenders using a UK corporate structure from home.",
       "image": "/images/hero-uk.jpg",
       "imageAlt": "Global tendering playbook for government and military contracts via UK hub",
-      "readTime": 15
+      "readTime": 15,
+      "metaTitle": "The Global Founder's Tendering Playbook: Winning Government &..."
     },
     {
       "id": 30,
@@ -565,7 +580,8 @@
       "excerpt": "Navigate EU food safety regulations and build a premium spice brand using a UK-based distribution company.",
       "image": "/images/blog_uk_formation_guide_2026.png",
       "imageAlt": "High-quality spice exports from South Asia to the European market",
-      "readTime": 10
+      "readTime": 10,
+      "metaTitle": "Spice Exporters: Globalize from Bangladesh & India"
     },
     {
       "id": 31,
@@ -581,13 +597,14 @@
       "excerpt": "Secure national security and military tenders by leveraging the 'British Tech' advantage for GPS and GPRS technology exports.",
       "image": "/images/blog_uk_formation_guide_2026.png",
       "imageAlt": "High-spec GPS and GPRS technology for military and government tenders",
-      "readTime": 12
+      "readTime": 12,
+      "metaTitle": "GPS & GPRS Technology: Positioning Your Brand for..."
     },
     {
       "id": 32,
       "slug": "how-to-register-uk-company-from-usa-complete-step-by-step-guide-2026",
       "title": "How to Register a UK Limited Company from the USA: The 2026 Step-by-Step Guide",
-      "metaTitle": "Register UK Company from USA 2026",
+      "metaTitle": "Register a UK Company from USA 2026 — Step-by-Step",
       "metaDescription": "Master guide for US citizens registering a UK Limited company. UK Ltd vs US LLC, banking for Americans, ACSP verification, and tax strategy for 2026.",
       "author": "UK LTD Registration",
       "publishedDate": "2026-03-20",
@@ -622,7 +639,8 @@
       "excerpt": "The definitive roadmap for Indian businesses to enter the US and EU markets using a UK corporate structure for banking and logistics.",
       "image": "/images/hero-uk.jpg",
       "imageAlt": "Global trade roadmap for Indian manufacturers expanding to USA and Europe",
-      "readTime": 18
+      "readTime": 18,
+      "metaTitle": "Indian Makers: USA & EU Expansion via UK LTD"
     },
     {
       "id": 34,
@@ -638,7 +656,8 @@
       "excerpt": "Why the UK is the perfect bridge for Indian manufacturers looking to scale their presence in the United States.",
       "image": "/images/hero-home.jpg",
       "imageAlt": "Strategic logistics hub for Indian brands targeting the United States market",
-      "readTime": 12
+      "readTime": 12,
+      "metaTitle": "Scale Indian Brands in USA — UK Logistics Entity"
     },
     {
       "id": 35,
@@ -676,7 +695,8 @@
       "excerpt": "How a UK Limited Company simplifies the complex health and safety compliance required for meat exports to Europe.",
       "image": "/images/blog_uk_formation_guide_2026.png",
       "imageAlt": "Meat and poultry export compliance guide for UK and EU markets",
-      "readTime": 12
+      "readTime": 12,
+      "metaTitle": "UK & EU Meat Export Rules — The UK LTD Advantage"
     },
     {
       "id": 37,
@@ -745,7 +765,7 @@
       "id": 39,
       "slug": "pakistan-exporter-guide-leather-textile-uk-ltd",
       "title": "The Ultimate Guide for Pakistani Exporters: Scaling Leather & Textile Brands via UK Company Formation",
-      "metaTitle": "Pakistan Exporters: UK Company for Leather & Textile Bran...",
+      "metaTitle": "Pakistani Exporters: Leather & Textiles via UK LTD",
       "metaDescription": "Practical guide for Sialkot and Faisalabad leather and textile exporters using a UK company for UK, EU, and US sales. Covers setup, VAT, customs, payments, and compliance.",
       "category": "Pillar",
       "tags": [
@@ -798,7 +818,8 @@
       "excerpt": "Build a multi-million-pound machinery export business by sourcing refurbished equipment from the UK for Asian infrastructure projects.",
       "image": "/images/hero-home.jpg",
       "imageAlt": "Refurbished construction machinery export from UK to Asian markets",
-      "readTime": 11
+      "readTime": 11,
+      "metaTitle": "Refurbished Construction Machinery: Building a Fortune in Asian..."
     },
     {
       "id": 42,
@@ -898,7 +919,7 @@
       "id": 46,
       "slug": "register-uk-ltd-online-india-pakistan-2026",
       "title": "How to Register a UK Company from Pakistan (2026 Founder's Guide)",
-      "metaTitle": "Register UK Company from Pakistan 2026 | PKR Cost & Guide",
+      "metaTitle": "Register UK Company from Pakistan 2026 | India Guide",
       "metaDescription": "The definitive 2026 guide for Pakistani founders. Register a UK Private Limited Company from Karachi, Lahore, or Islamabad. Amazon FBA, Wise banking, and Tax details included.",
       "category": "International",
       "tags": [
@@ -927,7 +948,8 @@
       "focusKeyword": "register UK Ltd Indonesia",
       "excerpt": "Digital registration for Indonesian founders. Avoid local FX friction with a GBP business hub.",
       "readTime": 8,
-      "updatedDate": "2026-09-14"
+      "updatedDate": "2026-09-14",
+      "metaTitle": "How Indonesia Founders Can Register a UK Ltd..."
     },
     {
       "id": 48,
@@ -942,7 +964,8 @@
       "focusKeyword": "register UK Ltd Malaysia",
       "excerpt": "Guide for Malaysian entrepreneurs looking to expand to global markets via a UK entity.",
       "readTime": 8,
-      "updatedDate": "2026-09-14"
+      "updatedDate": "2026-09-14",
+      "metaTitle": "How Malaysia Founders Can Register a UK Ltd..."
     },
     {
       "id": 49,
@@ -956,7 +979,8 @@
       ],
       "excerpt": "Seamless UK incorporation for Filipino virtual assistants and remote agency owners.",
       "readTime": 8,
-      "updatedDate": "2026-09-14"
+      "updatedDate": "2026-09-14",
+      "metaTitle": "How Philippines Founders Can Register a UK Ltd..."
     },
     {
       "id": 50,
@@ -1008,7 +1032,8 @@
         "banking": "Wise, StraitsX Integration",
         "timeline": "Same Day Available"
       },
-      "updatedDate": "2026-09-14"
+      "updatedDate": "2026-09-14",
+      "metaTitle": "How Singapore Founders Can Register a UK Ltd..."
     },
     {
       "id": 52,
@@ -1022,7 +1047,8 @@
       ],
       "excerpt": "Bridging the gap for Thai creators and agencies selling into US and European markets.",
       "readTime": 8,
-      "updatedDate": "2026-09-14"
+      "updatedDate": "2026-09-14",
+      "metaTitle": "How Thailand Founders Can Register a UK Ltd..."
     },
     {
       "id": 53,
@@ -1037,13 +1063,14 @@
       "focusKeyword": "register UK Ltd Vietnam",
       "excerpt": "Empowering Vietnamese tech startups with UK formation, banking, and worldwide payments.",
       "readTime": 8,
-      "updatedDate": "2026-09-14"
+      "updatedDate": "2026-09-14",
+      "metaTitle": "How Vietnam Founders Can Register a UK Ltd..."
     },
     {
       "id": 54,
       "slug": "remote-uk-company-registration-ireland",
       "title": "How to Register a UK LTD from Ireland: The 2026 Remote Guide",
-      "metaTitle": "Register UK Company from Ireland 2026 | Step-by-Step Guide",
+      "metaTitle": "Register a UK LTD from Ireland 2026 — Remote Guide",
       "metaDescription": "Learn how to register a UK Limited Company from Ireland in 2026. Fully remote process, London addresses, and digital identity verification for Irish founders.",
       "category": "International",
       "tags": [
@@ -1061,7 +1088,7 @@
       "id": 55,
       "slug": "required-documents-uk-ltd-ireland",
       "title": "The Ultimate 2026 Documentation Checklist for UK Company Formation",
-      "metaTitle": "UK Company Formation Documents 2026 Checklist | Ireland",
+      "metaTitle": "UK Company Formation Documents 2026 — Checklist",
       "metaDescription": "Everything Irish founders need to register a UK LTD in 2026. IDs, proof of address, Articles of Association, and identity verification rules.",
       "category": "Company Formation",
       "tags": [
@@ -1106,13 +1133,14 @@
       "excerpt": "In a rush? Learn about the £156 priority service and how to get your certificate within hours.",
       "readTime": 4,
       "image": "/images/blog_uk_formation_guide_2026.png",
-      "imageAlt": "Same day company formation UK 2026"
+      "imageAlt": "Same day company formation UK 2026",
+      "metaTitle": "Same-Day Company Formation UK 2026 — 24-Hour Setup"
     },
     {
       "id": 58,
       "slug": "sea-founders-uk-playbook-2026",
       "title": "The 2026 Southeast Asia Founder’s Playbook for Using a UK Company",
-      "metaTitle": "SEA Founder's UK Playbook 2026",
+      "metaTitle": "2026 SEA Founder's Playbook — UK Company Global Growth",
       "metaDescription": "The definitive guide for Southeast Asian founders using UK Limited companies to scale globally. Banking, Stripe UK, ACSP verification, and tax efficiency for 2026.",
       "category": "Regional",
       "tags": [
@@ -1148,7 +1176,8 @@
       "excerpt": "Boost your seafood export margins by using a UK-based distribution company for faster logistics and payments in Europe.",
       "image": "/images/blog/sialkot-safety-wear.png",
       "imageAlt": "Modern seafood production and distribution hub for the European market",
-      "readTime": 9
+      "readTime": 9,
+      "metaTitle": "Seafood Exports Reimagined: How Global Suppliers Use UK..."
     },
     {
       "id": 60,
@@ -1164,7 +1193,8 @@
       "excerpt": "How Sialkot's manufacturing strength can be leveraged via a London hub to dominate US and European markets.",
       "image": "/images/blog/sialkot-safety-wear.png",
       "imageAlt": "Industrial production line for premium safety wear and sports goods in Sialkot, Pakistan",
-      "readTime": 10
+      "readTime": 10,
+      "metaTitle": "Sialkot to the World — Export Safety Wear via UK"
     },
     {
       "id": 61,
@@ -1181,7 +1211,8 @@
       "excerpt": "Technical advice on industrial codes for agricultural traders to ensure VAT compliance and banking approval in the UK.",
       "image": "/images/blog_uk_formation_guide_2026.png",
       "imageAlt": "Agricultural and food export compliance guide for the European market",
-      "readTime": 9
+      "readTime": 9,
+      "metaTitle": "SIC Codes for Ag & Food Exports to EU"
     },
     {
       "id": 62,
@@ -1197,7 +1228,8 @@
       "excerpt": "The ultimate guide to selecting the correct industrial codes for your food and beverage export business to secure UK banking.",
       "image": "/images/blog_uk_formation_guide_2026.png",
       "imageAlt": "UK SIC code guide for food and beverage exporters",
-      "readTime": 8
+      "readTime": 8,
+      "metaTitle": "Essential SIC Codes for Food & Beverage Exporters:..."
     },
     {
       "id": 63,
@@ -1213,7 +1245,8 @@
       "excerpt": "Technical guide to selecting the right industrial codes for your Indian export-import business in the UK.",
       "image": "/images/blog_uk_formation_guide_2026.png",
       "imageAlt": "UK SIC code classification guide for international trade entities",
-      "readTime": 9
+      "readTime": 9,
+      "metaTitle": "SIC Codes for Indian Exporters — Wholesale & Mfg"
     },
     {
       "id": 64,
@@ -1229,7 +1262,8 @@
       "excerpt": "Choosing the correct Standard Industrial Classification for your textile export business to ensure banking and legal compliance.",
       "image": "/images/blog/pakistan-leather-textile-pillar.png",
       "imageAlt": "Professional workspace with UK SIC code documents and high-quality textile samples",
-      "readTime": 8
+      "readTime": 8,
+      "metaTitle": "SIC Codes for Pakistan Textile — Global Trade"
     },
     {
       "id": 65,
@@ -1244,7 +1278,8 @@
         "SEA"
       ],
       "excerpt": "Practical setup guide for digital payments. How to secure international payment gateways for your UK Ltd from anywhere in SEA.",
-      "readTime": 12
+      "readTime": 12,
+      "metaTitle": "Stripe, Wise & Mercury for SEA Founders (2026)"
     },
     {
       "id": 66,
@@ -1309,7 +1344,8 @@
       "image": "/images/blog_wise_vs_ukbanks_guide.png",
       "imageAlt": "Multi-currency financial management for South Asian export businesses",
       "readTime": 11,
-      "updatedDate": "2026-09-14"
+      "updatedDate": "2026-09-14",
+      "metaTitle": "Multi-Currency UK Bank Accounts for S. Asia Exporters"
     },
     {
       "id": 69,
@@ -1350,7 +1386,8 @@
       "excerpt": "Maximize your export revenue by using UK business accounts to collect USD and EUR payments with minimal fees.",
       "image": "/images/blog_wise_vs_ukbanks_guide.png",
       "imageAlt": "Cross-border payment management for Indian exporters via UK banking",
-      "readTime": 10
+      "readTime": 10,
+      "metaTitle": "UK Banking: Cross-Border Payments for Indian Biz"
     },
     {
       "id": 71,
@@ -1366,7 +1403,8 @@
       "excerpt": "Simplify your international payments. Learn how a UK business account bridges the gap between Pakistani manufacturers and global buyers.",
       "image": "/images/blog_wise_vs_ukbanks_guide.png",
       "imageAlt": "Digital banking interface for non-resident UK company owners",
-      "readTime": 12
+      "readTime": 12,
+      "metaTitle": "UK Bank Accounts for Pakistani Exporters — US/EU"
     },
     {
       "id": 72,
@@ -1394,7 +1432,7 @@
       "id": 73,
       "slug": "uk-company-formation-complete-guide-2026",
       "title": "UK Company Formation 2026: The Ultimate Guide for Non-Residents",
-      "metaTitle": "UK Company Formation for Non-Residents 2026 | Fast & Secure",
+      "metaTitle": "UK Company Formation 2026 — Ultimate Non-Resident Guide",
       "metaDescription": "Learn how to start a business in the UK as a non-resident. Our 2026 guide covers everything from directors and shareholders to registering for corporation tax and choosing a registered office address.",
       "category": "Company Formation",
       "focusKeyword": "UK company formation non resident",
@@ -1411,7 +1449,8 @@
       "excerpt": "True costs revealed. From the £100 government fee to secretarial support, here is what it actually costs to run a UK company in year one.",
       "readTime": 7,
       "image": "/images/blog_uk_formation_guide_2026.png",
-      "imageAlt": "UK company formation cost breakdown 2026"
+      "imageAlt": "UK company formation cost breakdown 2026",
+      "metaTitle": "UK Company Formation Cost 2026 — Complete Price Breakdown"
     },
     {
       "id": 75,
@@ -1421,7 +1460,8 @@
       "excerpt": "Prestige, banking, and European market access. Why UK companies are the top choice for founders in Dubai, Riyadh, and Abu Dhabi.",
       "image": "/images/hero-uk.jpg",
       "imageAlt": "UK-UAE Business Gateway for Gulf Entrepreneurs seeking European market access",
-      "readTime": 7
+      "readTime": 7,
+      "metaTitle": "UK-UAE Gateway: Guide for Gulf Entrepreneurs"
     },
     {
       "id": 76,
@@ -1432,13 +1472,14 @@
       "image": "/images/blog_uk_formation_guide_2026.png",
       "imageAlt": "Guide to legally compliant UK Company Naming rules 2026",
       "readTime": 6,
-      "updatedDate": "2026-09-14"
+      "updatedDate": "2026-09-14",
+      "metaTitle": "UK Company Name Rules 2026 — Check & Compliance Guide"
     },
     {
       "id": 77,
       "slug": "uk-company-tax-efficiency-non-residents",
       "title": "UK Company Tax Efficiency & Legal Compliance for Non-Residents (2026)",
-      "metaTitle": "UK Company Tax Efficiency for Non-Residents 2026",
+      "metaTitle": "UK Tax Efficiency & Compliance for Non-Residents",
       "metaDescription": "Expert guide on UK corporation tax, dividends, and double taxation for non-residents. Frame your tax planning through legal efficiency and compliance.",
       "category": "Tax & Finance",
       "tags": [
@@ -1456,7 +1497,7 @@
       "id": 78,
       "slug": "uk-company-vs-delaware-c-corp",
       "title": "UK Company vs Delaware C-Corp: Which is Better for Startups?",
-      "metaTitle": "UK Ltd vs Delaware C-Corp for Startups | 2026 Comparison",
+      "metaTitle": "UK Company or Delaware C-Corp: Best for Startups 2026?",
       "metaDescription": "Startup founders compare UK Limited Company vs Delaware C-Corporation. VC funding, tax, compliance, costs, and which structure suits tech startups best.",
       "category": "Business Strategy",
       "focusKeyword": "UK company vs Delaware C-Corp",
@@ -1506,7 +1547,8 @@
       "excerpt": "Budgeting beyond formation. A roadmap of renewal fees, filing costs, and administrative requirements.",
       "readTime": 7,
       "image": "/images/blog_uk_formation_guide_2026.png",
-      "imageAlt": "UK Ltd company annual costs 2026"
+      "imageAlt": "UK Ltd company annual costs 2026",
+      "metaTitle": "UK LTD Annual Costs 2026 — Full Fee Breakdown"
     },
     {
       "id": 81,
@@ -2071,7 +2113,8 @@
         "SEA"
       ],
       "excerpt": "Tax separation and double taxation agreements explained for Singapore, Malaysia, and Indonesia founders.",
-      "readTime": 10
+      "readTime": 10,
+      "metaTitle": "SEA Founders: Do You Pay Tax Twice with a UK LTD?"
     },
     {
       "id": 100,
@@ -2147,13 +2190,14 @@
         "Incorporation"
       ],
       "excerpt": "Detailed comparison of UK Ltd vs local entities in Singapore, Malaysia, and Vietnam. Tax, banking, and global credibility factors.",
-      "readTime": 11
+      "readTime": 11,
+      "metaTitle": "UK LTD vs Local Co: When SEA Startups Go UK"
     },
     {
       "id": 103,
       "slug": "uk-ltd-vs-offshore-company",
       "title": "UK Ltd vs Offshore Company: Which is Safer in 2026?",
-      "metaTitle": "UK Ltd vs Offshore Company 2026 | Safety, Tax, Banking",
+      "metaTitle": "UK LTD vs Offshore Company: Which is Safer in 2026?",
       "metaDescription": "Compare UK Limited Company vs offshore jurisdictions. Banking access, credibility, tax implications, and why UK Ltd is often safer in 2026.",
       "category": "Business Strategy",
       "focusKeyword": "UK Ltd vs offshore company",
@@ -2166,7 +2210,7 @@
       "id": 104,
       "slug": "uk-ltd-vs-us-llc",
       "title": "UK Ltd vs US LLC: Which Business Structure is Better in 2026?",
-      "metaTitle": "UK Ltd vs US LLC 2026 Comparison | Tax, Costs, Benefits",
+      "metaTitle": "UK LTD vs US LLC: Best Business Structure in 2026?",
       "metaDescription": "Detailed comparison of UK Limited Company vs US LLC. Tax implications, formation costs, compliance, banking, credibility, and which is best for your business in 2026.",
       "category": "Business Strategy",
       "focusKeyword": "UK Ltd vs US LLC",
@@ -2249,13 +2293,14 @@
       "excerpt": "PO Boxes are out. Appropriateness is in. Learn the new 2026 rules for your company's legal headquarters.",
       "image": "/images/blog_uk_formation_guide_2026.png",
       "imageAlt": "Official UK Registered Office Address requirements and ACSP compliance context",
-      "readTime": 8
+      "readTime": 8,
+      "metaTitle": "UK Registered Office Address Rules 2026 — Full Guide"
     },
     {
       "id": 108,
       "slug": "uk-tax-compliance-non-resident-ireland",
       "title": "UK Tax Compliance for Irish Founders: A Non-Resident Guide (2026)",
-      "metaTitle": "UK Tax for Irish Owners 2026 | Corporation Tax & VAT Guide",
+      "metaTitle": "UK Tax for Irish Founders 2026 — Non-Resident Guide",
       "metaDescription": "Essential tax guide for Irish-owned UK companies. Corporation Tax rates, VAT thresholds (£90k), and the UK-Ireland Double Taxation Agreement.",
       "category": "Tax & Finance",
       "tags": [
@@ -2272,7 +2317,7 @@
       "slug": "vat-registration-threshold-uk-2026",
       "title": "UK VAT Registration Threshold 2026: Current Rates, Dates & Rules",
       "category": "Tax & Finance",
-      "metaTitle": "UK VAT Registration Threshold 2026 | £90,000 Rule Explained",
+      "metaTitle": "UK VAT Registration Threshold 2026 — £90K Rule & Dates",
       "metaDescription": "Current UK VAT registration threshold March 2026 is £90,000. Guide covers UK standard VAT rate 2026, UK VAT registration threshold 2026, and practical steps for UK Ltd companies to register for VAT.",
       "excerpt": "The UK VAT registration threshold is £90,000 in 2026. Learn how the rolling 12-month test, 20% standard rate, deadlines, and HMRC rules apply to UK Ltd companies.",
       "updatedDate": "2026-08-25",
@@ -2328,7 +2373,7 @@
       "id": 112,
       "slug": "why-irish-entrepreneurs-choose-uk-ltd",
       "title": "Why Irish Entrepreneurs are Choosing UK LTDs over Irish DACs in 2026",
-      "metaTitle": "UK LTD vs Irish DAC 2026 | Benefits for Entrepreneurs",
+      "metaTitle": "Why Irish Entrepreneurs Choose UK LTDs over DACs",
       "metaDescription": "Why Irish founders prefer UK companies for speed, prestige, and market access. Comparing UK Ltd vs Irish Designated Activity Companies.",
       "category": "Business Strategy",
       "tags": [
@@ -2354,13 +2399,14 @@
       ],
       "excerpt": "Learn why founders in Singapore, Malaysia, and Vietnam are choosing UK vehicles to access US and EU markets with ease in 2026.",
       "readTime": 10,
-      "updatedDate": "2026-09-14"
+      "updatedDate": "2026-09-14",
+      "metaTitle": "Why SEA Founders Use UK LTDs to Go Global in 2026"
     },
     {
       "id": 114,
       "slug": "wise-vs-uk-banks-non-residents",
       "title": "Wise vs Traditional UK Banks for Non-Residents (2026 Comparison)",
-      "metaTitle": "Wise vs UK Banks for Non-Residents 2026 | Best Account",
+      "metaTitle": "Wise vs UK Banks for Non-Residents 2026 — Comparison",
       "metaDescription": "Compare Wise, Revolut, Tide vs NatWest, Barclays for non-resident UK company owners. Approval rates, fees, features, and which is best in 2026.",
       "category": "Banking",
       "focusKeyword": "Wise vs UK banks non-residents",

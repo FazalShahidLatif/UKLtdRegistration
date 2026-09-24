@@ -1,2 +1,1 @@
-googlebot
 google.com, pub-5104329103217752, DIRECT, f084660846b2d451

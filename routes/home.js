@@ -8,7 +8,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     res.render('pages/home', {
-        title: 'UK LTD Formation - Register a UK Company in 24 Hours from 119.99 GBP | Same-Day Companies House Filing, ACSP-Verified, Free Registered Office',
+        title: 'UK LTD Formation — UK Company in 24 Hours from £119.99',
         metaDescription: 'Form your UK LTD company online in 24 hours from 119.99 GBP. Same-day Companies House filing, ACSP-verified agents, free London registered office for 3 months, Wise business banking setup. Trusted by 10,000+ founders in 188 countries. No hidden fees. Pakistani, Indian, Bangladeshi, USA, and UAE founders welcome.',
         metaKeywords: 'UK LTD formation, register UK company online, form UK Ltd company 24 hours, UK company registration 2026, non-resident UK company formation, ACSP verified formation agent, UK LTD from Pakistan India Bangladesh USA UAE',
         packages: [

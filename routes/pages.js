@@ -4,7 +4,7 @@ const router = express.Router();
 // Pricing page
 router.get(['/pricing', '/packages'], (req, res) => {
     res.render('pages/pricing', {
-        title: 'Cheapest Company Formation UK from £119.99 | All-In 2026',
+        title: 'Cheapest UK Company Formation from £119.99 | All-Incl.',
         metaDescription: 'Cheapest company formation UK from £119.99 — Companies House fee included, zero hidden charges. Compare all-inclusive packages with registered office, banking, and ACSP verification.',
         metaKeywords: 'cheapest company formation UK, affordable UK company registration, UK limited company formation cost, Companies House fee included'
     });
@@ -21,7 +21,7 @@ router.get('/services', (req, res) => {
 // Specific Service Pages
 router.get('/services/virtual-office', (req, res) => {
     res.render('pages/services/virtual-office', {
-        title: 'Virtual Office London — Prestigious UK Business Address from £49.99/Year',
+        title: 'Virtual Office London — UK Address from £49.99/yr',
         metaDescription: 'Get a prestigious virtual office address in London for your UK Ltd company. Registered office, mail handling, and director service address — from £49.99/year. Protect your privacy and comply with Companies House.',
         metaKeywords: 'virtual office London, London business address, registered office UK, virtual office address, Companies House address, prestige London address'
     });
@@ -59,7 +59,7 @@ router.get('/uk-residents', (req, res) => {
 // US Citizens page
 router.get('/us-citizens', (req, res) => {
     res.render('pages/us-citizens', {
-        title: 'Register a UK Company from the USA 2026 — Same-Day Formation from $229 | LLC vs UK LTD, Mercury Banking, ACSP',
+        title: 'Register UK Company from USA 2026 — Same-Day from $229',
         metaDescription: 'US citizens: register a UK LTD from the USA in 2026. Same-day Companies House filing from $229 (£119.99). LLC vs UK LTD comparison, Mercury/Wise banking for Americans, ACSP verification, London registered office. No US LLC Form 5472 headaches.',
         metaKeywords: 'register UK company from USA, US citizens UK LTD, UK Ltd vs US LLC, form UK company American, Mercury banking UK, non-resident UK company USA, ACSP verification USA'
     });
@@ -117,7 +117,7 @@ router.get('/partners', (req, res) => {
 // Success Stories page
 router.get('/success-stories', (req, res) => {
     res.render('pages/success-stories', {
-        title: 'UK LTD Success Stories — How Founders From Pakistan, India & Bangladesh Built Global Businesses',
+        title: 'UK LTD Success Stories — Pakistan, India & Bangladesh',
         metaDescription: 'Real success stories of founders from Pakistan, India, Bangladesh, and Sri Lanka who formed UK Ltd companies for e-commerce, Amazon FBA, and global trade. See how they did it — and how you can too. Step-by-step guides included.',
         metaKeywords: 'UK LTD success stories, form UK company from Pakistan, Amazon FBA UK LTD, e-commerce UK company success, non-resident business success stories'
     });
@@ -170,7 +170,7 @@ router.get('/strategic-research-hub', (req, res) => {
 // LTD Company Formation Page (Core Conversion Page)
 router.get('/register-a-limited-company-uk', (req, res) => {
     res.render('pages/ltd-formation', {
-        title: 'Register a Limited Company UK — Same-Day Formation from £119.99',
+        title: 'Register a Limited Company UK — Same-Day from £119.99',
         metaDescription: 'Register a limited company in the UK online today. Same-day Companies House filing, ACSP-verified agents, free registered office for 3 months, and Wise business banking setup. From £119.99. Trusted by 10,000+ founders.',
         metaKeywords: 'register a limited company UK, UK company registration, form a limited company, register ltd company online, Companies House registration, non-resident UK company'
     });
@@ -200,14 +200,14 @@ router.get('/register-company-wales', (req, res) => {
 
 router.get('/register-company-london', (req, res) => {
     res.render('pages/regions/london', {
-        title: 'Register a Company London | London Limited Company Formation',
+        title: 'Register a Company in London — UK LTD from £119.99',
         metaDescription: 'Set up your limited company in London with a prestigious Central London registered office address. Same-day registration and banking support.'
     });
 });
 
 router.get('/register-company-manchester', (req, res) => {
     res.render('pages/regions/manchester', {
-        title: 'Manchester Company Formation Agents | Same-Day Online Setup',
+        title: 'Manchester Company Formation — Same-Day from £119.99',
         metaDescription: 'Register a Manchester limited company online with same-day filing, £100 state fee included, and a London registered office option for your North West business.'
     });
 });
@@ -243,14 +243,14 @@ router.get('/registered-office-address', (req, res) => {
 
 router.get('/company-secretary', (req, res) => {
     res.render('pages/services/company-secretary', {
-        title: 'Company Secretary Service UK | Managed Corporate Secretary',
+        title: 'Company Secretary Service UK — Managed Compliance',
         metaDescription: 'Outsource your corporate compliance with our professional company secretary service in the UK. Comprehensive filing, share management, and legal compliance support.'
     });
 });
 
 router.get('/vat-registration', (req, res) => {
     res.render('pages/services/vat-registration', {
-        title: 'UK VAT Registration 2026 — Threshold £90,000 | Register with HMRC from £149',
+        title: 'UK VAT Registration 2026 — £90K Threshold | HMRC £149',
         metaDescription: 'UK VAT registration threshold 2026 is £90,000. Register your UK Ltd for VAT with HMRC — mandatory or voluntary. Non-resident friendly. Full HMRC filing support from £149. Same-day service available.',
         metaKeywords: 'UK VAT registration 2026, VAT threshold £90,000, register for VAT UK, HMRC VAT registration, non-resident VAT registration UK, VAT registration service'
     });
@@ -258,7 +258,7 @@ router.get('/vat-registration', (req, res) => {
 
 router.get('/confirmation-statement', (req, res) => {
     res.render('pages/services/confirmation-statement', {
-        title: 'Companies House Confirmation Statement Service | CS01 Filing',
+        title: 'Companies House Confirmation Statement — CS01 from £149',
         metaDescription: 'File your mandatory annual Companies House Confirmation Statement (CS01) easily. Fast processing, statutory fee included, and 100% compliant and secure.'
     });
 });
@@ -286,7 +286,7 @@ router.get('/services/apostille', (req, res) => {
 
 router.get('/services/dissolution', (req, res) => {
     res.render('pages/services/dissolution', {
-        title: 'Close UK Company Online | Managed DS01 Strike-Off Service',
+        title: 'Close UK Company Online — DS01 Strike-Off Service',
         metaDescription: 'Dissolve and strike off your UK Limited Company safely online. Managed DS01 Companies House filing service to avoid late penalties and close HMRC accounts.'
     });
 });
@@ -312,7 +312,7 @@ router.get('/cheapest-uk-company-registration', (req, res) => {
 // Enhanced UK Residents Page
 router.get('/uk-company-formation-for-residents', (req, res) => {
     res.render('pages/uk-residents', {
-        title: 'UK Company Formation for UK Residents 2026 — Same-Day from £119.99',
+        title: 'UK Company Formation for Residents — Same-Day £119.99',
         metaDescription: 'UK residents: form a limited company in 2026 from £119.99. Same-day Companies House filing, ACSP-verified agents, biometric ID verification, and full post-incorporation support. Register your UK LTD today — price includes the £100 statutory fee.'
     });
 });
