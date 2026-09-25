@@ -108,6 +108,12 @@ As a limited company director, you have ongoing administrative obligations to ke
 
 ---
 
+## 7. Keep Your Personal Address Private
+
+Your home address does not need to appear on the public Companies House register. As a director, you can use a **Director's Service Address** — a separate address for official correspondence that keeps your private residence confidential. [What is a Director's Service Address?](/blog/director-service-address-uk-what-is-it)
+
+---
+
 ## Summary Checklist:
 
 * `[ ]` Download and back up your Certificate of Incorporation, Memorandum, and Share Certificates.

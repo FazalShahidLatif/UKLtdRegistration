@@ -53,7 +53,7 @@ A UK company must have a registered office address. It is the official address f
 
 The address must be in the correct UK jurisdiction. It must be a suitable physical address. A PO Box alone is not enough.
 
-A director service address is different. It is used for a director's public correspondence. A business address is different again. It is used for day-to-day trading mail.
+A director service address is different. It is used for a director's public correspondence. [What is a Director's Service Address?](/blog/director-service-address-uk-what-is-it) A business address is different again. It is used for day-to-day trading mail.
 
 If you live abroad, an address service can help protect your home privacy. Read the [virtual office and address options](/services/virtual-office) and check what mail handling is included.
 

@@ -74,6 +74,7 @@ For 95% of Irish startups registering in the UK, starting with **Wise or Revolut
 - **[UK Company Formation Cost Breakdown 2026](/blog/uk-company-formation-cost-breakdown-2026)** - Transparent pricing analysis.
 - **[Registered Office Address Services](/registered-office-address)** - Why a premium London address matters.
 - **[Can I Register a UK Company as a Non-UK Resident?](/blog/can-i-register-a-uk-company-as-a-non-uk-resident)** - Yes, and here is how.
+- **[Wise vs Traditional UK Banks for Non-Residents](/blog/wise-vs-uk-banks-non-residents)** - Full comparison of Wise vs high-street banks.
 - **[Strategic Research Hub](/strategic-research-hub)** - Verify your company name and SIC codes.
 
 ---

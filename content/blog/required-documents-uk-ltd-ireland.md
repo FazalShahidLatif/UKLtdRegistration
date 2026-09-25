@@ -51,7 +51,7 @@ You must select at least one code that describes what your business does. For ex
 ## 6. Official UK Addresses
 You need two specific addresses (which we can provide):
 - **Registered Office Address**: The official legal address.
-- **Director’s Service Address**: To keep your private Irish address off the public register.
+- **Director’s Service Address**: To keep your private Irish address off the public register. [What is a Director's Service Address?](/blog/director-service-address-uk-what-is-it)
 
 > [!IMPORTANT]
 > Since the 2026 ECCTA update, all documents must be clear and high-resolution. Blurry photos of IDs are the #1 cause of formation delays.
