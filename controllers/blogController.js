@@ -37,14 +37,16 @@ exports.index = (req, res) => {
             title: 'How to Register a Company in the UK | Step-by-Step 2026',
             metaDescription: 'How to register a company in the UK step by step. Expert guides on UK limited company formation costs, Companies House filing, registered offices, banking, and non-resident setup for 2026.',
             metaKeywords: 'how to register a company in UK, UK company registration, UK limited company formation, Companies House registration, non-resident UK company',
-            articles: allArticles
+            articles: allArticles,
+            articleImage: '/images/blog_uk_formation_guide_2026.png'
         });
     } catch (error) {
         console.error('Blog index error:', error);
         res.render('pages/blog-list', {
             title: 'Blog',
             articles: [],
-            metaDescription: 'Latest news and guides about UK company formation.'
+            metaDescription: 'Latest news and guides about UK company formation.',
+            articleImage: '/images/blog_uk_formation_guide_2026.png'
         });
     }
 };

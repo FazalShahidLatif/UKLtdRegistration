@@ -55,7 +55,8 @@ router.get('/', (req, res) => {
                 cta: 'Choose Elite',
                 popular: false
             }
-        ]
+        ],
+        articleImage: '/images/hero-home.png'
     });
 });
 

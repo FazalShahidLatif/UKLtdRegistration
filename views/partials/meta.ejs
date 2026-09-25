@@ -13,6 +13,9 @@
 <meta property="og:title" content="<%= title %> | <%= siteName %>">
 <meta property="og:description" content="<%= metaDescription %>">
 <meta property="og:image" content="<%= (typeof articleImage !== 'undefined' && articleImage) ? (typeof siteUrl !== 'undefined' && siteUrl ? siteUrl : 'https://ukltdregistration.com') + articleImage : (typeof siteUrl !== 'undefined' && siteUrl ? siteUrl : 'https://ukltdregistration.com') + '/images/og-image.jpg' %>">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
 
 <%- include('schema') %>
 

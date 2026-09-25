@@ -162,12 +162,12 @@ router.get('/sitemap.xml', (req, res) => {
             xml += `    <lastmod>${xmlEscape((article && (article.updatedDate || article.publishedDate)) || today)}</lastmod>\n`;
 
             // Add image metadata for blog articles
-            if (route.startsWith('/blog/')) {
+            if (route.startsWith('/blog/') || route === '/' || route === '/success-stories') {
                 if (article && article.image) {
                     xml += '    <image:image>\n';
-                    xml += `      <image:loc>${xmlEscape(rootUrl + article.image)}</image:loc>\n`;
+                    xml += `      <image:loc>${xmlEscape(rootUrl + (article && article.image ? article.image : (route === '/' ? '/images/hero-home.png' : route === '/success-stories' ? '/images/success/saas.png' : '/images/blog_uk_formation_guide_2026.png')))}</image:loc>\n`;
                     if (article.imageAlt) {
-                        xml += `      <image:caption>${xmlEscape(article.imageAlt)}</image:caption>\n`;
+                        xml += `      <image:caption>${xmlEscape((article && article.imageAlt) || (route === '/' ? 'UK LTD Formation — Form a UK Company in 24 Hours from 119.99 GBP' : route === '/success-stories' ? 'Success Stories — How Founders From Pakistan, India & Bangladesh Built Global Businesses' : 'UK LTD Registration — Complete Guide'))}</image:caption>\n`;
                     }
                     xml += '    </image:image>\n';
                 }

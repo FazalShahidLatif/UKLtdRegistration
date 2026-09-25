@@ -6,7 +6,8 @@ router.get(['/pricing', '/packages'], (req, res) => {
     res.render('pages/pricing', {
         title: 'Cheapest UK Company Formation from £119.99 | All-Incl.',
         metaDescription: 'Cheapest company formation UK from £119.99 — Companies House fee included, zero hidden charges. Compare all-inclusive packages with registered office, banking, and ACSP verification.',
-        metaKeywords: 'cheapest company formation UK, affordable UK company registration, UK limited company formation cost, Companies House fee included'
+        metaKeywords: 'cheapest company formation UK, affordable UK company registration, UK limited company formation cost, Companies House fee included',
+        articleImage: '/images/hero-pricing.jpg'
     });
 });
 
@@ -14,7 +15,8 @@ router.get(['/pricing', '/packages'], (req, res) => {
 router.get('/services', (req, res) => {
     res.render('pages/services', {
         title: 'Our Services | Professional Company Formation',
-        metaDescription: 'Explore our full range of UK company formation and maintenance services.'
+        metaDescription: 'Explore our full range of UK company formation and maintenance services.',
+        articleImage: '/images/hero-home.png'
     });
 });
 
@@ -52,7 +54,8 @@ router.get('/services/banking', (req, res) => {
 router.get('/uk-residents', (req, res) => {
     res.render('pages/uk-residents', {
         title: 'UK Residents Formation | Register Your Company',
-        metaDescription: 'Specialized UK company formation services for UK residents.'
+        metaDescription: 'Specialized UK company formation services for UK residents.',
+        articleImage: '/images/hero-uk.jpg'
     });
 });
 
@@ -67,6 +70,15 @@ router.get('/us-citizens', (req, res) => {
 
 // Forex Trading / Non-Resident Formation Help Page (P1 SEO Priority)
 router.get('/get-help-forming-a-uk-ltd', (req, res) => {
+    res.render('pages/forex-uk-ltd', {
+        title: 'Get Help Forming a UK LTD | Expert Guidance',
+        metaDescription: 'Get expert help forming your UK LTD company. Step-by-step guidance for non-residents and UK residents.',
+        articleImage: '/images/hero-uk.jpg'
+    });
+});
+
+// UK Ltd Forex Trading Review Page
+router.get('/forex-trading-uk-ltd-review', (req, res) => {
     res.render('pages/forex-uk-ltd', {
         title: 'UK Ltd Forex Trading Review 2026',
         metaDescription: 'Comprehensive UK Ltd for non resident review for forex trading in 2026, including Tide eligibility, non-resident banking rules, and the best alternatives for traders.'
@@ -119,7 +131,8 @@ router.get('/success-stories', (req, res) => {
     res.render('pages/success-stories', {
         title: 'UK LTD Success Stories — Pakistan, India & Bangladesh',
         metaDescription: 'Real success stories of founders from Pakistan, India, Bangladesh, and Sri Lanka who formed UK Ltd companies for e-commerce, Amazon FBA, and global trade. See how they did it — and how you can too. Step-by-step guides included.',
-        metaKeywords: 'UK LTD success stories, form UK company from Pakistan, Amazon FBA UK LTD, e-commerce UK company success, non-resident business success stories'
+        metaKeywords: 'UK LTD success stories, form UK company from Pakistan, Amazon FBA UK LTD, e-commerce UK company success, non-resident business success stories',
+        articleImage: '/images/success/saas.png'
     });
 });
 
