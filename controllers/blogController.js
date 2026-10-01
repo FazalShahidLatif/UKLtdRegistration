@@ -9,7 +9,7 @@ const { getPublishedArticles, getPublishedArticleBySlug } = require('../utils/bl
 
 // Use a simple JSON database for articles
 const articlesPath = path.join(__dirname, '../content/blog/blog-articles.json');
-const maxTitleLength = 55;
+const maxTitleLength = 60;
 
 const buildPageTitle = article => {
     let sourceTitle = (article.metaTitle || article.title || '').trim();
@@ -22,10 +22,18 @@ const buildPageTitle = article => {
 
     if (sourceTitle.length <= maxTitleLength) return sourceTitle;
 
-    const truncatedTitle = sourceTitle
-        .slice(0, maxTitleLength - 3)
-        .replace(/\s+\S*$/, '')
-        .trim();
+    // Prefer dropping a trailing secondary clause ("| ..." or "— ...") over
+    // cutting mid-phrase, so the primary keyword survives intact.
+    const clauseSplit = sourceTitle.match(/^(.*?)\s*[|—–]\s*[^|—–]+$/);
+    if (clauseSplit && clauseSplit[1].trim().length <= maxTitleLength) {
+        return clauseSplit[1].trim();
+    }
+
+    // Otherwise cut at the last complete word that fits.
+    const hardLimit = maxTitleLength - 3;
+    const clipped = sourceTitle.slice(0, hardLimit);
+    const lastSpace = clipped.lastIndexOf(' ');
+    const truncatedTitle = (lastSpace > 20 ? clipped.slice(0, lastSpace) : clipped).replace(/\s*[|—–,]\s*$/, '').trim();
     return `${truncatedTitle}...`;
 };
 
