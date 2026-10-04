@@ -1,0 +1,37 @@
+{
+  "register": [
+    "digital-nomad-uk-business-hub",
+    "dormant-company-compliance",
+    "hidden-costs-uk-formation",
+    "solopreneur-uk-ltd-benefits",
+    "uk-corporate-tax-guide-2026",
+    "uk-startup-ip-protection"
+  ],
+  "merge": [
+    {
+      "slug": "directors-service-address-privacy",
+      "into": "director-service-address-uk-what-is-it",
+      "reason": "Both answer \"what is a director service address and why do I need one\". The orphan adds nothing the live article lacks. Same intent, would cannibalise."
+    },
+    {
+      "slug": "registered-office-privacy-guide",
+      "into": "uk-registered-office-address-requirements-2026",
+      "reason": "uk-registered-office-guide already covers registered office vs service address, and uk-registered-office-address-requirements-2026 is live with the same intent. Three overlapping articles on one topic would be the exact cannibalisation just fixed on the formation page."
+    },
+    {
+      "slug": "sic-codes-classification-guide",
+      "into": "sic-codes-pakistan-textile-manufacturing-trade",
+      "reason": "Four live SIC-code articles already exist (agricultural, food and beverage, India exporters, Pakistan textiles). A fifth generic SIC explainer would fragment the cluster rather than strengthen it."
+    },
+    {
+      "slug": "uk-registered-office-guide",
+      "into": "uk-registered-office-address-requirements-2026",
+      "reason": "Duplicate of the orphan registered-office-privacy-guide AND overlaps the live uk-registered-office-address-requirements-2026. Content should be folded into that one article."
+    },
+    {
+      "slug": "vat-registration-guide-2026",
+      "into": "vat-registration-threshold-uk-2026",
+      "reason": "The live article is 2,399 words and already covers the £90,000 threshold, mandatory vs voluntary registration and non-resident rules. The orphan is a 266-word subset of it. No new intent."
+    }
+  ]
+}

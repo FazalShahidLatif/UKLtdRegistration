@@ -24,7 +24,7 @@ If you are selling digital services, consulting, or e-commerce products internat
 
 ---
 
-**Bridge the gap.** Launch your London presence today from the comfort of your home in Ireland. [Quick Formation](/checkout?package=starter).
+**Bridge the gap.** Launch your London presence today from the comfort of your home in Ireland. [Start Formation — Starter £119.99](/pricing).
 
 ---
 

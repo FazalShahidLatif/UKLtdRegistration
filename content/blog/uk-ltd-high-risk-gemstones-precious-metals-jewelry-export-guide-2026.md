@@ -102,7 +102,7 @@ Your SIC (Standard Industrial Classification) code directly impacts your banking
 | **32.12** | Manufacture of jewellery and related articles | Manufacturers and cutters |
 | **46.90** | Non-specialised wholesale trade | General trading (less specific, can be a red flag) |
 
-> **Tip:** Using the more specific codes (46.48/2 or 32.12) rather than generic "wholesale trade" codes signals to banks that you understand your industry and have nothing to hide. See our [SIC Codes Classification Guide](/blog/sic-codes-classification-guide) for broader context.
+> **Tip:** Using the more specific codes (46.48/2 or 32.12) rather than generic "wholesale trade" codes signals to banks that you understand your industry and have nothing to hide. See our [SIC Codes Explained](/blog/sic-codes-pakistan-textile-manufacturing-trade) for broader context.
 
 ---
 
@@ -178,7 +178,7 @@ High-street banks (Barclays, HSBC, NatWest, Lloyds) have extremely conservative 
 | **HSBC Commercial** | ✅ Yes (with conditions) | In-person meeting required; expect 4-8 weeks |
 | **Barclays Corporate** | ✅ Yes (with conditions) | Relationship banking model; 6-12 weeks |
 
-For a broader comparison of banking options, see our [UK Business Banking for Non-Residents](/blog/business-banking-uk-ltd-non-residents) guide and our individual reviews of [Wise](/blog/wise-vs-uk-banks-2026), [Revolut vs Wise](/blog/revolut-business-vs-wise-business-uk-ltd-2026), and [Airwallex](/blog/airwallex-business-account-uk-ltd-guide-2026).
+For a broader comparison of banking options, see our [UK Business Banking for Non-Residents](/blog/business-banking-uk-ltd-non-residents) guide and our individual reviews of [Wise](/blog/wise-vs-uk-banks-non-residents), [Revolut vs Wise](/blog/revolut-business-vs-wise-business-uk-ltd-2026), and [Airwallex](/blog/airwallex-business-account-uk-ltd-guide-2026).
 
 ---
 
