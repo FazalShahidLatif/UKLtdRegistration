@@ -245,7 +245,8 @@ router.get('/priority-sitemap.xml', (req, res) => {
             '/company-name-check',
             '/non-uk-resident-company',
             '/blog/companies-house-vs-formation-agent-uk-2026',
-            '/blog/non-resident-uk-company-setup-checklist-2026'
+                        '/blog/non-resident-uk-company-setup-checklist-2026',
+                        '/blog/best-uk-business-bank-accounts-non-residents-2026'
         ].concat(priorityBlogRoutes)
             .filter(route => !redirectSources.has(route))
             .filter((route, index, routes) => routes.indexOf(route) === index);

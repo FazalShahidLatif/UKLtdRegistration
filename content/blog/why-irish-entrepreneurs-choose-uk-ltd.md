@@ -25,3 +25,25 @@ If you are selling digital services, consulting, or e-commerce products internat
 ---
 
 **Bridge the gap.** Launch your London presence today from the comfort of your home in Ireland. [Quick Formation](/checkout?package=starter).
+
+---
+
+## Ready to Form Your UK LTD?
+
+Before you can open a business bank account, you need a UK LTD. Formation is the first step — and it's quick.
+
+**[Start Your UK LTD Formation — From £119.99](/pricing)**
+- Same-day Companies House filing
+- ACSP-verified agents
+- Free London registered office for 3 months (Standard Plus + Enterprise Elite)
+- Wise banking setup assistance included
+- Trusted by 10,000+ founders in 188 countries
+
+---
+
+## Related Guides
+
+- **[Why SEA Founders Use UK Ltd Companies](/blog/why-sea-founders-use-uk-ltd-global-2026)**
+- **[UK Ltd vs Local Company](/blog/uk-ltd-vs-local-company-sea-startups)**
+- **[Start Your UK LTD Formation](/pricing)**
+

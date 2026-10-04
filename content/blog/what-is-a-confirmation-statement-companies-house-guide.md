@@ -125,3 +125,25 @@ Neglecting a confirmation statement deadline is one of the leading reasons UK co
 Our **CS01 annual submission service** covers the entire audit, drafting, and direct API submission—fully inclusive of the mandatory government filing fee.
 
 [**File your Confirmation Statement with us today →**](/confirmation-statement)
+
+---
+
+## Ready to Form Your UK LTD?
+
+Before you can open a business bank account, you need a UK LTD. Formation is the first step — and it's quick.
+
+**[Start Your UK LTD Formation — From £119.99](/pricing)**
+- Same-day Companies House filing
+- ACSP-verified agents
+- Free London registered office for 3 months (Standard Plus + Enterprise Elite)
+- Wise banking setup assistance included
+- Trusted by 10,000+ founders in 188 countries
+
+---
+
+## Related Guides
+
+- **[What Happens After You Register a Company?](/blog/what-happens-after-you-register-a-company)**
+- **[UK VAT Registration Threshold 2026](/blog/vat-registration-threshold-uk-2026)**
+- **[Start Your UK LTD Formation](/pricing)**
+
