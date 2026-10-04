@@ -19,7 +19,7 @@
                     <% const cookieTypes = [
                         { name: 'Essential Cookies', color: 'bg-brand-blue', desc: 'Required for the website to function. These include your session cookie which keeps you logged in and remembers your shopping cart. They cannot be disabled.' },
                         { name: 'Analytics Cookies', color: 'bg-purple-500', desc: 'Help us understand how visitors interact with our website. We use anonymised data to improve our content and user experience.' },
-                        { name: 'Marketing Cookies', color: 'bg-brand-green', desc: 'Used to track the effectiveness of our marketing campaigns. We may use retargeting cookies to show you relevant advertisements on other websites.' }
+                        { name: 'Marketing Cookies', color: 'bg-brand-green', desc: 'Used to track the effectiveness of our marketing campaigns and to limit how often you see the same advertisement. Set by Google AdSense and, if approved, other advertising partners.' }
                     ]; %>
                     <% cookieTypes.forEach(c => { %>
                     <div class="flex items-start space-x-4">
@@ -30,6 +30,16 @@
                         </div>
                     </div>
                     <% }); %>
+                    <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6">
+                        <p class="font-black text-gray-900 mb-2">Named providers</p>
+                        <ul class="space-y-1 text-sm text-gray-600 list-disc list-inside">
+                            <li><strong>Google AdSense / DoubleClick</strong> &mdash; serves advertising and measures ad performance. Google's <a href="https://policies.google.com/technologies/ads" rel="nofollow noopener" target="_blank" class="text-brand-blue hover:underline">advertising policies</a> apply.</li>
+                            <li><strong>Google Analytics 4</strong> &mdash; measures site usage in aggregate.</li>
+                            <li><strong>Google Tag Manager</strong> &mdash; loads the scripts above.</li>
+                            <li><strong>CallHippo, Wise, Revolut, Payoneer and Airwallex</strong> &mdash; outbound affiliate links to banking and telephony providers. We are paid if you sign up; this does not change what you pay or affect how you are treated on their sites.</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
             <div class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm">

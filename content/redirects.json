@@ -138,5 +138,25 @@
   {
     "from": "/blog/sic-codes-classification-guide",
     "to": "/blog/sic-codes-pakistan-textile-manufacturing-trade"
+  },
+  {
+    "from": "/privacy",
+    "to": "/legal/privacy"
+  },
+  {
+    "from": "/terms",
+    "to": "/legal/terms"
+  },
+  {
+    "from": "/cookie-policy",
+    "to": "/legal/cookies"
+  },
+  {
+    "from": "/refund-policy",
+    "to": "/legal/refund"
+  },
+  {
+    "from": "/compliance",
+    "to": "/legal/compliance"
   }
 ]
