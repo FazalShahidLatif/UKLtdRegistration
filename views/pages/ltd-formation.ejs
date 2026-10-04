@@ -1,6 +1,48 @@
 <%- include('../partials/header') %>
 <%- include('../partials/navigation') %>
 
+<!-- FAQPage Structured Data — mirrors the visible FAQ section below -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I register a UK limited company if I'm not a UK resident?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You do not need to live in the UK or hold UK residency. Non-residents can own and run a UK Ltd from anywhere in the world. We handle international setups and provide a London registered office address in W1 or EC1, plus virtual banking support via Wise or Mercury."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I change the company name after registration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can change your name at any time after forming the company. Just submit a Special Resolution to Companies House. Once approved, you receive a Certificate of Name Change and all records update automatically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my chosen company name is already taken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Companies House will reject names that match or closely resemble an existing business. Our tool checks availability before you apply. If there is a clash, our team will help you adjust the name — for example, swapping Group for Solutions — and resubmit at no extra cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many directors can a UK limited company have?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You need at least one director aged 16 or older. There is no upper limit on the number of directors. They can be of any nationality and do not have to live in the UK."
+      }
+    }
+  ]
+}
+</script>
+
 <main class="bg-gray-50 py-16">
     <div class="container mx-auto px-4">
         <!-- Hero & Intro Section -->
@@ -15,7 +57,7 @@
                     </div>
                     
                     <h1 class="text-4xl md:text-6xl font-black text-gray-900 mb-6 tracking-tighter leading-tight">
-                        Ltd Company UK Registration &amp; New Ltd Company Registration
+                        Register a Limited Company UK
                     </h1>
                     <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-6">Same-Day Online Formation — Official Companies House Authorized Agent — From £119.99</p>
                     
@@ -283,10 +325,10 @@
                 <p class="text-gray-700 leading-relaxed mb-6">
                     <strong>UK company formation</strong> is the legal process of incorporating a private limited company with Companies House — the UK's official government business registry. The moment your application is approved, your business becomes a distinct legal entity, capable of entering contracts, owning assets, and employing staff entirely in its own name.
                 </p>
-                <h3 class="text-2xl font-black text-gray-900 mt-6 mb-4">ltd company uk registration &amp; uk company formation — Quick Summary</h3>
-                <p class="text-gray-700 leading-relaxed mb-6">
-                    If your priority is a fast, compliant formation, our `ltd company uk registration` service streamlines every step of `uk company formation` — from name checks and SIC code selection to ACSP identity verification and Companies House filing. Using the exact processes required for Companies House, we help founders worldwide form an Ltd with a London registered office and bank-ready documentation.
-                </p>
+                <h3 class="text-2xl font-black text-gray-900 mt-6 mb-4">What Our Formation Service Covers</h3>
+                                <p class="text-gray-700 leading-relaxed mb-6">
+                                    If your priority is a fast, compliant formation, our service streamlines every step of the process — from name availability checks and SIC code selection through ACSP identity verification to final Companies House filing. Using the exact procedures Companies House requires, we help founders worldwide register an Ltd with a London registered office and bank-ready documentation.
+                                </p>
                 <p class="text-gray-700 leading-relaxed mb-6">
                     Whether you refer to it as a <strong>UK limited</strong> or a <strong>United Kingdom private limited</strong>, forming an Ltd gives your business separate legal status, stronger commercial credibility, and access to global banking and payment platforms that many international founders rely on.
                 </p>
