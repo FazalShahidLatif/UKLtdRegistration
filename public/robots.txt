@@ -1,9 +1,23 @@
+# Crawler directives required by Google AdSense.
+# These crawler groups must be declared explicitly, otherwise the AdSense
+# crawler inherits the generic User-agent: * group and may be blocked.
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /auth/
 Disallow: /api/
 Disallow: /checkout
-Disallow: /*?*
 
 Sitemap: https://ukltdregistration.com/sitemap.xml
