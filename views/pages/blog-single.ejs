@@ -106,18 +106,6 @@
                     </div>
                 <% } %>
 
-                <!-- AdSense In-Article Ad (Auto) -->
-                <% if (typeof process.env !== 'undefined' && process.env.NODE_ENV === 'production') { %>
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-5104329103217752"
-                     data-ad-slot="8345673210"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-                <% } %>
 
                 <!-- Article Body -->
                 <div class="prose prose-xl prose-slate max-w-none 
@@ -172,20 +160,6 @@
                     <%- content %>
                 </div>
 
-                <!-- AdSense In-Article Ad (After Content) -->
-                <% if (typeof process.env !== 'undefined' && process.env.NODE_ENV === 'production') { %>
-                <div class="my-16">
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-5104329103217752"
-                     data-ad-slot="2918475630"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-                </div>
-                <% } %>
 
                 <% if (currentPath === '/blog/vat-registration-threshold-uk-2026') { %>
                 <aside class="not-prose mt-12 p-8 md:p-10 bg-amber-50 border border-amber-200 rounded-2xl shadow-sm" aria-label="2026 founder compliance checklist">
@@ -311,20 +285,6 @@
                     </form>
                 </div>
 
-                <!-- AdSense Sidebar Ad -->
-                <% if (typeof process.env !== 'undefined' && process.env.NODE_ENV === 'production') { %>
-                <div class="px-8 mb-8">
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-5104329103217752"
-                     data-ad-slot="4729183650"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-                </div>
-                <% } %>
 
                 <!-- Recent Posts / Trending -->
                 <div class="px-8">
