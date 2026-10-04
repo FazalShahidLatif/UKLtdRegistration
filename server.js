@@ -45,6 +45,7 @@ const sitemapRoute = require('./routes/sitemap');
 const redirectsMiddleware = require('./middleware/redirects');
 const { initSEOScheduler } = require('./cron/seo-scheduler');
 const { displayDate } = require('./utils/view-helpers');
+const reviews = require('./utils/reviews');
 
 // Initialize Express app
 const app = express();
@@ -118,6 +119,20 @@ app.use((req, res, next) => {
     res.locals.user = req.user || null;
     res.locals.currentPath = req.path;
     res.locals.displayDate = displayDate;
+
+    // Rating data, derived only from genuinely collected reviews.
+    // With no published reviews these are null, so templates render nothing and
+    // no AggregateRating is emitted. See utils/reviews.js.
+    try {
+        res.locals.ratingLabel = reviews.getRatingLabel();
+        res.locals.aggregateRatingSchema = reviews.getAggregateRatingSchema();
+        res.locals.publishedReviews = reviews.getPublishedReviews(6);
+    } catch (e) {
+        res.locals.ratingLabel = null;
+        res.locals.aggregateRatingSchema = null;
+        res.locals.publishedReviews = [];
+    }
+
     next();
 });
 

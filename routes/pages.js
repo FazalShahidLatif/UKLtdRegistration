@@ -129,13 +129,30 @@ router.get('/partners', (req, res) => {
 // Success Stories page
 router.get('/success-stories', (req, res) => {
     res.render('pages/success-stories', {
-        title: 'UK LTD Success Stories — Pakistan, India & Bangladesh',
-        metaDescription: 'Real success stories of founders from Pakistan, India, Bangladesh, and Sri Lanka who formed UK Ltd companies for e-commerce, Amazon FBA, and global trade. See how they did it — and how you can too. Step-by-step guides included.',
-        metaKeywords: 'UK LTD success stories, form UK company from Pakistan, Amazon FBA UK LTD, e-commerce UK company success, non-resident business success stories',
+        title: 'Form UK Ltd Company from Pakistan for E-commerce | Stories',
+        metaDescription: 'Form a UK Ltd company from Pakistan for e-commerce and scale globally. Real founder stories on Amazon FBA, Shopify, Stripe and B2B trade — plus the costs and steps involved.',
+        metaKeywords: 'form uk ltd company from pakistan for ecommerce, UK LTD success stories, Amazon FBA UK LTD, ecommerce UK company, non-resident business success stories',
         articleImage: '/images/success/saas.png'
     });
 });
 
+
+// Reviews
+router.get('/reviews', (req, res) => {
+    res.render('pages/reviews', {
+        title: 'Leave a Review | UK Ltd Registration',
+        metaDescription: 'Tell us how your UK company formation went. Every review is read by a person before publication. See our review policy.',
+        articleImage: '/images/hero-home.png'
+    });
+});
+
+router.get('/legal/review-policy', (req, res) => {
+    res.render('pages/legal/review-policy', {
+        title: 'Review Policy | UK Ltd Registration',
+        metaDescription: 'How we collect, verify and publish customer reviews. We show no rating we cannot support with real, visible reviews.',
+        articleImage: '/images/hero-home.png'
+    });
+});
 
 // Legal Pages
 router.get('/legal/privacy', (req, res) => {

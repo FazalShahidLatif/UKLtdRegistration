@@ -304,14 +304,9 @@
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "GBP"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "1340",
-        "bestRating": "5",
-        "worstRating": "1"
       }
+      <% const toolRating = (typeof aggregateRatingSchema !== 'undefined' && aggregateRatingSchema) ? (',\n      "aggregateRating": ' + JSON.stringify(aggregateRatingSchema)) : ''; %>
+      <%- toolRating %>
     }
     <% } %>
     <% if (currentPath === '/strategic-research-hub') { %>

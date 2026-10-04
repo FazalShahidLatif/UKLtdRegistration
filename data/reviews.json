@@ -1,0 +1,22 @@
+{
+  "_readme": [
+    "REVIEW POLICY — read before collecting anything.",
+    "",
+    "1. Nothing enters reviews.json by hand unless a real customer wrote it.",
+    "2. A review is only marked verified:true when it is matched to a completed",
+    "   order in the database. Unmatched reviews stay verified:false.",
+    "3. A review is only published (published:true) after a human reads it and",
+    "   confirms the customer gave permission to display it, with their name or",
+    "   initials as they consented to.",
+    "4. Never edit an average or a count directly. Both are computed from the",
+    "   array at render time, so they cannot drift from the reviews listed.",
+    "5. If there are no published reviews, the site shows nothing rather than a",
+    "   placeholder. That is correct behaviour, not a bug.",
+    "",
+    "Collecting reviews: POST /api/review with JSON body { name, email, rating,",
+    "body, service, orderNumber? }. Email is stored for follow-up only and must",
+    "never be published. Submissions land in data/review-submissions.json as",
+    "published:false, and are promoted here individually after moderation."
+  ],
+  "reviews": []
+}

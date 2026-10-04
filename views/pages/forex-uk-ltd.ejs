@@ -14,9 +14,11 @@
                 </div>
                 <h1 class="text-4xl md:text-6xl font-black text-gray-900 tracking-tighter leading-tight mb-6">UK Ltd for Non Resident Review for Forex Trading (2026)</h1>
                 <p class="text-xl text-gray-700 font-medium leading-relaxed mb-6">An independent review of why forex traders and prop firm operators choose a UK Limited Company over a US LLC. Learn how to set up a compliant company under the new 2026 ECCTA rules. Start your setup now on our <a href="/" class="text-brand-blue hover:underline font-bold">UK company registration homepage</a>.</p>
-                <div class="inline-flex items-center gap-2 rounded-full bg-amber-50 text-amber-800 border border-amber-200 px-4 py-2 text-sm font-bold mb-8">
-                    <span>★</span> 4.9/5 average rating from 128 verified reviews
-                </div>
+                <% if (typeof ratingLabel !== 'undefined' && ratingLabel) { %>
+    <div class="inline-flex items-center gap-2 rounded-full bg-amber-50 text-amber-800 border border-amber-200 px-4 py-2 text-sm font-bold mb-8">
+                        <span>★</span> <%= ratingLabel %>
+                    </div>
+<% } %>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="/pricing" class="btn-primary">Start Your Formation</a>
                     <a href="/blog/business-banking-uk-ltd-non-residents" class="px-10 py-5 border border-gray-100 rounded-2xl font-black text-xs uppercase tracking-widest text-gray-700 hover:bg-gray-50 transition shadow-sm">Banking Guide</a>

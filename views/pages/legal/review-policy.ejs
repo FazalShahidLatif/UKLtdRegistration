@@ -1,0 +1,114 @@
+<%- include('../../partials/header') %>
+<%- include('../../partials/navigation', { user: (typeof user !== 'undefined' ? user : null) }) %>
+
+<main class="bg-gray-50 py-24 min-h-screen">
+    <div class="container mx-auto px-4 max-w-3xl">
+
+        <h1 class="text-4xl md:text-5xl font-black text-gray-900 mb-6 tracking-tight">Review Policy</h1>
+        <p class="text-lg text-gray-600 mb-12">How we collect, check and publish customer feedback &mdash; and what we will not do.</p>
+
+        <div class="bg-white rounded-[2rem] border border-gray-100 shadow-sm p-8 md:p-12 space-y-10 text-gray-700">
+
+            <section>
+                <h2 class="text-2xl font-black text-gray-900 mb-3">Our commitment</h2>
+                <p class="leading-relaxed">
+                    We publish only feedback that a real customer wrote. We do not display a rating,
+                    an average or a review count that we cannot support with reviews that are
+                    actually shown on this site. When we have no published reviews, we show no
+                    rating at all.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-black text-gray-900 mb-3">How to leave a review</h2>
+                <p class="leading-relaxed mb-3">
+                    Use the <a href="/reviews" class="text-brand-blue hover:underline font-bold">review form</a>.
+                    We ask for your name or initials, an email address, a star rating, the service
+                    you used and your comments. If you have an order number or company number,
+                    providing it helps us verify you are a customer.
+                </p>
+                <p class="leading-relaxed">
+                    <strong>Your email address is never published.</strong> We keep it only so we
+                    can contact you about your review if we have a question.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-black text-gray-900 mb-3">How reviews are published</h2>
+                <ol class="space-y-3 list-decimal list-inside leading-relaxed">
+                    <li>Every submission is read by a person before it appears on the site.</li>
+                    <li>A review is labelled <strong>&ldquo;Verified customer&rdquo;</strong> only when we can match it to a completed order.</li>
+                    <li>Unverified reviews may still be published, clearly marked as such.</li>
+                    <li>Your wording is published as you wrote it. We do not rewrite reviews, and we do not ask for them to be softened.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-black text-gray-900 mb-3">What we do not remove</h2>
+                <p class="leading-relaxed">
+                    Negative reviews stay up. A one-star review from a real customer is more useful
+                    to a prospective buyer than no review at all, and we would rather earn your
+                    trust than protect a number.
+                </p>
+                <p class="leading-relaxed mt-3">
+                    We remove a review only when it is spam, contains an attempt to inject links or
+                    code, impersonates a customer, or discloses someone else's personal information.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-black text-gray-900 mb-3">Incentives</h2>
+                <p class="leading-relaxed">
+                    We do not offer discounts, refunds or any other benefit in exchange for a
+                    review, and we do not ask anyone to remove or change a review. If you were
+                    offered something for reviewing us, please tell us and we will remove it.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-black text-gray-900 mb-3">How ratings are calculated</h2>
+                <p class="leading-relaxed mb-3">
+                    The published rating is the arithmetic mean of every review shown on the site,
+                    rounded to one decimal place. The review count is the number of reviews shown.
+                    Both are calculated at page load from the reviews listed, so they cannot fall
+                    out of step with what you can see.
+                </p>
+                <p class="leading-relaxed">
+                    We do not weight reviews, remove low scores to move an average, or display a
+                    different figure from the one the reviews produce.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-black text-gray-900 mb-3">Illustrative examples</h2>
+                <p class="leading-relaxed">
+                    Some pages on this site contain illustrative founder scenarios that show the
+                    kinds of problems we help solve. Those are examples, not customer testimonials,
+                    and they are labelled as such where they appear. They are never counted towards
+                    any rating.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-black text-gray-900 mb-3">Corrections</h2>
+                <p class="leading-relaxed">
+                    If you believe a published review is misattributed to you, or you want your
+                    details removed, contact us and we will action it. If we cannot verify that a
+                    review came from you, we will remove it.
+                </p>
+            </section>
+
+            <section class="border-t border-gray-100 pt-8">
+                <h2 class="text-2xl font-black text-gray-900 mb-3">Contact</h2>
+                <p class="leading-relaxed">
+                    Email <a href="/contact" class="text-brand-blue hover:underline font-bold">our support team</a>
+                    with the subject line &ldquo;Review correction&rdquo; and we will respond.
+                </p>
+            </section>
+
+        </div>
+
+    </div>
+</main>
+
+<%- include('../../partials/footer') %>

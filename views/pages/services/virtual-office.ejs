@@ -14,9 +14,11 @@
                 Secure a premium central London business address to protect your personal privacy, satisfy Companies House compliance, and project a global corporate image.
             </p>
             
-            <div class="inline-flex items-center gap-2 rounded-full bg-amber-50 text-amber-800 border border-amber-200 px-4 py-2 text-sm font-bold mb-8">
-                <span>★</span> 4.9/5 average rating from 128 verified reviews
-            </div>
+            <% if (typeof ratingLabel !== 'undefined' && ratingLabel) { %>
+    <div class="inline-flex items-center gap-2 rounded-full bg-amber-50 text-amber-800 border border-amber-200 px-4 py-2 text-sm font-bold mb-8">
+                    <span>★</span> <%= ratingLabel %>
+                </div>
+<% } %>
 
             <!-- Introduction detailing services and presence benefits -->
             <p class="text-xl text-gray-600 leading-relaxed font-medium mb-6 text-left md:text-center">

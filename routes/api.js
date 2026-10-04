@@ -103,5 +103,70 @@ router.post('/affiliate-apply', (req, res) => {
     res.json({ success: true, message: 'Application received. We review all applications within 2 business days.' });
 });
 
+// Review submission
+// Accepts a genuine customer review, validates it, and queues it for moderation.
+// A submission is NEVER published automatically — it lands in
+// data/review-submissions.json with published:false and must be promoted into
+// data/reviews.json by a human after checking it is real and consented to.
+// Email is retained only so we can follow up; it is never rendered anywhere.
+router.post('/review', (req, res) => {
+    const { name, email, rating, body, service, orderNumber } = req.body || {};
+
+    const errors = [];
+    if (!name || typeof name !== 'string' || name.trim().length < 2) errors.push('name');
+    if (!email || typeof email !== 'string' || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) errors.push('email');
+    const score = Number(rating);
+    if (!Number.isInteger(score) || score < 1 || score > 5) errors.push('rating');
+    if (!body || typeof body !== 'string' || body.trim().length < 20) errors.push('body');
+
+    if (errors.length) {
+        return res.status(400).json({
+            success: false,
+            message: 'Please check the highlighted fields.',
+            fields: errors
+        });
+    }
+
+    // Basic abuse guards
+    const text = (body + ' ' + name).toLowerCase();
+    const banned = ['http://', 'https://', 'buy now', 'seo service', 'backlink', 'casino', 'viagra'];
+    if (banned.some(w => text.includes(w))) {
+        return res.status(400).json({ success: false, message: 'Submission rejected.' });
+    }
+
+    const submission = {
+        id: 'sub-' + Date.now() + '-' + Math.random().toString(36).slice(2, 8),
+        name: name.trim().slice(0, 60),
+        email: email.trim().slice(0, 120),
+        rating: score,
+        body: body.trim().slice(0, 2000),
+        service: (typeof service === 'string' ? service : '').trim().slice(0, 80),
+        orderNumber: (typeof orderNumber === 'string' ? orderNumber : '').trim().slice(0, 60),
+        receivedAt: new Date().toISOString(),
+        published: false
+    };
+
+    try {
+        const fs = require('fs');
+        const path = require('path');
+        const file = path.join(__dirname, '../data/review-submissions.json');
+        const queue = fs.existsSync(file)
+            ? JSON.parse(fs.readFileSync(file, 'utf8'))
+            : { submissions: [] };
+        if (!Array.isArray(queue.submissions)) queue.submissions = [];
+        queue.submissions.push(submission);
+        fs.writeFileSync(file, JSON.stringify(queue, null, 2) + '\n', 'utf8');
+    } catch (err) {
+        console.error('[Review] could not queue submission:', err.message);
+    }
+
+    console.log(`[Review] queued ${submission.id} — ${submission.rating}★ from ${submission.name} (pending moderation)`);
+
+    res.json({
+        success: true,
+        message: 'Thank you. Your review has been received and will be published once we have checked it.'
+    });
+});
+
 module.exports = router;
 

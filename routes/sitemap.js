@@ -42,6 +42,8 @@ router.get('/sitemap.xml', (req, res) => {
             '/about',
             '/faq',
             '/contact',
+            '/reviews',
+            '/legal/review-policy',
             '/knowledge-hub',
             '/blog',
             '/blog/southeast-asia-founders',
