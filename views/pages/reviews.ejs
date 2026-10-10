@@ -1,5 +1,5 @@
-<%- include('../partials/header') %>
-<%- include('../partials/navigation', { user: (typeof user !== 'undefined' ? user : null) }) %>
+<%- include('partials/header') %>
+<%- include('partials/navigation', { user: (typeof user !== 'undefined' ? user : null) }) %>
 
 <main class="bg-gray-50 py-24 min-h-screen">
     <div class="container mx-auto px-4 max-w-3xl">
@@ -188,4 +188,4 @@
 })();
 </script>
 
-<%- include('../partials/footer') %>
+<%- include('partials/footer') %>
