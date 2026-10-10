@@ -1,3 +1,14 @@
+
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+    // Application continues to run in limited mode
+});
+
+process.on('uncaughtException', (err) => {
+    console.error('Uncaught Exception:', err);
+    // Prevent process from exiting
+});
+
 /**
  * UK LTD Registration - Node.js Server
  * 
@@ -179,19 +190,20 @@ const connectTimeout = setTimeout(() => {
     console.warn('⚠ MongoDB connection timeout - app will continue without database');
 }, 5000);
 
-mongoose.connect(MONGODB_URI, {
-    serverSelectionTimeoutMS: 5000,
-    socketTimeoutMS: 5000,
-})
-    .then(() => {
-        clearTimeout(connectTimeout);
-        console.log('✓ MongoDB connected');
-    })
-    .catch(err => {
-        clearTimeout(connectTimeout);
-        console.warn('⚠ MongoDB connection failed:', err.message);
-        console.warn('  App will continue in limited mode');
-    });
+
+async function connectDB() {
+    try {
+        await mongoose.connect(MONGODB_URI, {
+            serverSelectionTimeoutMS: 5000
+        });
+        console.log('✅ MongoDB Connected');
+    } catch (err) {
+        console.error('⚠ MongoDB Connection Failed: ' + err.message);
+        console.log('App running in Limited Mode (JSON fallback)');
+    }
+}
+connectDB();
+
 
 // Export app for Vercel (do NOT call app.listen - Vercel manages the HTTP layer)
 module.exports = app;
