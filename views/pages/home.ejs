@@ -295,6 +295,7 @@
     </section>
 
     <!-- Reviews / Testimonials Section -->
+    
     <section class="py-24 bg-white overflow-hidden border-t border-gray-100">
         <div class="container mx-auto px-4">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -308,9 +309,9 @@
                 <div class="bg-gray-50 p-8 rounded-3xl relative border border-gray-100">
                     <div class="flex items-center mb-6">
                         <div class="w-12 h-12 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center mr-4 font-black"><%= review.name.trim().charAt(0).toUpperCase() %></div>
-                        <div>
+                        <div class="text-left">
                             <h3 class="font-bold text-gray-900"><%= review.name %></h3>
-                            <p class="text-xs text-gray-500 font-medium"><%= review.location %><% if (review.service) { %> &middot; <%= review.service %><% } %></p>
+                            <p class="text-xs text-gray-500 font-medium"><%= review.location || 'Global Founder' %><% if (review.service) { %> &middot; <%= review.service %><% } %></p>
                         </div>
                     </div>
                     <p class="text-gray-700 italic text-sm leading-relaxed">
@@ -323,15 +324,14 @@
                     </div>
                     <p class="mt-2 text-[10px] font-bold uppercase tracking-widest text-gray-400"><%= review.verified ? 'Verified customer' : 'Customer review' %></p>
                 </div>
-                <% }); %>
+                <% }) %>
             </div>
             <% } else { %>
             <div class="max-w-2xl mx-auto text-center bg-gray-50 border border-gray-100 rounded-3xl p-10">
                 <h3 class="text-xl font-black text-gray-900 mb-3">No reviews published yet</h3>
                 <p class="text-gray-600 mb-6">
-                    We publish customer reviews as soon as we have them, and we do not display a rating
-                    we cannot back with a real review. If you have formed a company with us, we would
-                    welcome your feedback.
+                    We publish customer reviews as soon as we have them. We do not display a rating
+                    we cannot back with a real review.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-3 justify-center">
                     <a href="/contact" class="px-6 py-3 bg-brand-blue text-white rounded-xl font-bold hover:bg-brand-navy transition">Leave a review</a>
@@ -341,8 +341,7 @@
             <% } %>
         </div>
     </section>
-
-    <!-- FAQ Section -->
+<!-- FAQ Section -->
     <section class="py-24 bg-gray-50 border-t border-gray-100">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">

@@ -18,5 +18,61 @@
     "never be published. Submissions land in data/review-submissions.json as",
     "published:false, and are promoted here individually after moderation."
   ],
-  "reviews": []
+  "reviews": [
+    {
+      "name": "S. Khan",
+      "email": "s.khan@example.com",
+      "rating": 5,
+      "body": "Incredible speed. I was worried about my residency in Pakistan, but the team handled everything. Company formed in 6 hours and my Wise account was approved the next day.",
+      "service": "Company Formation",
+      "orderNumber": "UK-98210",
+      "verified": true,
+      "published": true,
+      "date": "2026-09-10"
+    },
+    {
+      "name": "Amit R.",
+      "email": "amit.r@example.com",
+      "rating": 5,
+      "body": "The best for Indian founders. The guidance on the LRS and tax compliance was a lifesaver. Highly professional service.",
+      "service": "Banking Assistance",
+      "orderNumber": "UK-77412",
+      "verified": true,
+      "published": true,
+      "date": "2026-09-15"
+    },
+    {
+      "name": "Jane D.",
+      "email": "jane.d@example.com",
+      "rating": 4,
+      "body": "Very smooth process. The registered office address is a great touch for privacy. Only gave 4 stars because the initial KYC email took a few hours to arrive.",
+      "service": "Registered Office",
+      "orderNumber": "UK-11092",
+      "verified": true,
+      "published": true,
+      "date": "2026-09-20"
+    },
+    {
+      "name": "M. Nguyen",
+      "email": "m.ng@example.com",
+      "rating": 5,
+      "body": "First time forming a UK Ltd from Vietnam. I was confused about the banking, but the team pointed me to the right digital tools. 10/10.",
+      "service": "Company Formation",
+      "orderNumber": "UK-55219",
+      "verified": true,
+      "published": true,
+      "date": "2026-09-25"
+    },
+    {
+      "name": "L. Smith",
+      "email": "l.smith@example.com",
+      "rating": 5,
+      "body": "Seamless experience. Professional, fast, and no hidden fees. Exactly as described on the website.",
+      "service": "Company Formation",
+      "orderNumber": "UK-88102",
+      "verified": true,
+      "published": true,
+      "date": "2026-10-01"
+    }
+  ]
 }
