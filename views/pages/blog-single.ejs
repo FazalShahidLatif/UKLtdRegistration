@@ -1,5 +1,5 @@
-<%- include('partials/header') %>
-<%- include('partials/navigation', { user: (typeof user !== 'undefined' ? user : null) }) %>
+<%- include('../partials/header') %>
+<%- include('../partials/navigation', { user: (typeof user !== 'undefined' ? user : null) }) %>
 
 <main class="bg-white min-h-screen">
     <script>
@@ -157,7 +157,7 @@
                         </div>
                     <% } %>
 
-                    <%- include('partials/affiliate-disclosure') %>
+                    <%- include('../partials/affiliate-disclosure') %>
 <%- content %>
                 </div>
 
@@ -333,4 +333,4 @@
         }
         </script></main>
 
-<%- include('partials/footer') %>
+<%- include('../partials/footer') %>
