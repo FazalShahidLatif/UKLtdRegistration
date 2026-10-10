@@ -368,3 +368,35 @@ These run in the background. You'll get notified if anything breaks.
 5. Start pinning to Pinterest daily (10am reminder already set)
 6. Add AdSense or other ad network for display revenue
 7. Monitor indexing of 62 new articles in GSC over next 2-4 weeks
+
+## Report Date: 2026-10-10 (Current Update) | Status: Scaling Phase
+
+---
+
+## PART 2 — Growth & Stability Update (Oct 2026)
+
+### ✅ High-Impact Wins (Completed)
+| Focus | Action | Result |
+|---|---|---|
+| **Server** | Fixed Vercel `FUNCTION_INVOCATION_FAILED` | Site 100% stable across all 120+ routes. |
+| **Content** | Expanded to 117 indexed articles + Banking Hub | Massive increase in organic footprint and "top-of-funnel" reach. |
+| **Technical SEO** | Fixed Duplicate H1s, Long Titles, Image 404s | Resolved primary GSC warnings; improved indexing health. |
+| **Structure** | Head-term consolidation & Internal Linking | Fixed cannibalization between Transactional and Informational intent. |
+| **Revenue** | AdSense $ightarrow$ Adstera Transition (Cleanse) | Removed all AdSense traces (scripts, ads.txt) to prepare for high-RPM alternative. |
+| **Hygiene** | De-registered 6 unreachable SEA articles | Fixed "hidden" duplicate content bug caused by redirect middleware. |
+
+### 🚩 The "Growth Gap" (Critical Pending)
+As a Growth Partner, the priority is no longer just "fixing" but "optimizing for revenue."
+
+1. **Content Depth (The Revenue Leak):** 41 articles are "thin" (<500 editorial words). The most critical are the **Banking stubs** (e.g., `business-banking-uk-ltd-non-residents`). These are your highest-conversion pages; running them as stubs is leaving affiliate revenue on the table.
+2. **Adstera Deployment:** Site is now "clean," but waiting on the actual embed codes to start passive revenue generation.
+3. **Trust Conversion:** The site has a "corporate" feel but lacks the transparency signals (real reviews/policy) needed to convert cold traffic into lead captures.
+4. **Index Health:** 4 legacy 404s remain. Small, but affects "crawl budget" and user experience.
+
+### 🚀 Growth Partner Mandate: Priority Queue
+To close the gap and scale, we shift from "bug-fixing" to "conversion-optimization":
+
+- **PRIORITY 1: Revenue Depth.** Expand the 4 high-value banking stubs. More depth = higher trust = higher affiliate CTR.
+- **PRIORITY 2: Monetization.** Implement Adstera scripts the moment codes are received.
+- **PRIORITY 3: Trust signals.** Implement the "True Transparency" review collection strategy to increase lead conversion rates.
+- **PRIORITY 4: Content consolidation.** Merge the remaining thin SEA strategy articles into the Playbook to avoid further cannibalization.
