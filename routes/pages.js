@@ -355,4 +355,12 @@ router.get('/uk-company-registration-for-foreigners', (req, res) => {
     });
 });
 
+
+router.get("/checklist-download", (req, res) => {
+    res.render("pages/checklist-download", {
+        title: "Download Your 2026 UK Founder's Checklist",
+        metaDescription: "Get the 15-step checklist for successful UK company formation. Free PDF guide for global founders."
+    });
+});
+
 module.exports = router;
