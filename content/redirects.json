@@ -158,5 +158,17 @@
   {
     "from": "/compliance",
     "to": "/legal/compliance"
+  },
+  {
+    "from": "/blog/seafood-export-strategies-global-markets-uk-ltd",
+    "to": "/blog/sea-founders-uk-playbook-2026"
+  },
+  {
+    "from": "/blog/uk-ltd-vs-local-company-sea-startups",
+    "to": "/blog/sea-founders-uk-playbook-2026"
+  },
+  {
+    "from": "/blog/why-sea-founders-use-uk-ltd-global-2026",
+    "to": "/blog/sea-founders-uk-playbook-2026"
   }
 ]
