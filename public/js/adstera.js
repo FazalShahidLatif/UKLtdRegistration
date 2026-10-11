@@ -1,6 +1,6 @@
 /**
- * Adsterra ads for ukltdregistration.com
- * Matches pdff.online policy exactly.
+ * Adstera ads for ukltdregistration.com
+ * Direct embed codes from Adstera dashboard
  *
  * POLICY:
  * - Consent-gated: ads only load after user opts in
@@ -17,15 +17,15 @@ var ZONES = {
     width: 728,
     height: 90,
   },
-  rectangle: {
-    key: "b0dbaa27f5516540d4a35d7e2caf6f9c",
-    width: 300,
-    height: 250,
-  },
   skyscraper: {
     key: "0ad760d490bac5fba53de64edf625a8e",
     width: 160,
     height: 600,
+  },
+  rectangle: {
+    key: "b0dbaa27f5516540d4a35d7e2caf6f9c",
+    width: 300,
+    height: 250,
   },
 };
 
@@ -35,9 +35,14 @@ function adsAllowed() {
   return true;
 }
 
+/**
+ * Build the exact srcdoc for each zone using the dashboard embed code.
+ * Splitting "script" into "scr"+"ipt" prevents the HTML parser from
+ * closing the outer script tag prematurely.
+ */
 function snippetDocument(key, width, height) {
   var script1 = "<scr" + "ipt>atOptions={'key':'" + key + "','format':'iframe','height':" + height + ",'width':" + width + ",'params':{}};</scr" + "ipt>";
-  var script2 = "<scr" + "ipt src=\"https://ballisticcomainvitation.com/" + key + "/invoke.js\"></scr" + "ipt>";
+  var script2 = '<scr' + 'ipt src="https://ballisticcomainvitation.com/' + key + '/invoke.js"></scr' + 'ipt>';
   return '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><style>html,body{margin:0;padding:0;overflow:hidden;background:transparent}</style></head><body>' + script1 + script2 + '</body></html>';
 }
 
@@ -75,8 +80,8 @@ function shouldShowAds() {
 window.addEventListener("DOMContentLoaded", function () {
   if (!shouldShowAds()) return;
 
-  var leaderboardSlot = document.getElementById("ad-slot-leaderboard-top");
-  if (leaderboardSlot) createAdZone("leaderboard", leaderboardSlot);
+  var leaderboardTop = document.getElementById("ad-slot-leaderboard-top");
+  if (leaderboardTop) createAdZone("leaderboard", leaderboardTop);
 
   var leaderboardBottom = document.getElementById("ad-slot-leaderboard-bottom");
   if (leaderboardBottom) createAdZone("leaderboard", leaderboardBottom);
