@@ -73,7 +73,7 @@ app.use(helmet({
             scriptSrcAttr: ["'unsafe-inline'"],
             connectSrc: ["'self'", "https://*.google-analytics.com", "https://*.analytics.google.com", "https://*.googletagmanager.com", "https://*.doubleclick.net"],
             imgSrc: ["'self'", "data:", "https:"],
-            frameSrc: ["'self'", "https://www.youtube.com", "https://*.youtube.com", "https://*.youtube-nocookie.com"],
+            frameSrc: ["'self'", "https://www.youtube.com", "https://*.youtube.com", "https://*.youtube-nocookie.com", "https://ballisticcomainvitation.com"],
             childSrc: ["'self'", "https://www.youtube.com", "https://*.youtube.com", "https://*.youtube-nocookie.com"],
         },
     },
