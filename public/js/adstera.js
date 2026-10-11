@@ -1,23 +1,31 @@
 /**
- * Adstera Ads for ukltdregistration.com
- * Policy: Consent-gated, DNT honored, isolated iframes.
+ * Adsterra ads for ukltdregistration.com
+ * Matches pdff.online policy exactly.
+ *
+ * POLICY:
+ * - Consent-gated: ads only load after user opts in
+ * - DNT/GPC honored: visitors with Do Not Track never see ads
+ * - One snippet per document: each ad runs in its own iframe (srcdoc)
+ * - No popunder, smartlink, native banner, or social bar
+ * - No ads on article/legal pages (only tool/service pages)
+ * - English only — zero tolerance for any other language
  */
 
-const ZONES = {
+var ZONES = {
   leaderboard: {
     key: "db4049ca9b52a2a134361130360cd0c3",
     width: 728,
     height: 90,
   },
   rectangle: {
-    key: "0ad760d490bac5fba53de64edf625a8e",
-    width: 160,
-    height: 600,
-  },
-  skyscraper: {
     key: "b0dbaa27f5516540d4a35d7e2caf6f9c",
     width: 300,
     height: 250,
+  },
+  skyscraper: {
+    key: "0ad760d490bac5fba53de64edf625a8e",
+    width: 160,
+    height: 600,
   },
 };
 
@@ -28,23 +36,17 @@ function adsAllowed() {
 }
 
 function snippetDocument(key, width, height) {
-  return (
-    '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">' +
-    '<meta name="robots" content="noindex,nofollow">' +
-    "<style>html,body{margin:0;padding:0;overflow:hidden;background:transparent}</style>" +
-    "</head><body>" +
-    "<scr" + "ipt>atOptions={'key':'" + key + "','format':'iframe','height':" + height +
-    ",'width':" + width + ",'params':{}};</scr" + "ipt>" +
-    '<scr" + "ipt src=" + "\" + "https://ballisticcomainvitation.com/" + key + "/invoke.js" + "\" + "></scr" + "ipt>" +
-    "</body></html>"
-  );
+  var script1 = "<scr" + "ipt>atOptions={'key':'" + key + "','format':'iframe','height':" + height + ",'width':" + width + ",'params':{}};</scr" + "ipt>";
+  var script2 = "<scr" + "ipt src=\"https://ballisticcomainvitation.com/" + key + "/invoke.js\"></scr" + "ipt>";
+  return '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><style>html,body{margin:0;padding:0;overflow:hidden;background:transparent}</style></head><body>' + script1 + script2 + '</body></html>';
 }
 
 function createAdZone(zone, container) {
-  const cfg = ZONES[zone];
-  if (!cfg || !adsAllowed()) return null;
+  var cfg = ZONES[zone];
+  if (!cfg) return null;
+  if (!adsAllowed()) return null;
 
-  const iframe = document.createElement("iframe");
+  var iframe = document.createElement("iframe");
   iframe.title = "Advertisement";
   iframe.srcdoc = snippetDocument(cfg.key, cfg.width, cfg.height);
   iframe.width = String(cfg.width);
@@ -63,27 +65,27 @@ function createAdZone(zone, container) {
 }
 
 function shouldShowAds() {
-  const path = window.location.pathname;
-  if (path.startsWith("/blog/")) return false;
-  if (path.startsWith("/privacy") || path.startsWith("/terms") || path.startsWith("/cookies")) return false;
-  if (path.startsWith("/article/")) return false;
+  var path = window.location.pathname;
+  if (path.indexOf("/blog/") === 0) return false;
+  if (path.indexOf("/privacy") === 0 || path.indexOf("/terms") === 0 || path.indexOf("/cookies") === 0) return false;
+  if (path.indexOf("/article/") === 0) return false;
   return true;
 }
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", function () {
   if (!shouldShowAds()) return;
 
-  const leaderboardTop = document.getElementById("ad-slot-leaderboard-top");
-  if (leaderboardTop) createAdZone("leaderboard", leaderboardTop);
+  var leaderboardSlot = document.getElementById("ad-slot-leaderboard-top");
+  if (leaderboardSlot) createAdZone("leaderboard", leaderboardSlot);
 
-  const leaderboardBottom = document.getElementById("ad-slot-leaderboard-bottom");
+  var leaderboardBottom = document.getElementById("ad-slot-leaderboard-bottom");
   if (leaderboardBottom) createAdZone("leaderboard", leaderboardBottom);
 
-  const rectangleSlot = document.getElementById("ad-slot-rectangle");
+  var rectangleSlot = document.getElementById("ad-slot-rectangle");
   if (rectangleSlot) createAdZone("rectangle", rectangleSlot);
 
   if (window.innerWidth >= 1024) {
-    const skyscraperSlot = document.getElementById("ad-slot-skyscraper");
+    var skyscraperSlot = document.getElementById("ad-slot-skyscraper");
     if (skyscraperSlot) createAdZone("skyscraper", skyscraperSlot);
   }
 });
