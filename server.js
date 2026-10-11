@@ -208,10 +208,9 @@ async function connectDB() {
     }
     // Clear the timeout once connection attempt completes
 }
-// Fire-and-forget: never block the server from responding
-connectDB().catch(err => {
-    console.error('DB connection error (non-fatal):', err.message);
-});
+
+// DB connection removed from module level to prevent Vercel serverless crashes.
+// App runs in Limited Mode (JSON fallback) without MongoDB.
 
 
 // Export app for Vercel (do NOT call app.listen - Vercel manages the HTTP layer)
