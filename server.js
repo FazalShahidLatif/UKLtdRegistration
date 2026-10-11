@@ -172,12 +172,18 @@ app.use((req, res) => {
 
 // Error Handler
 app.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(err.status || 500).render('pages/error', {
-        title: 'Error',
-        metaDescription: 'An error occurred',
-        error: process.env.NODE_ENV === 'development' ? err : {},
-    });
+    console.error('Express error:', err.message || err);
+    // Try to render error page, but fall back to plain text if that fails
+    try {
+        res.status(err.status || 500).render('pages/error', {
+            title: 'Error',
+            metaDescription: 'An error occurred',
+            error: process.env.NODE_ENV === 'development' ? err : {},
+        });
+    } catch (renderErr) {
+        console.error('Error page render failed:', renderErr.message);
+        res.status(500).send('Internal Server Error');
+    }
 });
 
 // Database connection - fire and forget (non-blocking for Vercel serverless)
@@ -186,23 +192,26 @@ mongoose.connection.on('error', err => {
     console.error('✗ Mongoose connection error event:', err.message);
 });
 
-const connectTimeout = setTimeout(() => {
-    console.warn('⚠ MongoDB connection timeout - app will continue without database');
-}, 5000);
+
 
 
 async function connectDB() {
     try {
         await mongoose.connect(MONGODB_URI, {
-            serverSelectionTimeoutMS: 5000
+            serverSelectionTimeoutMS: 3000,
+            bufferCommands: false
         });
         console.log('✅ MongoDB Connected');
     } catch (err) {
         console.error('⚠ MongoDB Connection Failed: ' + err.message);
         console.log('App running in Limited Mode (JSON fallback)');
     }
+    // Clear the timeout once connection attempt completes
 }
-connectDB();
+// Fire-and-forget: never block the server from responding
+connectDB().catch(err => {
+    console.error('DB connection error (non-fatal):', err.message);
+});
 
 
 // Export app for Vercel (do NOT call app.listen - Vercel manages the HTTP layer)
