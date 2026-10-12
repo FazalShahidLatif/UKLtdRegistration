@@ -1,0 +1,75 @@
+<!-- Pinterest Pins Display -->
+<div class="pinterest-pins-container" data-pinterest-board="<%= (typeof pinterestBoard !== 'undefined' && pinterestBoard) ? pinterestBoard : '' %>">
+    <div class="pinterest-pins-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <!-- Pins will be loaded dynamically via Pinterest API -->
+    </div>
+</div>
+
+<script>
+(function() {
+    // Pinterest Pins Display - loads pins from a board
+    // Uses the Pinterest API v5 to fetch pins
+    var container = document.querySelector('.pinterest-pins-container');
+    if (!container) return;
+    
+    var board = container.getAttribute('data-pinterest-board');
+    if (!board) return;
+    
+    // Load pins when the element is in viewport (lazy loading for performance)
+    if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    loadPinterestPins(board, container);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { rootMargin: '200px' });
+        observer.observe(container);
+    } else {
+        loadPinterestPins(board, container);
+    }
+    
+    function loadPinterestPins(board, container) {
+        // Use Pinterest's embed script for reliable pin display
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://assets.pinterest.com/js/pinit.js';
+        document.body.appendChild(script);
+        
+        // Create pin elements
+        var grid = container.querySelector('.pinterest-pins-grid');
+        if (!grid) return;
+        
+        // Fetch pins via Pinterest API
+        // Note: This requires a valid access token
+        // For now, use the Pinterest widget builder approach
+        var apiUrl = 'https://api.pinterest.com/v5/boards/' + board + '/pins?access_token=' + 
+                     encodeURIComponent('<%= (typeof pinterestAccessToken !== 'undefined' && pinterestAccessToken) ? pinterestAccessToken : '' %>');
+        
+        fetch(apiUrl)
+            .then(function(response) { return response.json(); })
+            .then(function(data) {
+                if (data.items && data.items.length > 0) {
+                    grid.innerHTML = data.items.slice(0, 8).map(function(pin) {
+                        var imageUrl = pin.media?.images?.originals?.url || pin.media?.images?.['600x']?.url || '';
+                        var description = pin.description || pin.title || '';
+                        var link = pin.link || 'https://www.pinterest.com/pin/' + pin.id + '/';
+                        
+                        return '<a href="' + link + '" target="_blank" rel="noopener noreferrer" class="group block">' +
+                            '<div class="relative overflow-hidden rounded-2xl bg-gray-100 aspect-square">' +
+                            '<img src="' + imageUrl + '" alt="' + description.replace(/"/g, '&quot;') + '" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">' +
+                            '</div>' +
+                            '<p class="mt-2 text-xs font-bold text-gray-700 line-clamp-2 group-hover:text-blue-600 transition-colors">' + description + '</p>' +
+                            '</a>';
+                    }).join('');
+                }
+            })
+            .catch(function(error) {
+                console.error('Pinterest API error:', error);
+                grid.innerHTML = '<p class="text-sm text-gray-500 col-span-full text-center py-8">Unable to load pins at this time.</p>';
+            });
+    }
+})();
+</script>
+<!-- End Pinterest Pins Display -->

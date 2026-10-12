@@ -27,6 +27,16 @@
 <meta property="twitter:image" content="<%= (typeof articleImage !== 'undefined' && articleImage) ? (typeof siteUrl !== 'undefined' && siteUrl ? siteUrl : 'https://ukltdregistration.com') + articleImage : (typeof siteUrl !== 'undefined' && siteUrl ? siteUrl : 'https://ukltdregistration.com') + '/images/og-image.jpg' %>">
 
 <!-- Favicon -->
+
+<!-- Pinterest Rich Pins -->
+<meta name="pinterest-rich-pin" content="true">
+<% if (typeof article !== 'undefined' && article && article.image) { %>
+<meta property="og:image" content="<%= (typeof siteUrl !== 'undefined' && siteUrl ? siteUrl : 'https://ukltdregistration.com') + article.image %>">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="article">
+<% } %>
+
 <link rel="icon" type="image/png" href="/images/favicon.png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
