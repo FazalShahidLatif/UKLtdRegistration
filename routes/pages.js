@@ -5,7 +5,7 @@ const router = express.Router();
 router.get(['/pricing', '/packages'], (req, res) => {
     res.render('pages/pricing', {
         title: 'Cheapest UK Company Formation from £119.99 | All-Incl.',
-        metaDescription: 'Cheapest UK company formation from £119.99 — Companies House fee included, zero hidden charges. Compare all-inclusive packages with banking and ACSP verification.',
+        metaDescription: 'Cheapest UK company formation from £119.99 — Companies House fee included, zero hidden charges. Compare all-inclusive packages with banking.',
         metaKeywords: 'cheapest company formation UK, affordable UK company registration, UK limited company formation cost, Companies House fee included',
         articleImage: '/images/hero-pricing.jpg'
     });
