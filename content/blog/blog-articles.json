@@ -137,7 +137,9 @@
       ],
       "focusKeyword": "UK banking for Ireland entrepreneurs",
       "excerpt": "High-street or FinTech? We compare the best GBP account options for Irish directors running UK Limited companies.",
-      "readTime": 7
+      "readTime": 7,
+      "imageAlt": "UK Business Banking for Irish Entrepreneurs — UK company formation guide",
+      "image": "/images/banking_ireland.png"
     },
     {
       "id": 8,
@@ -152,7 +154,9 @@
       "excerpt": "A deep dive into FX fees, cross-border transfers, and the best bank accounts for non-resident SEA directors.",
       "readTime": 9,
       "metaTitle": "Best Banking Setup for SEA Founders with UK LTD",
-      "metaDescription": "Best Banking and Payment Setup for Southeast Asia Founders with a UK Ltd. Covers eligibility, fees, and setup steps for 2026."
+      "metaDescription": "Best Banking and Payment Setup for Southeast Asia Founders with a UK Ltd. Covers eligibility, fees, and setup steps for 2026.",
+      "imageAlt": "Best Banking and Payment Setup for Southeast Asia Founders with a UK Ltd — UK company formation guide",
+      "image": "/images/sea_founders_bridge.png"
     },
     {
       "id": 9,
@@ -378,7 +382,9 @@
       "excerpt": "The new verification rules for 2026. How SEA directors can comply with UK identity checks remotely.",
       "readTime": 9,
       "metaTitle": "ECCTA 2026: ACSP Verification for SEA Founders",
-      "metaDescription": "ECCTA 2026 and ACSP Verification Explained for Non-Resident SEA Founders. Covers the 2026 rules, deadlines, and how to stay compliant."
+      "metaDescription": "ECCTA 2026 and ACSP Verification Explained for Non-Resident SEA Founders. Covers the 2026 rules, deadlines, and how to stay compliant.",
+      "imageAlt": "ECCTA 2026 and ACSP Verification Explained for Non-Resident SEA Founders — UK company formation guide",
+      "image": "/images/sea_founders_bridge.png"
     },
     {
       "id": 20,
@@ -518,7 +524,9 @@
       "excerpt": "How to structure your SaaS or agency for international revenue collection with minimal friction.",
       "readTime": 8,
       "metaTitle": "Get Paid in GBP, USD & EUR — UK LTD for SEA Founders",
-      "metaDescription": "Getting Paid in GBP, USD and EUR from Southeast Asia using a UK Ltd. Covers eligibility, fees, and setup steps for 2026."
+      "metaDescription": "Getting Paid in GBP, USD and EUR from Southeast Asia using a UK Ltd. Covers eligibility, fees, and setup steps for 2026.",
+      "imageAlt": "Getting Paid in GBP, USD and EUR from Southeast Asia using a UK Ltd — UK company formation guide",
+      "image": "/images/sea_founders_bridge.png"
     },
     {
       "id": 27,
@@ -1190,7 +1198,9 @@
       "excerpt": "Practical setup guide for digital payments. How to secure international payment gateways for your UK Ltd from anywhere in SEA.",
       "readTime": 12,
       "metaTitle": "Stripe, Wise & Mercury for SEA Founders (2026)",
-      "metaDescription": "Opening Stripe, Wise and Mercury as a Southeast Asia Founder (2026 Guide). Covers eligibility, fees, and setup steps for 2026."
+      "metaDescription": "Opening Stripe, Wise and Mercury as a Southeast Asia Founder (2026 Guide). Covers eligibility, fees, and setup steps for 2026.",
+      "imageAlt": "Opening Stripe, Wise and Mercury as a Southeast Asia Founder (2026 Guide) — UK company formation guide",
+      "image": "/images/blog_wise_vs_ukbanks_guide.png"
     },
     {
       "id": 66,
@@ -2041,7 +2051,9 @@
       "excerpt": "Tax separation and double taxation agreements explained for Singapore, Malaysia, and Indonesia founders.",
       "readTime": 10,
       "metaTitle": "SEA Founders: Do You Pay Tax Twice with a UK LTD?",
-      "metaDescription": "Do Southeast Asia Founders Pay Tax Twice with a UK Company? Tax Basics. Covers rates, thresholds, and filing duties for 2026."
+      "metaDescription": "Do Southeast Asia Founders Pay Tax Twice with a UK Company? Tax Basics. Covers rates, thresholds, and filing duties for 2026.",
+      "imageAlt": "Do Southeast Asia Founders Pay Tax Twice with a UK Company? Tax Basics — UK company formation guide",
+      "image": "/images/digital_document_verification.png"
     },
     {
       "id": 100,
@@ -2224,7 +2236,9 @@
       ],
       "focusKeyword": "UK tax for non-resident Ireland",
       "excerpt": "Navigating the dual-tax environment between Ireland and the UK. What every Irish founder needs to know about HMRC compliance.",
-      "readTime": 9
+      "readTime": 9,
+      "imageAlt": "UK Tax Compliance for Irish Founders — UK company formation guide",
+      "image": "/images/banking_ireland.png"
     },
     {
       "id": 109,
