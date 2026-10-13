@@ -168,18 +168,6 @@ router.post('/review', (req, res) => {
     });
 });
 
-// Pinterest pins (server-side token; never exposed to the browser)
-router.get('/pinterest/pins', async (req, res) => {
-    try {
-        const pinterest = require('../services/pinterest');
-        const pins = await pinterest.getPins(8);
-        res.set('Cache-Control', 'public, max-age=3600');
-        res.json({ pins: pins });
-    } catch (err) {
-        console.error('[Pinterest] route error:', err.message);
-        res.json({ pins: [] });
-    }
-});
 
 module.exports = router;
 
