@@ -1,74 +1,53 @@
-<!-- Pinterest Pins Display -->
-<div class="pinterest-pins-container" data-pinterest-board="<%= (typeof pinterestBoard !== 'undefined' && pinterestBoard) ? pinterestBoard : '' %>">
-    <div class="pinterest-pins-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <!-- Pins will be loaded dynamically via Pinterest API -->
+<!-- Pinterest Pins Display (server-side token, no client exposure) -->
+<section class="py-20 bg-white border-t border-gray-100" aria-labelledby="pinterest-heading">
+    <div class="container mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 id="pinterest-heading" class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Formation Insights on Pinterest</h2>
+            <p class="text-lg text-gray-600">Practical UK company formation guides, checklists, and cost breakdowns.</p>
+        </div>
+        <div id="pinterest-pins-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Pins load here -->
+        </div>
+        <div class="text-center mt-10">
+            <a href="https://www.pinterest.com/ukltdregistration/" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 px-6 py-3 bg-[#e60023] text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-[#c8001e] transition-colors">
+                Follow us on Pinterest
+            </a>
+        </div>
     </div>
-</div>
+</section>
 
 <script>
-(function() {
-    // Pinterest Pins Display - loads pins from a board
-    // Uses the Pinterest API v5 to fetch pins
-    var container = document.querySelector('.pinterest-pins-container');
-    if (!container) return;
-    
-    var board = container.getAttribute('data-pinterest-board');
-    if (!board) return;
-    
-    // Load pins when the element is in viewport (lazy loading for performance)
-    if ('IntersectionObserver' in window) {
-        var observer = new IntersectionObserver(function(entries) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    loadPinterestPins(board, container);
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { rootMargin: '200px' });
-        observer.observe(container);
-    } else {
-        loadPinterestPins(board, container);
-    }
-    
-    function loadPinterestPins(board, container) {
-        // Use Pinterest's embed script for reliable pin display
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = 'https://assets.pinterest.com/js/pinit.js';
-        document.body.appendChild(script);
-        
-        // Create pin elements
-        var grid = container.querySelector('.pinterest-pins-grid');
-        if (!grid) return;
-        
-        // Fetch pins via Pinterest API
-        // Note: This requires a valid access token
-        // For now, use the Pinterest widget builder approach
-        var apiUrl = 'https://api.pinterest.com/v5/boards/' + board + '/pins?access_token=' + 
-                     encodeURIComponent('<%= (typeof pinterestAccessToken !== 'undefined' && pinterestAccessToken) ? pinterestAccessToken : '' %>');
-        
-        fetch(apiUrl)
-            .then(function(response) { return response.json(); })
-            .then(function(data) {
-                if (data.items && data.items.length > 0) {
-                    grid.innerHTML = data.items.slice(0, 8).map(function(pin) {
-                        var imageUrl = pin.media?.images?.originals?.url || pin.media?.images?.['600x']?.url || '';
-                        var description = pin.description || pin.title || '';
-                        var link = pin.link || 'https://www.pinterest.com/pin/' + pin.id + '/';
-                        
-                        return '<a href="' + link + '" target="_blank" rel="noopener noreferrer" class="group block">' +
-                            '<div class="relative overflow-hidden rounded-2xl bg-gray-100 aspect-square">' +
-                            '<img src="' + imageUrl + '" alt="' + description.replace(/"/g, '&quot;') + '" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">' +
-                            '</div>' +
-                            '<p class="mt-2 text-xs font-bold text-gray-700 line-clamp-2 group-hover:text-blue-600 transition-colors">' + description + '</p>' +
-                            '</a>';
-                    }).join('');
-                }
+(function () {
+    var grid = document.getElementById('pinterest-pins-grid');
+    if (!grid) return;
+
+    // Lazy-load: only fetch when the section nears the viewport (protects LCP/CLS)
+    function load() {
+        fetch('/api/pinterest/pins', { headers: { 'Accept': 'application/json' } })
+            .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+            .then(function (data) {
+                var pins = (data && data.pins) || [];
+                if (!pins.length) { grid.closest('section').remove(); return; }
+                grid.innerHTML = pins.map(function (p) {
+                    return '<a href="' + p.link + '" target="_blank" rel="noopener noreferrer" class="group block">' +
+                        '<div class="relative overflow-hidden rounded-2xl bg-gray-100" style="aspect-ratio:2/3">' +
+                        '<img src="' + p.image + '" alt="' + p.alt + '" width="400" height="600" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">' +
+                        '</div>' +
+                        '<p class="mt-3 text-xs font-bold text-gray-700 leading-snug line-clamp-2 group-hover:text-blue-600 transition-colors">' + p.title + '</p>' +
+                        '</a>';
+                }).join('');
             })
-            .catch(function(error) {
-                console.error('Pinterest API error:', error);
-                grid.innerHTML = '<p class="text-sm text-gray-500 col-span-full text-center py-8">Unable to load pins at this time.</p>';
-            });
+            .catch(function () { grid.closest('section').remove(); });
+    }
+
+    if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+            if (entries[0].isIntersecting) { io.disconnect(); load(); }
+        }, { rootMargin: '300px' });
+        io.observe(grid);
+    } else {
+        load();
     }
 })();
 </script>

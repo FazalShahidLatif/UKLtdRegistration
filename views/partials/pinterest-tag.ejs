@@ -1,45 +1,14 @@
+<% const _pinTagId = (typeof pinterestTagId !== 'undefined' && pinterestTagId) ? pinterestTagId : (process.env.PINTEREST_TAG_ID || ''); %>
+<% if (_pinTagId) { %>
 <!-- Pinterest Tag -->
 <script>
-window.pintrk = window.pintrk || function() {
-    window.pintrk.queue = window.pintrk.queue || [];
-    window.pintrk.queue.push(Array.prototype.slice.call(arguments));
-};
-(function() {
-    var d = document, s = d.createElement('script');
-    s.async = true;
-    s.src = 'https://s.pinimg.com/ct/core.js';
-    var x = d.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s, x);
-})();
+!function(e){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var n=window.pintrk;n.queue=[],n.version="3.0";var t=document.createElement("script");t.async=!0,t.src=e;var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+pintrk('load', '<%= _pinTagId %>');
+pintrk('page');
 </script>
 <noscript>
-    <img height="1" width="1" style="display:none;" alt=""
-         src="https://ct.pinterest.com/v3/?event=init&tid=<%= (typeof pinterestTagId !== 'undefined' && pinterestTagId) ? pinterestTagId : '' %>&noscript=1" />
+<img height="1" width="1" style="display:none" alt=""
+     src="https://ct.pinterest.com/v3/?event=init&amp;tid=<%= _pinTagId %>&amp;noscript=1" />
 </noscript>
 <!-- End Pinterest Tag -->
-
-<!-- Pinterest Tag Event Helpers -->
-<script>
-function trackPinterestEvent(eventName, data) {
-    if (typeof pintrk === 'undefined') return;
-    pintrk('track', eventName, data || {});
-}
-
-// Auto-track key conversion events for CTA optimization
-document.addEventListener('DOMContentLoaded', function() {
-    // Track outbound CTA clicks
-    document.querySelectorAll('[data-track]').forEach(function(el) {
-        el.addEventListener('click', function() {
-            var trackId = this.getAttribute('data-track');
-            trackPinterestEvent('Lead', {
-                lead_type: trackId
-            });
-        });
-    });
-
-    // Track page category for Pinterest audience building
-    if (typeof window.pageCategory !== 'undefined' && window.pageCategory) {
-        pintrk('page');
-    }
-});
-</script>
+<% } %>
