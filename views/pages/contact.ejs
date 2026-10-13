@@ -68,36 +68,62 @@
             <!-- Contact Form -->
             <div class="p-10 md:p-12 rounded-[2.5rem] bg-white border border-gray-100 shadow-2xl">
                 <h2 class="text-3xl font-black text-gray-900 mb-8 tracking-tight">Direct Inquiry</h2>
-                <form action="#" class="space-y-6" id="secure-contact-form">
+                <form class="space-y-6" id="secure-contact-form" novalidate>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="space-y-2">
-                            <label class="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-2">Full Name</label>
-                            <input type="text" placeholder="John Doe" required class="w-full p-5 bg-gray-50 border-none rounded-2xl text-sm font-medium focus:ring-2 focus:ring-brand-blue transition-all outline-none">
+                            <label for="cf-name" class="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-2">Full Name</label>
+                            <input id="cf-name" name="name" type="text" placeholder="John Doe" required autocomplete="name"
+                                   class="w-full p-5 bg-gray-50 border-none rounded-2xl text-sm font-medium focus:ring-2 focus:ring-brand-blue transition-all outline-none">
                         </div>
                         <div class="space-y-2">
-                            <label class="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-2">Business Email</label>
-                            <input type="email" placeholder="john@company.com" required class="w-full p-5 bg-gray-50 border-none rounded-2xl text-sm font-medium focus:ring-2 focus:ring-brand-blue transition-all outline-none">
+                            <label for="cf-email" class="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-2">Business Email</label>
+                            <input id="cf-email" name="email" type="email" placeholder="john@company.com" required autocomplete="email"
+                                   class="w-full p-5 bg-gray-50 border-none rounded-2xl text-sm font-medium focus:ring-2 focus:ring-brand-blue transition-all outline-none">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label for="cf-phone" class="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-2">Phone <span class="normal-case font-medium">(optional)</span></label>
+                            <input id="cf-phone" name="phone" type="tel" placeholder="+92 300 0000000" autocomplete="tel"
+                                   class="w-full p-5 bg-gray-50 border-none rounded-2xl text-sm font-medium focus:ring-2 focus:ring-brand-blue transition-all outline-none">
+                        </div>
+                        <div class="space-y-2">
+                            <label for="cf-topic" class="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-2">Subject</label>
+                            <select id="cf-topic" name="topic"
+                                    class="w-full p-5 bg-gray-50 border-none rounded-2xl text-sm font-medium focus:ring-2 focus:ring-brand-blue transition-all outline-none appearance-none">
+                                <option>New Company Formation</option>
+                                <option>Starter Package — £119.99</option>
+                                <option>Standard Plus Package — £189.99</option>
+                                <option>Enterprise Elite Package — £299.99</option>
+                                <option>Registered Office Address</option>
+                                <option>VAT Registration</option>
+                                <option>Confirmation Statement (CS01)</option>
+                                <option>Company Dissolution (DS01)</option>
+                                <option>Apostille &amp; Legalisation</option>
+                                <option>Tax &amp; Accounting Support</option>
+                                <option>Business Banking Help</option>
+                                <option>Technical Issue</option>
+                                <option>Other / General Inquiry</option>
+                            </select>
                         </div>
                     </div>
                     <div class="space-y-2">
-                        <label class="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-2">Subject</label>
-                        <select class="w-full p-5 bg-gray-50 border-none rounded-2xl text-sm font-medium focus:ring-2 focus:ring-brand-blue transition-all outline-none appearance-none">
-                            <option>New Company Formation</option>
-                            <option>Tax & Accounting Support</option>
-                            <option>Business Banking Help</option>
-                            <option>Technical Issue</option>
-                            <option>Other / General Inquiry</option>
-                        </select>
+                        <label for="cf-message" class="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-2">Message</label>
+                        <textarea id="cf-message" name="message" rows="5" placeholder="How can our agents assist you today?" required
+                                  class="w-full p-5 bg-gray-50 border-none rounded-2xl text-sm font-medium focus:ring-2 focus:ring-brand-blue transition-all outline-none resize-none"></textarea>
                     </div>
-                    <div class="space-y-2">
-                        <label class="text-[10px] font-black uppercase tracking-widest text-gray-400 ml-2">Message</label>
-                        <textarea rows="5" placeholder="How can our agents assist you today?" required class="w-full p-5 bg-gray-50 border-none rounded-2xl text-sm font-medium focus:ring-2 focus:ring-brand-blue transition-all outline-none resize-none"></textarea>
-                    </div>
-                    <button type="submit" class="w-full py-5 bg-brand-blue text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-700 transition shadow-xl shadow-blue-200">
+                    <button type="submit" id="cf-submit"
+                            class="w-full py-5 bg-brand-blue text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-700 transition shadow-xl shadow-blue-200 disabled:opacity-60">
                         Send Strategic Message
                     </button>
+                    <div id="cf-error" class="hidden p-4 bg-red-50 border border-red-200 text-red-800 rounded-xl text-sm font-medium"></div>
                     <p class="text-center text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-6">Secure • Encrypted • response in &lt; 2 hours</p>
                 </form>
+                <div id="cf-success" class="hidden text-center py-12">
+                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-3xl">&#10003;</div>
+                    <h3 class="text-2xl font-black text-gray-900 mb-3">Message received</h3>
+                    <p class="text-gray-600 max-w-md mx-auto">One of our UK-based agents will reply to your email shortly. If it is urgent, message us on WhatsApp.</p>
+                </div>
             </div>
 
             <!-- Contact Info & Details -->
@@ -193,5 +219,69 @@
             </ul>
         </div>
 </main>
+
+
+<script>
+(function () {
+    var form = document.getElementById('secure-contact-form');
+    if (!form) return;
+    var btn = document.getElementById('cf-submit');
+    var errBox = document.getElementById('cf-error');
+    var okBox = document.getElementById('cf-success');
+
+    // Prefill the subject from ?package=starter / standard / premium
+    var pkg = new URLSearchParams(window.location.search).get('package');
+    if (pkg) {
+        var map = { starter: 'Starter Package — £119.99', standard: 'Standard Plus Package — £189.99', premium: 'Enterprise Elite Package — £299.99' };
+        var sel = document.getElementById('cf-topic');
+        if (map[pkg] && sel) sel.value = map[pkg];
+    }
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        errBox.classList.add('hidden');
+
+        var payload = {
+            name:    document.getElementById('cf-name').value.trim(),
+            email:   document.getElementById('cf-email').value.trim(),
+            phone:   document.getElementById('cf-phone').value.trim(),
+            topic:   document.getElementById('cf-topic').value,
+            message: document.getElementById('cf-message').value.trim()
+        };
+
+        if (!payload.name || !payload.email || !payload.message) {
+            errBox.textContent = 'Please complete your name, email and message.';
+            errBox.classList.remove('hidden');
+            return;
+        }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.email)) {
+            errBox.textContent = 'Please enter a valid email address.';
+            errBox.classList.remove('hidden');
+            return;
+        }
+
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
+
+        fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        })
+        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, body: j }; }); })
+        .then(function (res) {
+            if (!res.ok) throw new Error(res.body.message || 'Submission failed.');
+            form.classList.add('hidden');
+            okBox.classList.remove('hidden');
+        })
+        .catch(function (err) {
+            errBox.textContent = err.message || 'Something went wrong. Please try again.';
+            errBox.classList.remove('hidden');
+            btn.disabled = false;
+            btn.textContent = 'Send Strategic Message';
+        });
+    });
+})();
+</script>
 
 <%- include('../partials/footer') %>

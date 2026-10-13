@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const chatbot = require('../chatbot/ai-chatbot');
+const mailer = require('../utils/mailer');
 
 // Health check
 router.get('/health', (req, res) => {
@@ -87,19 +88,70 @@ router.get('/sic-finder', (req, res) => {
     });
 });
 
-// Contact form submission
-router.post('/contact', (req, res) => {
-    const { firstName, lastName, email, topic, message } = req.body;
-    console.log(`[Contact] ${firstName} ${lastName} <${email}> [${topic}]: ${message}`);
-    // TODO: connect to email provider (SendGrid, Mailgun, etc.)
-    res.json({ success: true, message: 'Message received. We will be in touch shortly.' });
+// Contact form submission — the primary sales enquiry path.
+// Logged first so the lead survives even if notification fails.
+router.post('/contact', async (req, res) => {
+    const b = req.body || {};
+    const name = (b.name || b.fullName || ((b.firstName || '') + ' ' + (b.lastName || '')).trim() || '').trim();
+    const email = (b.email || '').trim();
+    const topic = (b.topic || b.subject || b.package || 'General enquiry').trim();
+    const message = (b.message || '').trim();
+    const phone = (b.phone || '').trim();
+
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        return res.status(400).json({ success: false, message: 'Please enter a valid email address.' });
+    }
+
+    console.log('[Contact] ' + JSON.stringify({ name: name, email: email, topic: topic, phone: phone, message: message }));
+
+    const result = await mailer.notify('New enquiry — ' + topic, {
+        Name: name, Email: email, Phone: phone, Topic: topic, Message: message
+    }, email);
+
+    res.json({
+        success: true,
+        notified: result.sent,
+        message: 'Message received. We will be in touch shortly.'
+    });
+});
+
+// Lead capture — the founder checklist funnel.
+router.post('/lead-capture', async (req, res) => {
+    const b = req.body || {};
+    const email = (b.email || '').trim();
+    const source = (b.source || 'unknown').trim();
+
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        return res.status(400).json({ success: false, message: 'Please enter a valid email address.' });
+    }
+
+    console.log('[Lead] ' + JSON.stringify({ email: email, source: source }));
+
+    const result = await mailer.notify('New lead — ' + source, {
+        Email: email, Source: source
+    }, email);
+
+    res.json({ success: true, notified: result.sent });
 });
 
 // Affiliate / partner application
-router.post('/affiliate-apply', (req, res) => {
-    const { fullName, email, website, partnerType } = req.body;
-    console.log(`[Affiliate Application] ${fullName} <${email}> | ${partnerType} | ${website}`);
-    // TODO: store to DB and send notification email
+router.post('/affiliate-apply', async (req, res) => {
+    const b = req.body || {};
+    const fullName = (b.fullName || '').trim();
+    const email = (b.email || '').trim();
+    const website = (b.website || '').trim();
+    const partnerType = (b.partnerType || '').trim();
+
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        return res.status(400).json({ success: false, message: 'Please enter a valid email address.' });
+    }
+
+    console.log('[Affiliate Application] ' + JSON.stringify({ fullName: fullName, email: email, website: website, partnerType: partnerType }));
+
+    await mailer.notify('New partner application', {
+        Name: fullName, Email: email, Website: website, Type: partnerType
+    }, email);
+
     res.json({ success: true, message: 'Application received. We review all applications within 2 business days.' });
 });
 
