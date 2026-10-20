@@ -97,27 +97,86 @@ async function appendSheet(row) {
 }
 
 /**
+ * Append one row to a Google Apps Script webhook.
+ * This is the mandate's allowed alternative to the Sheets API and needs no
+ * GCP API enablement — only a deployed Apps Script web app URL.
+ */
+async function appendWebhook(row) {
+    const url = process.env.LEAD_WEBHOOK_URL;
+    if (!url) return false;
+
+    try {
+        const axios = require('axios');
+        await axios.post(url, {
+            timestamp: row.timestamp,
+            property: row.property,
+            name: row.name,
+            email: row.email,
+            intent: row.intent,
+            source: row.source,
+            status: row.status
+        }, { timeout: 5000 });
+        return true;
+    } catch (error) {
+        console.error('[LeadStore] Webhook append failed:', error.message);
+        return false;
+    }
+}
+
+
+/**
  * Record a lead.
- * @returns {{ id: string, persisted: boolean, sheet: boolean }}
+ *
+ * Writes to every configured store. A Vercel serverless function has a
+ * read-only filesystem, so the local file append is expected to fail there —
+ * the Google Sheets and Apps Script webhook paths are the production stores.
+ * When nothing is configured the failure is logged loudly rather than
+ * swallowed, so a silent lead loss is always visible in the logs.
+ *
+ * @returns {{ id: string, persisted: boolean, sheet: boolean, webhook: boolean, stores: string[] }}
  */
 async function recordLead(input) {
     const row = normalise(input);
-    let persisted = false;
-    let sheet = false;
+    const stores = [];
 
+    let persisted = false;
     try {
         persisted = appendLocal(row);
+        if (persisted) stores.push('file');
     } catch (error) {
         console.error('[LeadStore] Local append failed:', error.message);
     }
 
+    let sheet = false;
     try {
         sheet = await appendSheet(row);
+        if (sheet) stores.push('sheets');
     } catch (error) {
         console.error('[LeadStore] Sheet append threw:', error.message);
     }
 
-    return { id: row.id, persisted, sheet };
+    let webhook = false;
+    try {
+        webhook = await appendWebhook(row);
+        if (webhook) stores.push('webhook');
+    } catch (error) {
+        console.error('[LeadStore] Webhook append threw:', error.message);
+    }
+
+    if (stores.length === 0) {
+        console.error(
+            '[LeadStore] NO STORE AVAILABLE for lead ' + row.id +
+            ' — set LEAD_SHEET_ID or LEAD_WEBHOOK_URL in the deployment environment.'
+        );
+    }
+
+    return {
+        id: row.id,
+        persisted: stores.length > 0,
+        sheet,
+        webhook,
+        stores
+    };
 }
 
 /** Read back the most recent leads (used by admin and verification). */

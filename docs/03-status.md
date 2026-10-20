@@ -54,6 +54,8 @@ Baseline recorded: 2026-10-20
 | # | Finding | Severity | Impact |
 |---|---|---|---|
 | F1 | **Leads are not persisted.** `/api/contact`, `/api/lead-capture`, `/api/affiliate-apply` only email + log to console. No durable record. | 🔴 Critical | Every enquiry is lost if the email bounces. **Biggest revenue risk.** |
+| F1a | **Vercel serverless filesystem is read-only.** `vercel.json` builds `server.js` as a `@vercel/node` function, so any `fs.appendFileSync` fails in production. A local-pass/production-fail that was caught during verification. | 🔴 Critical | The file-based lead store works locally but cannot work on Vercel. Production persistence must be Google Sheets or an Apps Script webhook. |
+| F1b | **Google Sheets API not enabled** in GCP project `375506795519`. | 🔴 Critical | Sheets path returns `accessNotConfigured`. Requires one manual click by the owner. |
 | F2 | **No checkout.** `/pricing` CTAs route to `/contact?package=`; `/checkout` returns 404. | 🔴 Critical | No self-serve conversion; zero revenue path. |
 | F3 | **Mailgun is a sandbox domain** (`sandbox…mailgun.org`). Sandbox sends only to authorised recipients. | 🔴 Critical | Lead notifications may never arrive. |
 | F4 | **49 articles under 800 words.** | 🟡 Medium | Thin content; weak topical authority. |
