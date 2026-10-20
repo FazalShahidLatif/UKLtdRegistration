@@ -1,0 +1,87 @@
+{
+  "$schema": "https://ukltdregistration.com/.well-known/ard.schema.json",
+  "name": "UK LTD Registration",
+  "description": "Online UK private limited company formation service. Same-day Companies House filing, registered office and director service addresses, and post-formation compliance support.",
+  "url": "https://ukltdregistration.com",
+  "version": "1.0.0",
+  "lastModified": "2026-10-20",
+  "owner": {
+    "name": "UK LTD Registration",
+    "email": "support@ukltdregistration.com",
+    "address": {
+      "streetAddress": "71-75 Shelton Street, Covent Garden",
+      "addressLocality": "London",
+      "postalCode": "WC2H 9JQ",
+      "addressCountry": "GB"
+    }
+  },
+  "offers": [
+    {
+      "name": "Starter",
+      "price": "119.99",
+      "priceCurrency": "GBP",
+      "description": "UK limited company formation including the £100 Companies House fee, digital incorporation documents, and identity verification.",
+      "url": "https://ukltdregistration.com/pricing"
+    },
+    {
+      "name": "Standard Plus",
+      "price": "189.99",
+      "priceCurrency": "GBP",
+      "description": "Starter plus London W1/EC1 registered office address, director service address, and banking introduction.",
+      "url": "https://ukltdregistration.com/pricing"
+    },
+    {
+      "name": "Enterprise Elite",
+      "price": "299.99",
+      "priceCurrency": "GBP",
+      "description": "Standard Plus plus London 020 virtual number, enhanced non-resident KYC, assisted banking introduction, trading address and mail forwarding.",
+      "url": "https://ukltdregistration.com/pricing"
+    }
+  ],
+  "resources": [
+    { "path": "/", "type": "webpage", "description": "Homepage" },
+    { "path": "/pricing", "type": "webpage", "description": "Formation packages and prices" },
+    { "path": "/register-a-limited-company-uk", "type": "webpage", "description": "UK limited company formation guide" },
+    { "path": "/company-name-check", "type": "tool", "description": "Company name availability checker" },
+    { "path": "/strategic-research-hub", "type": "tool", "description": "SIC code finder and research hub" },
+    { "path": "/blog", "type": "collection", "description": "120 articles on UK company formation and compliance" },
+    { "path": "/sitemap.xml", "type": "index", "description": "XML sitemap (160 URLs)" },
+    { "path": "/llms.txt", "type": "index", "description": "LLM-readable site summary" },
+    { "path": "/robots.txt", "type": "index", "description": "Crawler directives" }
+  ],
+  "actions": [
+    {
+      "name": "Start a formation",
+      "method": "GET",
+      "path": "/register-a-limited-company-uk",
+      "description": "Begin an online UK limited company formation."
+    },
+    {
+      "name": "Submit an enquiry",
+      "method": "POST",
+      "path": "/api/contact",
+      "description": "Send a sales enquiry. Requires name, email, topic, message.",
+      "contentType": "application/json"
+    },
+    {
+      "name": "Capture a lead",
+      "method": "POST",
+      "path": "/api/lead-capture",
+      "description": "Capture a checklist-funnel lead. Requires email and source.",
+      "contentType": "application/json"
+    }
+  ],
+  "legal": {
+    "privacy": "https://ukltdregistration.com/legal/privacy",
+    "terms": "https://ukltdregistration.com/legal/terms",
+    "cookies": "https://ukltdregistration.com/legal/cookies",
+    "refund": "https://ukltdregistration.com/legal/refund",
+    "compliance": "https://ukltdregistration.com/legal/compliance",
+    "reviewPolicy": "https://ukltdregistration.com/legal/review-policy"
+  },
+  "safety": {
+    "affiliateDisclosure": true,
+    "reviewPolicy": "Reviews are published only from genuine customer submissions and are never displayed without a matching completed order.",
+    "claims": "Formation filings are submitted through an authorised Corporate Service Provider (ACSP). The site does not claim to be Companies House, HMRC, or the ICO."
+  }
+}

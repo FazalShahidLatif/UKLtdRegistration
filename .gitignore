@@ -51,6 +51,9 @@ public/uploads/
 *.sqlite
 *.db
 
+# Lead capture — contains visitor PII, never commit
+data/leads.jsonl
+
 # Session store
 sessions/
 

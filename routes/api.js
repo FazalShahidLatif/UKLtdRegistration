@@ -3,6 +3,7 @@ const router = express.Router();
 
 const chatbot = require('../chatbot/ai-chatbot');
 const mailer = require('../utils/mailer');
+const leadStore = require('../utils/leadStore');
 
 // Health check
 router.get('/health', (req, res) => {
@@ -104,6 +105,12 @@ router.post('/contact', async (req, res) => {
 
     console.log('[Contact] ' + JSON.stringify({ name: name, email: email, topic: topic, phone: phone, message: message }));
 
+    // Persist the lead before anything else can fail — a lost enquiry is a lost sale.
+    const stored = await leadStore.recordLead({
+        name, email, intent: topic, phone, message,
+        source: req.headers.referer || ''
+    });
+
     const result = await mailer.notify('New enquiry — ' + topic, {
         Name: name, Email: email, Phone: phone, Topic: topic, Message: message
     }, email);
@@ -111,6 +118,7 @@ router.post('/contact', async (req, res) => {
     res.json({
         success: true,
         notified: result.sent,
+        persisted: stored.persisted,
         message: 'Message received. We will be in touch shortly.'
     });
 });
@@ -127,11 +135,16 @@ router.post('/lead-capture', async (req, res) => {
 
     console.log('[Lead] ' + JSON.stringify({ email: email, source: source }));
 
+    // Persist the lead before anything else can fail.
+    const stored = await leadStore.recordLead({
+        email, intent: 'Founder checklist download', source: source
+    });
+
     const result = await mailer.notify('New lead — ' + source, {
         Email: email, Source: source
     }, email);
 
-    res.json({ success: true, notified: result.sent });
+    res.json({ success: true, notified: result.sent, persisted: stored.persisted });
 });
 
 // Affiliate / partner application
@@ -148,11 +161,17 @@ router.post('/affiliate-apply', async (req, res) => {
 
     console.log('[Affiliate Application] ' + JSON.stringify({ fullName: fullName, email: email, website: website, partnerType: partnerType }));
 
+    // Persist the partner application.
+    const stored = await leadStore.recordLead({
+        name: fullName, email, intent: partnerType ? 'Affiliate — ' + partnerType : 'Affiliate application',
+        website, source: req.headers.referer || ''
+    });
+
     await mailer.notify('New partner application', {
         Name: fullName, Email: email, Website: website, Type: partnerType
     }, email);
 
-    res.json({ success: true, message: 'Application received. We review all applications within 2 business days.' });
+    res.json({ success: true, persisted: stored.persisted, message: 'Application received. We review all applications within 2 business days.' });
 });
 
 // Review submission
