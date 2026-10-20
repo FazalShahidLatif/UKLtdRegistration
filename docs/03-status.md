@@ -87,5 +87,22 @@ Baseline recorded: 2026-10-20
 | 2026-10-12 | 114 blog meta descriptions fixed; 7 articles given images | `eb0c000`, `ea8b89a` |
 | 2026-10-13 | Unverifiable regulatory/volume claims removed (61 instances) | `12c9634` |
 | 2026-10-13 | Pinterest + Adstera reverted | `cd13afd`, `64bc9a7` |
-| 2026-10-13 | Enquiry and lead-capture paths repaired | `8d88a13` |
-| 2026-10-20 | `BRAND.md`, `docs/01-03`, ARD manifest created | this commit |
+| 2026-10-20 | Enquiry and lead-capture paths repaired | `8d88a13` |
+| 2026-10-20 | `BRAND.md`, `docs/01-03`, ARD manifest created | `398281f` |
+| 2026-10-20 | Lead store: file + Sheets + Apps Script webhook paths | `2c58c7a` |
+| 2026-10-20 | `stores` exposed on lead responses; deploy verified live (`stores:[]`) | `243f178` |
+
+---
+
+## Verified Live (2026-10-20, post-deploy)
+
+| Check | Result |
+|---|---|
+| `/.well-known/ard.json` | **200** (was 404) |
+| `/api/lead-capture` | `{"success":true,"notified":false,"persisted":false,"stores":[]}` |
+| Interpretation | New code is live. `stores:[]` proves **no persistence store is configured on Vercel** — the file path cannot work there (read-only filesystem) and neither `LEAD_SHEET_ID` nor `LEAD_WEBHOOK_URL` is set. |
+| Mailgun notification | `notified:false` — confirms **F3** (sandbox domain cannot deliver) |
+
+**Action required to close F1:** set `LEAD_SHEET_ID` (after enabling the Sheets API)
+or `LEAD_WEBHOOK_URL` in the Vercel environment.
+
