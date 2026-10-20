@@ -121,7 +121,8 @@ exports.show = (req, res) => {
             content: content,
             relatedArticles: relatedArticles,
             pillar: pillar,
-            displayDate: (date) => new Date(date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
+            displayDate: (date) => new Date(date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }),
+            faq: article.faq || []
         });
     } catch (error) {
         console.error('Blog show error:', error);

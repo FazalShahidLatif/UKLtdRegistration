@@ -331,6 +331,44 @@
             "@id": "<%= (typeof siteUrl !== 'undefined' && siteUrl) ? siteUrl + currentPath : 'https://ukltdregistration.com' + currentPath %>"
           }
         }
+        </script>
+        <% if (faq && faq.length > 0) { %>
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            <% faq.forEach(function(q, i) { %>
+            {
+              "@type": "Question",
+              "name": "<%= q.question %>",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "<%= q.answer %>"
+              }
+            }<% if (i < faq.length - 1) { %>,<% } %>
+            <% }) %>
+          ]
+        }
+        </script>
+        <% } %>
+        <% if (typeof article.howTo !== undefined && article.howTo) { %>
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": "<%= article.howTo.name || article.metaTitle || article.title %>",
+          "description": "<%= article.howTo.description || '' %>",
+          "image": "<%= (typeof articleImage !== 'undefined' && articleImage) ? (typeof siteUrl !== 'undefined' && siteUrl ? siteUrl : 'https://ukltdregistration.com') + articleImage : (typeof siteUrl !== 'undefined' && siteUrl ? siteUrl : 'https://ukltdregistration.com') + '/images/og-image.jpg' %>",
+          "step": <%= JSON.stringify(article.howTo.steps || []) %>
+        }
+        </script>
+        <% } %>
+        <% if (typeof article.schema !== undefined && article.schema) { %>
+        <script type="application/ld+json">
+        <%= JSON.stringify(article.schema) %>
+        </script>
+        <% } %>
         </script></main>
 
 <%- include('../partials/footer') %>
