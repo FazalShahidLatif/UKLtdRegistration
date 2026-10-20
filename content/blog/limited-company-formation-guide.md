@@ -1,0 +1,250 @@
+---
+title: "Limited Company Formation: A Complete Guide for UK Ltd Setup in 2026"
+metaTitle: "Limited Company Formation 2026: Step-by-Step Guide for UK Ltd"
+metaDescription: "Limited company formation guide for UK Ltd registration in 2026. Step-by-step: name check, constitution, registered office, bank account, taxes, compliance, and costs — from £119.99."
+slug: limited-company-formation-guide
+author: UK LTD Registration
+publishedDate: 2026-10-20
+updatedDate: 2026-10-20
+category: Company Formation
+tags: [limited company, formation, UK Ltd, guide, step-by-step, 2026, incorporation]
+focusKeyword: limited company formation
+secondaryKeywords:
+  - "set up a limited company online"
+  - "limited company registration UK"
+  - "UK company formation guide"
+  - "register a limited company UK"
+  - "how to form a UK Ltd company"
+  - "UK LTD formation cost 2026"
+  - "Companies House registration UK"
+  - "limited company incorporation 2026"
+  - "UK company formation online"
+searchIntent: transactional
+commercialIntent: very high
+featured: false
+readTime: 10
+wordCount: 3000
+atAGlance:
+  cost: "From £119.99 (all-inclusive with formation agent)"
+  time: "Same-day service available"
+  steps: "7 simple steps: name check, office address, constitution, filing, Tax, bank account, compliance"
+schema:
+  type: Article
+  headline: Limited Company Formation Guide 2026
+  datePublished: 2026-10-20
+  dateModified: 2026-10-20
+  author:
+    type: Organization
+    name: UK LTD Registration
+  publisher:
+    type: Organization
+    name: UK LTD Registration
+    logo:
+      type: ImageObject
+      url: https://ukltdregistration.com/images/logo.png
+---
+
+# Limited Company Formation: Your Complete 2026 Guide to UK Ltd Setup
+
+Limited company formation is the process of registering a UK limited company with Companies House. For 2026, the process is faster and more accessible than ever — you can form your UK Ltd company in 24 hours, from anywhere in the world, with a licensed formation agent.
+
+This guide covers everything you need to know about limited company formation, from the basic requirements to ongoing compliance, tax, banking, and costs.
+
+---
+
+## What Is Limited Company Formation?
+
+Limited company formation is the legal process of registering a company as a limited liability entity with Companies House, the UK's registrar of companies.
+
+When you register a limited company, the company becomes a separate legal entity from its directors and shareholders. This means:
+
+- **Limited liability** — your personal assets are protected if the company goes into debt
+- **Separate legal identity** — the company can own assets, sign contracts, and sue/be sued
+- **Corporate tax** — the company pays Corporation Tax on its profits (not personal income tax)
+- **Perpetual succession** — the company continues to exist even if directors/shareholders change
+
+**Limited company formation vs. sole trader:**
+- Sole trader: simpler, no Companies House registration, you're personally liable
+- Limited company: more paperwork, but protects personal assets and looks more professional
+
+---
+
+## Limited Company Formation Requirements
+
+### Who Can Register a UK Limited Company?
+
+You (or someone else) can register a UK limited company if you:
+
+| Requirement | Details |
+|-------------|---------|
+| **Age** | 18 years or older |
+| **Nationality** | Any — UK residents or non-residents (including Pakistani, Indian, US, UAE founders) |
+| **Role** | Can be the sole director and sole shareholder |
+| **Address** | A UK registered office address (we provide it) |
+| **Name** | Unique, not offensive, meets naming rules |
+
+---
+
+## The Limited Company Formation Process (7 Steps)
+
+### Step 1: Choose a Company Name
+
+Your company name must:
+
+- Be unique (no other Company House registration)
+- Not contain restricted words (unless licensed)
+- End with "Limited" or "Ltd" (or "Public Limited Company" / "PLC" for public companies)
+- Not be offensive
+
+**Check availability** at [Companies House](https://find-and-apply.company-registration.service.gov.uk/) or with our [free company name check tool](https://ukltdregistration.com/company-name-check).
+
+---
+
+### Step 2: Appoint a Registered Office Address
+
+You need a UK registered office address. This is where Companies House and HMRC will send official mail.
+
+**Options:**
+- **London registered office** — from £49.99/yr
+- **Manchester registered office** — from £49.99/yr
+- **Virtual office with mail handling** — from £49.99/yr
+
+---
+
+### Step 3: Appoint Directors and Shareholders
+
+| Role | Requirement |
+|------|-------------|
+| **Director** | 18+, must consent to appointment, must provide ID |
+| **Shareholder** | Can be 1 person (can be the same as director) |
+| **PSC** | Anyone with >25% voting rights (must be disclosed) |
+
+---
+
+### Step 4: Prepare Your Articles of Association
+
+The articles are the company's constitution — the rules for how it's run.
+
+- **Model articles** (default) — the standard rules used by most UK Ltd companies
+- **Custom articles** — if you have specific needs (e.g., multiple classes of shares, non-resident board members)
+
+---
+
+### Step 5: File the Incorporation Form
+
+The incorporation application (IN01) requires:
+
+- Company name (unique)
+- Registered office address
+- SIC codes (what the business does)
+- Director details (name, DOB, country of residence, occupation)
+- Shareholder details
+- PSC details
+
+**File online** at Companies House — or let us handle it.
+
+---
+
+### Step 6: Register for Taxes
+
+After incorporation, register for:
+
+1. **Corporation Tax** — within 3 months of starting to trade
+2. **VAT** — if turnover exceeds £90,000 (2026 threshold)
+3. **PAYE** — if you employ staff
+
+---
+
+### Step 7: Open a UK Business Bank Account
+
+Apply for a UK business bank account with:
+
+- Company incorporation certificate
+- Unique Taxpayer Reference (UTR)
+- Bank account opening documents
+
+---
+
+## Limited Company Formation Costs in 2026
+
+| Cost Item | Amount |
+|-----------|--------|
+| Companies House registration fee | £100 (incorporated by 30 June) or £150 (after 30 June) |
+| Formation agent (UK LTD) | £119.99 (all-inclusive) |
+| Registered office (London) | £49.99/yr |
+| Virtual office + mail handling | £49.99/yr |
+| Bank account setup | Free (varies by bank) |
+
+**Minimum cost to form a UK Ltd company:** £119.99 (all-inclusive)
+
+---
+
+## Limited Company Formation Timeline
+
+| Phase | Timeframe |
+|-------|-----------|
+| Name check | 5 minutes |
+| Online filing | 15 minutes |
+| Companies House approval | Same-day (3-24 hours) |
+| Certificate of Incorporation | Within 24 hours (agent-filed) |
+| Bank account | 3-10 days |
+| Tax registration | Within 3 months of trading |
+
+---
+
+## Types of Limited Companies in the UK
+
+| Type | Description |
+|------|-------------|
+| **Private Limited Company (Ltd)** | Most common; limited liability; can be owner-managed or PLC |
+| **Public Limited Company (PLC)** | Must have minimum £50,000 share capital; can offer shares to public |
+| **Limited Liability Partnership (LLP)** | Partnership structure with limited liability; different filing requirements |
+| **Company Limited by Guarantee** | No shareholders; members guarantee a fixed amount; used for charities |
+
+---
+
+## Common Limited Company Formation Mistakes to Avoid
+
+1. **Not checking the name** — choosing a name already taken
+2. **Wrong SIC codes** — misrepresenting what the business does
+3. **Missing PSC details** — failure to identify people with >25% voting rights
+4. **Forgetting the registered office** — Companies House will issue fines
+5. **Leaving the registered office address public** — using a corporate service
+6. **Missing annual filings** — late confirmation statement or accounts
+
+---
+
+## Limited Company Formation: Key Takeaways
+
+1. **Limited company formation is legal** — Companies House registers your company
+2. **Cost from £119.99** with a licensed formation agent (all-inclusive)
+3. **Same-day service** available
+4. **UK Ltd companies** protect personal assets and look professional
+5. **Non-residents can form UK Ltd companies** (including Pakistani founders)
+
+---
+
+## Frequently Asked Questions
+
+**Q: How much does it cost to form a limited company in the UK?**
+A: From £100 (Companies House fee) or £119.99 (all-inclusive with a formation agent).
+
+**Q: Can I register a limited company online?**
+A: Yes. You can file online with Companies House, or use a formation agent.
+
+**Q: How long does limited company formation take?**
+A: Same-day service is available. With a formation agent, you receive your certificate within 24 hours.
+
+**Q: Can I be the only director and shareholder?**
+A: Yes. One person can be the sole director and sole shareholder of a UK Ltd company.
+
+**Q: Do I need a registered office address?**
+A: Yes. You must have a UK registered office address for Companies House and HMRC.
+
+---
+
+## Next Steps
+
+Ready to form your UK Ltd company?
+
+[**[Form UK Ltd — Same-Day from £119.99 →](https://ukltdregistration.com/register-a-limited-company-uk)**](https://ukltdregistration.com/register-a-limited-company-uk)
