@@ -31,22 +31,25 @@ router.get('/services/virtual-office', (req, res) => {
 
 router.get('/services/meeting-rooms', (req, res) => {
     res.render('pages/services/meeting-rooms', {
-        title: 'Meeting Rooms | UK Ltd Registration',
-        metaDescription: 'Book professional meeting rooms and boardrooms in Central London.'
+        title: 'Meeting Rooms & Boardrooms in London — Rental Guide 2026',
+        metaDescription: 'Book professional meeting rooms and boardrooms in Central London for your UK Ltd company. Flexible day passes, weekly rates, and virtual meeting rooms. Compare 2026 London meeting room prices.',
+        metaKeywords: 'meeting rooms London, boardrooms London, conference rooms, business meeting room rental, meeting room hire London, UK Ltd meeting room'
     });
 });
 
 router.get('/services/accounting', (req, res) => {
     res.render('pages/services/accounting', {
-        title: 'Accounting & Tax Services | UK Ltd Registration',
-        metaDescription: 'Expert tax planning, VAT registration, and accounting packages tailored for digital nomads and startups.'
+        title: 'UK Accounting Services for UK Ltd — Tax & Compliance (2026)',
+        metaDescription: 'Expert UK accounting services for UK Ltd companies. VAT registration, payroll, tax planning, and annual compliance. Freelancer from £79/mo, Small Business from £149/mo, Growing up to £299/mo.',
+        metaKeywords: 'UK accounting services, UK Ltd accounting, VAT registration UK, tax planning UK, payroll services UK, annual accounts preparation, HMRC compliance'
     });
 });
 
 router.get('/services/banking', (req, res) => {
     res.render('pages/services/banking', {
-        title: 'Business Banking Assistance | UK Ltd Registration',
-        metaDescription: 'Accelerate your UK business bank account application for residents and non-residents.'
+        title: 'UK Business Bank Accounts for UK Ltd — Priority Approval 2026',
+        metaDescription: 'Open UK business bank accounts for UK Ltd companies. Priority approval for Tide, Monzo, Wise Business, and Revolut Business. One-time fee from £49 for residents, £149 for non-residents.',
+        metaKeywords: 'UK business bank account, UK Ltd bank account, Tide business account, Wise Business, Revolut Business, Monzo Business, non-resident bank account UK'
     });
 });
 
