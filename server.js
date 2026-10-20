@@ -50,6 +50,7 @@ const blogRoutes = require('./routes/blog');
 const pagesRoutes = require('./routes/pages');
 const authRoutes = require('./routes/auth');
 const apiRoutes = require('./routes/api');
+const paymentRoutes = require('./routes/payment');
 const hubRoutes = require('./routes/hub');
 const adminRoutes = require('./routes/admin');
 const sitemapRoute = require('./routes/sitemap');
@@ -155,9 +156,10 @@ app.use('/', sitemapRoute);
 
 // Routes
 app.use('/', homeRoutes);
-app.use('/blog', blogRoutes); // Kept original order for blogRoutes
+app.use('/blog', blogRoutes);
 app.use('/auth', authRoutes);
 app.use('/api', apiRoutes);
+app.use('/api/payment', paymentRoutes);
 app.use('/knowledge-hub', hubRoutes);
 app.use('/admin', adminRoutes); // New route
 app.use('/', pagesRoutes); // Must be last to catch all page routes

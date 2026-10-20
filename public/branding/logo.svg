@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs>
+    <!-- Brand palette -->
+    <linearGradient id="logoGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#002B5C"/> <!-- brand-navy -->
+      <stop offset="50%" stop-color="#0056B3"/> <!-- brand-blue -->
+      <stop offset="100%" stop-color="#28A745"/> <!-- brand-green -->
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#002B5C"/>
+      <stop offset="100%" stop-color="#28A745"/>
+    </linearGradient>
+    <!-- Shield icon -->
+    <path id="shieldPath" d="M200 0 L400 80 L400 140 L200 200 L0 140 L0 80 Z" fill="url(#logoGradient)"/>
+    <!-- UK monogram inside shield -->
+    <g>
+      <!-- 'U' -->
+      <path d="M60 50 L60 150 L90 150 L90 40 L120 40 L120 50" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="60" y="90" width="30" height="55" rx="4" fill="#002B5C"/>
+      <rect x="60" y="100" width="30" height="45" rx="4" fill="#002B5C"/>
+      <!-- 'K' -->
+      <path d="M130 0 L130 200 L160 200 L160 0 Z" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="130" y1="60" x2="160" y2="100" stroke="white" stroke-width="12" stroke-linecap="round"/>
+      <line x1="130" y1="100" x2="160" y2="60" stroke="white" stroke-width="12" stroke-linecap="round"/>
+      <line x1="130" y1="100" x2="160" y2="140" stroke="white" stroke-width="12" stroke-linecap="round"/>
+      <line x1="160" y1="60" x2="130" y2="100" stroke="white" stroke-width="12" stroke-linecap="round"/>
+      <rect x="130" y="100" width="30" height="55" rx="4" fill="#002B5C"/>
+      <rect x="130" y="110" width="30" height="40" rx="4" fill="#002B5C"/>
+    </g>
+    <!-- Check mark -->
+    <path d="M180 130 L195 145 L220 115" fill="none" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </defs>
+  <rect width="400" height="200" fill="none"/>
+  <!-- Shield with gradient -->
+  <path d="M200 0 L400 80 L400 140 L200 200 L0 140 L0 80 Z" fill="url(#logoGradient)"/>
+  <!-- Inner shield border -->
+  <path d="M200 10 L400 85 L400 135 L200 200 L0 135 L0 85 Z" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.2" stroke-linejoin="round"/>
+  <!-- UK monogram -->
+  <g fill="none" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M70 55 L70 150 L105 150 L105 45 L135 45 L135 55"/>
+    <rect x="70" y="100" width="35" height="55" rx="4" fill="#002B5C"/>
+    <rect x="70" y="110" width="35" height="45" rx="4" fill="#002B5C"/>
+    <path d="M145 5 L145 200 L185 200 L185 5 Z"/>
+    <line x1="145" y1="70" x2="185" y2="110" stroke="white" stroke-width="14" stroke-linecap="round"/>
+    <line x1="145" y1="110" x2="185" y2="70" stroke="white" stroke-width="14" stroke-linecap="round"/>
+    <line x1="145" y1="110" x2="185" y2="150" stroke="white" stroke-width="14" stroke-linecap="round"/>
+    <line x1="185" y1="70" x2="145" y2="110" stroke="white" stroke-width="14" stroke-linecap="round"/>
+    <rect x="145" y="110" width="40" height="60" rx="4" fill="#002B5C"/>
+    <rect x="145" y="120" width="40" height="50" rx="4" fill="#002B5C"/>
+  </g>
+  <!-- Check mark -->
+  <path d="M185 140 L200 155 L225 125" fill="none" stroke="white" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Horizontal separator -->
+  <line x1="0" y1="205" x2="400" y2="205" stroke="#ffffff" stroke-width="2" stroke-opacity="0.15"/>
+  <!-- Text -->
+  <text x="200" y="262" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="42" font-weight="800" letter-spacing="2" fill="url(#textGradient)">
+    UK LTD Registration
+  </text>
+  <text x="200" y="290" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="20" font-weight="600" letter-spacing="1" fill="#002B5C" opacity="0.85">
+    Company Formation &amp; Registration Services
+  </text>
+  <text x="200" y="315" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="16" font-weight="400" letter-spacing="1" fill="#0056B3" opacity="0.8">
+    ★ Fast · Affordable · Trusted
+  </text>
+</svg>
