@@ -12,6 +12,13 @@
     .btn-success {
         @apply bg-brand-green text-white px-8 py-4 rounded-2xl font-black hover:opacity-90 transition-all duration-300 shadow-lg shadow-green-100 active:scale-95;
     }
+    /* Mobile-first CTA: full-width, touch-friendly */
+    .btn-mobile {
+        @apply bg-brand-blue text-white px-6 py-4 rounded-2xl font-black hover:bg-brand-navy transition-all duration-300 shadow-lg shadow-blue-100 active:scale-[0.98] w-full text-center;
+    }
+    .btn-mobile-sm {
+        @apply bg-brand-blue text-white px-8 py-3 rounded-2xl font-black hover:bg-brand-navy transition-all duration-300 shadow-lg shadow-blue-100 active:scale-[0.98] w-full text-center text-sm;
+    }
 }
 
 /* Additional custom styles */
@@ -20,3 +27,49 @@
 .prose p { @apply mb-4 leading-relaxed; }
 .prose ul { @apply list-disc ml-6 mb-4; }
 .prose li { @apply mb-2; }
+
+/* Mobile-specific improvements */
+@media (max-width: 768px) {
+    .prose h1 { font-size: 2rem; line-height: 2.5rem; }
+    .prose h2 { font-size: 1.4rem; line-height: 1.8rem; }
+    .prose h3 { font-size: 1.1rem; line-height: 1.6rem; }
+    .prose p { font-size: 1rem; line-height: 1.75rem; }
+    .prose ul { margin-left: 1.25rem; }
+}
+
+/* Blog content improvements for mobile */
+@media (max-width: 768px) {
+    .blog-content img { max-width: 100%; height: auto; }
+    .blog-content table { font-size: 0.9rem; }
+    .blog-content th, .blog-content td { padding: 0.5rem; }
+}
+
+/* Pull-to-refresh prevention */
+html {
+    overscroll-behavior: none;
+}
+
+/* Floating action button for mobile (bottom-right) */
+@media (max-width: 768px) {
+    .fab-mobile {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: #0056b3;
+        color: white;
+        border: none;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        z-index: 1000;
+        transition: transform 0.2s ease;
+    }
+    .fab-mobile:active {
+        transform: scale(0.95);
+    }
+}

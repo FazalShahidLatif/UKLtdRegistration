@@ -158,9 +158,56 @@
                     <% } %>
 
                     <%- include('../partials/affiliate-disclosure') %>
-<%- content %>
-                </div>
+                    <%- content %>
 
+                            <!-- Mobile-first CTA -->
+                            <div class="bg-blue-50 rounded-2xl p-4 sm:p-6 mb-6 border border-blue-100">
+                                <div class="flex flex-col sm:flex-row gap-3">
+                                    <a href="/register-a-limited-company-uk" class="btn-mobile">
+                                        <span class="flex items-center justify-center gap-2">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                                            Start Registration — Same-Day from £119.99
+                                        </span>
+                                    </a>
+                                    <a href="/pricing" class="btn-mobile-sm">Compare Packages</a>
+                                </div>
+                            </div>
+
+                            <!-- Related Articles (mobile-optimized) -->
+                            <% if (typeof relatedArticles !== 'undefined' && relatedArticles.length > 0) { %>
+                            <div class="mt-12 pt-8 border-t border-gray-100">
+                                <h2 class="text-2xl font-black text-gray-900 mb-6">Related Guides</h2>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <% relatedArticles.slice(0, 4).forEach(article => { %>
+                                    <a href="/blog/<%= article.slug %>" class="block p-4 rounded-xl border border-gray-100 hover:border-brand-blue/30 hover:bg-blue-50/30 transition-all hover:shadow-md">
+                                        <h3 class="text-lg font-bold text-gray-900 mb-2"><%= article.title %></h3>
+                                        <p class="text-xs text-gray-500 mb-3"><%= article.excerpt %></p>
+                                        <span class="text-xs font-black uppercase tracking-widest text-blue-600"><%= article.category %></span>
+                                    </a>
+                                    <% }) %>
+                                </div>
+                            </div>
+                            <% } %>
+
+                            <!-- FAQ Section (from JSON-LD structured data) -->
+                            <% if (faq && faq.length > 0) { %>
+                            <div class="mt-12 pt-8 border-t border-gray-100">
+                                <h2 class="text-2xl font-black text-gray-900 mb-6">Frequently Asked Questions</h2>
+                                <div class="space-y-4">
+                                    <% faq.forEach(q => { %>
+                                    <div class="border border-gray-100 rounded-xl overflow-hidden">
+                                        <button class="w-full text-left px-4 py-3 font-bold text-gray-900 flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
+                                            <span class="text-sm"><%= q.question %></span>
+                                            <span class="text-gray-400 ml-2">+</span>
+                                        </button>
+                                        <div class="px-4 pb-4 text-sm text-gray-600 max-h-0 overflow-hidden transition-all duration-300" style="max-height: 0;">
+                                            <p class="pl-4"><%= q.answer %></p>
+                                        </div>
+                                    </div>
+                                    <% }) %>
+                                </div>
+                            </div>
+                            <% } %>
 
                 <% if (currentPath === '/blog/vat-registration-threshold-uk-2026') { %>
                 <aside class="not-prose mt-12 p-8 md:p-10 bg-amber-50 border border-amber-200 rounded-2xl shadow-sm" aria-label="2026 founder compliance checklist">
