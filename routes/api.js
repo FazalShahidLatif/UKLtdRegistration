@@ -119,6 +119,7 @@ router.post('/contact', async (req, res) => {
         success: true,
         notified: result.sent,
         persisted: stored.persisted,
+        stores: stored.stores,
         message: 'Message received. We will be in touch shortly.'
     });
 });
@@ -144,7 +145,7 @@ router.post('/lead-capture', async (req, res) => {
         Email: email, Source: source
     }, email);
 
-    res.json({ success: true, notified: result.sent, persisted: stored.persisted });
+    res.json({ success: true, notified: result.sent, persisted: stored.persisted, stores: stored.stores });
 });
 
 // Affiliate / partner application
@@ -171,7 +172,7 @@ router.post('/affiliate-apply', async (req, res) => {
         Name: fullName, Email: email, Website: website, Type: partnerType
     }, email);
 
-    res.json({ success: true, persisted: stored.persisted, message: 'Application received. We review all applications within 2 business days.' });
+    res.json({ success: true, persisted: stored.persisted, stores: stored.stores, message: 'Application received. We review all applications within 2 business days.' });
 });
 
 // Review submission
