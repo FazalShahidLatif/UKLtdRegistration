@@ -13,9 +13,9 @@ router.get('/', (req, res) => {
     const ratingLabel = reviews.getRatingLabel();
 
     res.render('pages/home', {
-        title: 'UK LTD Formation — UK Company in 24 Hours from £119.99',
-        metaDescription: 'Form a UK LTD online in 24 hours from £119.99. Same-day Companies House filing, ACSP-verified agents, and a free London registered office.',
-        metaKeywords: 'UK LTD formation, register UK company online, form UK Ltd company 24 hours, UK company registration 2026, non-resident UK company formation, ACSP verified formation agent, UK LTD from Pakistan India Bangladesh USA UAE',
+        title: 'Form UK LTD Company in 24 Hours — Same-Day from £119.99 (2026)',
+        metaDescription: 'Form a UK LTD company in 24 hours from £119.99. Same-day Companies House filing, ACSP-verified agents, and a free London registered office. Complete guide for UK residents and non-residents.',
+        metaKeywords: 'form UK LTD company, register UK company online 24 hours, UK company formation £119.99, Companies House same day filing, UK LTD formation 2026, non-resident UK company, UK LTD from Pakistan India USA',
         packages: [
             {
                 id: 'starter',

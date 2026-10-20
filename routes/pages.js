@@ -23,9 +23,9 @@ router.get('/services', (req, res) => {
 // Specific Service Pages
 router.get('/services/virtual-office', (req, res) => {
     res.render('pages/services/virtual-office', {
-        title: 'Virtual Office London — UK Address from £49.99/yr',
-        metaDescription: 'Get a prestigious virtual office address in London for your UK Ltd company. Registered office, mail handling, and director service address — from £49.99/year. Protect your privacy and comply with Companies House.',
-        metaKeywords: 'virtual office London, London business address, registered office UK, virtual office address, Companies House address, prestige London address'
+        title: 'Virtual Office London — UK Address from £49.99/yr (2026 Review)',
+        metaDescription: 'Get a prestigious UK registered office address in London with mail handling, director service address, and business address from £49.99/year. Compare 2026 virtual office plans for UK Ltd companies. Includes free 30-day trial and cancel anytime.',
+        metaKeywords: 'virtual office London, UK address from £49.99, registered office London, virtual office UK, Companies House registered office, London business address 2026, virtual office review'
     });
 });
 
@@ -200,9 +200,9 @@ router.get('/strategic-research-hub', (req, res) => {
 // LTD Company Formation Page (Core Conversion Page)
 router.get('/register-a-limited-company-uk', (req, res) => {
     res.render('pages/ltd-formation', {
-        title: 'Register a Limited Company UK — Same-Day from £119.99',
-        metaDescription: 'Register a limited company UK online today. Same-day Companies House filing from £119.99 with ACSP-verified agents and a free London registered office.',
-        metaKeywords: 'register a limited company UK, UK company registration, form a limited company, register ltd company online, Companies House registration, non-resident UK company'
+        title: 'Register a UK Limited Company Same-Day — £119.99 from £119.99 (2026 Guide)',
+        metaDescription: 'Register a UK limited company online today. Same-day Companies House filing from £119.99 with ACSP-verified agents, a free London registered office, and full guidance on costs, taxes, and compliance in 2026.',
+        metaKeywords: 'register UK limited company same day, UK company registration online 2026, form limited company £119.99, Companies House same day filing, UK LTD formation cost 2026, non-resident UK company registration'
     });
 });
 
