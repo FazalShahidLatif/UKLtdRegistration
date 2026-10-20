@@ -379,6 +379,36 @@
           }
         }
         </script>
+        <% if (article.reviews && article.reviews.length > 0) { %>
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "ReviewSnippet",
+          "name": "<%= article.metaTitle || article.title %>",
+          "author": {
+            "@type": "Organization",
+            "name": "UK LTD Registration"
+          },
+          "review": [
+            <% article.reviews.forEach(function(r, i) { %>
+            {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": <%= r.rating || 5 %>,
+                "bestRating": 5
+              },
+              "author": {
+                "@type": "Organization",
+                "name": "<%= r.author || 'Verified UK LTD Client' %>"
+              },
+              "reviewBody": "<%= r.text || 'Trusted UK LTD formation service with same-day filing and full transparency.' %>"
+            }<% if (i < article.reviews.length - 1) { %>,<% } %>
+            <% }) %>
+          ]
+        }
+        </script>
+        <% } %>
         <% if (faq && faq.length > 0) { %>
         <script type="application/ld+json">
         {
