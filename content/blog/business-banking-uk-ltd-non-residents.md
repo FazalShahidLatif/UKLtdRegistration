@@ -69,7 +69,10 @@ The biggest roadblock in 2026 is **ACSP (Anti-Crime Supervision Protocol)** veri
 We recommend a tiered banking strategy to ensure your business never stops moving:
 
 **Step 1: Immediate Access (The Digital Layer)**
+
 Open a **Wise Business** account the moment your company is incorporated. This gives you the GBP details you need to activate Stripe and start invoicing.
+
+**Key takeaway:** Multi-currency accounts let you hold GBP, USD, and EUR in one place. For South Asian exporters receiving USD payments, a UK-based account is the fastest route — see our guide on [managing multi-currency UK bank accounts for South Asian exporters](/blog/uk-bank-account-south-asian-exporters-currency-management).
 
 **Step 2: Operational Stability (The Bridge Layer)**
 Once you have 3–6 months of transaction history and a professional website, apply for **Mercury** or **Revolut**. This diversifies your risk and provides better treasury tools.

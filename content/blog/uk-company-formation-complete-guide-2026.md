@@ -47,11 +47,12 @@ The UK applies a tapered rate. Understanding how to manage your business expense
 Our mission is to bridge the gap between your vision and a fully functional UK corporate entity. We don't just "file papers"—we build foundations.
 
 ### The 2026 Formation Checklist:
-- [ ] Determine your share structure (Ordinary vs. Alphabet shares).
-- [ ] Complete ACSP Identity Verification.
-- [ ] Secure a prestigious London Registered Office.
-- [ ] Initialize your business banking fast-track.
-- [ ] File your initial SIC classifications.
+- [ ] Determine your share structure (Ordinary vs. Alphabet shares).
+- [ ] **Complete ACSP Identity Verification** — pass Companies House's 2026 biometric verification requirements.
+- [ ] **Secure a prestigious London Registered Office** — get a private business address in London from £49.99/year: [Register a Company in London](/register-company-london)
+- [ ] **Initialize your business banking fast-track** — open a multi-currency UK account to receive USD, EUR, and GBP payments: [Multi-Currency UK Bank Accounts for South Asian Exporters](/blog/uk-bank-account-south-asian-exporters-currency-management)
+- [ ] **Compare business structures** — decide between a Sole Trader and an LTD company: [LTD Company vs Sole Trader in 2026](/blog/ltd-company-vs-sole-trader)
+- [ ] **File your initial SIC classifications** — select the correct SIC code for your business.
 
 ---
 
