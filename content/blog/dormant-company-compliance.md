@@ -193,6 +193,7 @@ Our company secretary service handles the dormant accounts and CS01 filing on an
 - **[What Happens After You Register a Company?](/blog/what-happens-after-you-register-a-company)** — your post-formation roadmap
 - **[What is a Confirmation Statement?](/blog/what-is-a-confirmation-statement-companies-house-guide)** — the CS01 explained
 - **[Close UK Company Online — DS01 Strike-Off Service](/services/dissolution)** — if you'd rather dissolve than maintain
+- **[Closing a UK Company Guide — Strike-Off vs Liquidation](/blog/closing-uk-company-guide)** — manage dissolution cleanly
 - **[Form a UK Ltd From Abroad — Non-Resident Guide](/blog/uk-company-formation-complete-guide-2026)** — for founders who haven't formed yet
 
 ---
