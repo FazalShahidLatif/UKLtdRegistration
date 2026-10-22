@@ -79,6 +79,7 @@ The company formation process itself is standard, but you must pay careful atten
 ### Standard Ltd Formation Process
 
 1.  Choose a company name (check [UK Company Name Rules 2026](/blog/uk-company-name-rules-2026)).
+2.  **Select the correct SIC code** — food and agricultural exporters should use our SIC code guide: [SIC Codes for Agricultural and Food Exports to EU](/blog/sic-codes-agricultural-food-exports-eu-guide).
 2.  Appoint at least one director (any nationality, any residence).
 3.  Register a **UK registered office address** ([see our address guide](/blog/uk-registered-office-address-requirements-2026)).
 4.  File Articles of Association and Form IN01 with Companies House.

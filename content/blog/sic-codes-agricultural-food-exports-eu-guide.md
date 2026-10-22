@@ -38,4 +38,10 @@ When you operate as a UK entity, you are often required to register for VAT to s
 ## Our SIC Code Research Tools
 We help South Asian founders get it right the first time. Our platform includes a comprehensive **SIC Code Checker** that ensures your **company registration** is perfectly aligned with your export goals.
 
+## Related Reading
+
+- **[UK Company Name Rules 2026]((/blog/uk-company-name-rules-2026))** — What names Companies House will accept
+- **[UK Company Formation Complete Guide 2026]((/blog/uk-company-formation-complete-guide-2026))** — From A to Z formation guide
+- **[UK Business Bank Accounts for Non-Residents 2026]((/blog/business-banking-uk-ltd-non-residents))** — Banking options for non-resident founders
+
 [Search SIC Codes and Start Formation](/strategic-research-hub)

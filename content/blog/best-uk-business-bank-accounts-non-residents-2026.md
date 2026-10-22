@@ -10,6 +10,10 @@
 
 ---
 
+## SIC Codes for Food & Agricultural Exporters
+
+For businesses exporting food, agricultural products, or spices to the EU, selecting the correct **SIC code** is critical. Our complete guide covers all relevant codes and how to choose the right one: [SIC Codes for Agricultural and Food Exports to EU](/blog/sic-codes-agricultural-food-exports-eu-guide).
+
 ## Quick Comparison Table — At a Glance
 
 | Feature | Wise Business | Revolut Business | Tide Business | Airwallex | Payoneer | Mercury |
