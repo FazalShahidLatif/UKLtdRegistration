@@ -28,6 +28,11 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 xl:gap-12">
                 <% articles.forEach((article, index) => { %>
                     <article class="group relative bg-white/70 backdrop-blur-xl rounded-[2.5rem] border border-white shadow-2xl shadow-gray-200/50 overflow-hidden hover:-translate-y-2 transition-all duration-500 flex flex-col">
+                        <!-- TravelPayouts Affiliate Tracking (Guide/Blog Articles) -->
+                        <script async src="https://cdn.travelpayouts.com/widgets/tpp-affiliate.js"></script>
+                        <script>
+                          tp_affiliate_id = '685596';
+                        </script>
                         <!-- Image Container -->
                         <div class="relative h-64 overflow-hidden">
                             <% if (article.image) { %>

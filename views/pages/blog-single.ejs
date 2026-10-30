@@ -352,10 +352,15 @@
         </div>
     </div>
 
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Article",
+    <!-- TravelPayouts Affiliate Tracking (Guide/Blog Articles) -->
+    <script async src="https://cdn.travelpayouts.com/widgets/tpp-affiliate.js"></script>
+    <script>
+      tp_affiliate_id = '685596';
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
           "headline": "<%= article.metaTitle || article.title %>",
           "description": "<%= metaDescription %>",
           "image": "<%= (typeof articleImage !== 'undefined' && articleImage) ? (typeof siteUrl !== 'undefined' && siteUrl ? siteUrl : 'https://ukltdregistration.com') + articleImage : (typeof siteUrl !== 'undefined' && siteUrl ? siteUrl : 'https://ukltdregistration.com') + '/images/og-image.jpg' %>",
