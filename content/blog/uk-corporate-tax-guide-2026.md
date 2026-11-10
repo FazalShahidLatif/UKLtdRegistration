@@ -38,6 +38,22 @@ Two things make it awkward for founders:
 
 ---
 
+## Corporate Tax Registration — How and When
+
+Corporate tax registration is not optional once your company exists. Companies House automatically informs HMRC when a company is incorporated, and HMRC opens a Corporation Tax account and sends the company a Unique Taxpayer Reference (UTR) by post to the registered office.
+
+**What you need to do:**
+
+1. **Wait for the UTR** — it usually arrives within a few weeks of incorporation.
+2. **Tell HMRC when you start trading** — if you begin trading immediately, write to HMRC with your first accounting period dates. If you are not trading yet, you can register as dormant.
+3. **Activate your Government Gateway account** — you need the UTR to do this.
+4. **File the CT600 return** — even for a year with no profit, a "nil" return is required once you are active.
+5. **Pay within the deadline** — 9 months and 1 day after the end of your accounting period.
+
+Non-resident directors receive the same UTR at the registered office. If it does not arrive, request it from HMRC with your company number and incorporation details.
+
+---
+
 ## The 2026 Rate Structure
 
 UK Corporation Tax is not a single flat rate. It tapers:

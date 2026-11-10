@@ -24,6 +24,23 @@ Registering a company shouldn't feel like a mountain of paperwork. For Irish fou
 
 Here is exactly what you need to have ready before you hit "Submit".
 
+## The Documents Required for the Incorporation of a Company — At a Glance
+
+| # | Document | Who provides it | Needed for |
+|---|----------|-----------------|------------|
+| 1 | Proof of identity (passport or driving licence) | Every director and PSC | ACSP identity verification |
+| 2 | Proof of residential address (utility bill or bank statement, under 3 months old) | Every director and PSC | ACSP identity verification |
+| 3 | Company name and any sensitive-word justification | You | Companies House filing |
+| 4 | Registered office address | You, or a service provider | Companies House filing |
+| 5 | Director and shareholder details | You | Companies House filing |
+| 6 | SIC code or codes | You | Companies House filing |
+| 7 | Statement of capital and share structure | You | Companies House filing |
+| 8 | Memorandum of Association | Generated on filing | Companies House |
+| 9 | Articles of Association | Generated on filing, or bespoke | Companies House |
+| 10 | Person with Significant Control (PSC) details | You | Companies House filing |
+
+If any item is missing or mismatched, the filing is delayed or rejected.
+
 ## 1. Proof of Identity (Government-Issued)
 You will need a valid, in-date photo ID. For most Irish citizens, this is:
 - **Passport** (Recommended for fastest verification).

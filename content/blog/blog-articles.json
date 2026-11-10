@@ -1070,8 +1070,8 @@
       "id": 55,
       "slug": "required-documents-uk-ltd-ireland",
       "title": "The Ultimate 2026 Documentation Checklist for UK Company Formation",
-      "metaTitle": "UK Company Formation Documents 2026 — Checklist",
-      "metaDescription": "Complete 2026 checklist for Irish founders. IDs, proof of address, Articles of Association, and identity verification rules for registering a UK LTD.",
+      "metaTitle": "Required Documents for UK Company Formation 2026 — Checklist",
+      "metaDescription": "Complete 2026 checklist of the documents required for the incorporation of a company: IDs, proof of address, registered office, SIC codes, Articles of Association and identity verification rules.",
       "category": "Company Formation",
       "tags": [
         "Documentation",
@@ -1082,7 +1082,15 @@
       "excerpt": "Don't let paperwork hold you back. Our 2026 checklist ensures your formation is approved on the first attempt.",
       "readTime": 6,
       "image": "/images/blog_uk_formation_guide_2026.png",
-      "imageAlt": "The Ultimate 2026 Documentation Checklist for UK Company Formation"
+      "imageAlt": "The Ultimate 2026 Documentation Checklist for UK Company Formation",
+      "secondaryKeywords": [
+        "documents required for the incorporation of a company",
+        "required documents UK Ltd",
+        "UK company formation documents 2026",
+        "Irish founders UK company formation",
+        "ACSP identity verification documents",
+        "UK company formation checklist"
+      ]
     },
     {
       "id": 56,
@@ -2595,7 +2603,7 @@
       "slug": "uk-corporate-tax-guide-2026",
       "title": "UK Corporation Tax 2026: Rates, Deadlines and How to Pay Less",
       "metaTitle": "UK Corporation Tax 2026 | Rates, Deadlines, CT600",
-      "metaDescription": "UK corporation tax rates 2026 including small profits and marginal relief, accounting period rules, CT600 deadlines, payment on account, and late filing.",
+      "metaDescription": "UK corporation tax 2026: corporate tax registration, rates, small profits and marginal relief, accounting period rules, CT600 deadlines, payment on account, and late filing penalties.",
       "category": "Tax & Finance",
       "tags": [
         "corporate tax",
@@ -2612,12 +2620,14 @@
       "updatedDate": "2026-10-04",
       "focusKeyword": "uk corporation tax 2026",
       "secondaryKeywords": [
+        "corporate tax registration",
         "corporation tax rates uk 2026",
         "ct600 filing deadline",
         "uk company tax payment on account",
         "small profits relief corporation tax",
         "marginal relief fraction uk",
-        "when must a uk ltd file corporation tax return"
+        "when must a uk ltd file corporation tax return",
+        "register for corporation tax UK"
       ],
       "searchIntent": "informational",
       "commercialIntent": "medium",

@@ -57,6 +57,33 @@ Home-based businesses that most commonly use this setup: freelancers, consultant
 
 ---
 
+### Startup How to Start: The 30-Day Plan
+
+For most founders, "startup how to start" comes down to a short, ordered checklist:
+
+1. **Week 1 — Validate.** Write down who the customer is, what problem you solve, and what they will pay. Ten conversations beat a business plan.
+2. **Week 2 — Name and brand.** Choose two or three name options, check them on Companies House and as .co.uk domains, and check the UK IPO trademark register.
+3. **Week 3 — Incorporate and bank.** File the company, register for Corporation Tax, and open a business account or multi-currency account.
+4. **Week 4 — Sell.** Get the first invoice out. Revenue is the only real validation.
+
+The legal side is the easy part — it takes one day. The hard part is finding a customer, so start there first if you can.
+
+---
+
+### Doing Business in the UK
+
+Doing business in the UK is attractive because the market is large, the legal system is predictable, and English is the language of trade. For overseas founders the practical points are:
+
+* **Entity** — a UK limited company is the standard structure and is open to foreign owners.
+* **Tax** — Corporation Tax on profits, VAT on sales above £90,000, and employer obligations if you hire.
+* **Banking** — digital accounts from Wise, Payoneer, or Mercury are the fastest route for non-residents.
+* **Compliance** — annual accounts, a confirmation statement, and Corporation Tax filings are mandatory once you trade.
+* **Contracts** — English law is the most common choice for international commercial contracts.
+
+You do not need to be in the UK to do business here. The entire setup and most of the ongoing compliance can be handled remotely.
+
+---
+
 ## How to Start a Partnership Business
 
 A partnership is two or more people running a business together and sharing the profits. It is simpler to set up than a limited company, but it carries **unlimited personal liability** — each partner is personally responsible for the business debts of the whole partnership.
