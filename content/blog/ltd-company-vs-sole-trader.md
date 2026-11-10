@@ -134,6 +134,41 @@ How to start a partnership business is simple: agree the split of profits, regis
 
 ---
 
+## 6. How to Register as Self-Employed
+
+Registering as self-employed is the simplest way to start trading in the UK, and it is free. You tell HMRC you are self-employed and they put you on Self Assessment.
+
+**The steps:**
+
+1. **Register with HMRC** — use the official [register for Self Assessment](https://www.gov.uk/register-for-self-assessment) service. You need your National Insurance number and proof of identity.
+2. **Choose your accounting date** — the date your tax year ends. Most sole traders use 5 April.
+3. **Keep records from day one** — invoices, receipts, bank statements, and expenses. HMRC requires digital records under Making Tax Digital for Income Tax from April 2026 for businesses above £5,000 in turnover.
+4. **File your Self Assessment return** — the deadline is 31 January each year.
+5. **Pay Income Tax and National Insurance** — Class 2 and Class 4 NIC apply on profits.
+
+**What you cannot do as self-employed:** you have no limited liability, no separate legal entity, and no company number to show clients. If you earn above the VAT threshold (£90,000 in 2026) you must register for VAT — the same as a limited company.
+
+Many founders register as self-employed first to test an idea, then incorporate once revenue is proven.
+
+---
+
+## 7. How to Open a Service Business
+
+A service business sells time and expertise rather than physical goods — consulting, design, development, coaching, accounting, marketing, legal support, and trades such as plumbing or electrical work.
+
+**To open a service business in the UK:**
+
+1. **Pick your structure** — sole trader for simplicity, limited company for liability protection and credibility.
+2. **Register with HMRC or Companies House** — Self Assessment if you are a sole trader, incorporation if you are a limited company.
+3. **Sort your insurance** — professional indemnity and public liability are often required by clients, especially in consulting and trades.
+4. **Open a business bank account** — not legally required for sole traders, but it keeps your finances clean and is required for a limited company.
+5. **Set your contracts and terms** — written terms of service protect you on payment, scope, and liability. This matters more in services than in products.
+6. **Handle VAT** — register if you expect to exceed £90,000, or voluntarily if you want to reclaim VAT on costs.
+
+Service businesses are the easiest to start from home and the easiest to scale to a limited company later.
+
+---
+
 ## Conclusion: Which is Right for You?
 
 ### Choose Sole Trader if:

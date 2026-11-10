@@ -27,6 +27,12 @@ A United Kingdom limited company is a business that is registered at Companies H
 
 A UK limited company can be set up by one person (a single shareholder and director) or by many. It can trade in any sector, open a UK business bank account, and invoice customers worldwide. It is the structure most UK banks, marketplaces, and enterprise clients expect.
 
+### Incorporated in England vs Scotland, Wales, and Northern Ireland
+
+A company is "incorporated in England" when its registered office is in England. England and Wales share a single register, so companies incorporated there receive numbers starting with 0 or 1. Scotland uses SC prefixes and Northern Ireland uses NI.
+
+The choice of jurisdiction affects which law applies to the company's constitution and where it must keep its registered office. Most founders incorporate in England because it is the largest market and the default for non-resident filings. You can change jurisdiction later by moving the registered office and filing the appropriate form, and the company keeps its original number.
+
 ### Starting a Business in the United Kingdom from Abroad
 
 You do not need to live in the UK — or even visit — to start a business in the United Kingdom. Non-residents can incorporate a UK limited company entirely online, and the UK places no restriction on foreign ownership or directorship.

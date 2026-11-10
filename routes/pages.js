@@ -24,8 +24,8 @@ router.get('/services', (req, res) => {
 router.get('/services/virtual-office', (req, res) => {
     res.render('pages/services/virtual-office', {
         title: 'Virtual Office UK — London Address from £49.99/yr (2026)',
-        metaDescription: 'Virtual office UK: prestigious London business address from £49.99/yr. UK virtual address, mail handling, director service address and call handling for Ltd companies. 2026 plans compared.',
-        metaKeywords: 'virtual office UK, virtual office London, UK virtual address, virtual business address, virtual office address London, virtual office central London, registered office London, business address virtual, London business address 2026, virtual office review'
+        metaDescription: 'Virtual office UK: prestigious London business address from £49.99/yr. Business address virtual and UK virtual address options, mail handling, director service address and call handling for Ltd companies. 2026 plans compared.',
+        metaKeywords: 'virtual office UK, virtual office London, UK virtual address, business address virtual, corp address, virtual business address, virtual office address London, virtual office central London, registered office London, London business address 2026, virtual office review'
     });
 });
 

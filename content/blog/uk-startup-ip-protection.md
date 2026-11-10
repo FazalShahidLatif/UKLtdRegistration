@@ -75,6 +75,22 @@ Copyright does **not** protect: names, logos as a brand identifier, product idea
 
 Trade marks are the only mechanism that stops someone else from trading under your name.
 
+### Trade Mark UK Search — How to Check Before You File
+
+Before you file, run a **trade mark UK search** against the UK Intellectual Property Office (IPO) register. A search shows whether an identical or similar mark already exists in your class, which is the single biggest reason applications fail.
+
+**How to run the search:**
+
+1. Go to the official [UK IPO trade mark search](https://www.gov.uk/search-for-trade-mark).
+2. Search by word, phrase, or image.
+3. Filter by **class** — a mark in a different class does not block yours.
+4. Check for **similar** marks, not just identical ones. The IPO can object on similarity as well as identity.
+5. Note any **dead marks** — a mark that lapsed or was cancelled may be available again.
+
+**What a search will not tell you:** whether the name is free as a company name (a separate Companies House check) or whether the .co.uk domain is free (a separate domain search). You need all three checks before you commit.
+
+If your mark is already taken in your class, you can choose a new brand, negotiate with the existing owner, or file in a different class if your use case genuinely differs. Filing without a search is the most expensive way to find out.
+
 ---
 
 ## What a Trade Mark Protects
