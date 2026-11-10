@@ -1,6 +1,10 @@
 ---
 title: Non-Resident UK Company Setup Checklist for 2026
+metaTitle: "Checklist for Starting a Business in the UK — Non-Resident Guide 2026"
+metaDescription: "Checklist for starting a business in the UK as a non-resident in 2026. Plan your company name, director ID checks, registered office, SIC codes, banking, tax, and first filings."
 description: Use this non-resident UK company checklist to plan your name, director ID check, registered office, SIC code, banking, tax, and first filings.
+focusKeyword: checklist for starting a business UK
+secondaryKeywords: [non-resident UK company setup checklist, requirements for a limited company, start a business in UK checklist, UK company formation checklist 2026]
 ---
 
 # Non-Resident UK Company Setup Checklist for 2026
@@ -10,6 +14,26 @@ You can own and run a UK company from another country. You do not usually need t
 You do need a clear plan. The company needs a valid name, a registered office, directors, shareholders, people with significant control, and suitable business activity codes.
 
 Use this checklist before you start an online application.
+
+## Requirements for a UK Limited Company
+
+Before you work through the checklist, confirm your company can meet the basic requirements for a UK limited company:
+
+| Requirement | What you need |
+|-------------|---------------|
+| **Director** | At least one, aged 18+, any nationality |
+| **Shareholder** | At least one (can be the same person as the director) |
+| **Registered office** | A physical UK address — PO boxes are not accepted |
+| **Company name** | Unique and not "too like" an existing name |
+| **SIC code** | At least one Standard Industrial Classification code |
+| **PSC** | Anyone with more than 25% of shares or voting rights |
+| **Identity check** | ACSP verification for directors and PSCs (ECCTA 2026) |
+
+If any of these are missing, your incorporation will be delayed or rejected.
+
+## Who This Checklist Is For
+
+This checklist applies to any private limited company, and the steps are identical whether you are forming a consultancy, an e-commerce brand, or a small IT company. Software developers, freelancers, and remote agencies are among the most common non-resident founders we help set up in the UK, because the market pays well for technical services and the company structure supports it cleanly. If you are planning how to start a small IT company from overseas, the UK is one of the simplest jurisdictions to do it from.
 
 ## 1. Check if a UK company fits your plan
 

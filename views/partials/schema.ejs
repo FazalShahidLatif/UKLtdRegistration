@@ -236,6 +236,9 @@
     ,{
       "@type": "FAQPage",
       "mainEntity": [
+        {"@type":"Question","name":"Where is the official Companies House website link?","acceptedAnswer":{"@type":"Answer","text":"The official Companies House website link for checking a company is gov.uk/get-information-about-a-company. It is the government's free service for checking company name availability and confirming whether a business is registered in the UK. The main register is at gov.uk/government/organisations/companies-house. Always use the gov.uk domain - third-party sites may charge for a search that is free on the official register."}},
+        {"@type":"Question","name":"How do I know if a business is registered?","acceptedAnswer":{"@type":"Answer","text":"Search the Companies House register by company name or registration number at gov.uk/get-information-about-a-company. A registered ltd company returns a live filing history, a registered office address, and details of its directors and persons with significant control. If the status shows Active the company is live; Dissolved means it has been struck off the register."}},
+        {"@type":"Question","name":"What does business name availability mean?","acceptedAnswer":{"@type":"Answer","text":"Business name availability means your proposed ltd company name is not already taken, is not too like an existing registered name, and is not blocked by sensitive word rules. Companies House will reject any formation that fails these tests. Availability is not a reservation - the only way to secure your ltd company name is to incorporate it."}},
         {"@type":"Question","name":"How do I check company name availability in the UK?","acceptedAnswer":{"@type":"Answer","text":"Use our free company names search tool. Enter your desired name and it instantly queries the live Companies House register - over 5 million companies. Results show existing active and dissolved companies so you can assess whether your chosen name clears the too-like rule. Once clear, proceed to ltd company UK registration via our same-day formation service."}},
         {"@type":"Question","name":"What does check for company name availability actually involve?","acceptedAnswer":{"@type":"Answer","text":"Checking for company name availability means running your proposed name through three tests: (1) the Companies House same-as comparison against 5 million+ registered names, (2) the sensitive words list under the Company Names Regulations 2015, and (3) optionally the UK IPO trademark database to rule out brand conflicts."}},
         {"@type":"Question","name":"What are ltd company names and what are the rules?","acceptedAnswer":{"@type":"Answer","text":"Ltd company names are official trading names for private limited companies registered at Companies House. Every valid UK ltd company name must end in Limited or Ltd, must not be too like an existing name, must not include restricted words without approval, must not imply a government connection, and must not be offensive."}},
@@ -369,6 +372,50 @@
           "@id": "<%= siteUrl %>/#organization"
         }
       }
+    }
+    ,{
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"What is a virtual office UK address?","acceptedAnswer":{"@type":"Answer","text":"A virtual office UK address is a real, physical business address that you use for your company registration, mail, and marketing without renting the space. It gives your limited company a prestigious UK presence, satisfies Companies House, and keeps your home address private."}},
+        {"@type":"Question","name":"Can I use a virtual office as my registered office?","acceptedAnswer":{"@type":"Answer","text":"Yes. A virtual office address can be used as your official registered office for Companies House and HMRC, as long as it is a physical street address where documents can be delivered and acknowledged by a person. P.O. Boxes are not accepted."}},
+        {"@type":"Question","name":"How much does a virtual office UK cost?","acceptedAnswer":{"@type":"Answer","text":"Our virtual office plans start from £99/year for a standard central London address, £299/year for the premium mail and phone package, and £499/year for the enterprise tier with call handling and meeting space. All prices exclude VAT."}},
+        {"@type":"Question","name":"What is included in a virtual office package?","acceptedAnswer":{"@type":"Answer","text":"Every package includes a prestigious central London address for Companies House and HMRC, statutory mail scanning, and digital notifications. Premium tiers add business mail forwarding, a UK phone number, call handling, and meeting room access."}}
+      ]
+    }
+    <% } %>
+    <% if (currentPath === '/registered-office-address') { %>
+    ,{
+      "@type": "Service",
+      "name": "registered office address uk",
+      "description": "Prestigious London registered office address service for UK limited companies, with mail scanning and director privacy.",
+      "image": "<%= siteUrl %>/images/premium_office_london.png",
+      "url": "<%= siteUrl %><%= currentPath %>",
+      "brand": {
+        "@type": "Brand",
+        "name": "<%= siteName %>"
+      },
+      "areaServed": "United Kingdom",
+      "offers": {
+        "@type": "Offer",
+        "price": "49.99",
+        "priceCurrency": "GBP",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2026-12-31",
+        "url": "<%= siteUrl %><%= currentPath %>",
+        "seller": {
+          "@type": "Organization",
+          "@id": "<%= siteUrl %>/#organization"
+        }
+      }
+    }
+    ,{
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"What is a company address and why is it public?","acceptedAnswer":{"@type":"Answer","text":"A company address is the official postal address of your limited company, known in the UK as the registered office. It is public record so that Companies House, HMRC, and the courts can deliver official documents and so that customers and suppliers can verify your business."}},
+        {"@type":"Question","name":"What does principal address mean?","acceptedAnswer":{"@type":"Answer","text":"Principal address is the main address linked to a company or director for official correspondence. For a company it is the registered office; for a director it is the service address shown on the public register."}},
+        {"@type":"Question","name":"Can I use a virtual office as my registered office?","acceptedAnswer":{"@type":"Answer","text":"Yes. A virtual office address can be your registered office as long as it is a physical street address where documents can be delivered and acknowledged by a person. P.O. Boxes are not accepted under 2026 rules."}},
+        {"@type":"Question","name":"How much does a registered office address cost?","acceptedAnswer":{"@type":"Answer","text":"Our standard registered office is £49.99/year and the premium business address is £99.99/year, both excluding VAT. Government mail scanning is included free of charge."}}
+      ]
     }
     <% } %>
     <% if (currentPath === '/blog/business-banking-uk-ltd-non-residents') { %>

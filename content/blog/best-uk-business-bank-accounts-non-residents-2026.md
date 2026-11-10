@@ -1,4 +1,14 @@
+---
+title: "Best UK Business Bank Accounts for Non-Residents 2026"
+metaTitle: "Best Business Bank Accounts UK 2026 — Non-Resident Comparison"
+metaDescription: "Best business bank accounts UK 2026: compare Wise, Revolut Business, Tide, Airwallex, Payoneer and Mercury for non-resident UK LTD owners. Fees, eligibility, approval speed and multi-currency support."
+focusKeyword: best business bank accounts uk
+secondaryKeywords: [best uk business bank accounts non-residents, uk business bank account for non residents, wise vs revolut vs airwallex, open uk bank account from overseas, uk bank account for international founders]
+---
+
 # UK Business Bank Accounts for Non-Residents 2026 — The Ultimate Comparison Guide
+
+## Best Business Bank Accounts UK 2026 — At a Glance
 
 **Meta Description:** Compare the best UK business bank accounts for non-residents in 2026. Wise, Revolut Business, Tide, Airwallex, Payoneer, and Mercury — full comparison of fees, eligibility, approval speed, multi-currency support, and which is best for your UK LTD.
 

@@ -1,15 +1,15 @@
 ---
 title: "UK Company Name Rules 2026: What's Allowed & What's Banned"
-metaTitle: "UK Company Name Rules 2026 | Naming Guidelines"
-metaDescription: "UK company name rules 2026. Banned words, sensitive terms, trademark issues, offensive names, and how to check availability before registration."
+metaTitle: "UK Company Name Rules 2026 — Legal Business Name Guide"
+metaDescription: "UK company name rules 2026: what a legal business name is, banned and sensitive words, trademark checks, and how business name registration works. Free availability check."
 slug: uk-company-name-rules-2026
 author: UK LTD Registration
 publishedDate: 2026-03-12
 updatedDate: 2026-03-12
 category: Company Formation
 tags: [name availability, rules, guidelines, legal]
-focusKeyword: UK company name rules
-secondaryKeywords: [UK company naming guidelines, banned company names UK, company name restrictions, sensitive words Companies House, trademark company name UK]
+focusKeyword: UK company name rules 2026
+secondaryKeywords: [what is a company name, legal business name, business name registration UK, how to register a business name, UK company naming guidelines, banned company names UK, company name restrictions, sensitive words Companies House, trademark company name UK]
 searchIntent: informational
 commercialIntent: low
 featured: false
@@ -38,6 +38,35 @@ Choosing a name for your UK Limited Company is arguably the most exciting part o
 However, before ordering business cards or registering domain names, you must pass the strict legal criteria enforced by **Companies House**. In 2026, the registrar tightened enforcement on duplicate and misleading corporate names. 
 
 If you get this wrong, your application will be rejected (or worse, you’ll be forced to change it later under threat of legal action). Here is the ultimate 2026 guide to UK company naming rules.
+
+---
+
+## What Is a Company Name?
+
+A **company name** is the official legal identity of your limited company. It is recorded on the Companies House register at incorporation and printed on your Certificate of Incorporation. It is not the same as a brand name, trading name, or domain name.
+
+Three separate things are often confused:
+
+* **Registered company name** — the legal name on the register. Must end in "Limited" or "Ltd".
+* **Trading name** — the name you actually trade under. You can trade under a different name, but the registered name must still appear on invoices, websites, and official correspondence.
+* **Trademark** — a registered brand right. Companies House approval does not give you trademark protection, and a trademark does not give you a company name.
+
+You can change your registered company name later by special resolution, but it is far easier to get it right at formation.
+
+---
+
+## Legal Business Name Requirements in 2026
+
+For a name to be accepted as a legal business name in the UK, it must pass all of the following tests:
+
+1. **It must be unique** — not identical or "too like" an existing entry on the Companies House register.
+2. **It must carry the correct designation** — "Limited" or "Ltd" (or Welsh equivalents for Welsh companies).
+3. **It must not contain sensitive words** without approval from the relevant authority.
+4. **It must not imply a government or public body connection** without a letter of non-objection.
+5. **It must not be offensive or promote illegal activity.**
+6. **It must not infringe an existing UK trademark** — this is a civil risk rather than a Companies House rule, but it is the most common reason founders are forced to rebrand.
+
+A legal business name is therefore one that clears Companies House *and* the trademark register. Check both before you commit to branding, domains, or marketing.
 
 ---
 
@@ -102,6 +131,21 @@ Companies House does **not** cross-reference the UK Intellectual Property Office
 You could successfully register "Starbucks Coffee Retail Ltd" precisely because there isn't another company formally registered with that perfectly identical string. But the very next day, your company will be served a Cease and Desist notice by Starbucks Corporation for trademark infringement, dragging you into costly litigation.
 
 **Always check the UK Trademark Database before committing to a name.**
+
+---
+
+## How to Register a Business Name in the UK
+
+Business name registration in the UK is not a separate filing — your company name is registered automatically when you incorporate the limited company. The process is:
+
+1. **Choose your name** — brainstorm options that reflect your brand and are likely to be unique.
+2. **Check availability** — run each option through our [free company name search tool](/company-name-check) against the live Companies House register.
+3. **Check sensitive words** — confirm none of your options contain restricted terms that need approval.
+4. **Check trademarks** — search the UK IPO trademark register to avoid infringement.
+5. **Incorporate the company** — submit the formation with your chosen name via [our same-day formation service](/register-a-limited-company-uk). Companies House approves the name as part of the incorporation.
+6. **Optionally register a trademark** — if you want brand protection beyond the company name, file with the UK IPO separately.
+
+If Companies House rejects your name, you can correct and resubmit. We handle name rejections as part of our formation packages at no extra cost.
 
 ---
 

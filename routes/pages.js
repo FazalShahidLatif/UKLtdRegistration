@@ -23,9 +23,9 @@ router.get('/services', (req, res) => {
 // Specific Service Pages
 router.get('/services/virtual-office', (req, res) => {
     res.render('pages/services/virtual-office', {
-        title: 'Virtual Office London — UK Address from £49.99/yr (2026 Review)',
-        metaDescription: 'Get a prestigious UK registered office address in London with mail handling, director service address, and business address from £49.99/year. Compare 2026 virtual office plans for UK Ltd companies. Includes free 30-day trial and cancel anytime.',
-        metaKeywords: 'virtual office London, UK address from £49.99, registered office London, virtual office UK, Companies House registered office, London business address 2026, virtual office review'
+        title: 'Virtual Office UK — London Address from £49.99/yr (2026)',
+        metaDescription: 'Virtual office UK: prestigious London business address from £49.99/yr. UK virtual address, mail handling, director service address and call handling for Ltd companies. 2026 plans compared.',
+        metaKeywords: 'virtual office UK, virtual office London, UK virtual address, virtual business address, virtual office address London, virtual office central London, registered office London, business address virtual, London business address 2026, virtual office review'
     });
 });
 
@@ -269,8 +269,8 @@ router.get('/register-company-edinburgh', (req, res) => {
 // 6 New Service Pages
 router.get('/registered-office-address', (req, res) => {
     res.render('pages/services/registered-office-address', {
-        title: 'Registered Office Address UK',
-        metaDescription: 'Get a prestigious London registered office address for your UK company from just £49.99/year. Keep your home address private and comply with Companies House.'
+        title: 'Registered Office Address UK — Company Address from £49.99/yr',
+        metaDescription: 'Registered office address UK: prestigious London company address from £49.99/yr. Learn what a company address and principal address mean, keep your home address private, and stay Companies House compliant.'
     });
 });
 
@@ -298,8 +298,8 @@ router.get('/confirmation-statement', (req, res) => {
 
 router.get('/company-name-check', (req, res) => {
     res.render('pages/services/company-name-check', {
-        title: 'Check Company Name Availability UK',
-        metaDescription: 'Check company name availability UK for free. Search ltd company names against the live Companies House register, sensitive word lists, and trademark databases. Find your perfect ltd company name and register today.'
+        title: 'Check Company Name Availability UK — Free Companies House Search (2026)',
+        metaDescription: 'Free UK company name availability check. Find the official Companies House website link, check if a business is registered, and search ltd names and trademarks.'
     });
 });
 
