@@ -1,0 +1,343 @@
+{
+  "range": {
+    "start": "2026-08-10",
+    "end": "2026-11-07"
+  },
+  "prevRange": {
+    "start": "2026-05-12",
+    "end": "2026-08-09"
+  },
+  "weeks": {
+    "2026-08-10": {
+      "impressions": 3396,
+      "clicks": 8
+    },
+    "2026-08-17": {
+      "impressions": 523,
+      "clicks": 1
+    },
+    "2026-11-02": {
+      "impressions": 2821,
+      "clicks": 8
+    }
+  },
+  "gained": [
+    {
+      "query": "company formation agents",
+      "impressions": 141,
+      "clicks": 0,
+      "position": 48.276595744680854,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 141
+    },
+    {
+      "query": "virtual office",
+      "impressions": 62,
+      "clicks": 0,
+      "position": 87.14516129032258,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 62
+    },
+    {
+      "query": "virtual office address",
+      "impressions": 59,
+      "clicks": 0,
+      "position": 83.55932203389831,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 59
+    },
+    {
+      "query": "formation agent",
+      "impressions": 50,
+      "clicks": 0,
+      "position": 42.3,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 50
+    },
+    {
+      "query": "international business bank account uk",
+      "impressions": 39,
+      "clicks": 0,
+      "position": 60.51282051282051,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 39
+    },
+    {
+      "query": "london registered office address service",
+      "impressions": 36,
+      "clicks": 0,
+      "position": 80.52777777777777,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 36
+    },
+    {
+      "query": "buy a business address",
+      "impressions": 31,
+      "clicks": 0,
+      "position": 78.16129032258064,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 31
+    },
+    {
+      "query": "registered office address provider",
+      "impressions": 36,
+      "clicks": 0,
+      "position": 85.33333333333333,
+      "prevImpressions": 5,
+      "prevClicks": 0,
+      "delta": 31
+    },
+    {
+      "query": "business address london",
+      "impressions": 32,
+      "clicks": 0,
+      "position": 81.8125,
+      "prevImpressions": 3,
+      "prevClicks": 0,
+      "delta": 29
+    },
+    {
+      "query": "business mail forwarding address london",
+      "impressions": 29,
+      "clicks": 0,
+      "position": 77.86206896551724,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 29
+    },
+    {
+      "query": "get a business address",
+      "impressions": 29,
+      "clicks": 0,
+      "position": 79.62068965517241,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 29
+    },
+    {
+      "query": "virtual office for business",
+      "impressions": 29,
+      "clicks": 0,
+      "position": 91,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 29
+    },
+    {
+      "query": "registered office address service london",
+      "impressions": 36,
+      "clicks": 0,
+      "position": 87.52777777777777,
+      "prevImpressions": 8,
+      "prevClicks": 0,
+      "delta": 28
+    },
+    {
+      "query": "virtual registered office address",
+      "impressions": 31,
+      "clicks": 0,
+      "position": 83.03225806451613,
+      "prevImpressions": 3,
+      "prevClicks": 0,
+      "delta": 28
+    },
+    {
+      "query": "registered office services",
+      "impressions": 27,
+      "clicks": 0,
+      "position": 87.29629629629629,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 27
+    }
+  ],
+  "lost": [
+    {
+      "query": "uk ltd",
+      "impressions": 269,
+      "clicks": 1,
+      "position": 8.059479553903346,
+      "prevImpressions": 1771,
+      "prevClicks": 12,
+      "delta": -1502
+    },
+    {
+      "query": "uk vat registration threshold 2026",
+      "impressions": 2,
+      "clicks": 0,
+      "position": 20,
+      "prevImpressions": 1327,
+      "prevClicks": 0,
+      "delta": -1325
+    },
+    {
+      "query": "limited company formation",
+      "impressions": 215,
+      "clicks": 0,
+      "position": 83.94883720930233,
+      "prevImpressions": 1532,
+      "prevClicks": 0,
+      "delta": -1317
+    },
+    {
+      "query": "set up a limited company online",
+      "impressions": 104,
+      "clicks": 0,
+      "position": 72.88461538461539,
+      "prevImpressions": 1016,
+      "prevClicks": 0,
+      "delta": -912
+    },
+    {
+      "query": "ltd company formation",
+      "impressions": 20,
+      "clicks": 0,
+      "position": 85.2,
+      "prevImpressions": 619,
+      "prevClicks": 0,
+      "delta": -599
+    },
+    {
+      "query": "uk sic code for forex trading own capital",
+      "impressions": 16,
+      "clicks": 0,
+      "position": 6.5625,
+      "prevImpressions": 516,
+      "prevClicks": 0,
+      "delta": -500
+    },
+    {
+      "query": "uk limited",
+      "impressions": 86,
+      "clicks": 0,
+      "position": 12.05813953488372,
+      "prevImpressions": 507,
+      "prevClicks": 0,
+      "delta": -421
+    },
+    {
+      "query": "limited company formation uk",
+      "impressions": 41,
+      "clicks": 0,
+      "position": 85.7560975609756,
+      "prevImpressions": 456,
+      "prevClicks": 0,
+      "delta": -415
+    },
+    {
+      "query": "virtual office uk",
+      "impressions": 11,
+      "clicks": 0,
+      "position": 73.54545454545455,
+      "prevImpressions": 408,
+      "prevClicks": 0,
+      "delta": -397
+    },
+    {
+      "query": "virtual office london",
+      "impressions": 18,
+      "clicks": 0,
+      "position": 85.66666666666667,
+      "prevImpressions": 366,
+      "prevClicks": 0,
+      "delta": -348
+    },
+    {
+      "query": "form uk ltd company from pakistan for ecommerce",
+      "impressions": 175,
+      "clicks": 0,
+      "position": 6.788571428571428,
+      "prevImpressions": 475,
+      "prevClicks": 0,
+      "delta": -300
+    },
+    {
+      "query": "uk company formation",
+      "impressions": 12,
+      "clicks": 0,
+      "position": 61.916666666666664,
+      "prevImpressions": 305,
+      "prevClicks": 0,
+      "delta": -293
+    },
+    {
+      "query": "london virtual office",
+      "impressions": 7,
+      "clicks": 0,
+      "position": 90.28571428571429,
+      "prevImpressions": 298,
+      "prevClicks": 0,
+      "delta": -291
+    },
+    {
+      "query": "set up limited company online",
+      "impressions": 27,
+      "clicks": 0,
+      "position": 73.77777777777777,
+      "prevImpressions": 287,
+      "prevClicks": 0,
+      "delta": -260
+    },
+    {
+      "query": "open limited company online",
+      "impressions": 18,
+      "clicks": 0,
+      "position": 62.333333333333336,
+      "prevImpressions": 253,
+      "prevClicks": 0,
+      "delta": -235
+    },
+    {
+      "query": "company formation pricing",
+      "impressions": 14,
+      "clicks": 0,
+      "position": 20.785714285714285,
+      "prevImpressions": 240,
+      "prevClicks": 0,
+      "delta": -226
+    },
+    {
+      "query": "create a limited company online",
+      "impressions": 21,
+      "clicks": 0,
+      "position": 76.0952380952381,
+      "prevImpressions": 242,
+      "prevClicks": 0,
+      "delta": -221
+    },
+    {
+      "query": "uk virtual office",
+      "impressions": 24,
+      "clicks": 0,
+      "position": 75.54166666666667,
+      "prevImpressions": 238,
+      "prevClicks": 0,
+      "delta": -214
+    },
+    {
+      "query": "www uk ltd",
+      "impressions": 1,
+      "clicks": 0,
+      "position": 10,
+      "prevImpressions": 206,
+      "prevClicks": 0,
+      "delta": -205
+    },
+    {
+      "query": "ltd uk",
+      "impressions": 24,
+      "clicks": 0,
+      "position": 37.416666666666664,
+      "prevImpressions": 215,
+      "prevClicks": 0,
+      "delta": -191
+    }
+  ]
+}

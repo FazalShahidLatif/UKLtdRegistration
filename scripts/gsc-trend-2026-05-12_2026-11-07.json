@@ -1,0 +1,395 @@
+{
+  "range": {
+    "start": "2026-05-12",
+    "end": "2026-11-07"
+  },
+  "prevRange": {
+    "start": "2025-11-13",
+    "end": "2026-05-11"
+  },
+  "weeks": {
+    "2026-05-11": {
+      "impressions": 692,
+      "clicks": 0
+    },
+    "2026-05-18": {
+      "impressions": 3741,
+      "clicks": 10
+    },
+    "2026-05-25": {
+      "impressions": 5337,
+      "clicks": 7
+    },
+    "2026-06-01": {
+      "impressions": 6407,
+      "clicks": 19
+    },
+    "2026-06-08": {
+      "impressions": 4054,
+      "clicks": 11
+    },
+    "2026-06-15": {
+      "impressions": 4862,
+      "clicks": 4
+    },
+    "2026-06-22": {
+      "impressions": 3988,
+      "clicks": 5
+    },
+    "2026-06-29": {
+      "impressions": 5335,
+      "clicks": 2
+    },
+    "2026-07-06": {
+      "impressions": 5392,
+      "clicks": 7
+    },
+    "2026-07-13": {
+      "impressions": 3160,
+      "clicks": 7
+    },
+    "2026-07-20": {
+      "impressions": 3322,
+      "clicks": 14
+    },
+    "2026-07-27": {
+      "impressions": 3777,
+      "clicks": 6
+    },
+    "2026-08-03": {
+      "impressions": 2268,
+      "clicks": 9
+    },
+    "2026-08-10": {
+      "impressions": 3396,
+      "clicks": 8
+    },
+    "2026-08-17": {
+      "impressions": 523,
+      "clicks": 1
+    },
+    "2026-11-02": {
+      "impressions": 2821,
+      "clicks": 8
+    }
+  },
+  "gained": [
+    {
+      "query": "uk ltd",
+      "impressions": 2040,
+      "clicks": 13,
+      "position": 8.851960784313725,
+      "prevImpressions": 232,
+      "prevClicks": 0,
+      "delta": 1808
+    },
+    {
+      "query": "limited company formation",
+      "impressions": 1747,
+      "clicks": 0,
+      "position": 76.80995993131081,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 1747
+    },
+    {
+      "query": "uk vat registration threshold 2026",
+      "impressions": 1329,
+      "clicks": 0,
+      "position": 9.36117381489842,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 1329
+    },
+    {
+      "query": "set up a limited company online",
+      "impressions": 1120,
+      "clicks": 0,
+      "position": 64.08303571428571,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 1120
+    },
+    {
+      "query": "llc formation news",
+      "impressions": 1014,
+      "clicks": 0,
+      "position": 10.168639053254438,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 1014
+    },
+    {
+      "query": "form uk ltd company from pakistan for ecommerce",
+      "impressions": 650,
+      "clicks": 0,
+      "position": 6.673846153846154,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 650
+    },
+    {
+      "query": "ltd company formation",
+      "impressions": 639,
+      "clicks": 0,
+      "position": 73.05007824726134,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 639
+    },
+    {
+      "query": "uk sic code for forex trading own capital",
+      "impressions": 532,
+      "clicks": 0,
+      "position": 8.654135338345863,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 532
+    },
+    {
+      "query": "limited company formation uk",
+      "impressions": 497,
+      "clicks": 0,
+      "position": 76.5513078470825,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 497
+    },
+    {
+      "query": "uk limited",
+      "impressions": 593,
+      "clicks": 0,
+      "position": 18.526138279932546,
+      "prevImpressions": 131,
+      "prevClicks": 0,
+      "delta": 462
+    },
+    {
+      "query": "virtual office uk",
+      "impressions": 419,
+      "clicks": 0,
+      "position": 77.90453460620525,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 419
+    },
+    {
+      "query": "virtual office london",
+      "impressions": 384,
+      "clicks": 0,
+      "position": 77.65625,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 384
+    },
+    {
+      "query": "set up limited company online",
+      "impressions": 314,
+      "clicks": 0,
+      "position": 63.945859872611464,
+      "prevImpressions": 0,
+      "prevClicks": 0,
+      "delta": 314
+    },
+    {
+      "query": "london virtual office",
+      "impressions": 305,
+      "clicks": 0,
+      "position": 75.57377049180327,
+      "prevImpressions": 1,
+      "prevClicks": 0,
+      "delta": 304
+    },
+    {
+      "query": "uk company formation",
+      "impressions": 317,
+      "clicks": 0,
+      "position": 66.83596214511041,
+      "prevImpressions": 20,
+      "prevClicks": 0,
+      "delta": 297
+    }
+  ],
+  "lost": [
+    {
+      "query": "www uk ltd",
+      "impressions": 207,
+      "clicks": 0,
+      "position": 6.642512077294686,
+      "prevImpressions": 354,
+      "prevClicks": 0,
+      "delta": -147
+    },
+    {
+      "query": "uk company formation non resident",
+      "impressions": 139,
+      "clicks": 0,
+      "position": 62.28776978417266,
+      "prevImpressions": 167,
+      "prevClicks": 0,
+      "delta": -28
+    },
+    {
+      "query": "uk company formation non resident with bank account",
+      "impressions": 3,
+      "clicks": 0,
+      "position": 55.333333333333336,
+      "prevImpressions": 27,
+      "prevClicks": 0,
+      "delta": -24
+    },
+    {
+      "query": "company formation in uk for non residents",
+      "impressions": 4,
+      "clicks": 0,
+      "position": 70.75,
+      "prevImpressions": 26,
+      "prevClicks": 0,
+      "delta": -22
+    },
+    {
+      "query": "business bank account for non uk residents",
+      "impressions": 6,
+      "clicks": 0,
+      "position": 94.83333333333333,
+      "prevImpressions": 24,
+      "prevClicks": 0,
+      "delta": -18
+    },
+    {
+      "query": "business bank accounts for non uk residents",
+      "impressions": 2,
+      "clicks": 0,
+      "position": 82,
+      "prevImpressions": 19,
+      "prevClicks": 0,
+      "delta": -17
+    },
+    {
+      "query": "company formation uk non resident",
+      "impressions": 30,
+      "clicks": 0,
+      "position": 74.93333333333334,
+      "prevImpressions": 46,
+      "prevClicks": 0,
+      "delta": -16
+    },
+    {
+      "query": "open business bank account online uk non resident",
+      "impressions": 3,
+      "clicks": 0,
+      "position": 90.33333333333333,
+      "prevImpressions": 18,
+      "prevClicks": 0,
+      "delta": -15
+    },
+    {
+      "query": "register uk company non resident",
+      "impressions": 6,
+      "clicks": 0,
+      "position": 34.5,
+      "prevImpressions": 21,
+      "prevClicks": 0,
+      "delta": -15
+    },
+    {
+      "query": "uk company bank account for non residents",
+      "impressions": 1,
+      "clicks": 0,
+      "position": 91,
+      "prevImpressions": 15,
+      "prevClicks": 0,
+      "delta": -14
+    },
+    {
+      "query": "business account uk non resident",
+      "impressions": 2,
+      "clicks": 0,
+      "position": 86.5,
+      "prevImpressions": 15,
+      "prevClicks": 0,
+      "delta": -13
+    },
+    {
+      "query": "open uk business bank account non resident",
+      "impressions": 3,
+      "clicks": 0,
+      "position": 89,
+      "prevImpressions": 16,
+      "prevClicks": 0,
+      "delta": -13
+    },
+    {
+      "query": "business bank account in uk for non residents",
+      "impressions": 6,
+      "clicks": 0,
+      "position": 90.33333333333333,
+      "prevImpressions": 18,
+      "prevClicks": 0,
+      "delta": -12
+    },
+    {
+      "query": "company formation insights uk",
+      "impressions": 15,
+      "clicks": 0,
+      "position": 18.533333333333335,
+      "prevImpressions": 26,
+      "prevClicks": 0,
+      "delta": -11
+    },
+    {
+      "query": "uk business bank account for non residents",
+      "impressions": 19,
+      "clicks": 0,
+      "position": 70.78947368421052,
+      "prevImpressions": 29,
+      "prevClicks": 0,
+      "delta": -10
+    },
+    {
+      "query": "uk ltd registration non resident",
+      "impressions": 3,
+      "clicks": 0,
+      "position": 20,
+      "prevImpressions": 12,
+      "prevClicks": 2,
+      "delta": -9
+    },
+    {
+      "query": "open a uk business bank account for non resident",
+      "impressions": 5,
+      "clicks": 0,
+      "position": 73.4,
+      "prevImpressions": 13,
+      "prevClicks": 0,
+      "delta": -8
+    },
+    {
+      "query": "can a non uk resident form a uk limited company",
+      "impressions": 4,
+      "clicks": 0,
+      "position": 65,
+      "prevImpressions": 10,
+      "prevClicks": 0,
+      "delta": -6
+    },
+    {
+      "query": "non resident business bank account",
+      "impressions": 4,
+      "clicks": 0,
+      "position": 80.75,
+      "prevImpressions": 10,
+      "prevClicks": 0,
+      "delta": -6
+    },
+    {
+      "query": "uk ltd formation non resident",
+      "impressions": 1,
+      "clicks": 0,
+      "position": 77,
+      "prevImpressions": 7,
+      "prevClicks": 0,
+      "delta": -6
+    }
+  ]
+}
