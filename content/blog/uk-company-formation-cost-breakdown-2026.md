@@ -48,6 +48,17 @@ This guide reveals the **complete UK company formation cost breakdown** for 2026
 
 **Quick Answer:** Basic UK Ltd formation costs £104.99 with our service (£100 Companies House + £4.99). However, **true first-year costs** range from £1,247 to £2,547 depending on your needs.
 
+### Cost of Registering a Business in the UK at a Glance
+
+| Route | State fee | Agent fee | Typical total | Time |
+|-------|-----------|-----------|---------------|------|
+| **Direct at Companies House** | £100 | £0 | £100 | 3–80 hours |
+| **Formation agent (standard)** | £100 | £19.99–£49.99 | £119.99–£149.99 | 3–24 hours |
+| **Formation agent (premium)** | £100 | £89.99–£189.99 | £189.99–£289.99 | Same day |
+| **Form a Ltd from abroad** | £100 | £89.99+ | £189.99+ | 1–3 days |
+
+The cost of registering a business in the UK is therefore £100 if you file yourself, or from £119.99 if you use an agent. The real cost of running the company in year one — registered office, accounting, confirmation statement, and Corporation Tax return — is covered in the scenarios below.
+
 ---
 
 ## Table of Contents

@@ -15,7 +15,7 @@ router.get(['/pricing', '/packages'], (req, res) => {
 router.get('/services', (req, res) => {
     res.render('pages/services', {
         title: 'Our Services | Professional Company Formation',
-        metaDescription: 'Explore our full range of UK company formation and maintenance services.',
+        metaDescription: 'Explore our full range of UK company formation and maintenance services, including company setup services, registered office, banking, accounting and compliance.',
         articleImage: '/images/hero-home.png'
     });
 });
@@ -74,8 +74,8 @@ router.get('/us-citizens', (req, res) => {
 // Forex Trading / Non-Resident Formation Help Page (P1 SEO Priority)
 router.get('/get-help-forming-a-uk-ltd', (req, res) => {
     res.render('pages/forex-uk-ltd', {
-        title: 'Get Help Forming a UK LTD | Expert Guidance',
-        metaDescription: 'Get expert help forming your UK LTD company. Step-by-step guidance for non-residents and UK residents.',
+        title: 'Get Help Forming a UK LTD — Who to Talk To About Starting a Business',
+        metaDescription: 'Who to talk to about starting a business in the UK: expert help forming your UK LTD, step by step, for residents and non-residents. Free guidance from UK agents.',
         articleImage: '/images/hero-uk.jpg'
     });
 });
@@ -203,17 +203,17 @@ router.get('/strategic-research-hub', (req, res) => {
 // LTD Company Formation Page (Core Conversion Page)
 router.get('/register-a-limited-company-uk', (req, res) => {
     res.render('pages/ltd-formation', {
-        title: 'Register a UK Limited Company Same-Day — £119.99 from £119.99 (2026 Guide)',
-        metaDescription: 'Register a UK limited company online today. Same-day Companies House filing from £119.99 with ACSP-verified agents, a free London registered office, and full guidance on costs, taxes, and compliance in 2026.',
-        metaKeywords: 'register UK limited company same day, UK company registration online 2026, form limited company £119.99, Companies House same day filing, UK LTD formation cost 2026, non-resident UK company registration'
+        title: 'Register a UK Limited Company or Business — Same-Day (2026)',
+        metaDescription: 'Register a UK limited company or business online today. Same-day Companies House filing from £119.99 — how to register a business in the UK step by step, with ACSP-verified agents, a free London registered office, and full 2026 cost, tax and compliance guidance.',
+        metaKeywords: 'register UK limited company same day, how to register a business in the UK, how do you register a business, UK company registration online 2026, corporate formation UK, form limited company £119.99, Companies House same day filing, UK LTD formation cost 2026, non-resident UK company registration'
     });
 });
 
 // Regional Landing Pages
 router.get('/register-company-england', (req, res) => {
     res.render('pages/regions/england', {
-        title: 'Register a Company in England Online',
-        metaDescription: 'Form an England limited company online today. Includes the £100 state fee, official London registered office options, and active 2026 ACSP verification from £119.99.'
+        title: 'Register a Company in England — Business Registration England 2026',
+        metaDescription: 'Business registration England: form an England limited company online today. Includes the £100 state fee, official London registered office options, and active 2026 ACSP verification from £119.99.'
     });
 });
 
@@ -305,8 +305,8 @@ router.get('/company-name-check', (req, res) => {
 
 router.get('/non-uk-resident-company', (req, res) => {
     res.render('pages/services/non-uk-resident-company', {
-        title: 'Register UK Company as Non-Resident',
-        metaDescription: 'Register a limited company in the UK as a non-resident remotely. Fully digital process, prestigious London address, Wise business banking setup, and ECCTA compliant.'
+        title: 'Register UK Company as Non-Resident — International Company Registration',
+        metaDescription: 'International company registration for non-residents: register a limited company in the UK remotely. Fully digital process, prestigious London address, Wise business banking setup, and ECCTA compliant.'
     });
 });
 
@@ -329,16 +329,16 @@ router.get('/services/dissolution', (req, res) => {
 // Same-Day Fast Formation Landing Page
 router.get('/fastest-uk-company-registration', (req, res) => {
     res.render('pages/fast-formation', {
-        title: 'Fastest UK LTD Registration',
-        metaDescription: 'Same-day UK company registration from £189.99. Companies House approval in 3-6 working hours. Fastest LTD formation guaranteed before 3 PM UK time. Start trading within 24 hours.'
+        title: 'Fastest UK LTD Registration — How Long Does It Take? (2026)',
+        metaDescription: 'Same-day UK company registration from £189.99. Companies House approval in 3-6 working hours — how long it takes to set up a limited company, and how to start trading within 24 hours.'
     });
 });
 
 // Cheap/Budget Formation Landing Page
 router.get('/cheapest-uk-company-registration', (req, res) => {
     res.render('pages/budget-formation', {
-        title: 'Cheapest UK Company Registration',
-        metaDescription: 'Cheapest UK LTD registration at £119.99. Companies House fee included, no hidden charges. Transparent pricing, zero upsells. Form your company now.'
+        title: 'Cheapest UK Company Registration — Free Ltd Formation Options 2026',
+        metaDescription: 'Cheapest UK LTD registration at £119.99, plus how to form a limited liability company for free. Companies House fee included, no hidden charges. Transparent pricing, zero upsells. Form your company now.'
     });
 });
 
@@ -353,8 +353,8 @@ router.get('/uk-company-formation-for-residents', (req, res) => {
 // Enhanced Non-Residents Page with better keywords
 router.get('/uk-company-registration-for-foreigners', (req, res) => {
     res.render('pages/non-residents', {
-        title: 'UK Company Registration for Foreigners',
-        metaDescription: 'Register a UK company as a foreigner from anywhere. Same-day formation, London registered office, and Wise banking assistance from £189.99.'
+        title: 'UK Company Registration for Foreigners & International Founders 2026',
+        metaDescription: 'International company registration: register a UK company as a foreigner from anywhere. Same-day formation, London registered office, and Wise banking assistance from £189.99.'
     });
 });
 

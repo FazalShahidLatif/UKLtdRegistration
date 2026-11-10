@@ -118,6 +118,22 @@ Historically, incorporating became tax-efficient once net profits exceeded &poun
 
 ---
 
+## 5. What About a Partnership?
+
+A partnership is the third structure founders compare. It is two or more people trading together and sharing the profits, with no separate legal entity.
+
+| | Partnership | Limited Company |
+|---|-------------|-----------------|
+| **Liability** | Unlimited and joint | Limited to shares |
+| **Set up** | Register with HMRC | Incorporate at Companies House |
+| **Tax** | Income Tax on profits | Corporation Tax on profits |
+| **Privacy** | None | Registered office can be a service address |
+| **Raising investment** | Difficult | Easier — shares can be issued |
+
+How to start a partnership business is simple: agree the split of profits, register each partner with HMRC for Self Assessment, and keep proper records. The catch is liability — if one partner takes on a bad contract, every partner is personally on the hook for it. For that reason most partnerships convert to a limited company once they start hiring or signing larger contracts.
+
+---
+
 ## Conclusion: Which is Right for You?
 
 ### Choose Sole Trader if:

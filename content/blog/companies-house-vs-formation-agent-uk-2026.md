@@ -19,6 +19,20 @@ Use a formation agent if you want help with the application, identity checks, ad
 
 A formation agent is not a legal requirement. It is a support service.
 
+## What Does a Formation Agent UK Actually Do?
+
+A formation agent UK service is a company that prepares and submits your incorporation for you, and usually bundles related services around it. A typical agent will:
+
+- **Check your company name** against the Companies House register before filing, and advise on "too like" conflicts.
+- **Handle the IN01 filing** and the appointment of directors, shareholders, and PSCs.
+- **Provide a registered office address** so your home address stays off the public register.
+- **Manage ACSP identity verification** for directors and PSCs under ECCTA 2026.
+- **Register the company for Corporation Tax** with HMRC and issue your UTR.
+- **Set up banking introductions** with digital and high-street banks.
+- **Send compliance reminders** for your confirmation statement and annual accounts.
+
+An agent is not required by law — Companies House accepts direct filings. The value is in validation before submission and the bundled address and verification services.
+
 ## Route one: file direct with Companies House
 
 The official Companies House service lets you register a company online. You choose a name, appoint directors, add shareholders, select SIC codes, and provide a registered office address.

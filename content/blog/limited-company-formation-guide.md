@@ -103,6 +103,48 @@ Our same-day formation service handles steps 1–5 and guides you through 6–7.
 
 The requirements for a UK limited company are set out in the [requirements table above](#limited-company-formation-requirements): at least one director aged 18+, at least one shareholder, a UK registered office address, a unique name, at least one SIC code, PSC details, and ACSP identity verification for all directors and PSCs. There is no minimum share capital and no UK residency requirement.
 
+### What Are the Requirements for a Corporation?
+
+In the US, "corporation" is the standard term for any registered company. In the UK, the equivalent is a **limited company** registered at Companies House, so the requirements for a corporation and the requirements for a UK limited company are the same seven things:
+
+1. At least one director aged 18 or over
+2. At least one shareholder
+3. A UK registered office address (physical, not a P.O. box)
+4. A unique name that passes Companies House checks
+5. At least one SIC code
+6. Details of every Person with Significant Control (PSC)
+7. ACSP identity verification for all directors and PSCs under ECCTA 2026
+
+There is no minimum share capital and no UK residency requirement.
+
+---
+
+## How to Create a Business from Home
+
+You do not need commercial premises to register a company. The registered office address is a legal address for official mail — it is not your workplace. To create a business from home:
+
+* **Use a registered office service** so your home address stays off the public register.
+* **Keep records digitally** — accounting records must be kept, but they do not need to be held at a physical office.
+* **Claim allowable expenses** — a proportion of utility and internet costs may be claimable if you work from home, subject to HMRC rules.
+* **Check your lease or mortgage** — most residential tenancies allow a home business; some require landlord consent.
+
+Freelancers, consultants, e-commerce sellers, software developers, and online coaches all routinely trade from home under a UK limited company.
+
+---
+
+## Easy to Open Business: The Fastest Routes in 2026
+
+If speed is the priority, these are the easiest structures to open:
+
+| Route | Time | Cost | Liability |
+|-------|------|------|-----------|
+| **Sole trader** | Same day (HMRC) | Free | Unlimited |
+| **Limited company via agent** | 3–24 hours | from £119.99 | Limited |
+| **Limited company direct at Companies House** | 3–80 hours | £100 (state fee) | Limited |
+| **Partnership** | Same day (HMRC) | Free | Unlimited, joint |
+
+For most founders who want limited liability without delay, a formation agent is the easiest route: they validate the name and details before submission, which is why approvals are faster and rejections are rare.
+
 ---
 
 ## Limited Company Formation Requirements

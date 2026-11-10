@@ -7,6 +7,82 @@ In 2026, the **Economic Crime and Corporate Transparency Act (ECCTA)** is in ful
 
 ---
 
+## How to Start a Business in the UK (2026 Roadmap)
+
+Starting a business in the UK in 2026 takes about one working day if you use a formation agent, and a little longer if you file the paperwork yourself. The route is the same whether you are a UK resident or filing from overseas.
+
+**The seven steps:**
+
+1. **Decide on your structure.** Most founders choose a private limited company (Ltd) because it separates your personal finances from the business. If you are trading alone and want the simplest setup, self-employment with HMRC is the alternative — compare the two in [LTD Company vs Sole Trader](/blog/ltd-company-vs-sole-trader).
+2. **Choose and check your name.** Run it through our [free company name check](/company-name-check) against the live Companies House register.
+3. **Appoint at least one director and one shareholder.** They can be the same person, and they can be of any nationality.
+4. **Register a UK office address.** This is your official registered office. It is public record, so many founders use a professional address service to keep their home address private.
+5. **Pick your SIC codes.** These describe what your company does and are now checked by banks as well as Companies House.
+6. **Verify identities.** Under ECCTA 2026, every director and person with significant control (PSC) must pass identity verification with an Authorized Corporate Service Provider.
+7. **Incorporate and register for tax.** Companies House issues your Certificate of Incorporation, and HMRC issues your Unique Taxpayer Reference (UTR).
+
+### What Is a United Kingdom Limited Company?
+
+A United Kingdom limited company is a business that is registered at Companies House and whose owners have limited liability. "Limited" means the company is a separate legal person: it can own assets, sign contracts, employ staff, and owe debts in its own name. If the business fails, the owners lose only what they invested in shares — not their home, savings, or personal property.
+
+A UK limited company can be set up by one person (a single shareholder and director) or by many. It can trade in any sector, open a UK business bank account, and invoice customers worldwide. It is the structure most UK banks, marketplaces, and enterprise clients expect.
+
+### Starting a Business in the United Kingdom from Abroad
+
+You do not need to live in the UK — or even visit — to start a business in the United Kingdom. Non-residents can incorporate a UK limited company entirely online, and the UK places no restriction on foreign ownership or directorship.
+
+What you do need is:
+
+* A **UK registered office address** — a service address is fine; it does not have to be your trading location.
+* **ACSP identity verification** for every director and PSC, completed remotely.
+* A **UK business bank account** or a multi-currency account (Wise, Payoneer, Mercury) that accepts non-resident-owned UK companies.
+
+---
+
+## How to Start a Business from Home
+
+How to create a business from home is one of the most searched formation questions in the UK, and the answer is straightforward: the company has a registered office address that is separate from where you actually work.
+
+* **Use a registered office service** for your official address so your home address never appears on the public register.
+* **Work from anywhere** — the registered office is a legal address, not a workplace requirement.
+* **Deduct the costs** — a registered office service and home-office equipment may be claimable as allowable business expenses, subject to HMRC rules.
+
+Home-based businesses that most commonly use this setup: freelancers, consultants, e-commerce sellers, software developers, and online coaches.
+
+---
+
+## How to Start a Partnership Business
+
+A partnership is two or more people running a business together and sharing the profits. It is simpler to set up than a limited company, but it carries **unlimited personal liability** — each partner is personally responsible for the business debts of the whole partnership.
+
+| | Partnership | Limited Company |
+|---|---|---|
+| **Liability** | Unlimited, joint | Limited to shares |
+| **Set up** | Register with HMRC | Incorporate at Companies House |
+| **Tax** | Income Tax on profits | Corporation Tax on profits |
+| **Privacy** | None | Registered office can be a service address |
+| **Credibility** | Lower with banks and clients | Higher |
+
+Many partnerships convert to a limited company once revenue and hiring begin, because a limited company caps liability and is easier to bring in investors. If you are deciding between the two, read [LTD Company vs Sole Trader](/blog/ltd-company-vs-sole-trader).
+
+---
+
+## Requirements for a Corporation vs a UK Limited Company
+
+The phrase "requirements for a corporation" usually comes from US searches, where incorporation happens at state level. In the UK, the equivalent is incorporating a **limited company** at Companies House, and the requirements are:
+
+1. **At least one director** aged 18 or over, of any nationality.
+2. **At least one shareholder** (can be the same person as the director).
+3. **A registered office address in the UK** — a physical address, not a P.O. box.
+4. **A unique company name** that passes the Companies House "sameness" and sensitive-words checks.
+5. **At least one SIC code** describing the company's business activity.
+6. **Details of every Person with Significant Control (PSC)** — anyone holding more than 25% of shares or voting rights.
+7. **Identity verification** for all directors and PSCs through an Authorized Corporate Service Provider under ECCTA 2026.
+
+There is **no minimum share capital**, no UK residency requirement, and no requirement to have a UK bank account at the point of incorporation — though you will need one to trade.
+
+---
+
 ## 🏗️ Phase 1: Structuring for Success
 
 ### 1. Choosing Your Legal Blueprint
